@@ -1,3 +1,12 @@
+# Quarto
+.quarto/
+
+# Mac generated file
+.DS_Store
+
+# The code directory
+code/
+
 # History files
 .Rhistory
 .Rapp.history
@@ -30,6 +39,7 @@ vignettes/*.pdf
 # knitr and R markdown default cache directories
 *_cache/
 /cache/
+*_files/
 
 # Temporary files created by R markdown
 *.utf8.md
