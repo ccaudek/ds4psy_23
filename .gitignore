@@ -4,9 +4,6 @@
 # Mac generated file
 .DS_Store
 
-# The code directory
-code/
-
 # History files
 .Rhistory
 .Rapp.history
