@@ -16,10 +16,10 @@ In questo insegnamento verrano trattati i temi di base della Data Science e verr
 
 Il metodo di studio che consiglio agli studenti è quello di seguire attivamente le lezioni, di assimilare i concetti via via che essi vengono presentati e di verificare in autonomia le procedure presentate a lezione.
 
-La prima fase dello studio, che è sicuramente individuale, è quella in cui lo studente deve acquisire le conoscenze teoriche relative ai problemi che saranno presentati all'esame. La seconda fase di studio, che può essere facilitata da scambi con altri e da incontri di gruppo, porta lo studente ad acquisire la capacità di applicare le conoscenze: è necessario sapere usare un software (nel nostro caso $\textsf{R}$) per applicare i concetti statistici alla specifica situazione del problema che si vuole risolvere. Le due fasi non sono però separate: in questa specifica materia è molto utile adottare un approccio di *learning by doing*.
+La prima fase dello studio, che è sicuramente individuale, è quella in cui lo studente deve acquisire le conoscenze teoriche relative ai problemi che saranno presentati all'esame. La seconda fase di studio, che può essere facilitata da scambi con altri e da incontri di gruppo, porta lo studente ad acquisire la capacità di applicare le conoscenze: è necessario sapere usare un software (nel nostro caso $\textsf{R}$) per risolvere i problemi che verranno presentati all'esame. Le due fasi non sono però separate: in questa materia è molto utile adottare un approccio di *learning by doing*.
 
 Per tutte queste ragioni, incoraggio gli studenti
 
 -   a farmi domande per chiarire ciò che non è stato capito appieno;
--   a svolgere gli esercizi proposti su Moodle seguendo il calendario indicato; i problemi forniti su Moodle rappresentano il livello di difficoltà richiesto per superare l'esame e consentono allo studente di capire se le competenze sviluppate fino a quel punto siano sufficienti rispetto alle richieste dell'esame;
+-   a svolgere gli esercizi proposti su Moodle seguendo il calendario indicato; tali problemi rappresentano il livello di difficoltà richiesto per superare l'esame e consentono allo studente di capire se le competenze sviluppate fino a quel punto siano sufficienti rispetto alle richieste dell'esame;
 -   a partecipare attivamente alle chat sui forum predisposti su Moodle e Discord.
