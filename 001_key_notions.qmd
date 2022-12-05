@@ -48,6 +48,14 @@ Il termine *variabile* usato nella statistica è equivalente al termine *variabi
 Che differenza c'è tra una variabile casuale e una variabile statistica? La differenza tra questi due concetti può essere descritta dall'incertezza epistemica del ricercatore. Supponiamo, ad esempio, che l'*esperimento casuale* sia il lancio di un dado e la variabile di interesse $X$ sia l'esito del lancio del dado. Poniamo che in una prova dell'esperimento casuale, ovvero in uno specifico lancio, la variabile $X$ assuma il valore 5. Prima del lancio del dado, la variabile $X$ è una *variabile casuale* (il ricercatore sa che $X$ può assumere i valore 1, ..., 6, ma non conosce lo specifico valore che verrà osservato dopo il lancio); dopo il lancio del dado, avendo osservato $X$ = 5, la variabile $X$ diventa una *variabile statistica*, ovvero costituisce un dato del campione di osservazioni.
 :::
 
+## Statistica
+
+Una statistica è una qualsiasi funzione del campione di una variabile casuale.
+
+::: callout-note
+Esempi di statistiche sono la media campionaria, la mediana campionaria, la varianza, ecc. Ma, per la definizione precedente, qualunque funzione arbitraria del campione costituisce una statistica: per esempio, il rapporto tra il valore minimo e il logaritmo del valore massimo del campione. Pur essendo insensato, un tale valore è una statistica del campione.
+:::
+
 ### Variabili indipendenti e variabili dipendenti
 
 Un primo compito fondamentale in qualsiasi analisi dei dati è l'identificazione delle variabili *dipendenti* ($Y$) e delle variabili *indipendenti* ($X$). Le variabili dipendenti sono anche chiamate variabili di esito o di risposta e le variabili indipendenti sono anche chiamate predittori o covariate. Ad esempio, nell'analisi di regressione, che esamineremo in seguito, la domanda centrale è quella di capire come varia $Y$ al variare di $X$. Più precisamente, la domanda che viene posta è: se viene mutato il valore della variabile indipendente $X$, quale conseguenza ne deriva per la variabile dipendente $Y$? In parole povere, le variabili indipendenti e dipendenti sono analoghe a "cause" ed "effetti", laddove le virgolette qui usate sottolineano che questa è solo un'analogia e che la determinazione delle cause può avvenire soltanto mediante l'utilizzo di un appropriato disegno sperimentale e di un'adeguata analisi statistica.
@@ -74,25 +82,33 @@ D_{m,n} =
 
 dove, nel caso presente, la prima colonna contiene il nome delle unità statistiche, la seconda e la terza colonna si riferiscono a due *mutabili* statistiche (o variabili categoriali; $A$ e $B$) e ne presentano le modalità osservate nel campione mentre le ultime due colonne si riferiscono a due *variabili* statistiche ($X$ e $Y$) e ne presentano le modalità osservate nel campione. Generalmente, tra le unità statistiche $\omega_i$ non esiste un ordine progressivo; l'indice attribuito alle unità statistiche nella matrice dei dati si riferisce semplicemente alla riga che esse occupano.
 
-## Parametri e modelli
-
-Ogni variabile casuale ha una *distribuzione* che descrive la probabilità che la variabile assuma qualsiasi valore in un dato intervallo.[^001_key_notions-1] Senza ulteriori specificazioni, una distribuzione può fare riferimento a un'intera famiglia di distribuzioni. I parametri, tipicamente indicati con lettere greche come $\mu$ e $\alpha$, ci permettono di specificare di quale membro della famiglia stiamo parlando. Quindi, si può parlare di una variabile casuale con una distribuzione Normale, ma se viene specificata la media $\mu$ = 100 e la varianza $\sigma^2$ = 15, viene individuata una specifica distribuzione Normale -- nell'esempio, la distribuzione del quoziente di intelligenza.
-
-[^001_key_notions-1]: In questo e nei successivi Paragrafi di questo Capitolo introduco gli obiettivi della *data science* utilizzando una serie di concetti che saranno chiariti solo in seguito. Questa breve panoramica risulterà dunque solo in parte comprensibile ad una prima lettura e serve solo per definire la *big picture* dei temi trattati in questo insegnamento. Il significato dei termini qui utilizzati sarà chiarito nei Capitoli successivi.
-
-I metodi statistici parametrici specificano la famiglia delle distribuzioni e quindi utilizzano i dati per individuare, stimando i parametri, una specifica distribuzione all'interno della famiglia di distribuzioni ipotizzata. Se $f$ è la PDF di una variabile casuale $Y$, l'interesse può concentrarsi sulla sua media e varianza. Nell'analisi di regressione, ad esempio, cerchiamo di spiegare come i parametri di $f$ dipendano dalle covariate $X$. Nella regressione lineare classica, assumiamo che $Y$ abbia una distribuzione normale con media $\mu = \mathbb{E}(Y)$, e stimiamo come $\mathbb{E}(Y)$ dipenda da $X$. Poiché molti esiti psicologici non seguono una distribuzione normale, verranno introdotte distribuzioni più appropriate per questi risultati. I metodi non parametrici, invece, non specificano una famiglia di distribuzioni per $f$. In queste dispense faremo riferimento a metodi non parametrici quando discuteremo della statistica descrittiva.
-
-Il termine *modello* è onnipresente in statistica e nella *data science*. Il modello statistico include le ipotesi e le specifiche matematiche relative alla distribuzione della variabile casuale di interesse. Il modello dipende dai dati e dalla domanda di ricerca, ma raramente è unico; nella maggior parte dei casi, esiste più di un modello che potrebbe ragionevolmente usato per affrontare la stessa domanda di ricerca e avendo a disposizione i dati osservati. Nella previsione delle aspettative future dei pazienti depressi che discuteremo in seguito [@zetschefuture2019], ad esempio, la specifica del modello include l'insieme delle covariate candidate, l'espressione matematica che collega i predittori con le aspettative future e qualsiasi ipotesi sulla distribuzione della variabile dipendente. La domanda di cosa costituisca un buon modello è una domanda su cui torneremo ripetutamente in questo insegnamento.
-
 ## Effetto
 
 L'*effetto* è una qualche misura dei dati. Dipende dal tipo di dati e dal tipo di test statistico che si vuole utilizzare. Ad esempio, se viene lanciata una moneta 100 volte e esce testa 66 volte, l'effetto sarà 66/100. Diventa poi possibile confrontare l'effetto ottenuto con l'effetto nullo che ci si aspetterebbe da una moneta bilanciata (50/100), o con qualsiasi altro effetto che può essere scelto. La *dimensione dell'effetto* si riferisce alla differenza tra l'effetto misurato nei dati e l'effetto nullo (di solito un valore che ci si aspetta di ottenere in base al caso soltanto).
 
 ## Stima e inferenza
 
-La stima è il processo mediante il quale il campione viene utilizzato per conoscere le proprietà di interesse della popolazione. La media campionaria è una stima naturale della media della popolazione e la mediana campionaria è una stima naturale della mediana della popolazione. Quando parliamo di stimare una proprietà della popolazione (a volte indicata come parametro della popolazione) o di stimare la distribuzione di una variabile casuale, stiamo parlando dell'utilizzo dei dati osservati per conoscere le proprietà di interesse della popolazione. L'inferenza statistica è il processo mediante il quale le stime campionarie vengono utilizzate per rispondere a domande di ricerca e per valutare specifiche ipotesi relative alla popolazione. Discuteremo le procedure bayesiane dell'inferenza nell'ultima parte di queste dispense.
+La stima è il processo mediante il quale il campione viene utilizzato per conoscere le proprietà di interesse della popolazione. Ad esempio, la media campionaria è una stima naturale della media della popolazione e la mediana campionaria è una stima naturale della mediana della popolazione. Quando si discute la stima di una proprietà della popolazione (a volte indicata come parametro della popolazione) o la stima della *distribuzione* di una variabile casuale (ovvero la probabilità che la variabile assuma qualsiasi valore in un dato intervallo), si fa riferimento all'utilizzo dei dati osservati per conoscere le proprietà di interesse della popolazione. L'inferenza statistica è il processo mediante il quale le stime campionarie vengono utilizzate per rispondere alle domande della ricerca e per valutare specifiche ipotesi relative alla popolazione. Nell'ultima parte di questa dispensa discuteremo le procedure bayesiane dell'inferenza e illustreremo i limiti dell'inferenza frequentista.
 
-## Metodi e procedure della psicologia
+<!-- ## Parametri e modelli -->
+
+<!-- Ogni variabile casuale ha una *distribuzione* che descrive la probabilità che la variabile assuma qualsiasi valore in un dato intervallo.[^001_key_notions-1] Senza ulteriori specificazioni, una distribuzione può fare riferimento a un'intera famiglia di distribuzioni. I parametri, tipicamente indicati con lettere greche come $\mu$ e $\alpha$, ci permettono di specificare di quale membro della famiglia stiamo parlando. Quindi, si può parlare di una variabile casuale con una distribuzione Normale, ma se viene specificata la media $\mu = 100$ e la varianza $\sigma^2 = 15^2$, allora viene individuata una specifica distribuzione Normale -- nell'esempio, la distribuzione del quoziente di intelligenza. -->
+
+<!-- [^001_key_notions-1]: In questo e nei successivi paragrafi di questo capitolo introduco gli obiettivi della *data science* utilizzando una serie di concetti che saranno chiariti solo in seguito. Questa breve panoramica risulterà dunque solo in parte comprensibile ad una prima lettura e serve solo per definire la *big picture* dei temi trattati in questo insegnamento. Il significato dei termini qui utilizzati sarà chiarito con maggiore precisione nei capitoli successivi. -->
+
+<!-- I metodi statistici parametrici specificano la famiglia delle distribuzioni e quindi utilizzano i dati per individuare, stimando i parametri, una specifica distribuzione all'interno della famiglia di distribuzioni ipotizzata. Se $f$ è la PDF di una variabile casuale $Y$, l'interesse può concentrarsi sulla sua media e varianza. Nell'analisi di regressione, ad esempio, cerchiamo di spiegare come i parametri di $f$ dipendano dalle covariate $X$. Nella regressione lineare classica, assumiamo che $Y$ abbia una distribuzione normale con media $\mu = \mathbb{E}(Y)$, e stimiamo come $\mathbb{E}(Y)$ dipenda da $X$. Poiché molti esiti psicologici non seguono una distribuzione normale, verranno introdotte distribuzioni più appropriate per questi risultati. I metodi non parametrici, invece, non specificano una famiglia di distribuzioni per $f$. In queste dispense faremo riferimento a metodi non parametrici quando discuteremo la statistica descrittiva. -->
+
+<!-- Il termine *modello* è onnipresente in statistica e nella *data science*. Un modello statistico include le ipotesi e le specifiche matematiche relative alla distribuzione della variabile casuale di interesse. Il modello dipende dai dati e dalla domanda di ricerca, ma raramente è unico; nella maggior parte dei casi, esiste più di un modello che potrebbe ragionevolmente usato per affrontare la stessa domanda di ricerca avendo a disposizione i dati osservati. La domanda di cosa costituisca un buon modello è una domanda su cui torneremo ripetutamente in questa dispensa. -->
+
+<!-- ::: {#exm-keys-5} -->
+
+<!-- Ad esempio, nella previsione delle aspettative future dei pazienti depressi che discuteremo in seguito [@zetschefuture2019], la specifica del modello include l'insieme delle covariate candidate, l'espressione matematica che collega i predittori con la variabile dipendente e qualsiasi ipotesi sulla distribuzione della variabile dipendente. -->
+
+<!-- ::: -->
+
+## Modelli psicologici
+
+Il termine *modello* è onnipresente in statistica e nella *data science*. Un modello statistico include le ipotesi e le specifiche matematiche relative alla distribuzione della variabile casuale di interesse. Il modello dipende dai dati e dalla domanda di ricerca, ma raramente è unico; nella maggior parte dei casi, esiste più di un modello che potrebbe ragionevolmente usato per affrontare la stessa domanda di ricerca avendo a disposizione i dati osservati. Il problema di cosa costituisca un buon modello è una domanda su cui torneremo ripetutamente in questa dispensa.
 
 Un modello psicologico di un qualche aspetto del comportamento umano o della mente ha le seguenti proprietà:
 
@@ -101,4 +117,4 @@ Un modello psicologico di un qualche aspetto del comportamento umano o della men
 3.  è sostenuto da evidenze empiriche,
 4.  deve essere falsificabile (ovvero, in linea di principio, deve potere fare delle predizioni su aspetti del fenomeno considerato che non sono ancora noti e che, se venissero indagati, potrebbero portare a rigettare il modello, se si dimostrassero incompatibili con esso).
 
-L'analisi dei dati valuta un modello psicologico utilizzando strumenti statistici.
+L'analisi dei dati si pone l'obiettivo di valutare un modello psicologico mediante strumenti statistici.
