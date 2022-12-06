@@ -19,6 +19,7 @@ book:
       - 001_key_notions.qmd
       - 005_measurement.qmd
       - 007_freq_distr.qmd
+      - 008_penguins.qmd
       - 011_loc_scale.qmd
       - 012_correlation.qmd
     - part: prob.qmd
