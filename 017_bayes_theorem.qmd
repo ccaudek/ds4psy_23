@@ -1,4 +1,4 @@
-# L'interpretazione soggettivista della probabilità {#sec-theorem-bayes}
+# Il teorema di Bayes {#sec-theorem-bayes}
 
 ```{r, include = FALSE}
 source("_common.R")
@@ -6,7 +6,7 @@ source("_common.R")
 
 Il teorema di Bayes assume un ruolo fondamentale nell'interpretazione soggettivista della probabilità perchè descrive l'aggiornamento della credenza che si aveva nel verificarsi dell'ipotesi $H$ (quantificata con la probabilità assegnata all'ipotesi) in conseguenza del verificarsi dell'evidenza $E$.
 
-## Il teorema di Bayes
+## Definizione
 
 ::: {#thm-bayes}
 Sia $(H_i)_{i\geq 1}$ una partizione dell'evento certo $\Omega$ e sia $E \subseteq \Omega$ un evento tale che $P(E) > 0$, allora, per $i = 1, \dots, \infty$:
@@ -59,14 +59,16 @@ Sostituendo tale risultato nella formula precedente otteniamo:
 $$
 P(H_1 \mid E) = \frac{P(E \mid H_1)P(H_1)}{P(E \mid H_1)P(H_1) + P(E \mid H_2)P(H_2)}.
 $$ {#eq-bayes1}
+:::
 
+::: callout-note
 Un lettore attento si sarà reso conto che, in precedenza, abbiamo già applicato il teorema di Bayes quando abbiamo risolto l'@exm-cancer. In quel caso, le due ipotesi erano "malattia presente", che possiamo denotare con $M$, e "malattia assente", $M^\complement$. L'evidenza $E$ era costituita dal risultato positivo al test, ovvero $+$. Con questa notazione l'@eq-bayes1 diventa:
 
 $$
 P(M \mid +) = \frac{P(+ \mid M) P(M)}{P(+ \mid M) P(M) + P(+ \mid M^\complement) P(M^\complement)}
 $$
 
-Inserendo i dati nella formula, otteniamo
+Inserendo i dati dell'@exm-cancer nella formula precedente, otteniamo
 
 $$
 \begin{align}
@@ -77,13 +79,19 @@ P(M \mid +) &= \frac{0.9 \cdot 0.01}{0.9 \cdot 0.01 + 0.1 \cdot 0.99} \notag\\
 $$
 :::
 
-## Commenti e considerazioni finali {.unnumbered}
+## Aggiornamento bayesiano
 
 Il teorema di Bayes rende esplicito il motivo per cui la probabilità non possa essere pensata come uno stato oggettivo, quanto piuttosto come un'inferenza soggettiva e condizionata. Il denominatore del membro di destra della @eq-bayes2 è un semplice fattore di normalizzazione. Nel numeratore compaiono invece due quantità: ${\mbox{P}}(H_i$) e ${\mbox{P}}(E \mid H_i)$. La probabilità ${\mbox{P}}(H_i$) è la probabilità *probabilità a priori* (*prior*) dell'ipotesi $H_i$ e rappresenta l'informazione che l'agente bayesiano possiede a proposito dell'ipotesi $H_i$. Diremo che ${\mbox{P}}(H_i)$ codifica il grado di fiducia che l'agente ripone in $H_i$ precedentemente al verificarsi dell'evidenza $E$. Nell'interpretazione bayesiana, ${\mbox{P}}(H_i)$ rappresenta un giudizio personale dell'agente e non esistono criteri esterni che possano determinare se tale giudizio sia coretto o meno. La probabilità condizionata ${\mbox{P}}(E \mid H_i)$ rappresenta invece la verosimiglianza di $H_i$ dato $E$ e descrive la plausibilità che si verifichi l'evento $E$ se è vera l'ipotesi $H_i$. Il teorema di Bayes descrive la regola che l'agente deve seguire per aggiornare il suo grado di fiducia nell'ipotesi $H_i$ alla luce del verificarsi dell'evento $E$. La ${\mbox{P}}(H_i \mid E)$ è chiamata probabilità a posteriori dato che rappresenta la nuova probabilità che l'agente assegna all'ipotesi $H_i$ affinché rimanga consistente con le nuove informazioni fornitegli da $E$.
 
-La probabilità a posteriori dipende sia dall'evidenza $E$, sia dalla conoscenza a priori dell'agente ${\mbox{P}}(H_i)$. È dunque chiaro come non abbia senso parlare di una probabilità oggettiva: per il teorema di Bayes la probabilità è definita condizionatamente alla probabilità a priori, la quale a sua volta, per definizione, è un'assegnazione soggettiva. Ne segue pertanto che ogni probabilità deve essere considerata come una rappresentazione del grado di fiducia soggettiva dell'agente. Dato che ogni assegnazione probabilistica rappresenta uno stato di conoscenza e che ciascun particolare stato di conoscenza è arbitrario, un accordo tra agenti diversi non è richiesto.
+La probabilità a posteriori dipende sia dall'evidenza $E$, sia dalla conoscenza a priori dell'agente ${\mbox{P}}(H_i)$. È dunque chiaro come non abbia senso parlare di una probabilità oggettiva: per il teorema di Bayes la probabilità è definita condizionatamente alla probabilità a priori, la quale a sua volta, per definizione, è un'assegnazione soggettiva. Ne segue pertanto che ogni probabilità deve essere considerata come una rappresentazione del grado di fiducia soggettiva dell'agente.
 
-Ciò nonostante, la teoria delle probabilità ci fornisce uno strumento che, alla luce di nuove evidenze, consente di aggiornare in un modo razionale il grado di fiducia che attribuiamo ad un'ipotesi, via via che nuove evidenze vengono raccolte, in modo tale da formulare un'ipotesi a posteriori la quale non è mai definitiva, ma può sempre essere aggiornata in base alle nuove evidenze disponibili. Questo processo si chiama *aggiornamento bayesiano*. Vedremo nel Capitolo \@sec-intro-bayes-inference come estendere l'@eq-bayes2 al caso continuo.
+Dato che ogni assegnazione probabilistica rappresenta uno stato di conoscenza e che ciascun particolare stato di conoscenza è arbitrario, un accordo tra agenti diversi non è richiesto. Ciò nonostante, la teoria delle probabilità ci fornisce uno strumento che, alla luce di nuove evidenze, consente di aggiornare in un modo razionale il grado di fiducia che attribuiamo ad un'ipotesi, via via che nuove evidenze vengono raccolte, in modo tale da formulare un'ipotesi a posteriori la quale non è mai definitiva, ma può sempre essere aggiornata in base alle nuove evidenze disponibili. Questo processo si chiama *aggiornamento bayesiano*.
+
+## Commenti e considerazioni finali {.unnumbered}
+
+La riflessione epistemologica contemporanea ha ampiamente messo in luce come la conoscenza non possa essere identificata con la certezza, ovvero con la garanzia razionale della verità. Da ciò deriva che qualunque giudizio deve essere necessariamente inteso come una decisione che viene presa in condizioni d'incertezza. Stando così le cose, non si può più considerare la logica deduttiva, modellata sulle forme della dimostrazione matematica, come quella più adeguata al ragionamento scientifico. La ricerca scientifica ha invece bisogno di una logica dell'incertezza e questa viene fornita dalla teoria delle probabilità e, specialmente, da quello schema di inferenza noto come teorema di Bayes.
+
+In questo capitolo abbiamo descritto il teorema di Bayes facendo riferimento alle variabili casuali discrete. Il caso discreto, tuttavia, nonostante la sua apparente semplicità matematica, è il più contro-intuitivo. È molto più "naturale", in termini psicologici, pensare al teorema di Bayes facendo riferimento alle variabili casuali continue. Questo sarà l'oggetto del @sec-intro-bayes-inference.
 
 <!-- Esercizi uleriori sono proposti nelle Appendici @ref(appendix:bayes-updating) e @ref(appendix:exrc-abs-prob). -->
 

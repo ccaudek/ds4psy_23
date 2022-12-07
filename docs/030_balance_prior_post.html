@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - 18&nbsp; L’influenza della distribuzione a priori</title>
+<title>Data Science per psicologi - 19&nbsp; L’influenza della distribuzione a priori</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,7 +142,7 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -194,7 +194,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variabili e distribuzioni di frequenza</span></a>
+  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analisi esplorativa dei dati</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -205,6 +205,11 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./012_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Le relazioni tra variabili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./013_penguins.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></a>
   </div>
 </li>
       </ul>
@@ -219,32 +224,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
+  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">L’interpretazione soggettivista della probabilità</span></a>
+  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Il teorema di Bayes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./019_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
+  <a href="./019_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./020_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./020_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
   </div>
 </li>
       </ul>
@@ -259,17 +264,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
+  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
+  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
+  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
   </div>
 </li>
       </ul>
@@ -284,52 +289,52 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
+  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
+  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
+  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
+  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
+  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
+  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
+  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
+  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
+  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
+  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
   </div>
 </li>
       </ul>
@@ -344,47 +349,47 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
+  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
+  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
+  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
+  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
+  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
+  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
+  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
+  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
+  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
   </div>
 </li>
       </ul>
@@ -399,17 +404,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Entropia</span></a>
+  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Entropia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
+  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
+  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -465,17 +470,17 @@ div.csl-indent {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sommario</h2>
    
   <ul>
-<li><a href="#il-test-di-benchdel" id="toc-il-test-di-benchdel" class="nav-link active" data-scroll-target="#il-test-di-benchdel"><span class="toc-section-number">18.1</span>  Il test di Benchdel</a></li>
-  <li><a href="#stessi-dati-diverse-distribuzioni-a-priori" id="toc-stessi-dati-diverse-distribuzioni-a-priori" class="nav-link" data-scroll-target="#stessi-dati-diverse-distribuzioni-a-priori"><span class="toc-section-number">18.2</span>  Stessi dati, diverse distribuzioni a priori</a></li>
-  <li><a href="#dati-diversi-stessa-distribuzione-a-priori" id="toc-dati-diversi-stessa-distribuzione-a-priori" class="nav-link" data-scroll-target="#dati-diversi-stessa-distribuzione-a-priori"><span class="toc-section-number">18.3</span>  Dati diversi, stessa distribuzione a priori</a></li>
-  <li><a href="#dati-diversi-diverse-distribuzioni-a-priori" id="toc-dati-diversi-diverse-distribuzioni-a-priori" class="nav-link" data-scroll-target="#dati-diversi-diverse-distribuzioni-a-priori"><span class="toc-section-number">18.4</span>  Dati diversi, diverse distribuzioni a priori</a></li>
-  <li><a href="#collegare-le-intuizioni-alla-teoria" id="toc-collegare-le-intuizioni-alla-teoria" class="nav-link" data-scroll-target="#collegare-le-intuizioni-alla-teoria"><span class="toc-section-number">18.5</span>  Collegare le intuizioni alla teoria</a></li>
+<li><a href="#il-test-di-benchdel" id="toc-il-test-di-benchdel" class="nav-link active" data-scroll-target="#il-test-di-benchdel"><span class="toc-section-number">19.1</span>  Il test di Benchdel</a></li>
+  <li><a href="#stessi-dati-diverse-distribuzioni-a-priori" id="toc-stessi-dati-diverse-distribuzioni-a-priori" class="nav-link" data-scroll-target="#stessi-dati-diverse-distribuzioni-a-priori"><span class="toc-section-number">19.2</span>  Stessi dati, diverse distribuzioni a priori</a></li>
+  <li><a href="#dati-diversi-stessa-distribuzione-a-priori" id="toc-dati-diversi-stessa-distribuzione-a-priori" class="nav-link" data-scroll-target="#dati-diversi-stessa-distribuzione-a-priori"><span class="toc-section-number">19.3</span>  Dati diversi, stessa distribuzione a priori</a></li>
+  <li><a href="#dati-diversi-diverse-distribuzioni-a-priori" id="toc-dati-diversi-diverse-distribuzioni-a-priori" class="nav-link" data-scroll-target="#dati-diversi-diverse-distribuzioni-a-priori"><span class="toc-section-number">19.4</span>  Dati diversi, diverse distribuzioni a priori</a></li>
+  <li><a href="#collegare-le-intuizioni-alla-teoria" id="toc-collegare-le-intuizioni-alla-teoria" class="nav-link" data-scroll-target="#collegare-le-intuizioni-alla-teoria"><span class="toc-section-number">19.5</span>  Collegare le intuizioni alla teoria</a></li>
   <li><a href="#commenti-e-considerazioni-finali" id="toc-commenti-e-considerazioni-finali" class="nav-link" data-scroll-target="#commenti-e-considerazioni-finali">Commenti e considerazioni finali</a></li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-prior-influence" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-prior-influence" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -489,8 +494,8 @@ div.csl-indent {
   
 
 </header><p>La notazione <span class="math inline">\(p(\theta \mid y) \propto p(\theta) \ p(y \mid \theta)\)</span> rende particolarmente chiaro che la distribuzione a posteriori è un “miscuglio” della distribuzione a priori e della verosimiglianza. Prima di preoccuparci di come calcolare la distribuzione a posteriori in casi diversi dalle famiglie coniugate, cerchiamo di capire meglio cosa significa “mescolare” la distribuzione a priori e la verosimiglianza. Considereremo qui un esempio discusso da <span class="citation" data-cites="Johnson2022bayesrules">Johnson et al. (<a href="999_refs.html#ref-Johnson2022bayesrules" role="doc-biblioref">2022</a>)</span>.</p>
-<section id="il-test-di-benchdel" class="level2" data-number="18.1"><h2 data-number="18.1" class="anchored" data-anchor-id="il-test-di-benchdel">
-<span class="header-section-number">18.1</span> Il test di Benchdel</h2>
+<section id="il-test-di-benchdel" class="level2" data-number="19.1"><h2 data-number="19.1" class="anchored" data-anchor-id="il-test-di-benchdel">
+<span class="header-section-number">19.1</span> Il test di Benchdel</h2>
 <p>Nel fumetto di Alison Bechdel <em>The Rule</em>, un personaggio afferma di guardare un film solo se soddisfa le seguenti tre regole <span class="citation" data-cites="Bechdel1986dykes">(<a href="999_refs.html#ref-Bechdel1986dykes" role="doc-biblioref">Bechdel, 1986</a>)</span>: almeno due caratteri nel film devono essere donne; queste due donne si parlano; parlano di qualcosa altro oltre a parlare di qualche uomo.</p>
 <p>Questi criteri costituiscono il <em>test di Bechdel</em> per la rappresentazione delle donne nei film. <span class="citation" data-cites="Johnson2022bayesrules">Johnson et al. (<a href="999_refs.html#ref-Johnson2022bayesrules" role="doc-biblioref">2022</a>)</span> pongono la seguente domanda “Quale percentuale dei film che avete visto supera il test di Bechdel?”.</p>
 <p>Sia <span class="math inline">\(\pi \in [0, 1]\)</span> una variabile casuale che indica la proporzione sconosciuta di film che superano il test di Bechdel. Tre amiche — la femminista, l’ignara e l’ottimista — hanno opionioni diverse su <span class="math inline">\(\pi\)</span>. Riflettendo sui film che ha visto, la femminista capisce che nella maggioranza dei film mancano personaggi femminili forti. L’ignara non ricorda bene i film che ha visto, quindi non sa quanti film superano il test di Bechdel. Infine, l’ottimista pensa che, in generale, le donne siano ben rappresentate all’interno dei film: secondo lei quasi tutti i film superano il test di Bechdel. Le tre amiche hanno dunque tre modelli a priori diversi di <span class="math inline">\(\pi\)</span>.</p>
@@ -510,8 +515,8 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 <li>gli stessi dati osservati, ma distribuzioni a priori diverse;</li>
 <li>dati diversi, ma la stessa distribuzione a priori;</li>
 <li>dati diversi e distribuzioni a priori diverse.</li>
-</ul></section><section id="stessi-dati-diverse-distribuzioni-a-priori" class="level2" data-number="18.2"><h2 data-number="18.2" class="anchored" data-anchor-id="stessi-dati-diverse-distribuzioni-a-priori">
-<span class="header-section-number">18.2</span> Stessi dati, diverse distribuzioni a priori</h2>
+</ul></section><section id="stessi-dati-diverse-distribuzioni-a-priori" class="level2" data-number="19.2"><h2 data-number="19.2" class="anchored" data-anchor-id="stessi-dati-diverse-distribuzioni-a-priori">
+<span class="header-section-number">19.2</span> Stessi dati, diverse distribuzioni a priori</h2>
 <p>Iniziamo con lo scenario che descrive il caso in cui abbiamo gli stessi dati ma diverse distribuzioni a priori. Supponiamo che le tre amiche decidano di guardare insieme 20 film selezionati a caso.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">bechdel</span>, package <span class="op">=</span> <span class="st">"bayesrules"</span><span class="op">)</span></span>
@@ -613,8 +618,8 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 <p>L’aggiornamento bayesiano indica che le tre amiche otterranno valori molto diversi per la media (o la moda) a posteriori del parametro <span class="math inline">\(\pi\)</span>. Dunque, anche dopo avere visto 20 film, le tre amiche non si trovano d’accordo su quale sia la proporzione di film che passano il test di Bechdel.</p>
 <p>Questo non dovrebbe sorprenderci. L’amica ottimista aveva opinioni molto forti sul valore di <span class="math inline">\(\pi\)</span> e i <em>pochi</em> nuovi dati che le sono stati forniti non sono riusciti a convincerla a cambiare idea: pensa ancora che i valori <span class="math inline">\(\pi &gt; 0.5\)</span> siano i più credibili. Lo stesso si può dire, all’estremo opposto, dell’amica femminista: anche lei continua a pensare che i valori <span class="math inline">\(\pi &lt; 0.5\)</span> siano i più credibili. Infine, l’ignara non aveva nessuna opinione a priori su <span class="math inline">\(\pi\)</span> e, anche dopo avere visto 20 film, continua a pensare che il valore <span class="math inline">\(\pi\)</span> più credibile sia quello intermedio, nell’intorno di 0.5.</p>
 <p>In conclusione, quando i dati sono deboli (ovvero, quando il campione è piccolo), l’aggiornamento bayesiano altera solo in piccola misura le distribuzioni a priori.</p>
-</section><section id="dati-diversi-stessa-distribuzione-a-priori" class="level2" data-number="18.3"><h2 data-number="18.3" class="anchored" data-anchor-id="dati-diversi-stessa-distribuzione-a-priori">
-<span class="header-section-number">18.3</span> Dati diversi, stessa distribuzione a priori</h2>
+</section><section id="dati-diversi-stessa-distribuzione-a-priori" class="level2" data-number="19.3"><h2 data-number="19.3" class="anchored" data-anchor-id="dati-diversi-stessa-distribuzione-a-priori">
+<span class="header-section-number">19.3</span> Dati diversi, stessa distribuzione a priori</h2>
 <p>Supponiamo ora che l’amica ottimista abbia tre amiche, Maria, Anna e Sara, tutte ottimiste come lei. L’ottimista chiede a Maria, Anna e Sara di fare loro stesse l’esperimento descritto in precedenza. Maria guarda 13 film; di questi 6 passano il test di Bechdel. Anna guarda 63 film; di questi 29 passano il test di Bechdel. Sara guarda 99 film; di questi 46 passano il test di Bechdel.</p>
 <p>Supponiamo che Maria, Anna e Sara condividano la stessa credenza a priori su <span class="math inline">\(\pi\)</span>: ovvero, Beta(14, 1). In tali circostanze e, alla luce dei dati osservati, cosa possiamo dire delle tre distribuzioni a posteriori?</p>
 <div class="cell" data-layout-align="center">
@@ -634,15 +639,15 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 </details><div class="cell-output-display">
 <div id="fig-bechdel-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="030_balance_prior_post_files/figure-html/fig-bechdel-2-1.png" class="img-fluid figure-img" style="width:95.0%"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;18.1: Aggiornamento bayesiano per le credenze di Maria (sinistra, 16 film), Anna (centro, 63 film) e Sara (destra, 99 film).</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;19.1: Aggiornamento bayesiano per le credenze di Maria (sinistra, 16 film), Anna (centro, 63 film) e Sara (destra, 99 film).</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>In conclusione, dalla <a href="#fig-bechdel-2">Figura&nbsp;<span>18.1</span></a> notiamo due cose. Primo, all’aumentare delle informazioni disponibili (ovvero, al crescere dell’ampiezza del campione), la distribuzione a posteriori si allontana sempre di più dalla distribuzione a priori e si avvicina sempre di più alla verosimiglianza. Secondo, all’aumentare dell’ampiezza del campione la varianza della distribuzione a posteriori diminuisce sempre di più — ovvero, diminuisce l’incertezza su quelli che sono i valori <span class="math inline">\(\pi\)</span> più credibili.</p>
-</section><section id="dati-diversi-diverse-distribuzioni-a-priori" class="level2" data-number="18.4"><h2 data-number="18.4" class="anchored" data-anchor-id="dati-diversi-diverse-distribuzioni-a-priori">
-<span class="header-section-number">18.4</span> Dati diversi, diverse distribuzioni a priori</h2>
-<p>La <a href="#fig-bechdel-3">Figura&nbsp;<span>18.2</span></a> illustra le distribuzioni a posteriori che si ottengono incrociando tre diversi set di dati (<span class="math inline">\(y\)</span> = 6, <span class="math inline">\(n\)</span> = 13;, <span class="math inline">\(y\)</span> = 29, <span class="math inline">\(n\)</span> = 63; <span class="math inline">\(y\)</span> = 66, <span class="math inline">\(n\)</span> = 99) con tre diverse distribuzioni a priori, <span class="math inline">\(\mbox{Beta}(14, 1)\)</span>, <span class="math inline">\(\mbox{Beta}(5, 11)\)</span> e <span class="math inline">\(\mbox{Beta}(1, 1)\)</span>.</p>
+<p>In conclusione, dalla <a href="#fig-bechdel-2">Figura&nbsp;<span>19.1</span></a> notiamo due cose. Primo, all’aumentare delle informazioni disponibili (ovvero, al crescere dell’ampiezza del campione), la distribuzione a posteriori si allontana sempre di più dalla distribuzione a priori e si avvicina sempre di più alla verosimiglianza. Secondo, all’aumentare dell’ampiezza del campione la varianza della distribuzione a posteriori diminuisce sempre di più — ovvero, diminuisce l’incertezza su quelli che sono i valori <span class="math inline">\(\pi\)</span> più credibili.</p>
+</section><section id="dati-diversi-diverse-distribuzioni-a-priori" class="level2" data-number="19.4"><h2 data-number="19.4" class="anchored" data-anchor-id="dati-diversi-diverse-distribuzioni-a-priori">
+<span class="header-section-number">19.4</span> Dati diversi, diverse distribuzioni a priori</h2>
+<p>La <a href="#fig-bechdel-3">Figura&nbsp;<span>19.2</span></a> illustra le distribuzioni a posteriori che si ottengono incrociando tre diversi set di dati (<span class="math inline">\(y\)</span> = 6, <span class="math inline">\(n\)</span> = 13;, <span class="math inline">\(y\)</span> = 29, <span class="math inline">\(n\)</span> = 63; <span class="math inline">\(y\)</span> = 66, <span class="math inline">\(n\)</span> = 99) con tre diverse distribuzioni a priori, <span class="math inline">\(\mbox{Beta}(14, 1)\)</span>, <span class="math inline">\(\mbox{Beta}(5, 11)\)</span> e <span class="math inline">\(\mbox{Beta}(1, 1)\)</span>.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
 <span>  alpha <span class="op">=</span> <span class="fl">14</span>, beta <span class="op">=</span> <span class="fl">1</span>, y <span class="op">=</span> <span class="fl">6</span>, n <span class="op">=</span> <span class="fl">13</span></span>
@@ -684,22 +689,22 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 </details><div class="cell-output-display">
 <div id="fig-bechdel-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="030_balance_prior_post_files/figure-html/fig-bechdel-3-1.png" class="img-fluid figure-img" style="width:95.0%"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;18.2: Sulle colonne (a partire da sinistra) i dati utilizzati sono, rispettivamente, (y = 6, n = 13), (y = 29, n = 63) e (y = 66, n = 99). Sulle righe (a partire dall’alto), le distribuzioni a priori usate sono: Beta(14, 1), Beta(5, 11) e Beta(1, 1).</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;19.2: Sulle colonne (a partire da sinistra) i dati utilizzati sono, rispettivamente, (y = 6, n = 13), (y = 29, n = 63) e (y = 66, n = 99). Sulle righe (a partire dall’alto), le distribuzioni a priori usate sono: Beta(14, 1), Beta(5, 11) e Beta(1, 1).</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>In conclusione, la <a href="#fig-bechdel-3">Figura&nbsp;<span>18.2</span></a> ci consente di concludere quanto segue: se il campione è grande, una distribuzione a priori debolmente informativa ha uno scarso effetto sulla distribuzione a posteriori; se il campione è piccolo, invece, anche una distribuzione a priori debolmente informativa ha un grande effetto sulla distribuzione a posteriori.</p>
-</section><section id="collegare-le-intuizioni-alla-teoria" class="level2" data-number="18.5"><h2 data-number="18.5" class="anchored" data-anchor-id="collegare-le-intuizioni-alla-teoria">
-<span class="header-section-number">18.5</span> Collegare le intuizioni alla teoria</h2>
-<p>Il compromesso che abbiamo osservato nell’esempio precedente, ovvero l’equilibrio che si ottiene tra la distribuzione a priori e le evidenze fornite dai dati, è molto vicino alle nostre intuizioni. Ma è anche il frutto di una necessità matematica. È infatti possibile riscrivere l’<a href="029_conjugate_families.html#eq-ev-post-beta-bin-1">Equazione&nbsp;<span>17.1</span></a> nel modo seguente</p>
+<p>In conclusione, la <a href="#fig-bechdel-3">Figura&nbsp;<span>19.2</span></a> ci consente di concludere quanto segue: se il campione è grande, una distribuzione a priori debolmente informativa ha uno scarso effetto sulla distribuzione a posteriori; se il campione è piccolo, invece, anche una distribuzione a priori debolmente informativa ha un grande effetto sulla distribuzione a posteriori.</p>
+</section><section id="collegare-le-intuizioni-alla-teoria" class="level2" data-number="19.5"><h2 data-number="19.5" class="anchored" data-anchor-id="collegare-le-intuizioni-alla-teoria">
+<span class="header-section-number">19.5</span> Collegare le intuizioni alla teoria</h2>
+<p>Il compromesso che abbiamo osservato nell’esempio precedente, ovvero l’equilibrio che si ottiene tra la distribuzione a priori e le evidenze fornite dai dati, è molto vicino alle nostre intuizioni. Ma è anche il frutto di una necessità matematica. È infatti possibile riscrivere l’<a href="029_conjugate_families.html#eq-ev-post-beta-bin-1">Equazione&nbsp;<span>18.1</span></a> nel modo seguente</p>
 <p><span id="eq-ev-post-beta-bin"><span class="math display">\[
 \begin{align}
 \mathbb{E}_{\text{post}} &amp;[\text{Beta}(\alpha + y, \beta + n - y)] = \frac{\alpha + y}{\alpha + \beta +n}\notag\\
 &amp;= \frac{a+b}{a+b+n} \cdot \frac{a}{a+b} + \frac{n}{a+b+n} \cdot \frac{y}{n}.
 \end{align}
-\tag{18.1}\]</span></span></p>
-<p>L’<a href="#eq-ev-post-beta-bin">Equazione&nbsp;<span>18.1</span></a> indica che il valore atteso a posteriori è una media pesata fra il valore atteso a priori <span class="math inline">\(\left( \frac{\alpha}{\alpha+\beta}\right)\)</span> e la proporzione osservata di successi <span class="math inline">\(\left(\frac{y}{n}\right)\)</span>. I pesi sono <span class="math inline">\(\left( \frac{\alpha+\beta}{\alpha+\beta+n}\right)\)</span> e <span class="math inline">\(\left( \frac{n}{\alpha+\beta+n}\right)\)</span>. Quindi, quando <span class="math inline">\(n\)</span> è grande rispetto ad <span class="math inline">\(\alpha + \beta\)</span>, contano molto i dati osservati e contano poco le credenze a priori. Viceversa, quando <span class="math inline">\(n\)</span> è piccolo rispetto a <span class="math inline">\(\alpha + \beta\)</span>, i dati contano poco rispetto alla credenza a priori.</p>
+\tag{19.1}\]</span></span></p>
+<p>L’<a href="#eq-ev-post-beta-bin">Equazione&nbsp;<span>19.1</span></a> indica che il valore atteso a posteriori è una media pesata fra il valore atteso a priori <span class="math inline">\(\left( \frac{\alpha}{\alpha+\beta}\right)\)</span> e la proporzione osservata di successi <span class="math inline">\(\left(\frac{y}{n}\right)\)</span>. I pesi sono <span class="math inline">\(\left( \frac{\alpha+\beta}{\alpha+\beta+n}\right)\)</span> e <span class="math inline">\(\left( \frac{n}{\alpha+\beta+n}\right)\)</span>. Quindi, quando <span class="math inline">\(n\)</span> è grande rispetto ad <span class="math inline">\(\alpha + \beta\)</span>, contano molto i dati osservati e contano poco le credenze a priori. Viceversa, quando <span class="math inline">\(n\)</span> è piccolo rispetto a <span class="math inline">\(\alpha + \beta\)</span>, i dati contano poco rispetto alla credenza a priori.</p>
 <p>Queste osservazioni ci fanno capire come scegliere i parametri <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span>: se vogliamo assumere una totale ignoranza rispetto al fenomeno in esame, la scelta coerente è <span class="math inline">\(\alpha = \beta = 1\)</span> (ogni valore di <span class="math inline">\(\theta\)</span> è ugualmente credibile); se invece abbiamo delle forti credenze a priori, allora possiamo scegliere <span class="math inline">\(\alpha\)</span> così che sia uguale al valore atteso a priori, mentre <span class="math inline">\(\alpha + \beta\)</span> esprime l’importanza che diamo all’informazione a priori: maggiore è il valore di <span class="math inline">\(\alpha + \beta\)</span>, tanti più dati serviranno per allontanare la distribuzione a posteriori dalla distribuzione a priori. Infine, se <span class="math inline">\(n\)</span> è grande, la distribuzione a posteriori avrà una scarsa influenza sulla distribuzione a priori, a meno di scelte estreme.</p>
 </section><section id="commenti-e-considerazioni-finali" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="commenti-e-considerazioni-finali">Commenti e considerazioni finali</h2>
 <p>La conclusione che possiamo trarre dall’esempio discusso da <span class="citation" data-cites="Johnson2022bayesrules">Johnson et al. (<a href="999_refs.html#ref-Johnson2022bayesrules" role="doc-biblioref">2022</a>)</span> è molto chiara: l’aggiornamento bayesiano può essere paragonato ai processi di ragionamento del senso comune. Quando le nuove evidenze (i dati) sono deboli, non c’è ragione di cambiare idea (le nostre credenze “a posteriori” sono molto simili a ciò che pensavamo prima di avere osservato i dati). Quando le nuove evidenze sono irrefutabili, invece, è necessario modificare le nostre credenze sulla base di ciò che ci dicono i dati, quali che siano le nostre credenze pregresse — non farlo significherebbe vivere in un mondo di fantasia e avere scarse possibilità di sopravvivere nel mondo empirico. L’aggiornamento bayesiano, dunque, non fa altro che esprimere in maniera quantitativa e precisa ciò che ci dicono le nostre intuizioni.</p>
@@ -902,12 +907,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./029_conjugate_families.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./036_posterior_sim.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

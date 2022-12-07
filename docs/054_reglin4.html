@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - 28&nbsp; Inferenza sul modello lineare</title>
+<title>Data Science per psicologi - 29&nbsp; Inferenza sul modello lineare</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,7 +142,7 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -194,7 +194,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variabili e distribuzioni di frequenza</span></a>
+  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analisi esplorativa dei dati</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -205,6 +205,11 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./012_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Le relazioni tra variabili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./013_penguins.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></a>
   </div>
 </li>
       </ul>
@@ -219,32 +224,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
+  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">L’interpretazione soggettivista della probabilità</span></a>
+  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Il teorema di Bayes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./019_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
+  <a href="./019_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./020_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./020_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
   </div>
 </li>
       </ul>
@@ -259,17 +264,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
+  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
+  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
+  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
   </div>
 </li>
       </ul>
@@ -284,52 +289,52 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
+  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
+  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
+  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
+  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
+  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
+  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
+  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
+  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
+  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
+  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
   </div>
 </li>
       </ul>
@@ -344,47 +349,47 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
+  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
+  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
+  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
+  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
+  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
+  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
+  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
+  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
+  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
   </div>
 </li>
       </ul>
@@ -399,17 +404,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Entropia</span></a>
+  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Entropia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
+  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
+  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -465,21 +470,21 @@ div.csl-indent {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sommario</h2>
    
   <ul>
-<li><a href="#rappresentazione-grafica-dellincertezza-della-stima" id="toc-rappresentazione-grafica-dellincertezza-della-stima" class="nav-link active" data-scroll-target="#rappresentazione-grafica-dellincertezza-della-stima"><span class="toc-section-number">28.1</span>  Rappresentazione grafica dell’incertezza della stima</a></li>
+<li><a href="#rappresentazione-grafica-dellincertezza-della-stima" id="toc-rappresentazione-grafica-dellincertezza-della-stima" class="nav-link active" data-scroll-target="#rappresentazione-grafica-dellincertezza-della-stima"><span class="toc-section-number">29.1</span>  Rappresentazione grafica dell’incertezza della stima</a></li>
   <li>
-<a href="#intervalli-di-credibilit%C3%A0" id="toc-intervalli-di-credibilità" class="nav-link" data-scroll-target="#intervalli-di-credibilit%C3%A0"><span class="toc-section-number">28.2</span>  Intervalli di credibilità</a>
+<a href="#intervalli-di-credibilit%C3%A0" id="toc-intervalli-di-credibilità" class="nav-link" data-scroll-target="#intervalli-di-credibilit%C3%A0"><span class="toc-section-number">29.2</span>  Intervalli di credibilità</a>
   <ul class="collapse">
-<li><a href="#quale-soglia-usare" id="toc-quale-soglia-usare" class="nav-link" data-scroll-target="#quale-soglia-usare"><span class="toc-section-number">28.2.1</span>  Quale soglia usare?</a></li>
+<li><a href="#quale-soglia-usare" id="toc-quale-soglia-usare" class="nav-link" data-scroll-target="#quale-soglia-usare"><span class="toc-section-number">29.2.1</span>  Quale soglia usare?</a></li>
   </ul>
 </li>
-  <li><a href="#test-di-ipotesi" id="toc-test-di-ipotesi" class="nav-link" data-scroll-target="#test-di-ipotesi"><span class="toc-section-number">28.3</span>  Test di ipotesi</a></li>
-  <li><a href="#modello-lineare-robusto" id="toc-modello-lineare-robusto" class="nav-link" data-scroll-target="#modello-lineare-robusto"><span class="toc-section-number">28.4</span>  Modello lineare robusto</a></li>
+  <li><a href="#test-di-ipotesi" id="toc-test-di-ipotesi" class="nav-link" data-scroll-target="#test-di-ipotesi"><span class="toc-section-number">29.3</span>  Test di ipotesi</a></li>
+  <li><a href="#modello-lineare-robusto" id="toc-modello-lineare-robusto" class="nav-link" data-scroll-target="#modello-lineare-robusto"><span class="toc-section-number">29.4</span>  Modello lineare robusto</a></li>
   <li><a href="#commenti-e-considerazioni-finali" id="toc-commenti-e-considerazioni-finali" class="nav-link" data-scroll-target="#commenti-e-considerazioni-finali">Commenti e considerazioni finali</a></li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-inference-reg-lin-stan" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-inference-reg-lin-stan" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -496,8 +501,8 @@ div.csl-indent {
 
 </div>
 <p>Un modo per rappresentare l’incertezza dell’inferenza in un ottica bayesiana è quella di presentare graficamente la retta specificata dal modello di regressione lineare. Continuerò qui la discussione dell’esempio descritto nel Capitolo precedente, ovvero, userò i dati <code>kid_score</code> e i valori <code>mom_iq</code> centrati.</p>
-<section id="rappresentazione-grafica-dellincertezza-della-stima" class="level2" data-number="28.1"><h2 data-number="28.1" class="anchored" data-anchor-id="rappresentazione-grafica-dellincertezza-della-stima">
-<span class="header-section-number">28.1</span> Rappresentazione grafica dell’incertezza della stima</h2>
+<section id="rappresentazione-grafica-dellincertezza-della-stima" class="level2" data-number="29.1"><h2 data-number="29.1" class="anchored" data-anchor-id="rappresentazione-grafica-dellincertezza-della-stima">
+<span class="header-section-number">29.1</span> Rappresentazione grafica dell’incertezza della stima</h2>
 <p>Supponiamo (come indicato nel Capitolo precedente) di avere eseguito il campionamento MCMC mediante la seguente istruzione.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit2</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
@@ -663,8 +668,8 @@ div.csl-indent {
 <p>L’argomento grafico <code>alpha = 0.01</code> passato a <code>geom_abline()</code> specifica la trasparenza del segmento che rappresenta ciascuna retta. Ho usato un valore molto basso per questo argomento per fare in modo che, anche sovrapponendo 16,000 rette, si produca comunque ancora un certo grado di trasparenza.</p>
 <p>Il grafico mostra che le rette di regressione costruite estraendo a caso valori dalla distribuzione a posteriori dei parametri <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span> <em>sono molto simili tra loro</em>. Ciò significa che, se combiniamo le informazioni fornite dai dati con le nostre credenza precedenti (qui, dei prior poco informativi), allora dobbiamo concludere che l’incertezza relativa alla dipendenza lineare del quoziente di intelligenza del bambino da quello della madre è decisamente piccola. In altre parole, siamo molto sicuri che c’è una associazione lineare positiva tra le due variabili: <em>in media</em> il QI dei figli è positivamente associato al QI della madre.</p>
 <p>Si presti attenzione al fatto che il modello statistico ci conduce a tale conclusione: siamo sicuri dell’esistenza di un’associazione positiva tra il QI dei figli e il QI della madre. Ma il modello statistico non ci dice nulla sulle cause di questa associazione: ci dice soltanto che le due variabili tendono a covariare. Non ci dice che il QI della madre è la “causa” del QI del figlio. Questo è un argomento su cui è stata fatta molta ricerca (e di ciò qui non diremo nulla). Ma, al di là dei risultati di tali ricerche, se consideriamo solo il risultato del modello statistico qui esaminato, nulla si può concludere sui rapporti di causa/effetto tra QI della madre e QI del figlio. La presenza di un’associazione statistica, infatti, è condizione necessaria <em>ma non sufficiente</em> per potere affermare l’esistenza di un nesso causale.</p>
-</section><section id="intervalli-di-credibilità" class="level2" data-number="28.2"><h2 data-number="28.2" class="anchored" data-anchor-id="intervalli-di-credibilità">
-<span class="header-section-number">28.2</span> Intervalli di credibilità</h2>
+</section><section id="intervalli-di-credibilità" class="level2" data-number="29.2"><h2 data-number="29.2" class="anchored" data-anchor-id="intervalli-di-credibilità">
+<span class="header-section-number">29.2</span> Intervalli di credibilità</h2>
 <p>Abbiamo visto come l’incertezza sulla stima dei parametri possa essere espressa graficamente. In alternativa, l’incertezza inferenziale sui parametri può essere descritta mediante gli <em>intervalli di credibilità</em>, ovvero gli intervalli che contengono la quota desiderata (es., il 95%) della distribuzione a posteriori.</p>
 <p>Per l’esempio che stiamo discutendo, gli intervalli di credibilità (a code uguali) al 95% si ottengono nel modo seguente:</p>
 <div class="cell" data-layout-align="center">
@@ -711,8 +716,8 @@ div.csl-indent {
 </details>
 </div>
 <p>Quando la distribuzione a posteriori dei parametri è simmetrica, i due tipi di intervalli producono, all’atto pratico, risultati equivalenti.</p>
-<section id="quale-soglia-usare" class="level3" data-number="28.2.1"><h3 data-number="28.2.1" class="anchored" data-anchor-id="quale-soglia-usare">
-<span class="header-section-number">28.2.1</span> Quale soglia usare?</h3>
+<section id="quale-soglia-usare" class="level3" data-number="29.2.1"><h3 data-number="29.2.1" class="anchored" data-anchor-id="quale-soglia-usare">
+<span class="header-section-number">29.2.1</span> Quale soglia usare?</h3>
 <p>Ripeto c’è niente di “magico” o necessario relativamente al livello di 0.95: il valore 0.95 è arbitrario. È quello utilizzato nelle pubblicazioni scientifiche, di consuetudine. Almeno in psicologia. In fisica, ad esempio, si usa un intervallo molto più grande.</p>
 <p><span class="citation" data-cites="kennedy2019before">Kennedy-Shaffer (<a href="999_refs.html#ref-kennedy2019before" role="doc-biblioref">2019</a>)</span> descrivono l’origine storica di questa scelta. Nel 1925 Ronal Fisher pubblicò la prima edizione della sua influente opera <em>Statistical Methods for Research Workers</em>. In tale testo troviamo il seguente passaggio:</p>
 <blockquote class="blockquote">
@@ -751,8 +756,8 @@ div.csl-indent {
 </div>
 </div>
 </div>
-</section></section><section id="test-di-ipotesi" class="level2" data-number="28.3"><h2 data-number="28.3" class="anchored" data-anchor-id="test-di-ipotesi">
-<span class="header-section-number">28.3</span> Test di ipotesi</h2>
+</section></section><section id="test-di-ipotesi" class="level2" data-number="29.3"><h2 data-number="29.3" class="anchored" data-anchor-id="test-di-ipotesi">
+<span class="header-section-number">29.3</span> Test di ipotesi</h2>
 <p>È facile valutare ipotesi direzionali usando Stan. Per esempio, chiediamoci quale sia la probabilità <span class="math inline">\(P(\hat{\beta}_1 &gt; 0)\)</span>.</p>
 <p>Per trovare la probabilità richiesta possiamo usare il vettore <code>post$beta</code> il quale contiene 16,000 valori presi a caso dalla distribuzione a posteriori <span class="math inline">\(p(\beta \mid y)\)</span>. Nell’istruzione seguente, <code>post$beta &gt; 0</code> valuta se ciascun elemento di <code>post$beta</code> soddisfi la condizione logica specificata, ritornando <code>TRUE</code> (codificato con 1) o <code>FALSE</code> (codificato con 0) a seconda che la condizione logica sia vera o falsa. L’istruzione <code>sum(post$beta &gt; 0)</code> conta dunque il numero di volte in cui la condizione è soddisfatta, mentre <code>length(post$beta)</code> è uguale a 16,000. La proporzione così determinata è una stima empirica della probabilità cercata.</p>
 <div class="cell" data-layout-align="center">
@@ -767,8 +772,8 @@ div.csl-indent {
 </details>
 </div>
 <p>Ciò significa che, relativamente alla presenza di un’associazione lineare positiva tra QI della madre e QI del figlio, la forza dell’evidenza è enorme.</p>
-</section><section id="modello-lineare-robusto" class="level2" data-number="28.4"><h2 data-number="28.4" class="anchored" data-anchor-id="modello-lineare-robusto">
-<span class="header-section-number">28.4</span> Modello lineare robusto</h2>
+</section><section id="modello-lineare-robusto" class="level2" data-number="29.4"><h2 data-number="29.4" class="anchored" data-anchor-id="modello-lineare-robusto">
+<span class="header-section-number">29.4</span> Modello lineare robusto</h2>
 <p>Spesso i ricercatori devono affrontare il problema degli outlier (osservazioni anomale): in presenza di outlier, un modello statistico basato sulla distribuzione gaussiana produce delle stime distorte dei parametri (ovvero stime che <em>non si generalizzano</em> ad altri campioni di dati). Il metodo tradizionale per affrontare questo problema è quello di eliminare gli outlier prima di eseguire l’analisi statistica. Il problema di questo approccio, però, è che il criterio utilizzato per eliminare gli outlier, quale esso sia, è arbitrario; dunque, usando criteri diversi per la rimozione di outlier, i ricercatori finiscono per trovare risultati diversi.</p>
 <p>Questo problema trova una semplice soluzione nell’approccio bayesiano. Il modello lineare che abbiamo dicusso finora ipotizza una specifica distribuzione degli errori, ovvero <span class="math inline">\(\varepsilon \sim \mathcal{N}(0, \sigma_{\varepsilon})\)</span>. In un modello formulato in questi termini, la presenza di solo un valore anomalo e influente ha un effetto drammatico sulle stime dei parametri.</p>
 <p>Per fare un esempio, introduciamo un singolo valore anomalo e influente nel set dei dati dell’esempio che stiamo discutendo:</p>
@@ -1062,12 +1067,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./053_reglin3.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./055_reglin5.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

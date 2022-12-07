@@ -4,7 +4,9 @@
 source("_common.R")
 ```
 
-## Dati grezzi
+In questo capitolo esamineremo le fuzionalità di $\mathsf{R}$ per la manipolazione e la visualizzazione dei dati. Nello specifico, esamineremo le funzioni fornite dal pacchetto `dplyr`.
+
+## Codifica dei dati grezzi
 
 Si chiamano "dati grezzi" quelli che provengono dal mondo circostanze, i dati raccolti per mezzo di esperimenti, interviste, questionari, ecc. Questi dati (detti *dataset*) raramente vengono forniti con una struttura logica precisa. Per poterli elaborare mediante software è necessario prima trasformarli in maniera tale che abbiano una struttura logica organizzata. La struttura che solitamente si utilizza è quella tabellare (detta *matrice dei dati*), ovvero si dispongono i dati in una tabella nella quale ciascuna riga corrisponde ad un'osservazione e ciascuna colonna corrisponde ad una variabile rilevata. In $\mathsf{R}$ una tale struttura è chiamata *data frame* o *tibble* (il *tibble* è solo un modo diverso di stampare un data frame sulla console).
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - 20&nbsp; Il modello beta-binomiale in linguaggio Stan</title>
+<title>Data Science per psicologi - 21&nbsp; Il modello beta-binomiale in linguaggio Stan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,7 +142,7 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -194,7 +194,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variabili e distribuzioni di frequenza</span></a>
+  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analisi esplorativa dei dati</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -205,6 +205,11 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./012_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Le relazioni tra variabili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./013_penguins.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></a>
   </div>
 </li>
       </ul>
@@ -219,32 +224,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
+  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">L’interpretazione soggettivista della probabilità</span></a>
+  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Il teorema di Bayes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./019_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
+  <a href="./019_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./020_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./020_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
   </div>
 </li>
       </ul>
@@ -259,17 +264,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
+  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
+  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
+  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
   </div>
 </li>
       </ul>
@@ -284,52 +289,52 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
+  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
+  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
+  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
+  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
+  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
+  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
+  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
+  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
+  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
+  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
   </div>
 </li>
       </ul>
@@ -344,47 +349,47 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
+  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
+  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
+  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
+  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
+  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
+  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
+  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
+  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
+  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
   </div>
 </li>
       </ul>
@@ -399,17 +404,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Entropia</span></a>
+  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Entropia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
+  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
+  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -465,24 +470,24 @@ div.csl-indent {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sommario</h2>
    
   <ul>
-<li><a href="#il-presidente-trump-e-lidrossiclorochina" id="toc-il-presidente-trump-e-lidrossiclorochina" class="nav-link active" data-scroll-target="#il-presidente-trump-e-lidrossiclorochina"><span class="toc-section-number">20.1</span>  Il presidente Trump e l’idrossiclorochina</a></li>
-  <li><a href="#una-proporzione" id="toc-una-proporzione" class="nav-link" data-scroll-target="#una-proporzione"><span class="toc-section-number">20.2</span>  Una proporzione</a></li>
+<li><a href="#il-presidente-trump-e-lidrossiclorochina" id="toc-il-presidente-trump-e-lidrossiclorochina" class="nav-link active" data-scroll-target="#il-presidente-trump-e-lidrossiclorochina"><span class="toc-section-number">21.1</span>  Il presidente Trump e l’idrossiclorochina</a></li>
+  <li><a href="#una-proporzione" id="toc-una-proporzione" class="nav-link" data-scroll-target="#una-proporzione"><span class="toc-section-number">21.2</span>  Una proporzione</a></li>
   <li>
-<a href="#cmdstanr-gautret" id="toc-cmdstanr-gautret" class="nav-link" data-scroll-target="#cmdstanr-gautret"><span class="toc-section-number">20.3</span>  Interfaccia <code>cmdstanr</code></a>
+<a href="#cmdstanr-gautret" id="toc-cmdstanr-gautret" class="nav-link" data-scroll-target="#cmdstanr-gautret"><span class="toc-section-number">21.3</span>  Interfaccia <code>cmdstanr</code></a>
   <ul class="collapse">
-<li><a href="#fase-1" id="toc-fase-1" class="nav-link" data-scroll-target="#fase-1"><span class="toc-section-number">20.3.1</span>  Fase 1</a></li>
-  <li><a href="#fase-2" id="toc-fase-2" class="nav-link" data-scroll-target="#fase-2"><span class="toc-section-number">20.3.2</span>  Fase 2</a></li>
-  <li><a href="#fase-3" id="toc-fase-3" class="nav-link" data-scroll-target="#fase-3"><span class="toc-section-number">20.3.3</span>  Fase 3</a></li>
+<li><a href="#fase-1" id="toc-fase-1" class="nav-link" data-scroll-target="#fase-1"><span class="toc-section-number">21.3.1</span>  Fase 1</a></li>
+  <li><a href="#fase-2" id="toc-fase-2" class="nav-link" data-scroll-target="#fase-2"><span class="toc-section-number">21.3.2</span>  Fase 2</a></li>
+  <li><a href="#fase-3" id="toc-fase-3" class="nav-link" data-scroll-target="#fase-3"><span class="toc-section-number">21.3.3</span>  Fase 3</a></li>
   </ul>
 </li>
-  <li><a href="#la-critica-di-hulme_2020" id="toc-la-critica-di-hulme_2020" class="nav-link" data-scroll-target="#la-critica-di-hulme_2020"><span class="toc-section-number">20.4</span>  La critica di <span class="citation" data-cites="Hulme_2020">Hulme et al. (2020)</span></a></li>
-  <li><a href="#due-proporzioni" id="toc-due-proporzioni" class="nav-link" data-scroll-target="#due-proporzioni"><span class="toc-section-number">20.5</span>  Due proporzioni</a></li>
+  <li><a href="#la-critica-di-hulme_2020" id="toc-la-critica-di-hulme_2020" class="nav-link" data-scroll-target="#la-critica-di-hulme_2020"><span class="toc-section-number">21.4</span>  La critica di <span class="citation" data-cites="Hulme_2020">Hulme et al. (2020)</span></a></li>
+  <li><a href="#due-proporzioni" id="toc-due-proporzioni" class="nav-link" data-scroll-target="#due-proporzioni"><span class="toc-section-number">21.5</span>  Due proporzioni</a></li>
   <li><a href="#commenti-e-considerazioni-finali" id="toc-commenti-e-considerazioni-finali" class="nav-link" data-scroll-target="#commenti-e-considerazioni-finali">Commenti e considerazioni finali</a></li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-stan-beta-binom" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-stan-beta-binom" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -496,16 +501,16 @@ div.csl-indent {
   
 
 </header><p>In questo Capitolo introdurremo un linguaggio di programmazione probabilistica chiamato <a href="http://mc-stan.org/">Stan</a> <span class="citation" data-cites="carpenter2017stan">(<a href="999_refs.html#ref-carpenter2017stan" role="doc-biblioref">Carpenter et al., 2017</a>)</span>. Stan consente di generare campioni da distribuzioni di probabilità basati sulla costruzione di una catena di Markov avente come distribuzione di equilibrio (o stazionaria) la distribuzione desiderata. Prende il nome da uno dei creatori del metodo Monte Carlo, Stanislaw Ulam <span class="citation" data-cites="Eckhardt1987stan">(<a href="999_refs.html#ref-Eckhardt1987stan" role="doc-biblioref">Eckhardt, 1987</a>)</span>. Un’introduzione al linguaggio Stan è fornita in Appendice. In questo Capitolo useremo Stan per fare inferenza su una proporzione.</p>
-<section id="il-presidente-trump-e-lidrossiclorochina" class="level2" data-number="20.1"><h2 data-number="20.1" class="anchored" data-anchor-id="il-presidente-trump-e-lidrossiclorochina">
-<span class="header-section-number">20.1</span> Il presidente Trump e l’idrossiclorochina</h2>
+<section id="il-presidente-trump-e-lidrossiclorochina" class="level2" data-number="21.1"><h2 data-number="21.1" class="anchored" data-anchor-id="il-presidente-trump-e-lidrossiclorochina">
+<span class="header-section-number">21.1</span> Il presidente Trump e l’idrossiclorochina</h2>
 <p>Per fare un esempio concreto, consideriamo un set di dati reali. Cito dal <em>Washington Post</em> del 7 aprile 2020:</p>
 <blockquote class="blockquote">
 <p>One of the most bizarre and disturbing aspects of President Trump’s nightly press briefings on the coronavirus pandemic is when he turns into a drug salesman. Like a cable TV pitchman hawking ‘male enhancement’ pills, Trump regularly extols the virtues of taking hydroxychloroquine, a drug used to treat malaria and lupus, as a potential ‘game changer’ that just might cure Covid-19.</p>
 </blockquote>
 <p>Tralasciamo qui il fatto che il Donald Trump non sia un esperto in questo campo. Esaminiamo invece le evidenze iniziali a supporto dell’ipotesi che l’idrossiclorochina possa essere utile per la cura del Covid-19, ovvero le evidenze che erano disponibili nel momento in cui il Donald Trump ha fatto le affermazioni riportate sopra (in seguito, quest’idea è stata screditata). Tali evidenze sono state fornite da uno studio di <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span>. Il disegno sperimentale di <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span> comprende, tra le altre cose, il confronto tra una condizione sperimentale e una condizione di controllo. Il confronto importante è tra la proporzione di paziente positivi al virus SARS-CoV-2 nel gruppo sperimentale (a cui è stata somministrata l’idrossiclorochina; 6 su 14) e la proporzione di paziente positivi nel gruppo di controllo (a cui non è stata somministrata l’idrossiclorochina; ovvero 14 su 16). Obiettivo di questo Capitolo è mostrare come si possa fare inferenza sui dati di <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span> usando il linguaggio Stan. Per semplicità, iniziamo considerando solo il gruppo di controllo.</p>
-</section><section id="una-proporzione" class="level2" data-number="20.2"><h2 data-number="20.2" class="anchored" data-anchor-id="una-proporzione">
-<span class="header-section-number">20.2</span> Una proporzione</h2>
-<p>Sulla base di ciò che è stato detto nel <a href="029_conjugate_families.html"><span>Capitolo&nbsp;17</span></a>, sappiamo che, quando i dati sono rappresentati da una proporzione <span class="math inline">\(\theta\)</span>, e quando utilizziamo una distribuzione a priori Beta per <span class="math inline">\(\theta\)</span>, la distribuzione a posteriori di <span class="math inline">\(\theta\)</span> è specificata dallo schema beta-binomiale. Se scegliamo, ad esempio, una <span class="math inline">\(\mbox{Beta}(2, 2)\)</span> quale distribuzione a priori per <span class="math inline">\(\theta\)</span>, il modello diventa:</p>
+</section><section id="una-proporzione" class="level2" data-number="21.2"><h2 data-number="21.2" class="anchored" data-anchor-id="una-proporzione">
+<span class="header-section-number">21.2</span> Una proporzione</h2>
+<p>Sulla base di ciò che è stato detto nel <a href="029_conjugate_families.html"><span>Capitolo&nbsp;18</span></a>, sappiamo che, quando i dati sono rappresentati da una proporzione <span class="math inline">\(\theta\)</span>, e quando utilizziamo una distribuzione a priori Beta per <span class="math inline">\(\theta\)</span>, la distribuzione a posteriori di <span class="math inline">\(\theta\)</span> è specificata dallo schema beta-binomiale. Se scegliamo, ad esempio, una <span class="math inline">\(\mbox{Beta}(2, 2)\)</span> quale distribuzione a priori per <span class="math inline">\(\theta\)</span>, il modello diventa:</p>
 <!-- Si considerino $n$ variabili casuali Bernoulliane i.i.d.:  -->
 <!-- $$ -->
 <!-- y = (y_1, \dots, y_n) \stackrel{iid}{\sim} \mbox{Bernoulli}(\theta). -->
@@ -520,10 +525,10 @@ div.csl-indent {
 y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 \theta &amp;\sim \mbox{Beta}(2, 2)
 \end{align}
-\tag{20.1}\]</span></span></p>
+\tag{21.1}\]</span></span></p>
 <p>dove la prima riga definisce la funzione di verosimiglianza e la seconda riga definisce la distribuzione a priori. Vediamo ora come specificare il modello beta-binomiale in linguaggio Stan.</p>
-</section><section id="cmdstanr-gautret" class="level2" data-number="20.3"><h2 data-number="20.3" class="anchored" data-anchor-id="cmdstanr-gautret">
-<span class="header-section-number">20.3</span> Interfaccia <code>cmdstanr</code>
+</section><section id="cmdstanr-gautret" class="level2" data-number="21.3"><h2 data-number="21.3" class="anchored" data-anchor-id="cmdstanr-gautret">
+<span class="header-section-number">21.3</span> Interfaccia <code>cmdstanr</code>
 </h2>
 <p>I modelli presentati in questo capitolo sono discussi da <span class="citation" data-cites="gelman1995bayesian">Gelman et al. (<a href="999_refs.html#ref-gelman1995bayesian" role="doc-biblioref">1995</a>)</span> mentre il codice è stato ricavato dalla seguente <a href="http://avehtari.github.io/BDA_R_demos/demos_rstan/rstan_demo.html">pagina web</a>. In questo e nei successivi capitoli useremo Stan mediante l’interfaccia <code>cmdstanr</code> di CmdStan.</p>
 <p>Iniziamo con il caricare i pacchetti necessari.</p>
@@ -535,8 +540,8 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 </details>
 </div>
 <p>Per svolgere l’analisi mediante <code>cmdstanr</code> è necessario prima specificare la struttura del modello bayesiano nella notazione Stan e, poi, eseguire il campionamento dalla distribuzione a posteriori. Esaminiamo questi due passaggi per l’esempio presente.</p>
-<section id="fase-1" class="level3" data-number="20.3.1"><h3 data-number="20.3.1" class="anchored" data-anchor-id="fase-1">
-<span class="header-section-number">20.3.1</span> Fase 1</h3>
+<section id="fase-1" class="level3" data-number="21.3.1"><h3 data-number="21.3.1" class="anchored" data-anchor-id="fase-1">
+<span class="header-section-number">21.3.1</span> Fase 1</h3>
 <p>Nella prima fase dell’analisi dobbiamo definire i dati, i parametri e il modello. I <em>dati</em> devono essere contenuti in un oggetto di classe <code>list</code>.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data1_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
@@ -578,8 +583,8 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 <details><summary>Codice</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">modelString</span>, con <span class="op">=</span> <span class="st">"code/oneprop.stan"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-</section><section id="fase-2" class="level3" data-number="20.3.2"><h3 data-number="20.3.2" class="anchored" data-anchor-id="fase-2">
-<span class="header-section-number">20.3.2</span> Fase 2</h3>
+</section><section id="fase-2" class="level3" data-number="21.3.2"><h3 data-number="21.3.2" class="anchored" data-anchor-id="fase-2">
+<span class="header-section-number">21.3.2</span> Fase 2</h3>
 <p>Per utilizzare il modello che abbiamo specificato, prima leggiamo l’indirizzo del file che contiene il codice Stan.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"oneprop.stan"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -618,8 +623,8 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 </ul>
 <p>Avendo assunto una distribuzione a priori per il parametro <span class="math inline">\(\theta\)</span>, l’algoritmo procede in maniera ciclica, correggendo la distribuzione a priori di <span class="math inline">\(\theta\)</span> condizionandola ai valori già generati. Dopo un certo numero di cicli, necessari per portare l’algoritmo a convergenza, i valori estratti possono essere assunti come campionati dalla distribuzione a posteriori di <span class="math inline">\(\theta\)</span>.</p>
 <p>Al crescere del numero di passi della catena, la distribuzione di target viene sempre meglio approssimata. All’inizio del campionamento, però, la distribuzione può essere significativamente lontana da quella stazionaria, e ci vuole un certo tempo prima di raggiungere la distribuzione stazionaria di equilibrio, detto, appunto, periodo di <em>burn-in</em>. I campioni provenienti da tale parte iniziale della catena vanno tipicamente scartati perché possono non rappresentare accuratamente la distribuzione a posteriori.</p>
-</section><section id="fase-3" class="level3" data-number="20.3.3"><h3 data-number="20.3.3" class="anchored" data-anchor-id="fase-3">
-<span class="header-section-number">20.3.3</span> Fase 3</h3>
+</section><section id="fase-3" class="level3" data-number="21.3.3"><h3 data-number="21.3.3" class="anchored" data-anchor-id="fase-3">
+<span class="header-section-number">21.3.3</span> Fase 3</h3>
 <p>Possiamo ora fare inferenza usando i risultati ottenuti. Un sommario della distribuzione a posteriori si ottiene con il metodo <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code>.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit1</span><span class="op">$</span><span class="fu">summary</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"theta"</span><span class="op">)</span><span class="op">)</span></span>
@@ -665,13 +670,13 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 </details><div class="cell-output-display">
 <div id="fig-trace-plot-gautret" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="040_beta_binomial_mod_files/figure-html/fig-trace-plot-gautret-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;20.1: Trace-plot per il parametro <span class="math inline">\(\theta\)</span> nel modello Beta-Binomiale.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;21.1: Trace-plot per il parametro <span class="math inline">\(\theta\)</span> nel modello Beta-Binomiale.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>La <a href="#fig-trace-plot-gautret">Figura&nbsp;<span>20.1</span></a> mostra che le catene esplorano uno spazio compreso approssimativamenre tra 0.5 e 0.95; questa figura descrive il comportamento <em>longitudinale</em> delle catene di Markov.</p>
-<p>Possiamo anche esaminare la distribuzione degli stati della catena di Markov, ovvero, dei valori che queste catene visitano lungo il loro percorso, ignorando l’ordine di queste visite. L’istogramma della <a href="#fig-hist-post-gautret">Figura&nbsp;<span>20.2</span></a> fornisce una rappresentazione grafica di questa distribuzione per i 16000 valori complessivi delle quattro catene, ovvero per 4000 valori provienienti da ciascuna catena.</p>
+<p>La <a href="#fig-trace-plot-gautret">Figura&nbsp;<span>21.1</span></a> mostra che le catene esplorano uno spazio compreso approssimativamenre tra 0.5 e 0.95; questa figura descrive il comportamento <em>longitudinale</em> delle catene di Markov.</p>
+<p>Possiamo anche esaminare la distribuzione degli stati della catena di Markov, ovvero, dei valori che queste catene visitano lungo il loro percorso, ignorando l’ordine di queste visite. L’istogramma della <a href="#fig-hist-post-gautret">Figura&nbsp;<span>21.2</span></a> fornisce una rappresentazione grafica di questa distribuzione per i 16000 valori complessivi delle quattro catene, ovvero per 4000 valori provienienti da ciascuna catena.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">mcmc_hist</span><span class="op">(</span><span class="va">stanfit1</span>, pars <span class="op">=</span> <span class="st">"theta"</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">yaxis_text</span><span class="op">(</span><span class="cn">TRUE</span><span class="op">)</span> <span class="op">+</span> </span>
@@ -679,12 +684,12 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 </details><div class="cell-output-display">
 <div id="fig-hist-post-gautret" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="040_beta_binomial_mod_files/figure-html/fig-hist-post-gautret-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;20.2: Istogramma che illustra l’approssimazione della distribuzione a posteriori per il parametro <span class="math inline">\(\theta\)</span> nel modello Beta-Binomiale.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;21.2: Istogramma che illustra l’approssimazione della distribuzione a posteriori per il parametro <span class="math inline">\(\theta\)</span> nel modello Beta-Binomiale.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>Nello schema beta-binomiale in cui la verosimiglianza è binomiale con 14 successi su 16 prove e in cui assumiamo una distribuzione a priori <span class="math inline">\(\mbox{Beta}(2, 2)\)</span> sul parametro <span class="math inline">\(\theta\)</span>, la distribuzione a posteriori è una distribuzione Beta di parametri <span class="math inline">\(\alpha\)</span> = 2 + 14 e <span class="math inline">\(\beta\)</span> = 2 + 16 - 14. La <a href="#fig-hist-post-gautret-plus-correct">Figura&nbsp;<span>20.3</span></a> riporta un kernel density plot per i valori delle quattro catene di Markov con sovrapposta in nero la densità <span class="math inline">\(\mbox{Beta}(16, 4)\)</span>. Si noti come la distribuzione dei valori delle catene di Markov produca un’eccellente approssimazione alla distribuzione bersaglio.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Nello schema beta-binomiale in cui la verosimiglianza è binomiale con 14 successi su 16 prove e in cui assumiamo una distribuzione a priori <span class="math inline">\(\mbox{Beta}(2, 2)\)</span> sul parametro <span class="math inline">\(\theta\)</span>, la distribuzione a posteriori è una distribuzione Beta di parametri <span class="math inline">\(\alpha\)</span> = 2 + 14 e <span class="math inline">\(\beta\)</span> = 2 + 16 - 14. La <a href="#fig-hist-post-gautret-plus-correct">Figura&nbsp;<span>21.3</span></a> riporta un kernel density plot per i valori delle quattro catene di Markov con sovrapposta in nero la densità <span class="math inline">\(\mbox{Beta}(16, 4)\)</span>. Si noti come la distribuzione dei valori delle catene di Markov produca un’eccellente approssimazione alla distribuzione bersaglio.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">mcmc_dens</span><span class="op">(</span><span class="va">stanfit1</span>, pars <span class="op">=</span> <span class="st">"theta"</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">yaxis_text</span><span class="op">(</span><span class="cn">TRUE</span><span class="op">)</span> <span class="op">+</span> </span>
@@ -693,7 +698,7 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 </details><div class="cell-output-display">
 <div id="fig-hist-post-gautret-plus-correct" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="040_beta_binomial_mod_files/figure-html/fig-hist-post-gautret-plus-correct-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;20.3: Istogramma che illustra l’approssimazione della distribuzione a posteriori per il parametro <span class="math inline">\(\theta\)</span> nel modello Beta-Binomiale. La curva nera rappresenta la corretta distribuzione a posteriori Beta(16, 4).</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;21.3: Istogramma che illustra l’approssimazione della distribuzione a posteriori per il parametro <span class="math inline">\(\theta\)</span> nel modello Beta-Binomiale. La curva nera rappresenta la corretta distribuzione a posteriori Beta(16, 4).</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -708,8 +713,8 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 </details>
 </div>
 <p>Svolgendo un’analisi bayesiana simile a questa, <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span> hanno trovato che gli intervalli di credibilità del gruppo di controllo e del gruppo sperimentale non si sovrappongono. Questo fatto viene interpretato dicendo che il parametro <span class="math inline">\(\theta\)</span> è diverso nei due gruppi. Sulla base di queste evidenza, <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span> hanno concluso, con un grado di certezza soggettiva del 95%, che nel gruppo sperimentale vi è una probabilità più bassa di risultare positivi al SARS-CoV-2 rispetto al gruppo di controllo. In altri termini, l’analisi statistica condotta da <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span> suggerisce che l’idrossiclorochina è una terapia efficace per il Covid-19.</p>
-</section></section><section id="la-critica-di-hulme_2020" class="level2" data-number="20.4"><h2 data-number="20.4" class="anchored" data-anchor-id="la-critica-di-hulme_2020">
-<span class="header-section-number">20.4</span> La critica di <span class="citation" data-cites="Hulme_2020">Hulme et al. (<a href="999_refs.html#ref-Hulme_2020" role="doc-biblioref">2020</a>)</span>
+</section></section><section id="la-critica-di-hulme_2020" class="level2" data-number="21.4"><h2 data-number="21.4" class="anchored" data-anchor-id="la-critica-di-hulme_2020">
+<span class="header-section-number">21.4</span> La critica di <span class="citation" data-cites="Hulme_2020">Hulme et al. (<a href="999_refs.html#ref-Hulme_2020" role="doc-biblioref">2020</a>)</span>
 </h2>
 <p>Un articolo pubblicato da <span class="citation" data-cites="Hulme_2020">Hulme et al. (<a href="999_refs.html#ref-Hulme_2020" role="doc-biblioref">2020</a>)</span> si è posto il problema di rianalizzare i dati di <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Tra gli autori di questo articolo figura anche Eric-Jan Wagenmakers, uno psicologo molto conosciuto per i suoi contributi metodologici. <span class="citation" data-cites="Hulme_2020">Hulme et al. (<a href="999_refs.html#ref-Hulme_2020" role="doc-biblioref">2020</a>)</span> osservano che, nelle loro analisi statistiche, <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span> hanno escluso alcuni dati. Nel gruppo sperimentale, infatti, vi erano alcuni pazienti i quali, anziché migliorare, sono in realtà peggiorati. L’analisi statistica di <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span> ha escluso i dati di questi pazienti. Se consideriamo tutti i pazienti — non solo quelli selezionati da <span class="citation" data-cites="Gautret_2020">Gautret et al. (<a href="999_refs.html#ref-Gautret_2020" role="doc-biblioref">2020</a>)</span> — la situazione diventa la seguente:</p>
 <ul>
@@ -717,12 +722,12 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 <li>gruppo di controllo: 14 positivi su 16.</li>
 </ul>
 <p>L’analisi dei dati proposta da <span class="citation" data-cites="Hulme_2020">Hulme et al. (<a href="999_refs.html#ref-Hulme_2020" role="doc-biblioref">2020</a>)</span> richiede l’uso di alcuni strumenti statistici che, in queste dispense, non verranno discussi. Ma possiamo giungere alle stesse conclusioni raggiunte da questi ricercatori anche usando le procedure statistiche descritte nel Paragrafo successivo.</p>
-</section><section id="due-proporzioni" class="level2" data-number="20.5"><h2 data-number="20.5" class="anchored" data-anchor-id="due-proporzioni">
-<span class="header-section-number">20.5</span> Due proporzioni</h2>
+</section><section id="due-proporzioni" class="level2" data-number="21.5"><h2 data-number="21.5" class="anchored" data-anchor-id="due-proporzioni">
+<span class="header-section-number">21.5</span> Due proporzioni</h2>
 <p>Svolgiamo ora l’analisi statistica considerando tutti i dati, come suggerito da <span class="citation" data-cites="Hulme_2020">Hulme et al. (<a href="999_refs.html#ref-Hulme_2020" role="doc-biblioref">2020</a>)</span>. Per fare questo verrà creato un modello bayesiano per fare inferenza sulla differenza tra due proporzioni. Dopo avere generato le distribuzioni a posteriori per le proporzioni di “successi” nei due gruppi, calcoleremo la quantità</p>
 <p><span id="eq-odds-ratio"><span class="math display">\[
 \omega = \frac{\theta_2 / (1-\theta_2)}{\theta_1 / (1-\theta_1)},
-\tag{20.2}\]</span></span></p>
+\tag{21.2}\]</span></span></p>
 <p>ovvero il rapporto tra gli Odds di positività tra i pazienti del gruppo di controllo e gli Odds di positività tra i pazienti del gruppo sperimentale. Se il valore dell’OR è uguale a 1, significa che l’Odds di positività nel gruppo di controllo è uguale all’Odds di positività nel gruppo sperimentale, cioè il fattore in esame (somministrazione dell’idrossiclorochina) è ininfluente sulla comparsa della malattia. L’inferenza statistica sull’efficacia dell’idrossiclorochina come terapia per il Covid-19 può dunque essere effettuata esaminando l’intervallo di credibilità al 95% per l’OR: se tale intervallo include il valore 1, allora non c’è evidenza che l’idrossiclorochina sia efficace come terapia per il Covid-19.</p>
 <p>Nell’implementazione di questo modello, la quantità di interesse è l’odds ratio; tale quantità viene calcolata nel blocco <code>generated quantities</code>. Per i parametri <span class="math inline">\(\theta_1\)</span> e <span class="math inline">\(\theta_2\)</span> useremo delle distribuzioni a priori debolmente informative il cui scopo è la regolarizzazione dei dati.</p>
 <p>Inseriscoo i dati dei due gruppi in un oggetto di classe <code>list</code>.</p>
@@ -795,7 +800,7 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 <span>  pars <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"theta1"</span>, <span class="st">"theta2"</span>, <span class="st">"oddsratio"</span><span class="op">)</span>,</span>
 <span>  digits_summary <span class="op">=</span> <span class="fl">3L</span></span>
 <span><span class="op">)</span></span>
-<span><span class="co">#&gt; Inference for Stan model: twoprop1-202211210857-1-5d51b2.</span></span>
+<span><span class="co">#&gt; Inference for Stan model: twoprop1-202212070801-1-5c26ec.</span></span>
 <span><span class="co">#&gt; 4 chains, each with iter=6000; warmup=2000; thin=1; </span></span>
 <span><span class="co">#&gt; post-warmup draws per chain=4000, total post-warmup draws=16000.</span></span>
 <span><span class="co">#&gt; </span></span>
@@ -804,7 +809,7 @@ y &amp;\sim \mbox{Bin}(n, \theta) \notag\\
 <span><span class="co">#&gt; theta2    0.798   0.001 0.087 0.601 0.744 0.808 0.862  0.937 14193    1</span></span>
 <span><span class="co">#&gt; oddsratio 4.721   0.043 4.411 0.906 2.166 3.514 5.698 15.558 10400    1</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; Samples were drawn using NUTS(diag_e) at Lun Nov 21 08:57:45 2022.</span></span>
+<span><span class="co">#&gt; Samples were drawn using NUTS(diag_e) at Mer Dic 07 08:01:40 2022.</span></span>
 <span><span class="co">#&gt; For each parameter, n_eff is a crude measure of effective sample size,</span></span>
 <span><span class="co">#&gt; and Rhat is the potential scale reduction factor on split chains (at </span></span>
 <span><span class="co">#&gt; convergence, Rhat=1).</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1023,12 +1028,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./036_posterior_sim.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./041_mcmc_diagnostics.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

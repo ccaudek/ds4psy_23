@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - 30&nbsp; Predictive checks</title>
+<title>Data Science per psicologi - 31&nbsp; Predictive checks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,7 +142,7 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -194,7 +194,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variabili e distribuzioni di frequenza</span></a>
+  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analisi esplorativa dei dati</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -205,6 +205,11 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./012_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Le relazioni tra variabili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./013_penguins.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></a>
   </div>
 </li>
       </ul>
@@ -219,32 +224,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
+  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">L’interpretazione soggettivista della probabilità</span></a>
+  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Il teorema di Bayes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./019_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
+  <a href="./019_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./020_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./020_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
   </div>
 </li>
       </ul>
@@ -259,17 +264,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
+  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
+  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
+  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
   </div>
 </li>
       </ul>
@@ -284,52 +289,52 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
+  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
+  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
+  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
+  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
+  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
+  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
+  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
+  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
+  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
+  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
   </div>
 </li>
       </ul>
@@ -344,47 +349,47 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
+  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
+  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
+  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
+  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
+  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
+  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
+  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
+  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
+  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
   </div>
 </li>
       </ul>
@@ -399,17 +404,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Entropia</span></a>
+  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Entropia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
+  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
+  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -465,14 +470,14 @@ div.csl-indent {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sommario</h2>
    
   <ul>
-<li><a href="#distribuzione-predittiva-a-posteriori" id="toc-distribuzione-predittiva-a-posteriori" class="nav-link active" data-scroll-target="#distribuzione-predittiva-a-posteriori"><span class="toc-section-number">30.1</span>  Distribuzione predittiva a posteriori</a></li>
-  <li><a href="#distribuzione-predittiva-a-priori" id="toc-distribuzione-predittiva-a-priori" class="nav-link" data-scroll-target="#distribuzione-predittiva-a-priori"><span class="toc-section-number">30.2</span>  Distribuzione predittiva a priori</a></li>
+<li><a href="#distribuzione-predittiva-a-posteriori" id="toc-distribuzione-predittiva-a-posteriori" class="nav-link active" data-scroll-target="#distribuzione-predittiva-a-posteriori"><span class="toc-section-number">31.1</span>  Distribuzione predittiva a posteriori</a></li>
+  <li><a href="#distribuzione-predittiva-a-priori" id="toc-distribuzione-predittiva-a-priori" class="nav-link" data-scroll-target="#distribuzione-predittiva-a-priori"><span class="toc-section-number">31.2</span>  Distribuzione predittiva a priori</a></li>
   <li><a href="#commenti-e-considerazioni-finali" id="toc-commenti-e-considerazioni-finali" class="nav-link" data-scroll-target="#commenti-e-considerazioni-finali">Commenti e considerazioni finali</a></li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-pred-checks" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-pred-checks" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -489,8 +494,8 @@ div.csl-indent {
 
 </div>
 <p>In precedenza abbiamo visto come si genera la distribuzione predittiva a posteriori nel caso del modello più semplice: quello di un’unica variabile con una data distribuzione di probabilità. In particolare, abbiamo considerato il caso beta-binomiale. In questo Capitolo estenderemo la discussione al caso del modello di regressione lineare. Esamineremo un esempio di <em>posterior predictive check</em> in cui simuleremo <span class="math inline">\(p(y^{rep} \mid \theta, y)\)</span> e un esempio di <em>prior predictive check</em> in cui simuleremo <span class="math inline">\(p(y^{rep} \mid \mathcal{M})\)</span>, ovvero condizionando il modello al meccanismo generatore dei dati <span class="math inline">\(\mathcal{M}\)</span>, ma senza però includere i dati del campione.</p>
-<section id="distribuzione-predittiva-a-posteriori" class="level2" data-number="30.1"><h2 data-number="30.1" class="anchored" data-anchor-id="distribuzione-predittiva-a-posteriori">
-<span class="header-section-number">30.1</span> Distribuzione predittiva a posteriori</h2>
+<section id="distribuzione-predittiva-a-posteriori" class="level2" data-number="31.1"><h2 data-number="31.1" class="anchored" data-anchor-id="distribuzione-predittiva-a-posteriori">
+<span class="header-section-number">31.1</span> Distribuzione predittiva a posteriori</h2>
 <p>Consideriamo qui un esempio nel quale vengono usati i dati <code>kidiq</code> <span class="citation" data-cites="gelman2020regression">(<a href="999_refs.html#ref-gelman2020regression" role="doc-biblioref">Gelman et al., 2020</a>)</span>. Leggiamo i dati in <span class="math inline">\(\mathsf{R}\)</span>.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/leeper/rio">"rio"</a></span><span class="op">)</span></span>
@@ -742,8 +747,8 @@ div.csl-indent {
 </details>
 </div>
 <p>Con un modello più adeguato, la stima a posteriori del parametro <span class="math inline">\(\beta\)</span> è diminuita: <span class="math inline">\(\hat{\beta}\)</span> = 0.408, 95% CI [0.32, 0.49]. È possibile esplorare la possibilità di qualche meccanismo generatore dei dati maggiormente adeguato ai dati a disposizione. Lo scopo della discussione presente è solo di fare vedere come la stima del parametro di interesse, qui <span class="math inline">\(\beta\)</span>, dipende dalle assunzioni che facciamo sul modello generatore dei dati. La distribuzione predittiva a posteriori è uno degli strumenti che possono essere usati allo scopo di selezionare, tra quelli sensati, il meccanismo generatore dei dati maggiormente appropriato per i dati che sono stati osservati.</p>
-</section><section id="distribuzione-predittiva-a-priori" class="level2" data-number="30.2"><h2 data-number="30.2" class="anchored" data-anchor-id="distribuzione-predittiva-a-priori">
-<span class="header-section-number">30.2</span> Distribuzione predittiva a priori</h2>
+</section><section id="distribuzione-predittiva-a-priori" class="level2" data-number="31.2"><h2 data-number="31.2" class="anchored" data-anchor-id="distribuzione-predittiva-a-priori">
+<span class="header-section-number">31.2</span> Distribuzione predittiva a priori</h2>
 <p>La distribuzione predittiva a priori si trova in un modo che è simile a quello che abbiamo usato per la distribuzione predittiva a posteriori, senza però includere i dati osservati. Quindi si potrebbe dire che la distribuzione predittiva a priori è il caso limite della distribuzione predittiva a posteriori, calcolata senza utilizzare i dati del campione. Il manuale Stan afferma che, se il codice per il controllo predittivo a posteriori è già stato scritto, e se è possibile modificare il codice in modo che non sia necessario specificare i dati, allora non è necessario fare nient’altro.</p>
 <p>Lo scopo della distribuzione predittiva a priori è quello di farci capire se le assunzioni che abbiamo introdotto nel modello sono sensate per i dati a disposizione. Anche nel caso della distribuzione predittiva a priori vengono generati dei dati mediante il modello. Tali dati, però, vengono generati usando soltanto le informazioni sulle distribuzioni a priori e sul meccanismo generatore dei dati – i dati del campione non vengono usati. La distribuzione predittiva a priori viene dunque usata per verificare se le distribuzioni a priori per i parametri del modello sono sensate per l’analisi statistica che dobbiamo eseguire.</p>
 <p>Dal punto di vista del codice, l’unico cambiamento necessario rispetto al codice utilizzato per la distribuzione predittiva a posteriori è quello di eliminare ogni riferimento ai dati <span class="math inline">\(y\)</span>. Nel caso di un modello di regressione lineare, i valori <span class="math inline">\(x\)</span> devono invece essere mantenuti per potere generare <code>y_rep</code>.</p>
@@ -1029,12 +1034,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./055_reglin5.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./060_anova.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

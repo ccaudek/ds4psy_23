@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - 10&nbsp; La densità di probabilità</title>
+<title>Data Science per psicologi - 12&nbsp; La densità di probabilità</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,8 +89,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./020_expval_var.html" rel="next">
-<link href="./018_joint_prob.html" rel="prev">
+<link href="./distr.html" rel="next">
+<link href="./019_joint_prob.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -123,7 +123,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -175,7 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variabili e distribuzioni di frequenza</span></a>
+  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analisi esplorativa dei dati</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -186,6 +186,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./012_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Le relazioni tra variabili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./013_penguins.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></a>
   </div>
 </li>
       </ul>
@@ -200,32 +205,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
+  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">L’interpretazione soggettivista della probabilità</span></a>
+  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Il teorema di Bayes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./019_density_func.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
+  <a href="./019_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./020_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./020_density_func.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
   </div>
 </li>
       </ul>
@@ -240,17 +245,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
+  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
+  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
+  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
   </div>
 </li>
       </ul>
@@ -265,52 +270,52 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
+  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
+  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
+  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
+  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
+  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
+  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
+  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
+  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
+  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
+  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
   </div>
 </li>
       </ul>
@@ -325,47 +330,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
+  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
+  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
+  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
+  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
+  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
+  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
+  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
+  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
+  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
   </div>
 </li>
       </ul>
@@ -380,17 +385,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Entropia</span></a>
+  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Entropia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
+  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
+  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -447,22 +452,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    
   <ul>
 <li>
-<a href="#spinner-e-variabili-casuali-continue-uniformi" id="toc-spinner-e-variabili-casuali-continue-uniformi" class="nav-link active" data-scroll-target="#spinner-e-variabili-casuali-continue-uniformi"><span class="toc-section-number">10.1</span>  Spinner e variabili casuali continue uniformi</a>
+<a href="#spinner-e-variabili-casuali-continue-uniformi" id="toc-spinner-e-variabili-casuali-continue-uniformi" class="nav-link active" data-scroll-target="#spinner-e-variabili-casuali-continue-uniformi"><span class="toc-section-number">12.1</span>  Spinner e variabili casuali continue uniformi</a>
   <ul class="collapse">
-<li><a href="#il-paradosso-delle-variabili-casuali-continue" id="toc-il-paradosso-delle-variabili-casuali-continue" class="nav-link" data-scroll-target="#il-paradosso-delle-variabili-casuali-continue"><span class="toc-section-number">10.1.1</span>  Il paradosso delle variabili casuali continue</a></li>
+<li><a href="#il-paradosso-delle-variabili-casuali-continue" id="toc-il-paradosso-delle-variabili-casuali-continue" class="nav-link" data-scroll-target="#il-paradosso-delle-variabili-casuali-continue"><span class="toc-section-number">12.1.1</span>  Il paradosso delle variabili casuali continue</a></li>
   </ul>
 </li>
-  <li><a href="#la-funzione-di-ripartizione-per-una-variabile-casuale-continua" id="toc-la-funzione-di-ripartizione-per-una-variabile-casuale-continua" class="nav-link" data-scroll-target="#la-funzione-di-ripartizione-per-una-variabile-casuale-continua"><span class="toc-section-number">10.2</span>  La funzione di ripartizione per una variabile casuale continua</a></li>
-  <li><a href="#la-distribuzione-uniforme" id="toc-la-distribuzione-uniforme" class="nav-link" data-scroll-target="#la-distribuzione-uniforme"><span class="toc-section-number">10.3</span>  La distribuzione uniforme</a></li>
-  <li><a href="#dagli-istogrammi-alle-densit%C3%A0" id="toc-dagli-istogrammi-alle-densità" class="nav-link" data-scroll-target="#dagli-istogrammi-alle-densit%C3%A0"><span class="toc-section-number">10.4</span>  Dagli istogrammi alle densità</a></li>
-  <li><a href="#funzione-di-densit%C3%A0-di-probabilit%C3%A0" id="toc-funzione-di-densità-di-probabilità" class="nav-link" data-scroll-target="#funzione-di-densit%C3%A0-di-probabilit%C3%A0"><span class="toc-section-number">10.5</span>  Funzione di densità di probabilità</a></li>
-  <li><a href="#la-funzione-di-ripartizione" id="toc-la-funzione-di-ripartizione" class="nav-link" data-scroll-target="#la-funzione-di-ripartizione"><span class="toc-section-number">10.6</span>  La funzione di ripartizione</a></li>
-  <li><a href="#media-e-mediana" id="toc-media-e-mediana" class="nav-link" data-scroll-target="#media-e-mediana"><span class="toc-section-number">10.7</span>  Media e mediana</a></li>
+  <li><a href="#la-funzione-di-ripartizione-per-una-variabile-casuale-continua" id="toc-la-funzione-di-ripartizione-per-una-variabile-casuale-continua" class="nav-link" data-scroll-target="#la-funzione-di-ripartizione-per-una-variabile-casuale-continua"><span class="toc-section-number">12.2</span>  La funzione di ripartizione per una variabile casuale continua</a></li>
+  <li><a href="#la-distribuzione-uniforme" id="toc-la-distribuzione-uniforme" class="nav-link" data-scroll-target="#la-distribuzione-uniforme"><span class="toc-section-number">12.3</span>  La distribuzione uniforme</a></li>
+  <li><a href="#dagli-istogrammi-alle-densit%C3%A0" id="toc-dagli-istogrammi-alle-densità" class="nav-link" data-scroll-target="#dagli-istogrammi-alle-densit%C3%A0"><span class="toc-section-number">12.4</span>  Dagli istogrammi alle densità</a></li>
+  <li><a href="#funzione-di-densit%C3%A0-di-probabilit%C3%A0" id="toc-funzione-di-densità-di-probabilità" class="nav-link" data-scroll-target="#funzione-di-densit%C3%A0-di-probabilit%C3%A0"><span class="toc-section-number">12.5</span>  Funzione di densità di probabilità</a></li>
+  <li><a href="#la-funzione-di-ripartizione" id="toc-la-funzione-di-ripartizione" class="nav-link" data-scroll-target="#la-funzione-di-ripartizione"><span class="toc-section-number">12.6</span>  La funzione di ripartizione</a></li>
+  <li><a href="#media-e-mediana" id="toc-media-e-mediana" class="nav-link" data-scroll-target="#media-e-mediana"><span class="toc-section-number">12.7</span>  Media e mediana</a></li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-intro-density-function" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-intro-density-function" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -477,14 +482,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header><p>Finora abbiamo considerato solo variabili casuali discrete, cioè variabili che assumono solo valori interi. Ma cosa succede se vogliamo usare variabili casuali per rappresentare lunghezze, o volumi, o distanze, o una qualsiasi delle altre proprietà continue nel mondo fisico o psicologico? È necessario generalizzare l’approccio usato finora.</p>
 <p>Le variabili casuali continue assumono valori reali. L’insieme dei numeri reali è <em>non numerabile</em> perché è più grande dell’insieme degli interi.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Le leggi della probabilità sono le stesse per le variabili casuali discrete e quelle continue. La nozione di funzione di massa di probabilità, invece, deve essere sostituita dal suo equivalente continuo, ovvero dalla <em>funzione di densità di probabilità</em>. Lo scopo di questo Capitolo è quello di chiarire il significato di questa nozione, usando un approccio basato sulle simulazioni.</p>
-<section id="spinner-e-variabili-casuali-continue-uniformi" class="level2" data-number="10.1"><h2 data-number="10.1" class="anchored" data-anchor-id="spinner-e-variabili-casuali-continue-uniformi">
-<span class="header-section-number">10.1</span> Spinner e variabili casuali continue uniformi</h2>
-<p>Consideriamo il seguente esperimento casuale. Facciamo ruotare ad alta velocità uno spinner simmetrico imperniato su un goniometro e osserviamo la posizione in cui si ferma (individuata dall’angolo acuto con segno tra il suo asse e l’asse orizzontale del goniometro). Chiamiamo <span class="math inline">\(\Theta\)</span> la variabile casuale “pendenza dello spinner” – <a href="#fig-spinner">Figura&nbsp;<span>10.1</span></a>. Nella trattazione seguente useremo i gradi e, di conseguenza, <span class="math inline">\(\Theta \in [0, 360]\)</span>.</p>
+<section id="spinner-e-variabili-casuali-continue-uniformi" class="level2" data-number="12.1"><h2 data-number="12.1" class="anchored" data-anchor-id="spinner-e-variabili-casuali-continue-uniformi">
+<span class="header-section-number">12.1</span> Spinner e variabili casuali continue uniformi</h2>
+<p>Consideriamo il seguente esperimento casuale. Facciamo ruotare ad alta velocità uno spinner simmetrico imperniato su un goniometro e osserviamo la posizione in cui si ferma (individuata dall’angolo acuto con segno tra il suo asse e l’asse orizzontale del goniometro). Chiamiamo <span class="math inline">\(\Theta\)</span> la variabile casuale “pendenza dello spinner” – <a href="#fig-spinner">Figura&nbsp;<span>12.1</span></a>. Nella trattazione seguente useremo i gradi e, di conseguenza, <span class="math inline">\(\Theta \in [0, 360]\)</span>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-spinner" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure"><p><img src="019_density_func_files/figure-html/fig-spinner-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;10.1: Uno spinner che riposa a 36 gradi, o il dieci percento del percorso intorno al cerchio. La pendenza dello spinner può assumere qualunque valore tra 0 e 360 gradi.</figcaption><p></p>
+<figure class="figure"><p><img src="020_density_func_files/figure-html/fig-spinner-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;12.1: Uno spinner che riposa a 36 gradi, o il dieci percento del percorso intorno al cerchio. La pendenza dello spinner può assumere qualunque valore tra 0 e 360 gradi.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -495,16 +500,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 \mbox{P}(\theta_1 \leq \Theta \leq \theta_2) = \frac{\theta_2 - \theta_1}{360}, \qquad 0 \leq \theta_1 \leq \theta_2 \leq 360.
 \]</span></p>
 <p>La ragione di questo è che le variabili casuali continue non hanno una massa di probabilità. Invece, una massa di probabilità viene assegnata alla realizzazione della variabile casuale in un intervallo di valori.</p>
-<section id="il-paradosso-delle-variabili-casuali-continue" class="level3" data-number="10.1.1"><h3 data-number="10.1.1" class="anchored" data-anchor-id="il-paradosso-delle-variabili-casuali-continue">
-<span class="header-section-number">10.1.1</span> Il paradosso delle variabili casuali continue</h3>
+<section id="il-paradosso-delle-variabili-casuali-continue" class="level3" data-number="12.1.1"><h3 data-number="12.1.1" class="anchored" data-anchor-id="il-paradosso-delle-variabili-casuali-continue">
+<span class="header-section-number">12.1.1</span> Il paradosso delle variabili casuali continue</h3>
 <p>Nel nostro esempio, la pendenza dello spinner è esattamente 36 gradi; ma avrebbe anche potuto essere 36.0376531 gradi, o qualunque altro valore in quell’intorno. Qual è la probabilità che la pendenza dello spinner sia esattamente 36? Paradossalmente, la risposta è zero:</p>
 <p><span class="math display">\[
 \mbox{P}(\Theta = 36) = 0.
 \]</span></p>
 <p>Infatti, se la probabilità di un qualunque valore fosse maggiore di zero, ogni altro possibile valore dovrebbe avere la stessa probabilità, dato che abbiamo assunto che tutti i valori <span class="math inline">\(\Theta\)</span> siano egualmente probabili. Ma se poi andiamo a sommare tutte queste probabilità il totale diventerà maggiore di uno, il che non è possibile.</p>
 <p>Nel caso delle variabili casuali continue dobbiamo dunque rinunciare a qualcosa, e quel qualcosa è l’idea che, in una distribuzione continua, ciascun valore puntuale della variabile casuale possa avere una massa di probabilità maggiore di zero. Il paradosso sorge perché una realizzazione della variabile casuale continua produce sempre un qualche numero, ma ciscuno di tali numeri ha probabilità nulla.</p>
-</section></section><section id="la-funzione-di-ripartizione-per-una-variabile-casuale-continua" class="level2" data-number="10.2"><h2 data-number="10.2" class="anchored" data-anchor-id="la-funzione-di-ripartizione-per-una-variabile-casuale-continua">
-<span class="header-section-number">10.2</span> La funzione di ripartizione per una variabile casuale continua</h2>
+</section></section><section id="la-funzione-di-ripartizione-per-una-variabile-casuale-continua" class="level2" data-number="12.2"><h2 data-number="12.2" class="anchored" data-anchor-id="la-funzione-di-ripartizione-per-una-variabile-casuale-continua">
+<span class="header-section-number">12.2</span> La funzione di ripartizione per una variabile casuale continua</h2>
 <p>Supponiamo che <span class="math inline">\(\Theta \sim \mathcal{U}(0, 360)\)</span> sia la pendenza dello spinner. La funzione di ripartizione (ovvero, la distribuzione cumulativa) è definita esattamente come nel caso delle variabili casuali discrete:</p>
 <p><span class="math display">\[
 F_{\Theta}(\theta) = \mbox{P}(\Theta \leq \theta).
@@ -513,12 +518,12 @@ F_{\Theta}(\theta) = \mbox{P}(\Theta \leq \theta).
 <p><span class="math display">\[
 F_{\Theta}(\theta) = \frac{\theta}{360}.
 \]</span></p>
-<p>Questa è una funzione lineare di <span class="math inline">\(\theta\)</span>, cioè <span class="math inline">\(\frac{1}{360} \cdot \theta\)</span>, come indicato dal grafico della <a href="#fig-spinner-cdf">Figura&nbsp;<span>10.2</span></a>.</p>
+<p>Questa è una funzione lineare di <span class="math inline">\(\theta\)</span>, cioè <span class="math inline">\(\frac{1}{360} \cdot \theta\)</span>, come indicato dal grafico della <a href="#fig-spinner-cdf">Figura&nbsp;<span>12.2</span></a>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-spinner-cdf" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure"><p><img src="019_density_func_files/figure-html/fig-spinner-cdf-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;10.2: Funzione di distribuzione cumulativa per l’angolo <span class="math inline">\(\theta\)</span> (in gradi) risultante da una rotazione di uno spinner simmetrico. La linea tratteggiata mostra il valore a 180 gradi, che corrisponde ad una probabilità di 0.5, e la linea tratteggiata a 270 gradi, che corrisponde ad una probabilità di 0.75.</figcaption><p></p>
+<figure class="figure"><p><img src="020_density_func_files/figure-html/fig-spinner-cdf-1.png" class="img-fluid figure-img" width="576"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;12.2: Funzione di distribuzione cumulativa per l’angolo <span class="math inline">\(\theta\)</span> (in gradi) risultante da una rotazione di uno spinner simmetrico. La linea tratteggiata mostra il valore a 180 gradi, che corrisponde ad una probabilità di 0.5, e la linea tratteggiata a 270 gradi, che corrisponde ad una probabilità di 0.75.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -544,8 +549,8 @@ F_{\Theta}(\theta) = \frac{\theta}{360}.
 <span><span class="va">unif_cdf_plot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output-display">
 <div id="fig-unif_cdf_plot" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure"><p><img src="019_density_func_files/figure-html/fig-unif_cdf_plot-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;10.3: Grafico della funzione di ripartizione di una variabile casuale <span class="math inline">\(\Theta\)</span> che rappresenta il risultato di una rotazione di uno spinner simmetrico. Come previsto, tale funzione è una semplice funzione lineare perché la variabile sottostante <span class="math inline">\(\Theta\)</span> ha una distribuzione uniforme.</figcaption><p></p>
+<figure class="figure"><p><img src="020_density_func_files/figure-html/fig-unif_cdf_plot-1.png" class="img-fluid figure-img" width="576"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;12.3: Grafico della funzione di ripartizione di una variabile casuale <span class="math inline">\(\Theta\)</span> che rappresenta il risultato di una rotazione di uno spinner simmetrico. Come previsto, tale funzione è una semplice funzione lineare perché la variabile sottostante <span class="math inline">\(\Theta\)</span> ha una distribuzione uniforme.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -558,8 +563,8 @@ F_{\Theta}(\theta) = \frac{\theta}{360}.
 &amp;= \frac{3}{4} - \frac{1}{2} \notag\\
 &amp;= \frac{1}{4}.
 \end{align}\]</span>
-</section><section id="la-distribuzione-uniforme" class="level2" data-number="10.3"><h2 data-number="10.3" class="anchored" data-anchor-id="la-distribuzione-uniforme">
-<span class="header-section-number">10.3</span> La distribuzione uniforme</h2>
+</section><section id="la-distribuzione-uniforme" class="level2" data-number="12.3"><h2 data-number="12.3" class="anchored" data-anchor-id="la-distribuzione-uniforme">
+<span class="header-section-number">12.3</span> La distribuzione uniforme</h2>
 <p>Dopo avere visto come generare numeri casuali uniformi da 0 a 360, consideriamo ora una variabile casuale che assume valori nell’intervallo da 0 a 1. Chiamiamo tale variabile casuale <span class="math inline">\(\Theta\)</span> e assumiamo che abbia una distribuzione continua uniforme sull’intervallo [0, 1]:</p>
 <p><span class="math display">\[
 \Theta \sim \mathcal{U}(0, 1).
@@ -590,8 +595,8 @@ F_{\Theta}(\theta) = \frac{\theta}{360}.
 <span><span class="va">unif_prob_plot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output-display">
 <div id="fig-unif-distr" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure"><p><img src="019_density_func_files/figure-html/fig-unif-distr-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;10.4: Istogramma di <span class="math inline">\(10\,000\)</span> realizzazioni <span class="math inline">\(\Theta \sim \mbox{Uniform}(0, 1)\)</span>.</figcaption><p></p>
+<figure class="figure"><p><img src="020_density_func_files/figure-html/fig-unif-distr-1.png" class="img-fluid figure-img" width="576"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;12.4: Istogramma di <span class="math inline">\(10\,000\)</span> realizzazioni <span class="math inline">\(\Theta \sim \mbox{Uniform}(0, 1)\)</span>.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -632,13 +637,13 @@ F_{\Theta}(\theta) = \frac{\theta}{360}.
 <span><span class="va">uniform_pdf_plot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output-display">
 <div id="fig-unif-distr-2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure"><p><img src="019_density_func_files/figure-html/fig-unif-distr-2-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;10.5: Distribuzione uniforme</figcaption><p></p>
+<figure class="figure"><p><img src="020_density_func_files/figure-html/fig-unif-distr-2-1.png" class="img-fluid figure-img" width="576"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;12.5: Distribuzione uniforme</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>Dalla <a href="#fig-unif-distr-2">Figura&nbsp;<span>10.5</span></a> vediamo che l’area sottesa alla funzione di densità è <span class="math inline">\((b - a)\cdot c\)</span>. Dato che tale area deve essere unitaria, ovvero, <span class="math inline">\((b - a) \cdot c = 1\)</span>, possiamo trovare <span class="math inline">\(c\)</span> dividendo entrambi i termini per <span class="math inline">\(b - a\)</span>,</p>
+<p>Dalla <a href="#fig-unif-distr-2">Figura&nbsp;<span>12.5</span></a> vediamo che l’area sottesa alla funzione di densità è <span class="math inline">\((b - a)\cdot c\)</span>. Dato che tale area deve essere unitaria, ovvero, <span class="math inline">\((b - a) \cdot c = 1\)</span>, possiamo trovare <span class="math inline">\(c\)</span> dividendo entrambi i termini per <span class="math inline">\(b - a\)</span>,</p>
 <p><span class="math display">\[
 c  = \frac{\displaystyle{1}}{\displaystyle b - a}.
 \]</span></p>
@@ -655,8 +660,8 @@ p_{\Theta}(\theta) = \mathcal{U}(\theta \mid a, b),
 <p>Si consideri una variabile casuale uniforme <span class="math inline">\(X\)</span> definita sull’intervallo [0, 100]. Si trovi la probabilità <span class="math inline">\(P(20 &lt; X &lt; 60)\)</span>.</p>
 <p>Per trovare la soluzione è sufficiente calcolare l’area di un rettangolo di base <span class="math inline">\(60 - 20 = 40\)</span> e di altezza 1/100. La probabilità cercata è dunque <span class="math inline">\(P(20 &lt; X &lt; 60) = 40 \cdot 0.01 = 0.4\)</span>.</p>
 </div>
-</section><section id="dagli-istogrammi-alle-densità" class="level2" data-number="10.4"><h2 data-number="10.4" class="anchored" data-anchor-id="dagli-istogrammi-alle-densità">
-<span class="header-section-number">10.4</span> Dagli istogrammi alle densità</h2>
+</section><section id="dagli-istogrammi-alle-densità" class="level2" data-number="12.4"><h2 data-number="12.4" class="anchored" data-anchor-id="dagli-istogrammi-alle-densità">
+<span class="header-section-number">12.4</span> Dagli istogrammi alle densità</h2>
 <p>Non esiste l’equivalente di una funzione di massa di probabilità per le variabili casuali continue. Esiste invece una <em>funzione di densità di probabilità</em> la quale, nei termini di una simulazione, può essere concepita nel modo seguente: avendo a disposizione un numero enorme di casi, quando l’intervallo <span class="math inline">\(\Delta\)</span> di ciascuna classe <span class="math inline">\(\rightarrow\)</span> 0, il profilo dell’istogramma delle frequenze delle classi di ampiezza <span class="math inline">\(\Delta\)</span> tende a diventare una curva continua. Tale curva continua <span class="math inline">\(f(x)\)</span> è detta funzione di densità di probabilità.</p>
 <p>Come si trasformano gli istogrammi all’aumentare del numero di osservazioni? Per fare un esempio, considereremo una funzione di una variabile casuale uniforme <span class="math inline">\([0, 1]\)</span>. Nello specifico, esamineremo la funzione logit:</p>
 <p><span class="math display">\[
@@ -716,8 +721,8 @@ p_{\Theta}(\theta) = \mathcal{U}(\theta \mid a, b),
 <span><span class="va">log_odds_growth_plot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output-display">
 <div id="fig-logit-unif" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure"><p><img src="019_density_func_files/figure-html/fig-logit-unif-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;10.6: Istogramma di <span class="math inline">\(M\)</span> campioni casuali <span class="math inline">\(\Theta \sim \mbox{Uniform}(0, 1)\)</span> trasformati in valori <span class="math inline">\(\Phi = \mbox{logit}(\Theta).\)</span> Il profilo limite dell’istogramma è evidenziato nella figura in basso a destra che è stata costruita usando <span class="math inline">\(1\,000\,000\)</span> di osservazioni.</figcaption><p></p>
+<figure class="figure"><p><img src="020_density_func_files/figure-html/fig-logit-unif-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;12.6: Istogramma di <span class="math inline">\(M\)</span> campioni casuali <span class="math inline">\(\Theta \sim \mbox{Uniform}(0, 1)\)</span> trasformati in valori <span class="math inline">\(\Phi = \mbox{logit}(\Theta).\)</span> Il profilo limite dell’istogramma è evidenziato nella figura in basso a destra che è stata costruita usando <span class="math inline">\(1\,000\,000\)</span> di osservazioni.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -755,15 +760,15 @@ p_{\Theta}(\theta) = \mathcal{U}(\theta \mid a, b),
 <span><span class="va">density_limit_plot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output-display">
 <div id="fig-hist-dens-example" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure"><p><img src="019_density_func_files/figure-html/fig-hist-dens-example-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;10.7: Istogramma di <span class="math inline">\(M = 1\,000\,000\)</span> campioni casuali <span class="math inline">\(\Theta \sim \mbox{Uniform}(0,1)\)</span> trasformati in valori <span class="math inline">\(\Phi = \mbox{logit}(\Theta)\)</span>. La spezzata nera congiunge i punti centrali superiori delle barre dell’istogramma. Nel limite, quando il numero di osservazioni e di barre tende all’infinito, tale spezzata approssima la funzione di densità di probabilità della variabile casuale.</figcaption><p></p>
+<figure class="figure"><p><img src="020_density_func_files/figure-html/fig-hist-dens-example-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;12.7: Istogramma di <span class="math inline">\(M = 1\,000\,000\)</span> campioni casuali <span class="math inline">\(\Theta \sim \mbox{Uniform}(0,1)\)</span> trasformati in valori <span class="math inline">\(\Phi = \mbox{logit}(\Theta)\)</span>. La spezzata nera congiunge i punti centrali superiori delle barre dell’istogramma. Nel limite, quando il numero di osservazioni e di barre tende all’infinito, tale spezzata approssima la funzione di densità di probabilità della variabile casuale.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Nella statistica descrittiva abbiamo già incontrato una rappresentazione che ha lo stesso significato della funzione di densità, ovvero il <em>kernel density plot</em>. La stima della densità del kernel (KDE), infatti, è un metodo non parametrico per stimare la funzione di densità di probabilità di una variabile casuale.</p>
-</section><section id="funzione-di-densità-di-probabilità" class="level2" data-number="10.5"><h2 data-number="10.5" class="anchored" data-anchor-id="funzione-di-densità-di-probabilità">
-<span class="header-section-number">10.5</span> Funzione di densità di probabilità</h2>
+</section><section id="funzione-di-densità-di-probabilità" class="level2" data-number="12.5"><h2 data-number="12.5" class="anchored" data-anchor-id="funzione-di-densità-di-probabilità">
+<span class="header-section-number">12.5</span> Funzione di densità di probabilità</h2>
 <p>Per descrivere le probabilità che possono essere associate ad una variabile casuale continua <span class="math inline">\(X\)</span> è necessario definire una funzione <span class="math inline">\(p(X)\)</span> che deve soddisfare le seguenti due proprietà:</p>
 <ul>
 <li>
@@ -774,8 +779,8 @@ p_{\Theta}(\theta) = \mathcal{U}(\theta \mid a, b),
 <span class="math inline">\(p(a &lt; x &lt; b) = \int_a^b p(x) \,\operatorname {d}\!x\)</span>, se <span class="math inline">\(a \leq b\)</span>, ovvero, l’area sottesa dalla <span class="math inline">\(p(y)\)</span> tra due punti <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> corrisponde alla probabilità che la v.c. <span class="math inline">\(x\)</span> assuma un valore compresto tra questi due estremi.</li>
 </ul>
 <p><em>Interpretazione.</em> È possibile che <span class="math inline">\(p(x) &gt; 1\)</span>, quindi una densità di probabilità non può essere interpretata come una probabilità. Piuttosto, la densità <span class="math inline">\(p(x)\)</span> può essere utilizzata per confrontare la fiducia relativa che può essere assegnata a diversi valori <span class="math inline">\(x\)</span>. Considerata una variabile casuale <span class="math inline">\(X\)</span> di cui è disponibile un insieme di realizzazioni, possiamo dire che, se consideriamo due valori <span class="math inline">\(x_k\)</span> e <span class="math inline">\(x_l\)</span> con <span class="math inline">\(p(x_k) &gt; p(x_l)\)</span>, allora possiamo concludere che è più probabile, in termini relativi, osservare realizzazioni <span class="math inline">\(X\)</span> nell’intorno di <span class="math inline">\(x_k\)</span> piuttosto che nell’intorno di <span class="math inline">\(x_l\)</span>.</p>
-</section><section id="la-funzione-di-ripartizione" class="level2" data-number="10.6"><h2 data-number="10.6" class="anchored" data-anchor-id="la-funzione-di-ripartizione">
-<span class="header-section-number">10.6</span> La funzione di ripartizione</h2>
+</section><section id="la-funzione-di-ripartizione" class="level2" data-number="12.6"><h2 data-number="12.6" class="anchored" data-anchor-id="la-funzione-di-ripartizione">
+<span class="header-section-number">12.6</span> La funzione di ripartizione</h2>
 <p>La funzione di ripartizione <span class="math inline">\(F(X)\)</span> è quella funzione che associa a ogni valore di una variabile casuale <span class="math inline">\(X\)</span> la probabilità che la variabile assuma valore minore o uguale a un prefissato valore <span class="math inline">\(x_k\)</span>. Come nel caso discreto, anche nel caso continuo la funzione di ripartizione è sempre non negativa, monotona non decrescente tra <span class="math inline">\(0\)</span> e <span class="math inline">\(1\)</span>, tale che:</p>
 <p><span class="math display">\[
 \lim_{x \to -\infty} F_x(X) = F_X(-\infty) = 0, \quad \lim_{x \to +\infty} F_X(X) = F_X(+\infty) = 1.
@@ -789,8 +794,8 @@ p_{\Theta}(\theta) = \mathcal{U}(\theta \mid a, b),
 <p><span class="math display">\[
 F(x_k) = P(X \leq x_k) = \int_{-\infty}^{x_k} f(x) \,\operatorname {d}\!x .
 \]</span></p>
-</section><section id="media-e-mediana" class="level2" data-number="10.7"><h2 data-number="10.7" class="anchored" data-anchor-id="media-e-mediana">
-<span class="header-section-number">10.7</span> Media e mediana</h2>
+</section><section id="media-e-mediana" class="level2" data-number="12.7"><h2 data-number="12.7" class="anchored" data-anchor-id="media-e-mediana">
+<span class="header-section-number">12.7</span> Media e mediana</h2>
 <p>Concludiamo questo capitolo con alcune considerazioni relative al contronto tra la media (valore atteso) e la mediana, nel caso di variabili casuali continue.</p>
 <p>Per distribuzioni simmetriche, sappiamo che la media e la mediana sono uguali. Chiediamoci ora cosa succede, nel caso di variabili casuali continue, nel caso di distribuzioni asimmetriche.</p>
 <p>La mediana indica il punto in cui la “massa totale” della distribuzione è suddivisa in due porzioni uguali. Nel caso della densità di probabilità, ciascuna di queste porzioni rappresenta un’area uguale, <span class="math inline">\(A_1 = A_2 = 1/2\)</span> poiché l’area totale sottesa alla funzione di densità è 1 per definizione.</p>
@@ -798,12 +803,12 @@ F(x_k) = P(X \leq x_k) = \int_{-\infty}^{x_k} f(x) \,\operatorname {d}\!x .
 <div class="cell-output-display">
 <div id="fig-median-mean" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="images/median_mean.png" class="img-fluid figure-img" style="width:85.0%"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;10.8: Qual è la differenza tra mediana e media in una funzione di densità?</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;12.8: Qual è la differenza tra mediana e media in una funzione di densità?</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>La <a href="#fig-median-mean">Figura&nbsp;<span>10.8</span></a> mostra come differiscono i due concetti di mediana (indicata dalla linea verticale) e media (indicata dal “punto di equilibrio” triangolare). A sinistra, per una densità di probabilità simmetrica, la media e la mediana coincidono. A destra, una piccola porzione della distribuzione è stata spostata all’estremo destro. Questa modifica non ha influito sulla posizione della mediana, poiché le aree a destra e a sinistra della linea verticale sono ancora uguali. In altri termini, la mediana, <span class="math inline">\(x_m\)</span>, divide l’area sottesa alla funzione di densità in due porzioni uguali:</p>
+<p>La <a href="#fig-median-mean">Figura&nbsp;<span>12.8</span></a> mostra come differiscono i due concetti di mediana (indicata dalla linea verticale) e media (indicata dal “punto di equilibrio” triangolare). A sinistra, per una densità di probabilità simmetrica, la media e la mediana coincidono. A destra, una piccola porzione della distribuzione è stata spostata all’estremo destro. Questa modifica non ha influito sulla posizione della mediana, poiché le aree a destra e a sinistra della linea verticale sono ancora uguali. In altri termini, la mediana, <span class="math inline">\(x_m\)</span>, divide l’area sottesa alla funzione di densità in due porzioni uguali:</p>
 <p><span class="math display">\[
 \int_{-\infty}^{x_m} p(x) dx = \int_{x_m}^{-\infty} p(x) dx = \frac{1}{2}.
 \]</span></p>
@@ -1005,13 +1010,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./018_joint_prob.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></span>
+      <a href="./019_joint_prob.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./020_expval_var.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./distr.html" class="pagination-link">
+        <span class="nav-page-text">Parte 3: Distribuzioni di v.c. discrete e continue</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

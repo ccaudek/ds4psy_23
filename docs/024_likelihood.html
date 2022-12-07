@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - 14&nbsp; La funzione di verosimiglianza</title>
+<title>Data Science per psicologi - 15&nbsp; La funzione di verosimiglianza</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,7 +142,7 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -194,7 +194,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variabili e distribuzioni di frequenza</span></a>
+  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analisi esplorativa dei dati</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -205,6 +205,11 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./012_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Le relazioni tra variabili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./013_penguins.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></a>
   </div>
 </li>
       </ul>
@@ -219,32 +224,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
+  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">L’interpretazione soggettivista della probabilità</span></a>
+  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Il teorema di Bayes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./019_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
+  <a href="./019_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./020_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./020_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
   </div>
 </li>
       </ul>
@@ -259,17 +264,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
+  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
+  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
+  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
   </div>
 </li>
       </ul>
@@ -284,52 +289,52 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
+  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
+  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
+  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
+  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
+  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
+  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
+  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
+  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
+  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
+  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
   </div>
 </li>
       </ul>
@@ -344,47 +349,47 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
+  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
+  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
+  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
+  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
+  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
+  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
+  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
+  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
+  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
   </div>
 </li>
       </ul>
@@ -399,17 +404,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Entropia</span></a>
+  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Entropia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
+  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
+  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -466,18 +471,18 @@ div.csl-indent {
    
   <ul>
 <li>
-<a href="#modello-binomiale" id="toc-modello-binomiale" class="nav-link active" data-scroll-target="#modello-binomiale"><span class="toc-section-number">14.1</span>  Modello binomiale</a>
+<a href="#modello-binomiale" id="toc-modello-binomiale" class="nav-link active" data-scroll-target="#modello-binomiale"><span class="toc-section-number">15.1</span>  Modello binomiale</a>
   <ul class="collapse">
-<li><a href="#interpretazione" id="toc-interpretazione" class="nav-link" data-scroll-target="#interpretazione"><span class="toc-section-number">14.1.1</span>  Interpretazione</a></li>
-  <li><a href="#la-log-verosimiglianza" id="toc-la-log-verosimiglianza" class="nav-link" data-scroll-target="#la-log-verosimiglianza"><span class="toc-section-number">14.1.2</span>  La log-verosimiglianza</a></li>
+<li><a href="#interpretazione" id="toc-interpretazione" class="nav-link" data-scroll-target="#interpretazione"><span class="toc-section-number">15.1.1</span>  Interpretazione</a></li>
+  <li><a href="#la-log-verosimiglianza" id="toc-la-log-verosimiglianza" class="nav-link" data-scroll-target="#la-log-verosimiglianza"><span class="toc-section-number">15.1.2</span>  La log-verosimiglianza</a></li>
   </ul>
 </li>
   <li>
-<a href="#modello-gaussiano" id="toc-modello-gaussiano" class="nav-link" data-scroll-target="#modello-gaussiano"><span class="toc-section-number">14.2</span>  Modello gaussiano</a>
+<a href="#modello-gaussiano" id="toc-modello-gaussiano" class="nav-link" data-scroll-target="#modello-gaussiano"><span class="toc-section-number">15.2</span>  Modello gaussiano</a>
   <ul class="collapse">
-<li><a href="#una-singola-osservazione" id="toc-una-singola-osservazione" class="nav-link" data-scroll-target="#una-singola-osservazione"><span class="toc-section-number">14.2.1</span>  Una singola osservazione</a></li>
-  <li><a href="#un-campione-di-osservazioni" id="toc-un-campione-di-osservazioni" class="nav-link" data-scroll-target="#un-campione-di-osservazioni"><span class="toc-section-number">14.2.2</span>  Un campione di osservazioni</a></li>
-  <li><a href="#massima-verosimiglianza" id="toc-massima-verosimiglianza" class="nav-link" data-scroll-target="#massima-verosimiglianza"><span class="toc-section-number">14.2.3</span>  Massima verosimiglianza</a></li>
+<li><a href="#una-singola-osservazione" id="toc-una-singola-osservazione" class="nav-link" data-scroll-target="#una-singola-osservazione"><span class="toc-section-number">15.2.1</span>  Una singola osservazione</a></li>
+  <li><a href="#un-campione-di-osservazioni" id="toc-un-campione-di-osservazioni" class="nav-link" data-scroll-target="#un-campione-di-osservazioni"><span class="toc-section-number">15.2.2</span>  Un campione di osservazioni</a></li>
+  <li><a href="#massima-verosimiglianza" id="toc-massima-verosimiglianza" class="nav-link" data-scroll-target="#massima-verosimiglianza"><span class="toc-section-number">15.2.3</span>  Massima verosimiglianza</a></li>
   </ul>
 </li>
   <li><a href="#commenti-e-considerazioni-finali" id="toc-commenti-e-considerazioni-finali" class="nav-link" data-scroll-target="#commenti-e-considerazioni-finali">Commenti e considerazioni finali</a></li>
@@ -485,7 +490,7 @@ div.csl-indent {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-likelihood" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-likelihood" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -500,7 +505,7 @@ div.csl-indent {
 
 </header><p>La verosimiglianza viene utilizzata sia nell’inferenza bayesiana che in quella frequentista. In entrambi i paradigmi di inferenza, il suo ruolo è quello di quantificare la forza con la quale i dati osservati supportano i possibili valori dei parametri sconosciuti di un modello statistico.</p>
 <div id="def-likelihood" class="theorem definition">
-<p><span class="theorem-title"><strong>Definizione 14.1 </strong></span>La <em>funzione di verosimiglianza</em> <span class="math inline">\(\mathcal{L}(\theta \mid y) = f(y \mid \theta), \theta \in \Theta,\)</span> è la funzione di massa o di densità di probabilità dei dati <span class="math inline">\(y\)</span> vista come una funzione del parametro sconosciuto (o dei parametri sconosciuti) <span class="math inline">\(\theta\)</span>.</p>
+<p><span class="theorem-title"><strong>Definizione 15.1 </strong></span>La <em>funzione di verosimiglianza</em> <span class="math inline">\(\mathcal{L}(\theta \mid y) = f(y \mid \theta), \theta \in \Theta,\)</span> è la funzione di massa o di densità di probabilità dei dati <span class="math inline">\(y\)</span> vista come una funzione del parametro sconosciuto (o dei parametri sconosciuti) <span class="math inline">\(\theta\)</span>.</p>
 </div>
 <p>Detto in altre parole, la funzione di verosimiglianza e la funzione di (massa o densità di) probabilità sono formalmente identiche, ma è completamente diversa la loro interpretazione:</p>
 <ul>
@@ -509,17 +514,17 @@ div.csl-indent {
 </ul>
 <p>La funzione di verosimiglianza descrive dunque in termini relativi il sostegno empirico che <span class="math inline">\(\theta \in \Theta\)</span> riceve da <span class="math inline">\(y\)</span>. Infatti, la funzione di verosimiglianza assume forme diverse al variare di <span class="math inline">\(y\)</span>. Possiamo dunque pensare alla funzione di verosimiglianza come alla risposta alla seguente domanda: avendo osservato i dati <span class="math inline">\(y\)</span>, quanto risultano (relativamente) credibili i diversi valori del parametro <span class="math inline">\(\theta\)</span>? In termini più formali possiamo dire che, sulla base dei dati, <span class="math inline">\(\theta_1 \in \Theta\)</span> risulta più credibile di <span class="math inline">\(\theta_2 \in \Theta\)</span> quale indice del modello probabilistico generatore dei dati se <span class="math inline">\(\mathcal{L}(\theta_1) &gt; \mathcal{L}(\theta_1)\)</span>.</p>
 <p>Si noti un punto importante: la funzione <span class="math inline">\(\mathcal{L}(\theta \mid y)\)</span> non è una funzione di densità. Infatti, essa non racchiude un’area unitaria.</p>
-<section id="modello-binomiale" class="level2" data-number="14.1"><h2 data-number="14.1" class="anchored" data-anchor-id="modello-binomiale">
-<span class="header-section-number">14.1</span> Modello binomiale</h2>
+<section id="modello-binomiale" class="level2" data-number="15.1"><h2 data-number="15.1" class="anchored" data-anchor-id="modello-binomiale">
+<span class="header-section-number">15.1</span> Modello binomiale</h2>
 <p>Per chiarire il concetto di verosimiglianza consideriamo innanzitutto il caso più semplice, ovvero quello Binomiale.</p>
 <p>Per <span class="math inline">\(n\)</span> prove Bernoulliane indipendenti, le quali producono <span class="math inline">\(y\)</span> successi e (<span class="math inline">\(n-y\)</span>) insuccessi, la funzione nucleo di verosimiglianza (ovvero, la funzione di verosimiglianza da cui sono state escluse tutte le costanti moltiplicative che non hanno alcun effetto su <span class="math inline">\(\hat{\theta}\)</span>) è</p>
 <p><span id="eq-like-binomial-kernel"><span class="math display">\[
 \mathcal{L}(p \mid y) = \theta^y (1-\theta)^{n - y}.\notag
-\tag{14.1}\]</span></span></p>
+\tag{15.1}\]</span></span></p>
 <p>Per fare un esempio pratico, consideriamo la ricerca di <span class="citation" data-cites="zetschefuture2019">Zetsche et al. (<a href="999_refs.html#ref-zetschefuture2019" role="doc-biblioref">2019</a>)</span>. Questi ricercatori hanno trovato che, su 30 pazienti clinicamente depressi, 23 manifestavano delle aspettative distorsione negativamente relativamente al loro umore futuro. Se i dati di <span class="citation" data-cites="zetschefuture2019">Zetsche et al. (<a href="999_refs.html#ref-zetschefuture2019" role="doc-biblioref">2019</a>)</span> vengono riassunti mediante una proporzione (ovvero, 23/30), allora è sensato adottare un modello probabilistico binomiale quale meccanismo generatore dei dati:</p>
 <p><span id="eq-binomialmodel"><span class="math display">\[
 y  \sim \mbox{Bin}(n, \theta),
-\tag{14.2}\]</span></span></p>
+\tag{15.2}\]</span></span></p>
 <p>laddove <span class="math inline">\(\theta\)</span> è la probabiltà che una prova Bernoulliana assuma il valore 1 e <span class="math inline">\(n\)</span> corrisponde al numero di prove Bernoulliane. Questo modello assume che le prove Bernoulliane <span class="math inline">\(y\)</span> che costituiscono il campione siano tra loro indipendenti e che ciascuna abbia la stessa probabilità <span class="math inline">\(\theta \in [0, 1]\)</span> di essere un “successo” (valore 1). In altre parole, il modello generatore dei dati avrà la seguente funzione di massa di probabilità</p>
 <p><span class="math display">\[
 p(y \mid \theta)
@@ -536,8 +541,8 @@ p(y \mid \theta)
 <p>La funzione di verosimiglianza dunque diventa</p>
 <p><span id="eq-likebino23"><span class="math display">\[
 \mathcal{L}(\theta \mid y) = \frac{(23 + 7)!}{23!7!} \theta^{23} + (1-\theta)^7.
-\tag{14.3}\]</span></span></p>
-<p>Per costruire la funzione di verosimiglianza dobbiamo applicare l’<a href="#eq-likebino23">Equazione&nbsp;<span>14.3</span></a> tante volte, cambiando ogni volta il valore <span class="math inline">\(\theta\)</span>, ma tenendo sempre costante il valore dei dati. Nella seguente simulazione considereremo 100 possibili valori <span class="math inline">\(\theta \in [0, 1]\)</span>.</p>
+\tag{15.3}\]</span></span></p>
+<p>Per costruire la funzione di verosimiglianza dobbiamo applicare l’<a href="#eq-likebino23">Equazione&nbsp;<span>15.3</span></a> tante volte, cambiando ogni volta il valore <span class="math inline">\(\theta\)</span>, ma tenendo sempre costante il valore dei dati. Nella seguente simulazione considereremo 100 possibili valori <span class="math inline">\(\theta \in [0, 1]\)</span>.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">theta</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">1</span>, length.out <span class="op">=</span> <span class="fl">100</span><span class="op">)</span></span>
 <span><span class="va">theta</span></span>
@@ -583,7 +588,7 @@ p(y \mid \theta)
 <details><summary>Codice</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">like</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Special.html">choose</a></span><span class="op">(</span><span class="va">n</span>, <span class="va">y</span><span class="op">)</span> <span class="op">*</span> <span class="va">theta</span><span class="op">^</span><span class="va">y</span> <span class="op">*</span> <span class="op">(</span><span class="fl">1</span> <span class="op">-</span> <span class="va">theta</span><span class="op">)</span><span class="op">^</span><span class="op">(</span><span class="va">n</span> <span class="op">-</span> <span class="va">y</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>La curva che interpola tali punti è la funzione di verosimiglianza. La <a href="#fig-likefutexpect">Figura&nbsp;<span>14.1</span></a> fornisce una rappresentazione grafica di tale funzione.</p>
+<p>La curva che interpola tali punti è la funzione di verosimiglianza. La <a href="#fig-likefutexpect">Figura&nbsp;<span>15.1</span></a> fornisce una rappresentazione grafica di tale funzione.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span><span class="va">theta</span>, <span class="va">like</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">theta</span>, y <span class="op">=</span> <span class="va">like</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -596,13 +601,13 @@ p(y \mid \theta)
 </details><div class="cell-output-display">
 <div id="fig-likefutexpect" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="024_likelihood_files/figure-html/fig-likefutexpect-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;14.1: Funzione di verosimiglianza nel caso di 23 successi in 30 prove.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;15.1: Funzione di verosimiglianza nel caso di 23 successi in 30 prove.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<section id="interpretazione" class="level3" data-number="14.1.1"><h3 data-number="14.1.1" class="anchored" data-anchor-id="interpretazione">
-<span class="header-section-number">14.1.1</span> Interpretazione</h3>
+<section id="interpretazione" class="level3" data-number="15.1.1"><h3 data-number="15.1.1" class="anchored" data-anchor-id="interpretazione">
+<span class="header-section-number">15.1.1</span> Interpretazione</h3>
 <p>Come possiamo interpretare la curva che abbiamo ottenuto? Per alcuni valori <span class="math inline">\(\theta\)</span> la funzione di verosimiglianza assume valori piccoli; per altri valori <span class="math inline">\(\theta\)</span> la funzione di verosimiglianza assume valori più grandi. Questi ultimi sono i valori <span class="math inline">\(\theta\)</span> più credibili e il valore 23/30 = 0.767 (la moda della funzione di verosimiglianza) è il valore più credibile di tutti.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span><span class="va">theta</span>, <span class="va">like</span><span class="op">)</span></span>
@@ -610,12 +615,12 @@ p(y \mid \theta)
 <span><span class="co">#&gt; [1] 0.7676768</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-</section><section id="la-log-verosimiglianza" class="level3" data-number="14.1.2"><h3 data-number="14.1.2" class="anchored" data-anchor-id="la-log-verosimiglianza">
-<span class="header-section-number">14.1.2</span> La log-verosimiglianza</h3>
+</section><section id="la-log-verosimiglianza" class="level3" data-number="15.1.2"><h3 data-number="15.1.2" class="anchored" data-anchor-id="la-log-verosimiglianza">
+<span class="header-section-number">15.1.2</span> La log-verosimiglianza</h3>
 <p>Dal punto di vista pratico risulta più conveniente utilizzare, al posto della funzione di verosimiglianza, il suo logaritmo naturale, ovvero la funzione di log-verosimiglianza:</p>
 <p><span id="eq-loglike-definition"><span class="math display">\[
 \ell(\theta) = \log \mathcal{L}(\theta).
-\tag{14.4}\]</span></span></p>
+\tag{15.4}\]</span></span></p>
 <p>Poiché il logaritmo è una funzione strettamente crescente (usualmente si considera il logaritmo naturale), allora <span class="math inline">\(\mathcal{L}(\theta)\)</span> e <span class="math inline">\(\ell(\theta)\)</span> assumono il massimo (o i punti di massimo) in corrispondenza degli stessi valori di <span class="math inline">\(\theta\)</span>:</p>
 <p><span class="math display">\[
 \hat{\theta} = \mbox{argmax}_{\theta \in \Theta} \ell(\theta) = \mbox{argmax}_{\theta \in \Theta} \mathcal{L}(\theta).
@@ -635,7 +640,7 @@ p(y \mid \theta)
 <details><summary>Codice</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">ll</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="va">y</span>, <span class="va">n</span>, <span class="va">theta</span>, log <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>La funzione di log-verosimiglianza è rappresentata nella <a href="#fig-loglike-futureexp">Figura&nbsp;<span>14.2</span></a>.</p>
+<p>La funzione di log-verosimiglianza è rappresentata nella <a href="#fig-loglike-futureexp">Figura&nbsp;<span>15.2</span></a>.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span><span class="va">theta</span>, <span class="va">ll</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">theta</span>, y <span class="op">=</span> <span class="va">ll</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -648,7 +653,7 @@ p(y \mid \theta)
 </details><div class="cell-output-display">
 <div id="fig-loglike-futureexp" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="024_likelihood_files/figure-html/fig-loglike-futureexp-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;14.2: Funzione di log-verosimiglianza nel caso di 23 successi in 30 prove.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;15.2: Funzione di log-verosimiglianza nel caso di 23 successi in 30 prove.</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -660,26 +665,26 @@ p(y \mid \theta)
 <span><span class="co">#&gt; [1] 0.7676768</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-</section></section><section id="modello-gaussiano" class="level2" data-number="14.2"><h2 data-number="14.2" class="anchored" data-anchor-id="modello-gaussiano">
-<span class="header-section-number">14.2</span> Modello gaussiano</h2>
+</section></section><section id="modello-gaussiano" class="level2" data-number="15.2"><h2 data-number="15.2" class="anchored" data-anchor-id="modello-gaussiano">
+<span class="header-section-number">15.2</span> Modello gaussiano</h2>
 <p>Ora che abbiamo capito come costruire la funzione verosimiglianza di una binomiale è relativamente semplice fare un passo ulteriore e considerare la verosimiglianza del caso di una funzione di densità, ovvero nel caso di una variabile casuale continua. Consideriamo qui il caso della Normale. La densità di una distribuzione Normale di parametri <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma\)</span> è</p>
 <p><span id="eq-gaussian-sim-like"><span class="math display">\[
 f(y \mid \mu, \sigma) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left\{-\frac{1}{2\sigma^2}(y-\mu)^2\right\}.
-\tag{14.5}\]</span></span></p>
-<p>Ci poniamo ora il problema di costruire la funzione di verosimiglianza per la densità dell’<a href="#eq-gaussian-sim-like">Equazione&nbsp;<span>14.5</span></a>.</p>
-<section id="una-singola-osservazione" class="level3" data-number="14.2.1"><h3 data-number="14.2.1" class="anchored" data-anchor-id="una-singola-osservazione">
-<span class="header-section-number">14.2.1</span> Una singola osservazione</h3>
+\tag{15.5}\]</span></span></p>
+<p>Ci poniamo ora il problema di costruire la funzione di verosimiglianza per la densità dell’<a href="#eq-gaussian-sim-like">Equazione&nbsp;<span>15.5</span></a>.</p>
+<section id="una-singola-osservazione" class="level3" data-number="15.2.1"><h3 data-number="15.2.1" class="anchored" data-anchor-id="una-singola-osservazione">
+<span class="header-section-number">15.2.1</span> Una singola osservazione</h3>
 <p>Esaminiamo prima il caso in cui i dati corrispondono ad una singola osservazione <span class="math inline">\(y\)</span>.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fl">114</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>L’<a href="#eq-gaussian-sim-like">Equazione&nbsp;<span>14.5</span></a> dipende dai parametri <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma\)</span> e dai dati <span class="math inline">\(y\)</span>. Per semplicità, ipotizziamo <span class="math inline">\(\sigma\)</span> noto e uguale a 15. Nella simulazione considereremo 1000 valori <span class="math inline">\(\mu\)</span> compresi tra 70 e 160.</p>
+<p>L’<a href="#eq-gaussian-sim-like">Equazione&nbsp;<span>15.5</span></a> dipende dai parametri <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma\)</span> e dai dati <span class="math inline">\(y\)</span>. Per semplicità, ipotizziamo <span class="math inline">\(\sigma\)</span> noto e uguale a 15. Nella simulazione considereremo 1000 valori <span class="math inline">\(\mu\)</span> compresi tra 70 e 160.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mu</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="fl">70</span>, <span class="fl">160</span>, length.out <span class="op">=</span> <span class="fl">1e3</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>Dato che consideriamo 1000 possibili valori <span class="math inline">\(\mu\)</span>, per costruire la funzione di verosimiglianza applicheremo l’<a href="#eq-gaussian-sim-like">Equazione&nbsp;<span>14.5</span></a> 1000 volte. In ciascun passo della simulazione, nell’<a href="#eq-gaussian-sim-like">Equazione&nbsp;<span>14.5</span></a> inseriremo</p>
+<p>Dato che consideriamo 1000 possibili valori <span class="math inline">\(\mu\)</span>, per costruire la funzione di verosimiglianza applicheremo l’<a href="#eq-gaussian-sim-like">Equazione&nbsp;<span>15.5</span></a> 1000 volte. In ciascun passo della simulazione, nell’<a href="#eq-gaussian-sim-like">Equazione&nbsp;<span>15.5</span></a> inseriremo</p>
 <ul>
 <li>il singolo valore <span class="math inline">\(y\)</span> considerato,</li>
 <li>il valore <span class="math inline">\(\sigma\)</span> assunto noto,</li>
@@ -722,8 +727,8 @@ f(y \mid \mu, \sigma) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left\{-\frac{1}{2\sigm
 </details>
 </div>
 <p>La moda della funzione di verosimiglianza è 114.</p>
-</section><section id="un-campione-di-osservazioni" class="level3" data-number="14.2.2"><h3 data-number="14.2.2" class="anchored" data-anchor-id="un-campione-di-osservazioni">
-<span class="header-section-number">14.2.2</span> Un campione di osservazioni</h3>
+</section><section id="un-campione-di-osservazioni" class="level3" data-number="15.2.2"><h3 data-number="15.2.2" class="anchored" data-anchor-id="un-campione-di-osservazioni">
+<span class="header-section-number">15.2.2</span> Un campione di osservazioni</h3>
 <p>Consideriamo ora il caso più generale, ovvero quello di un campione di <span class="math inline">\(n\)</span> osservazioni. Possiamo immaginare un campione casuale <span class="math inline">\(y_1, y_2, \dots, y_n\)</span> estratto da una popolazione <span class="math inline">\(\mathcal{N}(\mu, \sigma)\)</span> come una sequenza di realizzazioni indipendenti ed identicamente distribuite (di seguito, i.i.d.) della medesima variabile casuale <span class="math inline">\(Y \sim \mathcal{N}(\mu, \sigma)\)</span>. I parametri sconosciuti sono <span class="math inline">\(\theta = \{\mu, \sigma\}\)</span>.</p>
 <p>Se le variabili casuali <span class="math inline">\(y_1, y_2, \dots, y_n\)</span> sono i.i.d., la loro densità congiunta è data da: <span class="math display">\[\begin{align}
 f(y \mid \theta) &amp;= f(y_1 \mid \theta) \cdot f(y_2 \mid \theta) \cdot \; \dots \; \cdot f(y_n \mid \theta)\notag\\
@@ -801,14 +806,14 @@ f(y_i \mid \mu, \sigma) = \frac{1}{{6.61 \sqrt {2\pi}}}\exp\left\{{-\frac{(y_i -
 </details><div class="cell-output-display">
 <div id="fig-loglike-bdi2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="024_likelihood_files/figure-html/fig-loglike-bdi2-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;14.3: Log-verosimiglianza del parametro <span class="math inline">\(\mu\)</span> per i dati di <span class="citation" data-cites="zetschefuture2019">Zetsche et al. (<a href="999_refs.html#ref-zetschefuture2019" role="doc-biblioref">2019</a>)</span>.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;15.3: Log-verosimiglianza del parametro <span class="math inline">\(\mu\)</span> per i dati di <span class="citation" data-cites="zetschefuture2019">Zetsche et al. (<a href="999_refs.html#ref-zetschefuture2019" role="doc-biblioref">2019</a>)</span>.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Tale funzione descrive la credibilità relativa che può essere attribuita ai valori del parametro <span class="math inline">\(\mu\)</span> alla luce dei dati osservati.</p>
-</section><section id="massima-verosimiglianza" class="level3" data-number="14.2.3"><h3 data-number="14.2.3" class="anchored" data-anchor-id="massima-verosimiglianza">
-<span class="header-section-number">14.2.3</span> Massima verosimiglianza</h3>
+</section><section id="massima-verosimiglianza" class="level3" data-number="15.2.3"><h3 data-number="15.2.3" class="anchored" data-anchor-id="massima-verosimiglianza">
+<span class="header-section-number">15.2.3</span> Massima verosimiglianza</h3>
 <p>Il valore <span class="math inline">\(\mu\)</span> più credibile corrisponde al massimo della funzione di log-verosimiglinza e viene detto <em>stima di massima verosimiglianza</em>.</p>
 <p>Il massimo della funzione di log-verosimiglianza, ovvero 30.93 nel caso dell’esempio presente, è identico alla media dei dati campionari. Tale risultato, ottenuto per via numerica, può essere dimostrato formalmente nel modo seguente.</p>
 <p>Usando la notazione matematica possiamo dire che cerchiamo l’argmax dell’equazione precedente rispetto a <span class="math inline">\(\theta\)</span>, ovvero</p>
@@ -825,7 +830,7 @@ f(y_i \mid \mu, \sigma) = \frac{1}{{6.61 \sqrt {2\pi}}}\exp\left\{{-\frac{(y_i -
 \end{equation}\]</span>
 <p>In altri termini, la s.m.v. del parametro <span class="math inline">\(\mu\)</span> è la media del campione e la s.m.v. del parametro <span class="math inline">\(\sigma\)</span> è la deviazione standard del campione.</p>
 <div id="exr-loglike-bdi2-1" class="theorem exercise">
-<p><span class="theorem-title"><strong>Esercizio 14.1 </strong></span>Dalla <a href="#fig-loglike-bdi2">Figura&nbsp;<span>14.3</span></a> notiamo che il massimo della funzione di log-verosimiglianza calcolata per via numerica, ovvero 30.93, è identico alla media dei dati campionari e corrisponde al risultato teorico atteso.</p>
+<p><span class="theorem-title"><strong>Esercizio 15.1 </strong></span>Dalla <a href="#fig-loglike-bdi2">Figura&nbsp;<span>15.3</span></a> notiamo che il massimo della funzione di log-verosimiglianza calcolata per via numerica, ovvero 30.93, è identico alla media dei dati campionari e corrisponde al risultato teorico atteso.</p>
 </div>
 </section></section><section id="commenti-e-considerazioni-finali" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="commenti-e-considerazioni-finali">Commenti e considerazioni finali</h2>
 <p>Nella funzione di verosimiglianza i dati (osservati) vengono trattati come fissi, mentre i valori del parametro (o dei parametri) <span class="math inline">\(\theta\)</span> vengono variati: la verosimiglianza è una funzione di <span class="math inline">\(\theta\)</span> per il dato fisso <span class="math inline">\(y\)</span>. Pertanto, la funzione di verosimiglianza riassume i seguenti elementi: un modello statistico che genera stocasticamente i dati (in questo capitolo abbiamo esaminato due modelli statistici: quello binomiale e quello Normale), un intervallo di valori possibili per <span class="math inline">\(\theta\)</span> e i dati osservati <span class="math inline">\(y\)</span>.</p>
@@ -1025,7 +1030,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./023_cont_rv_distr.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

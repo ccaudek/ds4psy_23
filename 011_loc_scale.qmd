@@ -4,11 +4,11 @@
 source("_common.R")
 ```
 
-L'analisi grafica esaminata in precedenza costituisce la base di partenza di qualsivoglia analisi quantitativa dei dati. Tramite opportune rappresentazioni grafiche possiamo individuare alcune caratteristiche importanti di una distribuzione: per esempio, è possibile capire se la distribuzione è simmetrica o asimmetrica; oppure se è unimodale o multimodale. Successivamente, è necessario calcolare degli indici numerici che descrivano in modo sintetico le caratteristiche di base dei dati.
+L'analisi grafica esaminata in precedenza costituisce la base di partenza di qualsivoglia analisi quantitativa dei dati. Tramite opportune rappresentazioni grafiche possiamo individuare alcune caratteristiche importanti di una distribuzione: per esempio, è possibile capire se la distribuzione è simmetrica o asimmetrica; oppure se è unimodale o multimodale. Successivamente, è necessario calcolare degli indici numerici che descrivano in modo sintetico le caratteristiche di base dei dati. In questo capitolo verranno introdotti i principali indicatori della statistica descrittiva.
 
 ## Indici di tendenza centrale
 
-Tra le misure di tendenza centrale, ovvero tra gli indici che forniscono un'idea dei valori attorno ai quali sono prevalentemente concentrati i dati di un campione, quella più comunemente usata è la media.
+Tra le misure di tendenza centrale, ovvero tra gli indici che ci informano sui valori attorno ai quali sono prevalentemente concentrati i dati di un campione, quella più comunemente usata è la media.
 
 ::: callout-tip
 Per un'introduzione "soft" alla nozione di tendenza centrale di una distribuzione statistica si segua il [link](https://tinystats.github.io/teacups-giraffes-and-statistics/03_mean.html).

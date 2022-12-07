@@ -1,3 +1,10 @@
+base
+methods
+datasets
+utils
+grDevices
+graphics
+stats
 here
 tidyverse
 ggplot2
@@ -16,3 +23,4 @@ ggpubr
 viridisLite
 viridis
 ggokabeito
+kableExtra

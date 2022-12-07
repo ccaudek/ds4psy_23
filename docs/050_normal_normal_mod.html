@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - 24&nbsp; Inferenza sul parametro \(\mu\) (media di una v.c. Normale)</title>
+<title>Data Science per psicologi - 25&nbsp; Inferenza sul parametro \(\mu\) (media di una v.c. Normale)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,7 +142,7 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -194,7 +194,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variabili e distribuzioni di frequenza</span></a>
+  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analisi esplorativa dei dati</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -205,6 +205,11 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./012_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Le relazioni tra variabili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./013_penguins.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></a>
   </div>
 </li>
       </ul>
@@ -219,32 +224,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
+  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">L’interpretazione soggettivista della probabilità</span></a>
+  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Il teorema di Bayes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./019_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
+  <a href="./019_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./020_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./020_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
   </div>
 </li>
       </ul>
@@ -259,17 +264,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
+  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
+  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
+  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
   </div>
 </li>
       </ul>
@@ -284,52 +289,52 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
+  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
+  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
+  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
+  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
+  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
+  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
+  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
+  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
+  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
+  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
   </div>
 </li>
       </ul>
@@ -344,47 +349,47 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
+  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
+  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
+  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
+  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
+  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
+  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
+  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
+  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
+  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
   </div>
 </li>
       </ul>
@@ -399,17 +404,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Entropia</span></a>
+  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Entropia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
+  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
+  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -465,13 +470,13 @@ div.csl-indent {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sommario</h2>
    
   <ul>
-<li><a href="#caso-normale-normale-con-varianza-nota" id="toc-caso-normale-normale-con-varianza-nota" class="nav-link active" data-scroll-target="#caso-normale-normale-con-varianza-nota"><span class="toc-section-number">24.1</span>  Caso Normale-Normale con varianza nota</a></li>
-  <li><a href="#derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y" id="toc-derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y" class="nav-link" data-scroll-target="#derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y"><span class="toc-section-number">24.2</span>  Derivazione analitica della distribuzione a posteriori <span class="math inline">\(p(\mu \mid y)\)</span></a></li>
+<li><a href="#caso-normale-normale-con-varianza-nota" id="toc-caso-normale-normale-con-varianza-nota" class="nav-link active" data-scroll-target="#caso-normale-normale-con-varianza-nota"><span class="toc-section-number">25.1</span>  Caso Normale-Normale con varianza nota</a></li>
+  <li><a href="#derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y" id="toc-derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y" class="nav-link" data-scroll-target="#derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y"><span class="toc-section-number">25.2</span>  Derivazione analitica della distribuzione a posteriori <span class="math inline">\(p(\mu \mid y)\)</span></a></li>
   <li>
-<a href="#il-modello-normale-con-stan" id="toc-il-modello-normale-con-stan" class="nav-link" data-scroll-target="#il-modello-normale-con-stan"><span class="toc-section-number">24.3</span>  Il modello Normale con Stan</a>
+<a href="#il-modello-normale-con-stan" id="toc-il-modello-normale-con-stan" class="nav-link" data-scroll-target="#il-modello-normale-con-stan"><span class="toc-section-number">25.3</span>  Il modello Normale con Stan</a>
   <ul class="collapse">
-<li><a href="#versione-1-sigma-nota" id="toc-versione-1-sigma-nota" class="nav-link" data-scroll-target="#versione-1-sigma-nota"><span class="toc-section-number">24.3.1</span>  Versione 1 (<span class="math inline">\(\sigma\)</span> nota)</a></li>
-  <li><a href="#versione-2-sigma-incognita" id="toc-versione-2-sigma-incognita" class="nav-link" data-scroll-target="#versione-2-sigma-incognita"><span class="toc-section-number">24.3.2</span>  Versione 2 (<span class="math inline">\(\sigma\)</span> incognita)</a></li>
+<li><a href="#versione-1-sigma-nota" id="toc-versione-1-sigma-nota" class="nav-link" data-scroll-target="#versione-1-sigma-nota"><span class="toc-section-number">25.3.1</span>  Versione 1 (<span class="math inline">\(\sigma\)</span> nota)</a></li>
+  <li><a href="#versione-2-sigma-incognita" id="toc-versione-2-sigma-incognita" class="nav-link" data-scroll-target="#versione-2-sigma-incognita"><span class="toc-section-number">25.3.2</span>  Versione 2 (<span class="math inline">\(\sigma\)</span> incognita)</a></li>
   </ul>
 </li>
   <li><a href="#commenti-e-considerazioni-finali" id="toc-commenti-e-considerazioni-finali" class="nav-link" data-scroll-target="#commenti-e-considerazioni-finali">Commenti e considerazioni finali</a></li>
@@ -479,7 +484,7 @@ div.csl-indent {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-normal-normal-mod-stan" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-normal-normal-mod-stan" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -496,16 +501,16 @@ div.csl-indent {
 
 </div>
 <p>Esaminiamo ora in maggiore dettaglio un caso che abbiamo anticipato in precedenza, ovvero quello in cui disponiamo di un campione di dati a livello di scala a intervalli o rapporti e vogliamo fare inferenza sulla media della popolazione da cui il campione è stato estratto.</p>
-<section id="caso-normale-normale-con-varianza-nota" class="level2" data-number="24.1"><h2 data-number="24.1" class="anchored" data-anchor-id="caso-normale-normale-con-varianza-nota">
-<span class="header-section-number">24.1</span> Caso Normale-Normale con varianza nota</h2>
+<section id="caso-normale-normale-con-varianza-nota" class="level2" data-number="25.1"><h2 data-number="25.1" class="anchored" data-anchor-id="caso-normale-normale-con-varianza-nota">
+<span class="header-section-number">25.1</span> Caso Normale-Normale con varianza nota</h2>
 <p>Supponiamo che i dati <span class="math inline">\(y\)</span> siano un campione casuale estratto da una popolazione che segue la legge Normale. Ciò significa che le osservazioni possono essere considerate come una sequenza di variabili casuali indipendenti e identicamente distribuite. Supponiamo che ciascuna v.c. segua la distribuzione Normale. Abbiamo dunque</p>
 <p><span class="math display">\[
 Y_1, \dots, Y_n  \stackrel{iid}{\sim} \mathcal{N}(\mu, \sigma).
 \]</span></p>
 <p>In precedenza abbiamo visto come, in tali circostanze, la verosimiglianza <span class="math inline">\(p(y \mid \mu, \sigma)\)</span> sia Normale. Per fare inferenza sul parametro <span class="math inline">\(\mu\)</span>, facciamo due assunzioni: consideriamo <span class="math inline">\(\sigma\)</span> nota e imponiamo su <span class="math inline">\(\mu\)</span> una distribuzione a priori Normale. Questa situazione definisce lo schema coniugato Normale-Normale. Il caso Normale-Normale consente una derivazione analitica della distribuzione a posteriori <span class="math inline">\(p(\mu \mid y)\)</span> (così come nel caso beta-binomiale era possibile una derivazione analitica della distribuzione a posteriori <span class="math inline">\(p(\theta \mid y)\)</span>).</p>
 <p>La trattazione matematica di una tale derivazione è piuttosto complessa e qui verrà solo accennata. Nel seguito, impareremo invece ad applicare la soluzione che viene ottenuta in tali circostanze; mostreremo inoltre come fare inferenza su <span class="math inline">\(\mu\)</span> mediante i metodi MCMC.</p>
-</section><section id="derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y" class="level2" data-number="24.2"><h2 data-number="24.2" class="anchored" data-anchor-id="derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y">
-<span class="header-section-number">24.2</span> Derivazione analitica della distribuzione a posteriori <span class="math inline">\(p(\mu \mid y)\)</span>
+</section><section id="derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y" class="level2" data-number="25.2"><h2 data-number="25.2" class="anchored" data-anchor-id="derivazione-analitica-della-distribuzione-a-posteriori-pmu-mid-y">
+<span class="header-section-number">25.2</span> Derivazione analitica della distribuzione a posteriori <span class="math inline">\(p(\mu \mid y)\)</span>
 </h2>
 <p>Per <span class="math inline">\(\sigma^2\)</span> nota, la famiglia della distribuzione Normale è coniugata a sé stessa: se la funzione di verosimiglianza è Normale, la scelta di una distribuzione a priori Normale per <span class="math inline">\(\mu\)</span> assicura che anche la distribuzione a posteriori <span class="math inline">\(p(\mu \mid y)\)</span> sia Normale.</p>
 <p>Poniamoci dunque il problema di trovare <span class="math inline">\(p(\mu \mid y)\)</span> nel caso di un campione casuale <span class="math inline">\(Y_1, \dots, Y_n \stackrel{iid}{\sim} \mathcal{N}(\mu, \sigma)\)</span>, supponendo <span class="math inline">\(\sigma\)</span> perfettamente nota e imponendo su <span class="math inline">\(\mu\)</span> una distribuzione a priori Normale. Ricordiamo che la densità gaussiana è</p>
@@ -534,15 +539,15 @@ p(\mu) = \frac{1}{{\tau_0 \sqrt {2\pi}}}\exp\left\{{-\frac{(\mu - \mu_0)^2}{2\ta
 <p>Svolgendo una serie di passaggi algebrici, si arriva alla distribuzione a posteriori</p>
 <p><span id="eq-post-norm-norm"><span class="math display">\[
 p(\mu \mid y) = \frac{1}{{\tau_p \sqrt {2\pi}}}\exp\left\{{-\frac{(\mu - \mu_p)^2}{2\tau_p^2}}\right\},
-\tag{24.1}\]</span></span></p>
+\tag{25.1}\]</span></span></p>
 <p>dove</p>
 <p><span id="eq-post-norm-mup"><span class="math display">\[
 \mu_p = \frac{\frac{1}{\tau_0^2}\mu_0+ \frac{n}{\sigma^2}\bar{y}}{\frac {1}{\tau_0^2} + \frac{n}{\sigma^2}}
-\tag{24.2}\]</span></span></p>
+\tag{25.2}\]</span></span></p>
 <p>e</p>
 <p><span id="eq-post-norm-taup2"><span class="math display">\[
 \tau_p^2 = \frac{1}{\frac {1}{\tau_0^2}+ \frac{n}{\sigma^2}}.
-\tag{24.3}\]</span></span></p>
+\tag{25.3}\]</span></span></p>
 <p>Ciò significa che, se la distribuzione a priori <span class="math inline">\(p(\mu)\)</span> è gaussiana, allora anche la distribuzione a posteriori <span class="math inline">\(p(\mu \mid y)\)</span> sarà gaussiana con valore atteso <span class="math inline">\(\mu_p\)</span> e varianza <span class="math inline">\(\tau_p^2\)</span> date dalle espressioni precedenti.</p>
 <p>In conclusione, il risultato trovato indica che:</p>
 <ul>
@@ -550,7 +555,7 @@ p(\mu \mid y) = \frac{1}{{\tau_p \sqrt {2\pi}}}\exp\left\{{-\frac{(\mu - \mu_p)^
 <li>l’incertezza (varianza) a posteriori <span class="math inline">\(\tau_p^2\)</span> è sempre più piccola dell’incertezza a priori <span class="math inline">\(\tau_0^2\)</span> e diminuisce al crescere di <span class="math inline">\(n\)</span>.</li>
 </ul>
 <div id="exr-mod-norm-1" class="theorem exercise">
-<p><span class="theorem-title"><strong>Esercizio 24.1 </strong></span>Per esaminare un esempio pratico, consideriamo i 30 valori BDI-II dei soggetti clinici di <span class="citation" data-cites="zetschefuture2019">Zetsche et al. (<a href="999_refs.html#ref-zetschefuture2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p><span class="theorem-title"><strong>Esercizio 25.1 </strong></span>Per esaminare un esempio pratico, consideriamo i 30 valori BDI-II dei soggetti clinici di <span class="citation" data-cites="zetschefuture2019">Zetsche et al. (<a href="999_refs.html#ref-zetschefuture2019" role="doc-biblioref">2019</a>)</span>.</p>
 <div class="cell" data-layout-align="center">
 <details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span></span>
 <span>  y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
@@ -636,11 +641,11 @@ p(\mu \mid y) = \frac{1}{{\tau_p \sqrt {2\pi}}}\exp\left\{{-\frac{(\mu - \mu_p)^
 </div>
 <p>I risultati così trovati riproducono quelli forniti da <code><a href="https://bayes-rules.github.io/bayesrules/docs/reference/summarize_normal_normal.html">bayesrules::summarize_normal_normal()</a></code>.</p>
 </div>
-</section><section id="il-modello-normale-con-stan" class="level2" data-number="24.3"><h2 data-number="24.3" class="anchored" data-anchor-id="il-modello-normale-con-stan">
-<span class="header-section-number">24.3</span> Il modello Normale con Stan</h2>
+</section><section id="il-modello-normale-con-stan" class="level2" data-number="25.3"><h2 data-number="25.3" class="anchored" data-anchor-id="il-modello-normale-con-stan">
+<span class="header-section-number">25.3</span> Il modello Normale con Stan</h2>
 <p>I priori coniugati Normali di una Normale non richiedono una approssimazione numerica ottenuta mediante metodi MCMC. Tuttavia, per fare un esercizio e per verificare che i risultati ottenuti mediante MCMC siano simili a quelli trovati per via analitica, ripetiamo l’esercizio precedente usando Stan.</p>
-<section id="versione-1-sigma-nota" class="level3" data-number="24.3.1"><h3 data-number="24.3.1" class="anchored" data-anchor-id="versione-1-sigma-nota">
-<span class="header-section-number">24.3.1</span> Versione 1 (<span class="math inline">\(\sigma\)</span> nota)</h3>
+<section id="versione-1-sigma-nota" class="level3" data-number="25.3.1"><h3 data-number="25.3.1" class="anchored" data-anchor-id="versione-1-sigma-nota">
+<span class="header-section-number">25.3.1</span> Versione 1 (<span class="math inline">\(\sigma\)</span> nota)</h3>
 <p>Come in precedenza, impongo su <span class="math inline">\(\mu\)</span> una distribuzione a priori <span class="math inline">\(\mathcal{N}(25, 2)\)</span> e considero noto il parametro <span class="math inline">\(\sigma = 6.606858\)</span>. Il modello dunque diventa il seguente.</p>
 <p><span class="math display">\[
 \begin{align}
@@ -740,8 +745,8 @@ Y_i &amp;\sim \mathcal{N}(\mu, \sigma) \notag\\
 <span><span class="co">#&gt; [1] 27.32625 31.37521</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-</section><section id="versione-2-sigma-incognita" class="level3" data-number="24.3.2"><h3 data-number="24.3.2" class="anchored" data-anchor-id="versione-2-sigma-incognita">
-<span class="header-section-number">24.3.2</span> Versione 2 (<span class="math inline">\(\sigma\)</span> incognita)</h3>
+</section><section id="versione-2-sigma-incognita" class="level3" data-number="25.3.2"><h3 data-number="25.3.2" class="anchored" data-anchor-id="versione-2-sigma-incognita">
+<span class="header-section-number">25.3.2</span> Versione 2 (<span class="math inline">\(\sigma\)</span> incognita)</h3>
 <p>È facile estendere il caso precedente alla situazione in cui il parametro <span class="math inline">\(\sigma\)</span> è incognito. Se non conosciamo <span class="math inline">\(\sigma\)</span>, è necessario imporre su tale parametro una distribuzione a priori. Supponiamo di ipotizzare per <span class="math inline">\(\sigma\)</span> una distribuzione a priori <span class="math inline">\(\mbox{Cauchy}(0, 15)\)</span>.</p>
 <p>Mediante una <span class="math inline">\(\mbox{Cauchy}(0, 15)\)</span> descrivo il grado di plausibilità soggettiva che attribuisco ai possibili valori (&gt; 0) del parametro <span class="math inline">\(\sigma\)</span>. Ai valori prossimi allo 0 attribuisco la plausibilità maggiore; la plausibilità dei possibili valori <span class="math inline">\(\sigma\)</span> diminuisce progressivamente quando ci si allontana dallo 0, come indicato dalla curva della figura seguente. Ritengo poco plausibili valori <span class="math inline">\(\sigma\)</span> maggiori di 40, anche se non escludo completamente che <span class="math inline">\(\sigma\)</span> possa assumere un valore di questo tipo.</p>
 <div class="cell" data-layout-align="center">
@@ -1075,7 +1080,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./046_bayesian_prediction.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

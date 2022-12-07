@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - 12&nbsp; Distribuzioni di v.c. discrete</title>
+<title>Data Science per psicologi - 13&nbsp; Distribuzioni di v.c. discrete</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,7 +123,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -175,7 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variabili e distribuzioni di frequenza</span></a>
+  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analisi esplorativa dei dati</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -186,6 +186,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./012_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Le relazioni tra variabili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./013_penguins.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></a>
   </div>
 </li>
       </ul>
@@ -200,32 +205,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
+  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">L’interpretazione soggettivista della probabilità</span></a>
+  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Il teorema di Bayes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./019_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
+  <a href="./019_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./020_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./020_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
   </div>
 </li>
       </ul>
@@ -240,17 +245,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
+  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
+  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
+  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
   </div>
 </li>
       </ul>
@@ -265,52 +270,52 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
+  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
+  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
+  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
+  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
+  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
+  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
+  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
+  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
+  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
+  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
   </div>
 </li>
       </ul>
@@ -325,47 +330,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
+  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
+  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
+  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
+  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
+  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
+  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
+  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
+  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
+  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
   </div>
 </li>
       </ul>
@@ -380,17 +385,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Entropia</span></a>
+  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Entropia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
+  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
+  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -446,32 +451,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sommario</h2>
    
   <ul>
-<li><a href="#una-prova-bernoulliana" id="toc-una-prova-bernoulliana" class="nav-link active" data-scroll-target="#una-prova-bernoulliana"><span class="toc-section-number">12.1</span>  Una prova Bernoulliana</a></li>
+<li><a href="#una-prova-bernoulliana" id="toc-una-prova-bernoulliana" class="nav-link active" data-scroll-target="#una-prova-bernoulliana"><span class="toc-section-number">13.1</span>  Una prova Bernoulliana</a></li>
   <li>
-<a href="#una-sequenza-di-prove-bernoulliane" id="toc-una-sequenza-di-prove-bernoulliane" class="nav-link" data-scroll-target="#una-sequenza-di-prove-bernoulliane"><span class="toc-section-number">12.2</span>  Una sequenza di prove Bernoulliane</a>
+<a href="#una-sequenza-di-prove-bernoulliane" id="toc-una-sequenza-di-prove-bernoulliane" class="nav-link" data-scroll-target="#una-sequenza-di-prove-bernoulliane"><span class="toc-section-number">13.2</span>  Una sequenza di prove Bernoulliane</a>
   <ul class="collapse">
-<li><a href="#valore-atteso-e-deviazione-standard" id="toc-valore-atteso-e-deviazione-standard" class="nav-link" data-scroll-target="#valore-atteso-e-deviazione-standard"><span class="toc-section-number">12.2.1</span>  Valore atteso e deviazione standard</a></li>
+<li><a href="#valore-atteso-e-deviazione-standard" id="toc-valore-atteso-e-deviazione-standard" class="nav-link" data-scroll-target="#valore-atteso-e-deviazione-standard"><span class="toc-section-number">13.2.1</span>  Valore atteso e deviazione standard</a></li>
   </ul>
 </li>
   <li>
-<a href="#distribuzione-di-poisson" id="toc-distribuzione-di-poisson" class="nav-link" data-scroll-target="#distribuzione-di-poisson"><span class="toc-section-number">12.3</span>  Distribuzione di Poisson</a>
+<a href="#distribuzione-di-poisson" id="toc-distribuzione-di-poisson" class="nav-link" data-scroll-target="#distribuzione-di-poisson"><span class="toc-section-number">13.3</span>  Distribuzione di Poisson</a>
   <ul class="collapse">
-<li><a href="#alcune-propriet%C3%A0-della-variabile-di-poisson" id="toc-alcune-proprietà-della-variabile-di-poisson" class="nav-link" data-scroll-target="#alcune-propriet%C3%A0-della-variabile-di-poisson"><span class="toc-section-number">12.3.1</span>  Alcune proprietà della variabile di Poisson</a></li>
+<li><a href="#alcune-propriet%C3%A0-della-variabile-di-poisson" id="toc-alcune-proprietà-della-variabile-di-poisson" class="nav-link" data-scroll-target="#alcune-propriet%C3%A0-della-variabile-di-poisson"><span class="toc-section-number">13.3.1</span>  Alcune proprietà della variabile di Poisson</a></li>
   </ul>
 </li>
   <li>
-<a href="#distribuzione-discreta-uniforme" id="toc-distribuzione-discreta-uniforme" class="nav-link" data-scroll-target="#distribuzione-discreta-uniforme"><span class="toc-section-number">12.4</span>  Distribuzione discreta uniforme</a>
+<a href="#distribuzione-discreta-uniforme" id="toc-distribuzione-discreta-uniforme" class="nav-link" data-scroll-target="#distribuzione-discreta-uniforme"><span class="toc-section-number">13.4</span>  Distribuzione discreta uniforme</a>
   <ul class="collapse">
-<li><a href="#distribuzione-discreta-uniforme-con-textsfr" id="toc-distribuzione-discreta-uniforme-con-textsfr" class="nav-link" data-scroll-target="#distribuzione-discreta-uniforme-con-textsfr"><span class="toc-section-number">12.4.1</span>  Distribuzione discreta uniforme con <span class="math inline">\(\textsf{R}\)</span></a></li>
+<li><a href="#distribuzione-discreta-uniforme-con-textsfr" id="toc-distribuzione-discreta-uniforme-con-textsfr" class="nav-link" data-scroll-target="#distribuzione-discreta-uniforme-con-textsfr"><span class="toc-section-number">13.4.1</span>  Distribuzione discreta uniforme con <span class="math inline">\(\textsf{R}\)</span></a></li>
   </ul>
 </li>
-  <li><a href="#distribuzione-beta-binomiale" id="toc-distribuzione-beta-binomiale" class="nav-link" data-scroll-target="#distribuzione-beta-binomiale"><span class="toc-section-number">12.5</span>  Distribuzione beta-binomiale</a></li>
+  <li><a href="#distribuzione-beta-binomiale" id="toc-distribuzione-beta-binomiale" class="nav-link" data-scroll-target="#distribuzione-beta-binomiale"><span class="toc-section-number">13.5</span>  Distribuzione beta-binomiale</a></li>
   <li><a href="#commenti-e-considerazioni-finali" id="toc-commenti-e-considerazioni-finali" class="nav-link" data-scroll-target="#commenti-e-considerazioni-finali">Commenti e considerazioni finali</a></li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="ch-distr-rv-discr" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="ch-distr-rv-discr" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -485,11 +490,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
 
 </header><p>In questo Capitolo verranno esaminate le principali distribuzioni di probabilità delle variabili casuali discrete. Un esperimento casuale che può dare luogo a solo due possibili esiti (successo, insuccesso) è modellabile con una variabile casuale di Bernoulli. Una sequenza di prove di Bernoulli costituisce un processo Bernoulliano. Il numero di successi dopo <span class="math inline">\(n\)</span> prove di Bernoulli corrisponde ad una variabile casuale che segue la legge binomiale. La distribuzione binomiale risulta da un insieme di prove di Bernoulli solo se il numero totale <span class="math inline">\(n\)</span> è fisso per disegno. Se il numero di prove è esso stesso una variabile casuale, allora il numero di successi nella corrispondente sequenza di prove bernoulliane segue al distribuzione di Poisson. Concluderemo con la distribuzione discreta uniforme.</p>
-<section id="una-prova-bernoulliana" class="level2" data-number="12.1"><h2 data-number="12.1" class="anchored" data-anchor-id="una-prova-bernoulliana">
-<span class="header-section-number">12.1</span> Una prova Bernoulliana</h2>
+<section id="una-prova-bernoulliana" class="level2" data-number="13.1"><h2 data-number="13.1" class="anchored" data-anchor-id="una-prova-bernoulliana">
+<span class="header-section-number">13.1</span> Una prova Bernoulliana</h2>
 <p>Se un esperimento casuale ha solo due esiti possibili, allora le repliche indipendenti di questo esperimento sono chiamate “prove Bernoulliane” (il lancio di una moneta è il tipico esempio).</p>
 <div id="def-bernoulli-var" class="theorem definition">
-<p><span class="theorem-title"><strong>Definizione 12.1 </strong></span>Viene detta variabile di Bernoulli una variabile casuale discreta <span class="math inline">\(Y = \{0, 1\}\)</span> con la seguente distribuzione di probabilità:</p>
+<p><span class="theorem-title"><strong>Definizione 13.1 </strong></span>Viene detta variabile di Bernoulli una variabile casuale discreta <span class="math inline">\(Y = \{0, 1\}\)</span> con la seguente distribuzione di probabilità:</p>
 <p><span class="math display">\[
 P(Y \mid \theta) =
   \begin{cases}
@@ -505,26 +510,26 @@ P(Y \mid \theta) =
 \mathbb{E}(Y) &amp;= 0 \cdot P(Y=0) + 1 \cdot P(Y=1) = \theta, \\
 \mathbb{V}(Y) &amp;= (0 - \theta)^2 \cdot P(Y=0) + (1 - \theta)^2 \cdot P(Y=1) = \theta(1-\theta).
 \end{align}
-\tag{12.1}\]</span></span></p>
+\tag{13.1}\]</span></span></p>
 <p>Scriviamo <span class="math inline">\(Y \sim \mbox{Bernoulli}(\theta)\)</span> per indicare che la variabile casuale <span class="math inline">\(Y\)</span> ha una distribuzione Bernoulliana di parametro <span class="math inline">\(\theta\)</span>.</p>
 <div id="exr-bernoulli-var-1" class="theorem exercise">
-<p><span class="theorem-title"><strong>Esercizio 12.1 </strong></span>Nel caso del lancio di una moneta equilibrata la variabile casuale di Bernoulli assume i valori <span class="math inline">\(0\)</span> e <span class="math inline">\(1\)</span>. La distribuzione di massa di probabilità è pari a <span class="math inline">\(\frac{1}{2}\)</span> in corrispondenza di entrambi i valori. La funzione di distribuzione vale <span class="math inline">\(\frac{1}{2}\)</span> per <span class="math inline">\(Y = 0\)</span> e <span class="math inline">\(1\)</span> per <span class="math inline">\(Y = 1\)</span>.</p>
+<p><span class="theorem-title"><strong>Esercizio 13.1 </strong></span>Nel caso del lancio di una moneta equilibrata la variabile casuale di Bernoulli assume i valori <span class="math inline">\(0\)</span> e <span class="math inline">\(1\)</span>. La distribuzione di massa di probabilità è pari a <span class="math inline">\(\frac{1}{2}\)</span> in corrispondenza di entrambi i valori. La funzione di distribuzione vale <span class="math inline">\(\frac{1}{2}\)</span> per <span class="math inline">\(Y = 0\)</span> e <span class="math inline">\(1\)</span> per <span class="math inline">\(Y = 1\)</span>.</p>
 </div>
-</section><section id="una-sequenza-di-prove-bernoulliane" class="level2" data-number="12.2"><h2 data-number="12.2" class="anchored" data-anchor-id="una-sequenza-di-prove-bernoulliane">
-<span class="header-section-number">12.2</span> Una sequenza di prove Bernoulliane</h2>
+</section><section id="una-sequenza-di-prove-bernoulliane" class="level2" data-number="13.2"><h2 data-number="13.2" class="anchored" data-anchor-id="una-sequenza-di-prove-bernoulliane">
+<span class="header-section-number">13.2</span> Una sequenza di prove Bernoulliane</h2>
 <p>La distribuzione binomiale è rappresentata dall’elenco di tutti i possibili numeri di successi <span class="math inline">\(Y = \{0, 1, 2, \dots n\}\)</span> che possono essere osservati in <span class="math inline">\(n\)</span> prove Bernoulliane indipendenti di probabilità <span class="math inline">\(\theta\)</span>, a ciascuno dei quali è associata la relativa probabilità. Esempi di una distribuzione binomiale sono i risultati di una serie di lanci di una stessa moneta o di una serie di estrazioni da un’urna (con reintroduzione). La distribuzione binomiale di parametri <span class="math inline">\(n\)</span> e <span class="math inline">\(\theta\)</span> è in realtà una famiglia di distribuzioni: al variare dei parametri <span class="math inline">\(\theta\)</span> e <span class="math inline">\(n\)</span> variano le probabilità.</p>
 <div id="def-binomial-distrib" class="theorem definition">
-<p><span class="theorem-title"><strong>Definizione 12.2 </strong></span>La probabilità di ottenere <span class="math inline">\(y\)</span> successi e <span class="math inline">\(n-y\)</span> insuccessi in <span class="math inline">\(n\)</span> prove Bernoulliane è data dalla distribuzione binomiale:</p>
+<p><span class="theorem-title"><strong>Definizione 13.2 </strong></span>La probabilità di ottenere <span class="math inline">\(y\)</span> successi e <span class="math inline">\(n-y\)</span> insuccessi in <span class="math inline">\(n\)</span> prove Bernoulliane è data dalla distribuzione binomiale:</p>
 <p><span id="eq-binomialdistribution"><span class="math display">\[
 \begin{align}
 P(Y=y) &amp;= \binom{n}{y} \theta^{y} (1-\theta)^{n-y} \notag \\
 &amp;= \frac{n!}{y!(n-y)!} \theta^{y} (1-\theta)^{n-y},
 \end{align}
-\tag{12.2}\]</span></span></p>
+\tag{13.2}\]</span></span></p>
 <p>dove <span class="math inline">\(n\)</span> = numero di prove Bernoulliane, <span class="math inline">\(\theta\)</span> = probabilità di successo in ciascuna prova e <span class="math inline">\(y\)</span> = numero di successi.</p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Dimostrazione</em>. </span>L’<a href="#eq-binomialdistribution">Equazione&nbsp;<span>12.2</span></a> può essere derivata nel modo seguente. Indichiamo con <span class="math inline">\(S\)</span> il successo e con <span class="math inline">\(I\)</span> l’insuccesso di ciascuna prova. Una sequenza di <span class="math inline">\(n\)</span> prove Bernoulliane darà come esito una sequenza di <span class="math inline">\(n\)</span> elementi <span class="math inline">\(S\)</span> e <span class="math inline">\(I\)</span>. Ad esempio, una sequenza che contiene <span class="math inline">\(y\)</span> successi è la seguente:</p>
+<p><span class="proof-title"><em>Dimostrazione</em>. </span>L’<a href="#eq-binomialdistribution">Equazione&nbsp;<span>13.2</span></a> può essere derivata nel modo seguente. Indichiamo con <span class="math inline">\(S\)</span> il successo e con <span class="math inline">\(I\)</span> l’insuccesso di ciascuna prova. Una sequenza di <span class="math inline">\(n\)</span> prove Bernoulliane darà come esito una sequenza di <span class="math inline">\(n\)</span> elementi <span class="math inline">\(S\)</span> e <span class="math inline">\(I\)</span>. Ad esempio, una sequenza che contiene <span class="math inline">\(y\)</span> successi è la seguente:</p>
 <p><span class="math display">\[
 \overbrace{SS\dots S}^\text{$y$ volte} \overbrace{II\dots I}^\text{$n-y$ volte}
 \]</span></p>
@@ -533,30 +538,30 @@ P(Y=y) &amp;= \binom{n}{y} \theta^{y} (1-\theta)^{n-y} \notag \\
 \begin{equation}
 \overbrace{\theta \theta\dots \theta}^\text{$y$ volte} \overbrace{(1-\theta)(1-\theta)\dots (1-\theta)}^\text{$n-y$ volte} = \theta^y \cdot (1-\theta)^{n-y}.
 \end{equation}
-\tag{12.3}\]</span></span></p>
+\tag{13.3}\]</span></span></p>
 <p>Non siamo però interessati alla probabilità di una <em>specifica</em> sequenza di <span class="math inline">\(S\)</span> e <span class="math inline">\(I\)</span> ma, bensì, alla probabilità di osservare una <em>qualsiasi</em> sequenza di <span class="math inline">\(y\)</span> successi in <span class="math inline">\(n\)</span> prove. In altre parole, vogliamo la probabilità dell’unione di tutti gli eventi corrispondenti a <span class="math inline">\(y\)</span> successi in <span class="math inline">\(n\)</span> prove.</p>
-<p>È immediato notare che una qualsiasi altra sequenza contenente esattamente <span class="math inline">\(y\)</span> successi avrà sempre come probabilità <span class="math inline">\(\theta^y \cdot (1-\theta)^{n-y}\)</span>: il prodotto infatti resta costante anche se cambia l’ordine dei fattori.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Per trovare il risultato cercato dobbiamo moltiplicare l’<a href="#eq-demo-bino-kernel">Equazione&nbsp;<span>12.3</span></a> per il numero di sequenze possibili di <span class="math inline">\(y\)</span> successi in <span class="math inline">\(n\)</span> prove.</p>
+<p>È immediato notare che una qualsiasi altra sequenza contenente esattamente <span class="math inline">\(y\)</span> successi avrà sempre come probabilità <span class="math inline">\(\theta^y \cdot (1-\theta)^{n-y}\)</span>: il prodotto infatti resta costante anche se cambia l’ordine dei fattori.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Per trovare il risultato cercato dobbiamo moltiplicare l’<a href="#eq-demo-bino-kernel">Equazione&nbsp;<span>13.3</span></a> per il numero di sequenze possibili di <span class="math inline">\(y\)</span> successi in <span class="math inline">\(n\)</span> prove.</p>
 <p>Il numero di sequenze che contengono esattamente <span class="math inline">\(y\)</span> successi in <span class="math inline">\(n\)</span> prove. La risposta è fornita dal coefficiente binomiale:</p>
 <p><span id="eq-binomial-coefficient"><span class="math display">\[
 \begin{equation}
 \binom{n}{y} = \frac{n!}{y!(n-y)!},
 \end{equation}
-\tag{12.4}\]</span></span></p>
+\tag{13.4}\]</span></span></p>
 <p>dove il simbolo <span class="math inline">\(n!\)</span> si legge <span class="math inline">\(n\)</span> fattoriale ed è uguale al prodotto di <span class="math inline">\(n\)</span> numeri interi decrescenti a partire da <span class="math inline">\(n\)</span>. Per definizione <span class="math inline">\(0! = 1\)</span>.</p>
-<p>Essendo la probabilità dell’unione di <span class="math inline">\(K\)</span> elementi incompatibili uguale alla somma delle loro rispettive probabilità, e dato che le sequenze di <span class="math inline">\(y\)</span> successi in <span class="math inline">\(n\)</span> prove hanno tutte la stessa probabilità, per trovare la formula della distributione binomiale <a href="#eq-binomialdistribution">Equazione&nbsp;<span>12.2</span></a> è sufficiente moltiplicare l’<a href="#eq-demo-bino-kernel">Equazione&nbsp;<span>12.3</span></a> per l’<a href="#eq-binomial-coefficient">Equazione&nbsp;<span>12.4</span></a>.</p>
+<p>Essendo la probabilità dell’unione di <span class="math inline">\(K\)</span> elementi incompatibili uguale alla somma delle loro rispettive probabilità, e dato che le sequenze di <span class="math inline">\(y\)</span> successi in <span class="math inline">\(n\)</span> prove hanno tutte la stessa probabilità, per trovare la formula della distributione binomiale <a href="#eq-binomialdistribution">Equazione&nbsp;<span>13.2</span></a> è sufficiente moltiplicare l’<a href="#eq-demo-bino-kernel">Equazione&nbsp;<span>13.3</span></a> per l’<a href="#eq-binomial-coefficient">Equazione&nbsp;<span>13.4</span></a>.</p>
 </div>
-<p>La distribuzione di probabilità di alcune distribuzioni binomiali, per due valori di <span class="math inline">\(n\)</span> e <span class="math inline">\(\theta\)</span>, è fornita nella <a href="#fig-example-binomial-distr">Figura&nbsp;<span>12.1</span></a>.</p>
+<p>La distribuzione di probabilità di alcune distribuzioni binomiali, per due valori di <span class="math inline">\(n\)</span> e <span class="math inline">\(\theta\)</span>, è fornita nella <a href="#fig-example-binomial-distr">Figura&nbsp;<span>13.1</span></a>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-example-binomial-distr" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="022_discr_rv_distr_files/figure-html/fig-example-binomial-distr-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;12.1: Alcune distribuzioni binomiali. Nella figura, il parametro <span class="math inline">\(\theta\)</span> è indicato con <span class="math inline">\(p\)</span>.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;13.1: Alcune distribuzioni binomiali. Nella figura, il parametro <span class="math inline">\(\theta\)</span> è indicato con <span class="math inline">\(p\)</span>.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 <div id="exr-binomial-distr-1" class="theorem exercise">
-<p><span class="theorem-title"><strong>Esercizio 12.2 </strong></span>Usando l’<a href="#eq-binomialdistribution">Equazione&nbsp;<span>12.2</span></a>, si trovi la probabilità di <span class="math inline">\(y = 2\)</span> successi in <span class="math inline">\(n = 4\)</span> prove Bernoulliane indipendenti con <span class="math inline">\(\theta = 0.2\)</span></p>
+<p><span class="theorem-title"><strong>Esercizio 13.2 </strong></span>Usando l’<a href="#eq-binomialdistribution">Equazione&nbsp;<span>13.2</span></a>, si trovi la probabilità di <span class="math inline">\(y = 2\)</span> successi in <span class="math inline">\(n = 4\)</span> prove Bernoulliane indipendenti con <span class="math inline">\(\theta = 0.2\)</span></p>
 </div>
 <div class="solution proof">
 <p><span class="proof-title"><em>Soluzione</em>. </span>Abbiamo</p>
@@ -608,7 +613,7 @@ P(Y=2) &amp;= \frac{4!}{2!(4-2)!} 0.2^{2} (1-0.2)^{4-2} \notag  \\
 </div>
 </div>
 <div id="exr-binomial-distr-2" class="theorem exercise">
-<p><span class="theorem-title"><strong>Esercizio 12.3 </strong></span>Lanciando <span class="math inline">\(5\)</span> volte una moneta onesta, qual è la probabilità che esca testa almeno tre volte?</p>
+<p><span class="theorem-title"><strong>Esercizio 13.3 </strong></span>Lanciando <span class="math inline">\(5\)</span> volte una moneta onesta, qual è la probabilità che esca testa almeno tre volte?</p>
 </div>
 <div class="solution proof">
 <p><span class="proof-title"><em>Soluzione</em>. </span>In R, la soluzione si trova con</p>
@@ -624,15 +629,15 @@ P(Y=2) &amp;= \frac{4!}{2!(4-2)!} 0.2^{2} (1-0.2)^{4-2} \notag  \\
 </details>
 </div>
 </div>
-<section id="valore-atteso-e-deviazione-standard" class="level3" data-number="12.2.1"><h3 data-number="12.2.1" class="anchored" data-anchor-id="valore-atteso-e-deviazione-standard">
-<span class="header-section-number">12.2.1</span> Valore atteso e deviazione standard</h3>
+<section id="valore-atteso-e-deviazione-standard" class="level3" data-number="13.2.1"><h3 data-number="13.2.1" class="anchored" data-anchor-id="valore-atteso-e-deviazione-standard">
+<span class="header-section-number">13.2.1</span> Valore atteso e deviazione standard</h3>
 <p>La media (numero atteso di successi in <span class="math inline">\(n\)</span> prove) e la deviazione standard di una distribuzione binomiale si trovano nel modo seguente:</p>
 <p><span id="eq-mean-var-binomial"><span class="math display">\[
 \begin{align}
 \mu    &amp;= n\theta,  \notag \\
 \sigma &amp;= \sqrt{n\theta(1-\theta)}.
 \end{align}
-\tag{12.5}\]</span></span></p>
+\tag{13.5}\]</span></span></p>
 <div class="proof">
 <p><span class="proof-title"><em>Dimostrazione</em>. </span>Essendo <span class="math inline">\(Y\)</span> la somma di <span class="math inline">\(n\)</span> prove Bernoulliane indipendenti <span class="math inline">\(Y_i\)</span>, è facile vedere che</p>
 <span class="math display">\[\begin{align}
@@ -641,13 +646,13 @@ P(Y=2) &amp;= \frac{4!}{2!(4-2)!} 0.2^{2} (1-0.2)^{4-2} \notag  \\
 \end{align}\]</span>
 </div>
 <div id="exr-mean-var-binomial-1" class="theorem exercise">
-<p><span class="theorem-title"><strong>Esercizio 12.4 </strong></span>Si trovino il valore atteso e la varianza del lancio di quattro monete con probabilità di successo pari a <span class="math inline">\(\theta = 0.2\)</span>.</p>
+<p><span class="theorem-title"><strong>Esercizio 13.4 </strong></span>Si trovino il valore atteso e la varianza del lancio di quattro monete con probabilità di successo pari a <span class="math inline">\(\theta = 0.2\)</span>.</p>
 </div>
 <div class="solution proof">
 <p><span class="proof-title"><em>Soluzione</em>. </span>Il valore atteso è <span class="math inline">\(\mu = n \theta = 4 \cdot 0.2 = 0.8.\)</span> Ciò significa che, se l’esperimento casuale venisse ripetuto infinite volte, l’esito testa verrebbe osservato un numero medio di volte pari a 0.8. La varianza è <span class="math inline">\(n \theta (1-\theta) = 4 \cdot 0.2 \cdot (1 - 0.2) = 0.64\)</span>.</p>
 </div>
-</section></section><section id="distribuzione-di-poisson" class="level2" data-number="12.3"><h2 data-number="12.3" class="anchored" data-anchor-id="distribuzione-di-poisson">
-<span class="header-section-number">12.3</span> Distribuzione di Poisson</h2>
+</section></section><section id="distribuzione-di-poisson" class="level2" data-number="13.3"><h2 data-number="13.3" class="anchored" data-anchor-id="distribuzione-di-poisson">
+<span class="header-section-number">13.3</span> Distribuzione di Poisson</h2>
 <p>La distribuzione di Poisson è una distribuzione di probabilità discreta che esprime le probabilità per il numero di eventi che si verificano successivamente ed indipendentemente in un dato intervallo di tempo, sapendo che mediamente se ne verifica un numero <span class="math inline">\(\lambda\)</span>. La distribuzione di Poisson serve dunque per contare il numero di volte in cui un evento ha luogo in un determinato intervallo di tempo. La stessa distribuzione può essere estesa anche per contare gli eventi che hanno luogo in una determinata porzione di spazio.</p>
 <div class="definition">
 <p>La distribuzione di Poisson può essere intesa come limite della distribuzione binomiale, dove la probabilità di successo <span class="math inline">\(\theta\)</span> è pari a <span class="math inline">\(\frac{\lambda}{n}\)</span> con <span class="math inline">\(n\)</span> che tende a <span class="math inline">\(\infty\)</span>:</p>
@@ -655,18 +660,18 @@ P(Y=2) &amp;= \frac{4!}{2!(4-2)!} 0.2^{2} (1-0.2)^{4-2} \notag  \\
 \lim_{y \rightarrow \infty} \binom{n}{y} \theta^y (1-\theta)^{n-y} = \frac{\lambda^y}{y!}e^{-\lambda}.
 \end{equation}\]</span>
 </div>
-<p>Alcune distribuzioni di Poisson sono riportate nella figura <a href="#fig-examples-poisson-distrib">Figura&nbsp;<span>12.2</span></a>.</p>
+<p>Alcune distribuzioni di Poisson sono riportate nella figura <a href="#fig-examples-poisson-distrib">Figura&nbsp;<span>13.2</span></a>.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-examples-poisson-distrib" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="022_discr_rv_distr_files/figure-html/fig-examples-poisson-distrib-1.png" class="img-fluid figure-img" width="576"></p>
-<p></p><figcaption class="figure-caption">Figura&nbsp;12.2: Alcune distribuzioni di Poisson.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;13.2: Alcune distribuzioni di Poisson.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 <div id="exr-poisson-1" class="theorem exercise">
-<p><span class="theorem-title"><strong>Esercizio 12.5 </strong></span>Supponiamo che un evento accada 300 volte all’ora. Si vuole determinare la probabilità che in un minuto accadano esattamente 3 eventi.</p>
+<p><span class="theorem-title"><strong>Esercizio 13.5 </strong></span>Supponiamo che un evento accada 300 volte all’ora. Si vuole determinare la probabilità che in un minuto accadano esattamente 3 eventi.</p>
 </div>
 <div class="solution proof">
 <p><span class="proof-title"><em>Soluzione</em>. </span>Il numero medio di eventi in un minuto è pari a</p>
@@ -685,7 +690,7 @@ P(Y=2) &amp;= \frac{4!}{2!(4-2)!} 0.2^{2} (1-0.2)^{4-2} \notag  \\
 </div>
 </div>
 <div id="exr-poisson-2" class="theorem exercise">
-<p><span class="theorem-title"><strong>Esercizio 12.6 </strong></span>Per i dati dell’<a href="#exr-poisson-1">Esercizio&nbsp;<span>12.5</span></a>, si trovi la probabilità che un evento accada almeno 8 volte in un minuto.</p>
+<p><span class="theorem-title"><strong>Esercizio 13.6 </strong></span>Per i dati dell’<a href="#exr-poisson-1">Esercizio&nbsp;<span>13.5</span></a>, si trovi la probabilità che un evento accada almeno 8 volte in un minuto.</p>
 </div>
 <div class="solution proof">
 <p><span class="proof-title"><em>Soluzione</em>. </span>La probabilità cercata è</p>
@@ -703,7 +708,7 @@ p(y \geq 8) = 1 - p (y \leq 7) = 1- \sum_{i = 0}^7 \frac{\lambda^7}{7!}e^{-\lamb
 </div>
 </div>
 <div id="exr-poisson-3" class="theorem exercise">
-<p><span class="theorem-title"><strong>Esercizio 12.7 </strong></span>Sapendo che un evento avviene in media 6 volte al minuto, si calcoli (a) la probabilità di osservare un numero di eventi uguale o inferiore a 3 in un minuto, e (b) la probabilità di osservare esattamente 2 eventi in 30 secondi.</p>
+<p><span class="theorem-title"><strong>Esercizio 13.7 </strong></span>Sapendo che un evento avviene in media 6 volte al minuto, si calcoli (a) la probabilità di osservare un numero di eventi uguale o inferiore a 3 in un minuto, e (b) la probabilità di osservare esattamente 2 eventi in 30 secondi.</p>
 </div>
 <div class="solution proof">
 <p><span class="proof-title"><em>Soluzione</em>. </span>Per la domanda (a), <span class="math inline">\(\lambda = 6\)</span> e la probabilità richiesta è</p>
@@ -719,14 +724,14 @@ p(y \geq 8) = 1 - p (y \leq 7) = 1- \sum_{i = 0}^7 \frac{\lambda^7}{7!}e^{-\lamb
 </details>
 </div>
 </div>
-<section id="alcune-proprietà-della-variabile-di-poisson" class="level3" data-number="12.3.1"><h3 data-number="12.3.1" class="anchored" data-anchor-id="alcune-proprietà-della-variabile-di-poisson">
-<span class="header-section-number">12.3.1</span> Alcune proprietà della variabile di Poisson</h3>
+<section id="alcune-proprietà-della-variabile-di-poisson" class="level3" data-number="13.3.1"><h3 data-number="13.3.1" class="anchored" data-anchor-id="alcune-proprietà-della-variabile-di-poisson">
+<span class="header-section-number">13.3.1</span> Alcune proprietà della variabile di Poisson</h3>
 <ul>
 <li>Il valore atteso, la moda e la varianza della variabile di Poisson sono uguali a <span class="math inline">\(\lambda\)</span>.</li>
 <li>La somma <span class="math inline">\(Y_1 + \dots + Y_n\)</span> di <span class="math inline">\(n\)</span> variabili casuali indipendenti con distribuzioni di Poisson di parametri <span class="math inline">\(\lambda_{1},\dots,\lambda_{n}\)</span> segue una distribuzione di Poisson di parametro <span class="math inline">\(\lambda = \lambda_{1}+\dots+\lambda_{n}\)</span>.</li>
 <li>La differenze di due variabili di Poisson non è una variabile di Poisson. Basti infatti pensare che può assumere valori negativi.</li>
-</ul></section></section><section id="distribuzione-discreta-uniforme" class="level2" data-number="12.4"><h2 data-number="12.4" class="anchored" data-anchor-id="distribuzione-discreta-uniforme">
-<span class="header-section-number">12.4</span> Distribuzione discreta uniforme</h2>
+</ul></section></section><section id="distribuzione-discreta-uniforme" class="level2" data-number="13.4"><h2 data-number="13.4" class="anchored" data-anchor-id="distribuzione-discreta-uniforme">
+<span class="header-section-number">13.4</span> Distribuzione discreta uniforme</h2>
 <p>Una distribuzione discreta uniforme è una distribuzione di probabilità discreta che è uniforme su un insieme, ovvero che attribuisce ad ogni elemento dell’insieme discreto e finito <span class="math inline">\(S\)</span> su cui è definita la stessa probabilità <span class="math inline">\(p\)</span> di verificarsi.</p>
 <p>Si consideri una variabile casuale <span class="math inline">\(X\)</span> con supporto <span class="math inline">\(1, 2, \dots, m\)</span>. Un esperimento casuale in cui si verifica questa distribuzione è la scelta casuale di un intero compreso tra 1 e <span class="math inline">\(m\)</span> inclusi. Sia <span class="math inline">\(X\)</span> il numero scelto. Allora</p>
 <p><span class="math display">\[
@@ -744,20 +749,20 @@ P(X = x) = \frac{1}{m}, \quad x = 1, \dots, m.
 <p><span class="math display">\[
 \mathbb{V}(X) = \mathbb{E}(X^2) - \left[\mathbb{E}(X)\right]^2.
 \]</span></p>
-<section id="distribuzione-discreta-uniforme-con-textsfr" class="level3" data-number="12.4.1"><h3 data-number="12.4.1" class="anchored" data-anchor-id="distribuzione-discreta-uniforme-con-textsfr">
-<span class="header-section-number">12.4.1</span> Distribuzione discreta uniforme con <span class="math inline">\(\textsf{R}\)</span>
+<section id="distribuzione-discreta-uniforme-con-textsfr" class="level3" data-number="13.4.1"><h3 data-number="13.4.1" class="anchored" data-anchor-id="distribuzione-discreta-uniforme-con-textsfr">
+<span class="header-section-number">13.4.1</span> Distribuzione discreta uniforme con <span class="math inline">\(\textsf{R}\)</span>
 </h3>
 <p>La sintassi per simulare una variabile casuale uniforme discreta è <code>sample(x, size, replace = TRUE)</code>. L’argomento <code>x</code> identifica i numeri da cui campionare casualmente. Se <code>x</code> è un numero, il campionamento viene eseguito da 1 a <code>x</code>. L’argomento <code>size</code> indica quanto dovrebbe essere grande la dimensione del campione e <code>replace</code> indica se i numeri devono essere reintrodotti o meno nell’urna dopo essere stati estratti. L’opzione di default è <code>replace = FALSE</code> ma per le uniformi discrete i valori estratti devono essere sostituiti. Seguono alcuni esempi.</p>
 <ul>
 <li>Per lanciare un dado equilibrato 3000 volte: <code>sample(6, size = 3000, replace = TRUE)</code>;</li>
 <li>per scegliere 27 numeri casuali da 30 a 70: <code>sample(30:70, size = 27, replace = TRUE)</code>;</li>
 <li>per lanciare una moneta equa 1000 volte: <code>sample(c("H","T"), size = 1000, replace = TRUE)</code>.</li>
-</ul></section></section><section id="distribuzione-beta-binomiale" class="level2" data-number="12.5"><h2 data-number="12.5" class="anchored" data-anchor-id="distribuzione-beta-binomiale">
-<span class="header-section-number">12.5</span> Distribuzione beta-binomiale</h2>
+</ul></section></section><section id="distribuzione-beta-binomiale" class="level2" data-number="13.5"><h2 data-number="13.5" class="anchored" data-anchor-id="distribuzione-beta-binomiale">
+<span class="header-section-number">13.5</span> Distribuzione beta-binomiale</h2>
 <p>La distribuzione beta-binomiale di parametri <span class="math inline">\(N\)</span>, <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span> è una distribuzione discreta con una funzione di massa di probabilità uguale a</p>
 <p><span id="eq-beta-binom-formula"><span class="math display">\[
 \mbox{BetaBinomial}(y \mid N, \alpha, \beta) = \binom{N}{y} \frac{B(y + \alpha, N-y+\beta)}{B(\alpha, \beta)},
-\tag{12.6}\]</span></span></p>
+\tag{13.6}\]</span></span></p>
 <p>dove la funzione beta è <span class="math inline">\(B(u, v) = \frac{\Gamma(u)\Gamma(v)}{\Gamma(u+v)}\)</span>.</p>
 <p>Senza entrare nei dettagli, ci accontentiamo di sapere che tale distribuzione è implementata nella funzione <code>dbbinom()</code> del pacchetto <code>extraDistr</code>.</p>
 </section><section id="commenti-e-considerazioni-finali" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="commenti-e-considerazioni-finali">Commenti e considerazioni finali</h2>
@@ -960,7 +965,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./023_cont_rv_distr.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

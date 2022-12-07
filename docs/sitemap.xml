@@ -2,210 +2,210 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ccaudek.github.io/data_science/index.html</loc>
-    <lastmod>2022-12-06T07:25:29.774Z</lastmod>
+    <lastmod>2022-12-07T07:20:08.355Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/preface.html</loc>
-    <lastmod>2022-12-04T06:19:20.882Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.925Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/basics.html</loc>
-    <lastmod>2022-11-21T08:11:46.934Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.926Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/001_key_notions.html</loc>
-    <lastmod>2022-12-05T07:56:21.517Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.928Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/005_measurement.html</loc>
-    <lastmod>2022-12-04T07:25:45.175Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.930Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/007_freq_distr.html</loc>
-    <lastmod>2022-12-05T11:18:08.554Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.935Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/011_loc_scale.html</loc>
-    <lastmod>2022-12-06T06:39:08.165Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.941Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/012_correlation.html</loc>
-    <lastmod>2022-12-05T12:23:23.222Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.944Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ccaudek.github.io/data_science/013_penguins.html</loc>
+    <lastmod>2022-12-07T07:17:17.952Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/prob.html</loc>
-    <lastmod>2022-11-21T08:11:46.953Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.953Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/015_prob_intro.html</loc>
-    <lastmod>2022-11-21T08:11:46.959Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.960Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/016_conditional_prob.html</loc>
-    <lastmod>2022-11-21T08:11:46.962Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.966Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/017_bayes_theorem.html</loc>
-    <lastmod>2022-11-21T08:11:46.964Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.968Z</lastmod>
   </url>
   <url>
-    <loc>https://ccaudek.github.io/data_science/018_joint_prob.html</loc>
-    <lastmod>2022-11-21T08:11:46.967Z</lastmod>
+    <loc>https://ccaudek.github.io/data_science/018_expval_var.html</loc>
+    <lastmod>2022-12-07T07:17:17.972Z</lastmod>
   </url>
   <url>
-    <loc>https://ccaudek.github.io/data_science/019_density_func.html</loc>
-    <lastmod>2022-11-21T08:11:46.972Z</lastmod>
+    <loc>https://ccaudek.github.io/data_science/019_joint_prob.html</loc>
+    <lastmod>2022-12-07T07:17:17.976Z</lastmod>
   </url>
   <url>
-    <loc>https://ccaudek.github.io/data_science/020_expval_var.html</loc>
-    <lastmod>2022-11-21T08:11:46.978Z</lastmod>
+    <loc>https://ccaudek.github.io/data_science/020_density_func.html</loc>
+    <lastmod>2022-12-07T07:17:17.982Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/distr.html</loc>
-    <lastmod>2022-11-21T08:11:46.978Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.983Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/022_discr_rv_distr.html</loc>
-    <lastmod>2022-11-21T08:11:46.983Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.988Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/023_cont_rv_distr.html</loc>
-    <lastmod>2022-11-21T08:11:46.994Z</lastmod>
+    <lastmod>2022-12-07T07:17:17.997Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/024_likelihood.html</loc>
-    <lastmod>2022-11-21T08:11:46.999Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.005Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/bayes_inference.html</loc>
-    <lastmod>2022-11-21T08:11:46.999Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.006Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/025_intro_bayes.html</loc>
-    <lastmod>2022-11-21T08:11:47.004Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.011Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/026_subj_prop.html</loc>
-    <lastmod>2022-11-21T08:11:47.009Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.014Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/029_conjugate_families.html</loc>
-    <lastmod>2022-11-21T08:11:47.014Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.019Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/030_balance_prior_post.html</loc>
-    <lastmod>2022-11-21T08:11:47.018Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.023Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/036_posterior_sim.html</loc>
-    <lastmod>2022-11-21T08:11:47.027Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.033Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/040_beta_binomial_mod.html</loc>
-    <lastmod>2022-11-21T08:11:47.032Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.040Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/041_mcmc_diagnostics.html</loc>
-    <lastmod>2022-11-21T08:11:47.036Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.046Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/045_summarize_posterior.html</loc>
-    <lastmod>2022-11-21T08:11:47.041Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.054Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/046_bayesian_prediction.html</loc>
-    <lastmod>2022-11-21T08:11:47.050Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.062Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/050_normal_normal_mod.html</loc>
-    <lastmod>2022-11-21T08:11:47.056Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.067Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/regression.html</loc>
-    <lastmod>2022-11-21T08:11:47.057Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.068Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/051_reglin1.html</loc>
-    <lastmod>2022-11-21T08:11:47.060Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.073Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/052_reglin2.html</loc>
-    <lastmod>2022-11-21T08:11:47.065Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.079Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/053_reglin3.html</loc>
-    <lastmod>2022-11-21T08:11:47.070Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.085Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/054_reglin4.html</loc>
-    <lastmod>2022-11-21T08:11:47.074Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.089Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/055_reglin5.html</loc>
-    <lastmod>2022-11-21T08:11:47.077Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.094Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/056_pred_check.html</loc>
-    <lastmod>2022-11-21T08:11:47.081Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.099Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/060_anova.html</loc>
-    <lastmod>2022-11-21T08:11:47.090Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.109Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/070_mod_hier.html</loc>
-    <lastmod>2022-11-21T08:11:47.098Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.117Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/071_mod_hier_sim.html</loc>
-    <lastmod>2022-11-21T08:11:47.102Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.122Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/entropy.html</loc>
-    <lastmod>2022-11-21T08:11:47.103Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.123Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/090_entropy.html</loc>
-    <lastmod>2022-11-21T08:11:47.105Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.126Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/091_kl.html</loc>
-    <lastmod>2022-11-21T08:11:47.109Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.129Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/092_info_criterion.html</loc>
-    <lastmod>2022-11-21T08:11:47.114Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.135Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/999_refs.html</loc>
-    <lastmod>2022-11-21T08:11:47.116Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.136Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/a01_math_symbols.html</loc>
-    <lastmod>2022-11-21T08:11:47.117Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.137Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/a02_number_sets.html</loc>
-    <lastmod>2022-11-21T08:11:47.119Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.138Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/a03_set_theory.html</loc>
-    <lastmod>2022-12-04T06:23:14.847Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.140Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/a04_summation_notation.html</loc>
-    <lastmod>2022-11-21T08:11:47.122Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.144Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/a10_markov_chains.html</loc>
-    <lastmod>2022-11-21T08:11:47.124Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.148Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/a15_stan_lang.html</loc>
-    <lastmod>2022-11-21T08:11:47.128Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ccaudek.github.io/data_science/008_penguins.html</loc>
-    <lastmod>2022-12-06T07:51:13.516Z</lastmod>
+    <lastmod>2022-12-07T07:17:18.153Z</lastmod>
   </url>
 </urlset>

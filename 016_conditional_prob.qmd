@@ -10,9 +10,11 @@ Il fondamento della statistica bayesiana è il teorema di Bayes e il teorema di 
 
 L'attribuzione di una probabilità ad un evento è sempre condizionata dalle conoscenze che abbiamo a disposizione. Per un determinato stato di conoscenze, attribuiamo ad un dato evento una certa probabilità di verificarsi; ma se il nostro stato di conoscenze cambia, allora cambierà anche la probabilità che attribuiremo all'evento in questione. Infatti, si può pensare che tutte le probabilità siano probabilità condizionate, anche se l'evento condizionante non è sempre esplicitamente menzionato.
 
-Per introdurre la probabilità condizionata, @albert2019probability utilizzando il famoso paradosso delle tre carte. "Ci sono tre carte, delle quali la prima ($A$) è rossa su entrambi i lati, la seconda ($B$) su un lato è rossa e sull'altro è bianca e la terza ($C$) è bianca su entrambi i lati. Ponendo su un tavolo una delle tre carte, scelta a caso, ottengo che il lato visibile è di colore rosso. Qual è la probabilità che anche il lato non visibile sia di colore rosso? La risposta intuitiva porta solitamente a rispondere che la probabilità ricercata sia pari al 50%, in quanto solo due carte (la $A$ e la $B$) possono mostrare il colore rosso e solo una di queste (la $A$) può mostrare anche sull'altro lato il colore rosso; tuttavia si dimostra che la risposta giusta è 2/3." (da Wikipedia)
+Per introdurre la probabilità condizionata, @albert2019probability utilizzando il famoso paradosso delle tre carte.
 
-@albert2019probability propongono di risolvere il problema con una simulazione in $\textsf{R}$: prima di tutto si sceglie una carta a caso, e poi si sceglie un lato della carta. Ci sono tre carte possibili, che chiamiamo "c_rossa", "c_bianca", e "c_entrambi". Per la carta rossa, ci sono due lati rossi; per la carta bianca ci sono due lati bianchi e la carta "entrambi" ha un lato rosso e un lato bianco.
+> Ci sono tre carte, delle quali la prima ($A$) è rossa su entrambi i lati, la seconda ($B$) su un lato è rossa e sull'altro è bianca e la terza ($C$) è bianca su entrambi i lati. Ponendo su un tavolo una delle tre carte, scelta a caso, ottengo che il lato visibile è di colore rosso. Qual è la probabilità che anche il lato non visibile sia di colore rosso? La risposta intuitiva porta solitamente a rispondere che la probabilità ricercata sia pari al 50%, in quanto solo due carte (la $A$ e la $B$) possono mostrare il colore rosso e solo una di queste (la $A$) può mostrare anche sull'altro lato il colore rosso; tuttavia si dimostra che la risposta giusta è 2/3. (da Wikipedia)
+
+@albert2019probability propongono di risolvere il problema con una simulazione $\textsf{R}$: prima di tutto si sceglie una carta a caso, e poi si sceglie un lato della carta. Ci sono tre carte possibili, che chiamiamo "c_rossa", "c_bianca", e "c_entrambi". Per la carta rossa, ci sono due lati rossi; per la carta bianca ci sono due lati bianchi e la carta "entrambi" ha un lato rosso e un lato bianco.
 
 ```{r}
 df <- tibble(
@@ -233,7 +235,7 @@ $$
 
 ## Il teorema della probabilità assoluta
 
-Il teorema della probabilità assoluta consente di calcolare la probabilità di un evento $E$ di cui sono note le probabilità condizionate rispetto ad altri eventi $(H_i)_{i\geq 1}$, a condizione che essi costituiscano una partizione dell'evento certo $\Omega$, ovvero
+Il teorema della probabilità assoluta (detto anche teorema delle partizioni) consente di calcolare la probabilità di un evento $E$ di cui sono note le probabilità condizionate rispetto ad altri eventi $(H_i)_{i\geq 1}$, a condizione che essi costituiscano una partizione dell'evento certo $\Omega$, ovvero
 
 1.  $\bigcup_{i=1}^\infty H_i = \Omega$;
 2.  $H_j \cap H_j = \emptyset, i\neq j$;
@@ -376,4 +378,4 @@ Un esempio è il seguente (da Wikipedia). Siano due eventi le probabilità che l
 
 ## Commenti e considerazioni finali {.unnumbered}
 
-La probabilità condizionata è importante perché ci fornisce uno strumento per precisare il concetto di indipendenza statistica. Una delle domande più importanti delle analisi statistiche è infatti quella che si chiede se due variabili siano associate tra loro oppure no. In questo Capitolo abbiamo discusso il concetto di indipendenza (come contrapposto al concetto di associazione). In seguito vedremo come sia possibile fare inferenza sull'associazione tra variabili.
+La probabilità condizionata è importante perché ci fornisce uno strumento per precisare il concetto di indipendenza statistica. Una delle domande più importanti delle analisi statistiche è infatti quella che si chiede se due variabili siano associate tra loro oppure no. In questo capitolo abbiamo discusso il concetto di indipendenza (come contrapposto al concetto di associazione); in seguito vedremo come sia possibile fare inferenza sull'associazione tra variabili.

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.269">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - 26&nbsp; Regressione lineare bivariata</title>
+<title>Data Science per psicologi - 27&nbsp; Regressione lineare bivariata</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,7 +123,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -175,7 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variabili e distribuzioni di frequenza</span></a>
+  <a href="./007_freq_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Analisi esplorativa dei dati</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -186,6 +186,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./012_correlation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Le relazioni tra variabili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./013_penguins.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></a>
   </div>
 </li>
       </ul>
@@ -200,32 +205,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
+  <a href="./015_prob_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La logica dell’incerto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">L’interpretazione soggettivista della probabilità</span></a>
+  <a href="./017_bayes_theorem.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Il teorema di Bayes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./019_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
+  <a href="./019_joint_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Probabilità congiunta</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./020_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./020_density_func.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La densità di probabilità</span></a>
   </div>
 </li>
       </ul>
@@ -240,17 +245,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
+  <a href="./022_discr_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. discrete</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
+  <a href="./023_cont_rv_distr.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Distribuzioni di v.c. continue</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
+  <a href="./024_likelihood.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">La funzione di verosimiglianza</span></a>
   </div>
 </li>
       </ul>
@@ -265,52 +270,52 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
+  <a href="./025_intro_bayes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Credibilità, modelli e parametri</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
+  <a href="./026_subj_prop.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Pensare ad una proporzione in termini soggettivi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
+  <a href="./029_conjugate_families.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Distribuzioni coniugate</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
+  <a href="./030_balance_prior_post.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
+  <a href="./036_posterior_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Approssimazione della distribuzione a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
+  <a href="./040_beta_binomial_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Il modello beta-binomiale in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
+  <a href="./041_mcmc_diagnostics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Diagnostica delle catene markoviane</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
+  <a href="./045_summarize_posterior.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Sintesi a posteriori</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
+  <a href="./046_bayesian_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
+  <a href="./050_normal_normal_mod.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Inferenza sul parametro <span class="math inline">\(\mu\)</span> (media di una v.c. Normale)</span></a>
   </div>
 </li>
       </ul>
@@ -325,47 +330,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
+  <a href="./051_reglin1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
+  <a href="./052_reglin2.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
+  <a href="./053_reglin3.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
+  <a href="./054_reglin4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
+  <a href="./055_reglin5.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Confronto tra due gruppi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
+  <a href="./056_pred_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Predictive checks</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
+  <a href="./060_anova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Confronto tra le medie di tre o più gruppi</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
+  <a href="./070_mod_hier.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
+  <a href="./071_mod_hier_sim.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></a>
   </div>
 </li>
       </ul>
@@ -380,17 +385,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Entropia</span></a>
+  <a href="./090_entropy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">Entropia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
+  <a href="./091_kl.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">La divergenza di Kullback-Leibler</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
+  <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -447,17 +452,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    
   <ul>
 <li>
-<a href="#stima-dei-coefficienti-di-regressione" id="toc-stima-dei-coefficienti-di-regressione" class="nav-link active" data-scroll-target="#stima-dei-coefficienti-di-regressione"><span class="toc-section-number">26.1</span>  Stima dei coefficienti di regressione</a>
+<a href="#stima-dei-coefficienti-di-regressione" id="toc-stima-dei-coefficienti-di-regressione" class="nav-link active" data-scroll-target="#stima-dei-coefficienti-di-regressione"><span class="toc-section-number">27.1</span>  Stima dei coefficienti di regressione</a>
   <ul class="collapse">
-<li><a href="#trasformazione-dei-dati" id="toc-trasformazione-dei-dati" class="nav-link" data-scroll-target="#trasformazione-dei-dati"><span class="toc-section-number">26.1.1</span>  Trasformazione dei dati</a></li>
-  <li><a href="#il-metodo-dei-minimi-quadrati" id="toc-il-metodo-dei-minimi-quadrati" class="nav-link" data-scroll-target="#il-metodo-dei-minimi-quadrati"><span class="toc-section-number">26.1.2</span>  Il metodo dei minimi quadrati</a></li>
-  <li><a href="#lerrore-standard-della-regressione" id="toc-lerrore-standard-della-regressione" class="nav-link" data-scroll-target="#lerrore-standard-della-regressione"><span class="toc-section-number">26.1.3</span>  L’errore standard della regressione</a></li>
+<li><a href="#trasformazione-dei-dati" id="toc-trasformazione-dei-dati" class="nav-link" data-scroll-target="#trasformazione-dei-dati"><span class="toc-section-number">27.1.1</span>  Trasformazione dei dati</a></li>
+  <li><a href="#il-metodo-dei-minimi-quadrati" id="toc-il-metodo-dei-minimi-quadrati" class="nav-link" data-scroll-target="#il-metodo-dei-minimi-quadrati"><span class="toc-section-number">27.1.2</span>  Il metodo dei minimi quadrati</a></li>
+  <li><a href="#lerrore-standard-della-regressione" id="toc-lerrore-standard-della-regressione" class="nav-link" data-scroll-target="#lerrore-standard-della-regressione"><span class="toc-section-number">27.1.3</span>  L’errore standard della regressione</a></li>
   </ul>
 </li>
   <li>
-<a href="#indice-di-determinazione" id="toc-indice-di-determinazione" class="nav-link" data-scroll-target="#indice-di-determinazione"><span class="toc-section-number">26.2</span>  Indice di determinazione</a>
+<a href="#indice-di-determinazione" id="toc-indice-di-determinazione" class="nav-link" data-scroll-target="#indice-di-determinazione"><span class="toc-section-number">27.2</span>  Indice di determinazione</a>
   <ul class="collapse">
-<li><a href="#inferenza-sul-modello-di-regressione" id="toc-inferenza-sul-modello-di-regressione" class="nav-link" data-scroll-target="#inferenza-sul-modello-di-regressione"><span class="toc-section-number">26.2.1</span>  Inferenza sul modello di regressione</a></li>
+<li><a href="#inferenza-sul-modello-di-regressione" id="toc-inferenza-sul-modello-di-regressione" class="nav-link" data-scroll-target="#inferenza-sul-modello-di-regressione"><span class="toc-section-number">27.2.1</span>  Inferenza sul modello di regressione</a></li>
   </ul>
 </li>
   <li><a href="#commenti-e-considerazioni-finali" id="toc-commenti-e-considerazioni-finali" class="nav-link" data-scroll-target="#commenti-e-considerazioni-finali">Commenti e considerazioni finali</a></li>
@@ -465,7 +470,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-regr-model-lm" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-regr-model-lm" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -601,8 +606,8 @@ y_1 = a + b x_1 + e_1,
 <li>quant’è grande la porzione della <span class="math inline">\(y\)</span> che può essere predetta conoscendo <span class="math inline">\(x\)</span>? In altre parole, quant’è accurata la predizione della <span class="math inline">\(y\)</span> fornita dal modello di regressione lineare?</li>
 </ul>
 <p>Rispondere a tali due domanda definisce i primi due obiettivi del modello statistico della regressione lineare. Il terzo obiettivo è quello dell’inferenza, ovvero quello di capire che relazioni ci sono tra la relazione tra <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> osservata nel campione e la la relazione tra le due variabili nella popolazione.</p>
-<section id="stima-dei-coefficienti-di-regressione" class="level2" data-number="26.1"><h2 data-number="26.1" class="anchored" data-anchor-id="stima-dei-coefficienti-di-regressione">
-<span class="header-section-number">26.1</span> Stima dei coefficienti di regressione</h2>
+<section id="stima-dei-coefficienti-di-regressione" class="level2" data-number="27.1"><h2 data-number="27.1" class="anchored" data-anchor-id="stima-dei-coefficienti-di-regressione">
+<span class="header-section-number">27.1</span> Stima dei coefficienti di regressione</h2>
 <p>Iniziamo con il primo obiettivo, ovvero quello di trovare i coefficienti <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> che consentono di predire una componente di ciascuna osservazione <span class="math inline">\(y\)</span> conoscendo <span class="math inline">\(x\)</span>. Quindi, nel caso presente, ci chiediamo quanto segue. Il primo bambino del campione ha un QI uguale a 65. Sua madre ha un QI di 121.12. Qual è la predizione migliore del QI del bambino che possiamo ottenere conoscendo il QI della madre?</p>
 <p>È chiaro, guardando i dati del campione, che non c’è una corrispondenza perfetta tra QI della madre e QI del bambino, tutt’altro! Infatti, se guardiamo il diagramma di dispersione ci rendiamo conto che i punti sono piuttosto lontani dalla retta che abbiamo sovrapposto alla nube di punti <span class="math inline">\(x_i, y_i\)</span>. Tuttavia, il diagramma di dispersione ci suggerisce che, al di là del rumore, c’è comunque una relazione tra le due variabili. Il nostro obiettivo è trovare un metodo quantitativo per descrivere una tale relazione.</p>
 <p>Abbiamo detto che è possibile prevedere una componente di <span class="math inline">\(y_i\)</span> conoscendo <span class="math inline">\(x_i\)</span>. La componente <span class="math inline">\(y_i\)</span> predicibile da <span class="math inline">\(x_i\)</span> viene denotata da <span class="math inline">\(\hat{y}_i\)</span> e, nei termini del modello di regressione lineare è uguale a</p>
@@ -739,8 +744,8 @@ e_1 = (a + b x_1) - y_1
 <span><span class="co">#&gt; [1] 5.373479e-13</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<section id="trasformazione-dei-dati" class="level3" data-number="26.1.1"><h3 data-number="26.1.1" class="anchored" data-anchor-id="trasformazione-dei-dati">
-<span class="header-section-number">26.1.1</span> Trasformazione dei dati</h3>
+<section id="trasformazione-dei-dati" class="level3" data-number="27.1.1"><h3 data-number="27.1.1" class="anchored" data-anchor-id="trasformazione-dei-dati">
+<span class="header-section-number">27.1.1</span> Trasformazione dei dati</h3>
 <p>In generale, per variabili a livello di scala ad intervalli, non è possibile assegnare un’interpretazione utile all’intercetta del modello di regressione lineare. L’intercetta ci dice infatti qual è il valore atteso della <span class="math inline">\(y\)</span> quando <span class="math inline">\(x = 0\)</span>. Ma, se la variabile <span class="math inline">\(x\)</span> è misurata su scala ad intervalli, il valore <span class="math inline">\(x = 0\)</span> è arbitrario e non corrisponde “all’assenza di intensità” della variabile <span class="math inline">\(x\)</span>. Un valore pari a 0 del QI della madre non vuol dire che l’intelligenza della madre sia nulla (un’affermazione, questa, che è difficile da capire), ma semplicemente che il punteggio del test usato per misurare il QI della madre assume valore 0 (qualcosa che, comunque, in pratica non succederà mai). Quindi è di poco interesse sapere qual è il valore medio del QI del bambino quando test usato per misurare il QI della madre ha valore 0. Per potere fornire all’intercetta del modello di regressione un’interpretazione più utile dobbiamo trasformare le osservazioni <span class="math inline">\(x\)</span>.</p>
 <p>Esprimiamo <span class="math inline">\(x\)</span> come differenza dalla media. Chiamiamo questa nuova variabile <span class="math inline">\(xd\)</span>:</p>
 <div class="cell" data-layout-align="center">
@@ -773,8 +778,8 @@ e_1 = (a + b x_1) - y_1
 </details>
 </div>
 <p>L’intercetta corrisponde al punto sull’asse <span class="math inline">\(y\)</span> dove la retta di regressione interseca l’ordinata. Ma, nel caso dei dati trasformati, dato che abbiamo traslato i punti di una quantità pari a <span class="math inline">\(x - \bar{x}\)</span>, il valore <span class="math inline">\(xd = 0\)</span> corrisponde a <span class="math inline">\(x = \bar{x}\)</span> nel caso dei dati grezzi. Dunque, per i dati trasformati <span class="math inline">\(xd_i, y_i\)</span>, l’intercetta corrisponderà al valore atteso della <span class="math inline">\(y\)</span> in corrispondenza del valore medio della variabile <span class="math inline">\(x\)</span> sulla scala dei dati non trasformati (ovvero <span class="math inline">\(\bar{x}\)</span>). In altre parole, l’intercetta del modello di regressione lineare calcolata sui dati trasformati corrisponde al QI medio dei bambini in corrispondenza del QI medio delle madri.</p>
-</section><section id="il-metodo-dei-minimi-quadrati" class="level3" data-number="26.1.2"><h3 data-number="26.1.2" class="anchored" data-anchor-id="il-metodo-dei-minimi-quadrati">
-<span class="header-section-number">26.1.2</span> Il metodo dei minimi quadrati</h3>
+</section><section id="il-metodo-dei-minimi-quadrati" class="level3" data-number="27.1.2"><h3 data-number="27.1.2" class="anchored" data-anchor-id="il-metodo-dei-minimi-quadrati">
+<span class="header-section-number">27.1.2</span> Il metodo dei minimi quadrati</h3>
 <p>Ora che abbiamo visto come interpretare il coefficienti di regressione, chiediamoci come vengono calcolati. La procedura generale è stata brevemente descritta in precedenza. Vediamo ora come si giunge alla conclusione descritta sopra usando una simulazione.</p>
 <p>Il problema è di trovare i valori <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> tali per cui la quantità <span class="math inline">\(\sum_{i=1}^{n}{(y_i - (a + b x_i))^2}\)</span> assume il valore minore possibile. Questo è un problema di minimizzazione rispetto a due parametri. Per dare un’idea di come si fa, semplifichiamo il problema e supponiamo che uno dei due parametri sia noto, ad esempio <span class="math inline">\(a\)</span>, così ci resta una sola incognita.</p>
 <p>Credo una griglia di valori <code>b_grid</code> possibili, ad esempio:</p>
@@ -823,8 +828,8 @@ e_1 = (a + b x_1) - y_1
 </details>
 </div>
 <p>Una simulazione simile, ma computazionalmente più complessa, può essere usata per stimare simultaneamente entrambi i parametri. Ci siamo limitati qui ad una <em>proof of concept</em> del caso più semplice.</p>
-</section><section id="lerrore-standard-della-regressione" class="level3" data-number="26.1.3"><h3 data-number="26.1.3" class="anchored" data-anchor-id="lerrore-standard-della-regressione">
-<span class="header-section-number">26.1.3</span> L’errore standard della regressione</h3>
+</section><section id="lerrore-standard-della-regressione" class="level3" data-number="27.1.3"><h3 data-number="27.1.3" class="anchored" data-anchor-id="lerrore-standard-della-regressione">
+<span class="header-section-number">27.1.3</span> L’errore standard della regressione</h3>
 <p>Il secondo obiettivo del modello statistico di regressione lineare è quello di stabilire <em>quanto sia grande la componente</em> <span class="math inline">\(y\)</span> predicibile da <span class="math inline">\(x\)</span>, per ciascuna osservazione.</p>
 <p>Un indice assoluto della bontà di adattamento è fornito dalla deviazione standard dei residui, <span class="math inline">\(s_e\)</span>, chiamata anche <em>errore standard della stima</em>. Uno stimatore non distorto della varianza dei residui nella popolazione è dato da</p>
 <p><span class="math display">\[
@@ -891,8 +896,8 @@ s_e = \sqrt{\frac{1}{n-2}\sum e_i^2}.
 <span><span class="co">#&gt; F-statistic: 108.6 on 1 and 432 DF,  p-value: &lt; 2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-</section></section><section id="indice-di-determinazione" class="level2" data-number="26.2"><h2 data-number="26.2" class="anchored" data-anchor-id="indice-di-determinazione">
-<span class="header-section-number">26.2</span> Indice di determinazione</h2>
+</section></section><section id="indice-di-determinazione" class="level2" data-number="27.2"><h2 data-number="27.2" class="anchored" data-anchor-id="indice-di-determinazione">
+<span class="header-section-number">27.2</span> Indice di determinazione</h2>
 <p>Un importante risultato dei minimi quadrati riguarda la cosiddetta <em>scomposizione della devianza</em> mediante la quale si definisce l’indice di determinazione, il quale fornisce una misura relativa della bontà di adattamento del modello di regressione ai dati del campione. Per una generica osservazione <span class="math inline">\(x_i, y_i\)</span>, la variazione di <span class="math inline">\(y_i\)</span> rispetto alla media <span class="math inline">\(\bar{y}\)</span> può essere descritta come la somma di due componenti: il residuo <span class="math inline">\(e_i=y_i- \hat{y}_i\)</span> e lo scarto di <span class="math inline">\(\hat{y}_i\)</span> rispetto alla media <span class="math inline">\(\bar{y}\)</span>:</p>
 <p><span class="math display">\[
 y_i - \bar{y} = (y_i- \hat{y}_i) + (\hat{y}_i - \bar{y}) = e_i + (\hat{y}_i - \bar{y}).
@@ -967,8 +972,8 @@ R^2 \triangleq \frac{\mbox{dev_R}}{\mbox{dev_T}} = 1 - \frac{\mbox{dev_E}}{\mbox
 </details>
 </div>
 <p>Il risultato ottenuto si può interpretare dicendo che circa il 20% della variabilità dei punteggi del QI dei bambini può essere predetto conoscendo il QI delle madri.</p>
-<section id="inferenza-sul-modello-di-regressione" class="level3" data-number="26.2.1"><h3 data-number="26.2.1" class="anchored" data-anchor-id="inferenza-sul-modello-di-regressione">
-<span class="header-section-number">26.2.1</span> Inferenza sul modello di regressione</h3>
+<section id="inferenza-sul-modello-di-regressione" class="level3" data-number="27.2.1"><h3 data-number="27.2.1" class="anchored" data-anchor-id="inferenza-sul-modello-di-regressione">
+<span class="header-section-number">27.2.1</span> Inferenza sul modello di regressione</h3>
 <p>La discussione precedente era tutta basata sulla trattazione “classica” del modello lineare, ovvero una trattazione basata sulle stime di massima verosimiglianza (se <span class="math inline">\(y \sim \mathcal{N}(\alpha + \beta x, \sigma)\)</span>, allora le stime dei minimi quadrati coincidono con le stime di massima verosimiglianza). In altre parole, nella discussione precedente non abbiamo considerato in alcun modo le distribuzioni a priori dei parametri <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span>. I risultati precedenti si confermano, in un contesto bayesiano, se e solo se imponiamo sui parametri delle distribuzioni a priori non informative (cioè, uniformi). In tali circostanze, le stime di massima verosimiglianza risultano identiche al massimo a posteriori bayesiano.</p>
 <p>Detto questo, il tema dell’inferenza viene trattato dall’approccio frequentista costruendo la “distribuzione campionaria” dei parametri (ovvero la distribuzione dei valori che i parametri otterrebbero in infiniti campioni casuali (<span class="math inline">\(x, y\)</span>) di ampiezza <span class="math inline">\(n\)</span> estratti dalla medesima popolazione) e poi calcolando gli errori standard dei parametri e gli intervalli di fiducia dei parametri. Una domanda frequente è, per esempio, se la pendenza della retta di regressione sia maggiore di zero. Per rispondere a tale domanda l’approccio frequentista calcola l’intervallo di fiducia al 95% per il parametro <span class="math inline">\(\beta\)</span>. Se tale intervallo non include lo zero, e se il limite inferiore di tale intervallo è maggiore di zero, allora si conclude, con un grado di confidenza del 95%, che il vero parametro <span class="math inline">\(\beta\)</span> nella popolazione è maggiore di zero. Ovvero, si conclude che vi sono evidenze di un’associazione lineare positiva tra <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>.</p>
 <p>Alla stessa conclusione si può arrivare calcolando, in un ottica bayesiana, l’intervallo di credibilità al 95% per il parametro <span class="math inline">\(\beta\)</span>. I due intervalli sono identici se usiamo una distribuzione a priori piatta. Sono invece diversi se usiamo una distribuzione a priori debolmente informativa, oppure informativa.</p>
@@ -1164,12 +1169,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./051_reglin1.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Introduzione</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Introduzione</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./053_reglin3.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Modello di regressione in linguaggio Stan</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
