@@ -70,6 +70,7 @@ book:
     - a02_number_sets.qmd
     - a03_set_theory.qmd
     - a04_summation_notation.qmd
+    - a05_calculus_notation.qmd
     - a10_markov_chains.qmd
     - a15_stan_lang.qmd
 

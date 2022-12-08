@@ -1,10 +1,10 @@
-# Probabilità condizionata {#sec-prob-cond}
+# Probabilità condizionata: significato, teoremi, eventi indipendenti {#sec-prob-cond}
 
 ```{r, include = FALSE}
 source("_common.R")
 ```
 
-Il fondamento della statistica bayesiana è il teorema di Bayes e il teorema di Bayes è una semplice ridescrizione della probabilità condizionata. Esaminiamo dunque la nozione di probabilità condizionata.
+Il fondamento della statistica bayesiana è il teorema di Bayes e il teorema di Bayes è una semplice ridescrizione della probabilità condizionata. Iniziamo dunque a esaminare la nozione di probabilità condizionata.
 
 ## Probabilità condizionata su altri eventi {#sec-bayes-cancer}
 

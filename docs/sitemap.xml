@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ccaudek.github.io/data_science/index.html</loc>
-    <lastmod>2022-12-07T07:25:41.420Z</lastmod>
+    <lastmod>2022-12-08T05:22:17.863Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/preface.html</loc>
-    <lastmod>2022-12-07T07:17:17.925Z</lastmod>
+    <lastmod>2022-12-07T12:52:25.029Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/basics.html</loc>
@@ -42,19 +42,19 @@
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/015_prob_intro.html</loc>
-    <lastmod>2022-12-07T07:17:17.960Z</lastmod>
+    <lastmod>2022-12-08T04:35:39.100Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/016_conditional_prob.html</loc>
-    <lastmod>2022-12-07T07:17:17.966Z</lastmod>
+    <lastmod>2022-12-08T04:41:41.234Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/017_bayes_theorem.html</loc>
-    <lastmod>2022-12-07T07:45:45.502Z</lastmod>
+    <lastmod>2022-12-08T04:35:30.177Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/018_expval_var.html</loc>
-    <lastmod>2022-12-07T07:17:17.972Z</lastmod>
+    <lastmod>2022-12-08T06:07:27.373Z</lastmod>
   </url>
   <url>
     <loc>https://ccaudek.github.io/data_science/019_joint_prob.html</loc>
@@ -207,5 +207,9 @@
   <url>
     <loc>https://ccaudek.github.io/data_science/a15_stan_lang.html</loc>
     <lastmod>2022-12-07T07:17:18.153Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ccaudek.github.io/data_science/a05_calculus_notation.html</loc>
+    <lastmod>2022-12-08T05:23:37.877Z</lastmod>
   </url>
 </urlset>

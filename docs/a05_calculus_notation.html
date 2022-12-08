@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Corrado Caudek">
-<meta name="description" content="<p>Questo è il sito web per “Data Science per psicologi”. Viene qui presentato il materiale delle lezioni dell’insegnamento di <em>Psicometria B000286</em> (A.A. 2022/2023) rivolto agli studenti del primo anno del Corso di Laurea in Scienze e Tecniche Psicologiche dell’Università degli Studi di Firenze. Lo scopo di questo insegnamento è quello di fornire agli studenti un’introduzione all’analisi dei dati psicologici. Le conoscenze/competenze che verranno sviluppate in questo insegnamento sono quelle della <em>Data Science</em> applicata alla psicologia, ovvero, un insieme di conoscenze/competenze che si pongono all’intersezione tra psicologia, statistica e informatica.</p>">
 
-<title>Data Science per psicologi</title>
+<title>Data Science per psicologi - Appendix E — Per liberarvi dai terrori preliminari</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,7 +93,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./preface.html" rel="next">
+<link href="./a10_markov_chains.html" rel="next">
+<link href="./a04_summation_notation.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -135,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Data Science per psicologi</h1>
+      <h1 class="quarto-secondary-nav-title">Appendix E — Per liberarvi dai terrori preliminari</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -163,7 +162,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Benvenuti</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Benvenuti</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -451,7 +450,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a05_calculus_notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Per liberarvi dai terrori preliminari</span></a>
+  <a href="./a05_calculus_notation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Per liberarvi dai terrori preliminari</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -471,33 +470,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Sommario</h2>
-   
-  <ul>
-  <li><a href="#benvenuti" id="toc-benvenuti" class="nav-link active" data-scroll-target="#benvenuti">Benvenuti</a></li>
-  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title d-none d-lg-block">Data Science per psicologi</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Codice</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-calculus" class="quarto-section-identifier d-none d-lg-block">Appendix E — Per liberarvi dai terrori preliminari</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Codice</button></div></div>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Autore</div>
-    <div class="quarto-title-meta-contents">
-             <p>Corrado Caudek </p>
-          </div>
-  </div>
     
   
     
@@ -506,19 +492,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>🇺🇦</p>
-<section id="benvenuti" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="benvenuti">Benvenuti</h2>
-<p>Questo è il sito web per “Data Science per psicologi”. Viene qui presentato il materiale delle lezioni dell’insegnamento di <em>Psicometria B000286</em> (A.A. 2022/2023) rivolto agli studenti del primo anno del Corso di Laurea in Scienze e Tecniche Psicologiche dell’Università degli Studi di Firenze. Lo scopo di questo insegnamento è quello di fornire agli studenti un’introduzione all’analisi dei dati psicologici. Le conoscenze/competenze che verranno sviluppate in questo insegnamento sono quelle della <em>Data Science</em> applicata alla psicologia, ovvero, un insieme di conoscenze/competenze che si pongono all’intersezione tra psicologia, statistica e informatica.</p>
-</section>
-<section id="license" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="license">License</h2>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"></a><br>This book was created by Corrado Caudek and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+<p>Fornisco qui la traduzione (ottenuta con Google Translate, con piccole modifiche) del primo capitolo di <a href="https://calculusmadeeasy.org/1.html">Calculus made easy</a>.</p>
+<p>Il terrore preliminare, che impedisce alla maggior parte dei ragazzi di quinta anche solo di tentare di imparare l’analisi, può essere abolito una volta per tutte semplicemente affermando qual è il significato – in termini di buon senso – dei due simboli principali che sono usati nell’analisi matematica.</p>
+<p>Questi terribili simboli sono:</p>
+<ol type="1">
+<li><span class="math inline">\(d\)</span> che significa semplicemente “un po’ di”.</li>
+</ol>
+<p>Quindi <span class="math inline">\(\operatorname{d}\!x\)</span> significa un po’ di <span class="math inline">\(x\)</span>; o <span class="math inline">\(\operatorname{d}\!u\)</span> significa un po’ di <span class="math inline">\(u\)</span>. I matematici pensano che sia più educato dire “un elemento di” invece di “un po’ di”. Fai come ti pare. Ma scoprirai che questi piccoli pezzi (o elementi) possono essere considerati indefinitamente piccoli.</p>
+<ol start="2" type="1">
+<li><span class="math inline">\(\int\)</span> che è semplicemente una S allungata, e può essere chiamata (se volete) “la somma di”.</li>
+</ol>
+<p>Quindi <span class="math inline">\(\int \operatorname{d}\!x\)</span> significa la somma di tutti i pezzettini di <span class="math inline">\(x\)</span>; oppure <span class="math inline">\(\int \operatorname{d}\!t\)</span> significa la somma di tutti i pezzettini di <span class="math inline">\(t\)</span>. I matematici chiamano questo simbolo “l’integrale di”. Ora qualsiasi sciocco può vedere che se <span class="math inline">\(x\)</span> è considerato come composto da tanti piccoli pezzetti, ognuno dei quali è chiamato <span class="math inline">\(\operatorname{d}\!x\)</span>, se li sommi tutti insieme ottieni la somma di tutti i <span class="math inline">\(\operatorname{d}\!x\)</span>, (che è la stessa cosa dell’insieme di <span class="math inline">\(x\)</span>). La parola “integrale” significa semplicemente “il tutto”. Se pensi alla durata di un’ora, puoi (se vuoi) pensarla come suddivisa in 3600 piccoli pezzetti chiamati secondi. L’insieme dei 3600 pezzetti sommati fa un’ora.</p>
+<p>Quando vedrete un’espressione che inizia con questo simbolo terrificante, d’ora in poi saprete che è stato messo lì semplicemente per darvi l’istruzione che ora dovete eseguire (se potete) l’operazione di sommare tutti i piccoli pezzetti che sono indicati dai simboli che seguono.</p>
+<p>È tutto.</p>
 
 
 <!-- -->
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -707,27 +697,35 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./a04_summation_notation.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Simbolo di somma (sommatorie)</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./preface.html" class="pagination-link">
-        <span class="nav-page-text">Prefazione</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./a10_markov_chains.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">description-meta:</span><span class="co"> |</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">  Questo è il sito web per "Data Science per psicologi". Viene qui presentato il materiale delle lezioni dell'insegnamento di *Psicometria B000286* (A.A. 2022/2023) rivolto agli studenti del primo anno del Corso di Laurea in Scienze e Tecniche Psicologiche dell'Università degli Studi di Firenze. Lo scopo di questo insegnamento è quello di fornire agli studenti un'introduzione all'analisi dei dati psicologici. Le conoscenze/competenze che verranno sviluppate in questo insegnamento sono quelle della *Data Science* applicata alla psicologia, ovvero, un insieme di conoscenze/competenze che si pongono all'intersezione tra psicologia, statistica e informatica.</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>🇺🇦</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Benvenuti {.unnumbered}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Questo è il sito web per "Data Science per psicologi". Viene qui presentato il materiale delle lezioni dell'insegnamento di *Psicometria B000286* (A.A. 2022/2023) rivolto agli studenti del primo anno del Corso di Laurea in Scienze e Tecniche Psicologiche dell'Università degli Studi di Firenze. Lo scopo di questo insegnamento è quello di fornire agli studenti un'introduzione all'analisi dei dati psicologici. Le conoscenze/competenze che verranno sviluppate in questo insegnamento sono quelle della *Data Science* applicata alla psicologia, ovvero, un insieme di conoscenze/competenze che si pongono all'intersezione tra psicologia, statistica e informatica.</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## License {.unnumbered}</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">rel</span><span class="ot">=</span><span class="st">"license"</span> <span class="er">href</span><span class="ot">=</span><span class="st">"http://creativecommons.org/licenses/by-nc-nd/4.0/"</span><span class="kw">&gt;&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">"Creative Commons License"</span> <span class="er">style</span><span class="ot">=</span><span class="st">"border-width:0"</span><span class="kw">/&gt;&lt;/a&gt;&lt;br</span> <span class="kw">/&gt;</span>This book was created by Corrado Caudek and is licensed under a <span class="kw">&lt;a</span> <span class="er">rel</span><span class="ot">=</span><span class="st">"license"</span> <span class="er">href</span><span class="ot">=</span><span class="st">"http://creativecommons.org/licenses/by-nc-nd/4.0/"</span><span class="kw">&gt;</span>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License<span class="kw">&lt;/a&gt;</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Per liberarvi dai terrori preliminari {#sec-calculus}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Fornisco qui la traduzione (ottenuta con Google Translate, con piccole modifiche) del primo capitolo di <span class="co">[</span><span class="ot">Calculus made easy</span><span class="co">](https://calculusmadeeasy.org/1.html)</span>.</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Il terrore preliminare, che impedisce alla maggior parte dei ragazzi di quinta anche solo di tentare di imparare l'analisi, può essere abolito una volta per tutte semplicemente affermando qual è il significato -- in termini di buon senso -- dei due simboli principali che sono usati nell'analisi matematica.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Questi terribili simboli sono:</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>$d$ che significa semplicemente "un po' di".</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Quindi $\operatorname{d}<span class="sc">\!</span>x$ significa un po' di $x$; o $\operatorname{d}<span class="sc">\!</span>u$ significa un po' di $u$. I matematici pensano che sia più educato dire "un elemento di" invece di "un po' di". Fai come ti pare. Ma scoprirai che questi piccoli pezzi (o elementi) possono essere considerati indefinitamente piccoli.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>$\int$ che è semplicemente una S allungata, e può essere chiamata (se volete) "la somma di".</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Quindi $\int \operatorname{d}<span class="sc">\!</span>x$ significa la somma di tutti i pezzettini di $x$; oppure $\int \operatorname{d}<span class="sc">\!</span>t$ significa la somma di tutti i pezzettini di $t$. I matematici chiamano questo simbolo "l'integrale di". Ora qualsiasi sciocco può vedere che se $x$ è considerato come composto da tanti piccoli pezzetti, ognuno dei quali è chiamato $\operatorname{d}<span class="sc">\!</span>x$, se li sommi tutti insieme ottieni la somma di tutti i $\operatorname{d}<span class="sc">\!</span>x$, (che è la stessa cosa dell'insieme di $x$). La parola "integrale" significa semplicemente "il tutto". Se pensi alla durata di un'ora, puoi (se vuoi) pensarla come suddivisa in 3600 piccoli pezzetti chiamati secondi. L'insieme dei 3600 pezzetti sommati fa un'ora.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Quando vedrete un'espressione che inizia con questo simbolo terrificante, d'ora in poi saprete che è stato messo lì semplicemente per darvi l'istruzione che ora dovete eseguire (se potete) l'operazione di sommare tutti i piccoli pezzetti che sono indicati dai simboli che seguono.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>È tutto.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
