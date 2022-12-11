@@ -85,9 +85,10 @@ format:
     callout-appearance: 
       - simple
     # cover-image: cover.png
+    # monofont: "Ubuntu Mono"
     code-link: true
     link-citations: yes
-    code-fold: true
+    code-fold: false
     code-tools: true
 
 
