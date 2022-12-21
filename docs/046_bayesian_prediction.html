@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Data Science per psicologi - 24&nbsp; La predizione bayesiana</title>
 <style>
@@ -229,7 +229,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata: significato, teoremi, eventi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -239,7 +239,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indici di posizione, di varianza e di associazione di variabili casuali</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -417,21 +417,61 @@ div.csl-indent {
   <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
-  </div>
-</li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Appendici</a>
+            <a href="./frequentist_inference.html" class="sidebar-item-text sidebar-link">Parte 7: Inferenza frequentista</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./220_intro_frequentist.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Legge dei grandi numeri</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./221_conf_interv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Intervallo fiduciale</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./225_distr_camp_mean.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Distribuzione campionaria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./226_test_ipotesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Significatività statistica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./227_ttest.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Inferenza sulle medie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./228_limiti_stat_frequentista.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Limiti dell’inferenza frequentista</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Appendici</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./a01_math_symbols.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Simbologia di base</span></a>
@@ -454,12 +494,17 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  <a href="./a05_calculus_notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Per liberarvi dai terrori preliminari</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
+  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
   </div>
 </li>
       </ul>
@@ -486,7 +531,7 @@ div.csl-indent {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-prediction" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-prediction" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">La predizione bayesiana</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Codice</button></div></div>
 </div>
 
 
@@ -547,10 +592,10 @@ f(\tilde{y} \mid y) = \binom{m}{\tilde{y}} \frac{B(a+ y + \tilde{y}, b + n - y +
 <p>Nell’esempio relativo allo studio di <span class="citation" data-cites="zetschefuture2019">Zetsche et al. (<a href="999_refs.html#ref-zetschefuture2019" role="doc-biblioref">2019</a>)</span>, la verosimiglianza è binomiale, i dati sono costituiti da 23 successi su 30 prove e la distribuzione a priori su <span class="math inline">\(\theta\)</span> è <span class="math inline">\(\mbox{Beta}(2, 10)\)</span>. Di conseguenza, la distribuzione a posteriori è <span class="math inline">\(\mbox{Beta}(25, 17)\)</span>. Vogliamo calcolare la distribuzione predittiva a posteriori per un nuovo campione, poniamo, di <span class="math inline">\(m = 30\)</span> osservazioni (ma, in generale, <span class="math inline">\(m\)</span> può essere diverso da <span class="math inline">\(n\)</span>).</p>
 <p>In base all’<a href="#eq-beta-binomial-distr">Equazione&nbsp;<span>24.3</span></a> sappiamo che la distribuzione predittiva a posteriori è una distribuzione beta-binomiale di parametri <span class="math inline">\(m\)</span>, <span class="math inline">\(\alpha+y\)</span> e <span class="math inline">\(\beta+n-y\)</span>, dove <span class="math inline">\(m\)</span> è il numero di prove nel nuovo campione, <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span> sono i parametri della distribuzione a priori, e <span class="math inline">\(y\)</span> e <span class="math inline">\(n\)</span> sono le proprietà del campione corrente. Nel caso dell’esempio in discussione, <span class="math inline">\(m = 30\)</span>, <span class="math inline">\(\alpha = 2 + 23 = 25\)</span>, <span class="math inline">\(\beta = 10 + 30 - 23 = 17\)</span>. Possiamo svolgere i calcoli necessario usando le funzioni del pacchetto <code>extraDistr</code>. Per i parametri specificati sopra, un grafico della distribuzione predittiva a posteriori si ottiene nel modo seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">prob</span> <span class="op">&lt;-</span> <span class="fu">extraDistr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/extraDistr/man/BetaBinom.html">dbbinom</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, <span class="fl">30</span>, <span class="fl">25</span>, <span class="fl">17</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">prob</span> <span class="op">&lt;-</span> <span class="fu">extraDistr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/extraDistr/man/BetaBinom.html">dbbinom</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, <span class="fl">30</span>, <span class="fl">25</span>, <span class="fl">17</span><span class="op">)</span></span>
 <span><span class="fu">tibble</span><span class="op">(</span>Y<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, Probability <span class="op">=</span> <span class="va">prob</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ProbBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ProbBayes/man/prob_plot.html">prob_plot</a></span><span class="op">(</span>Color <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -561,13 +606,12 @@ f(\tilde{y} \mid y) = \binom{m}{\tilde{y}} \frac{B(a+ y + \tilde{y}, b + n - y +
 <p>Esaminando la distribuzione predittiva notiamo che, nei possibili campioni futuri di 30 osservazioni, il valore <span class="math inline">\(\tilde{y}\)</span> più plausibile è 18. Tuttavia, <span class="math inline">\(\tilde{y}\)</span> può assumere anche altri valori e la distribuzione predittiva ci informa sulla <em>plausibilità relativa</em> di ciascuno dei possibili valori futuri <span class="math inline">\(\tilde{y}\)</span> – nel presente esempio, <span class="math inline">\(\tilde{y}\)</span> corrisponde al numero di pazienti clinici (su 30) che manifesteranno una depressione grave.</p>
 <p>È desiderabile costruire un intervallo che contiene le realizzazioni <span class="math inline">\(\tilde{y}\)</span> ad un livello specificato di probabilità. Supponiamo che il livello di probabilità richiesto sia 0.89. L’intervallo si costruisce aggiungendo valori <span class="math inline">\(\tilde{y}\)</span> all’intervallo (partendo da quello con la probabilità maggiore) fino a che il contenuto di probabilità dell’insieme eccede la soglia richiesta, nel caso present di 0.89. La procedura è implementata nella funzione <code>discint()</code> del pacchetto <code>LearnBayes</code>. Per i dati dell’esempio otteniamo</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">LearnBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/LearnBayes/man/discint.html">discint</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, <span class="va">prob</span><span class="op">)</span>, <span class="fl">0.89</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">LearnBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/LearnBayes/man/discint.html">discint</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, <span class="va">prob</span><span class="op">)</span>, <span class="fl">0.89</span><span class="op">)</span></span>
 <span><span class="co">#&gt; $prob</span></span>
 <span><span class="co">#&gt; [1] 0.9152885</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $set</span></span>
 <span><span class="co">#&gt;  [1] 12 13 14 15 16 17 18 19 20 21 22 23</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Sulla base delle informazioni disponibili, possiamo dunque prevedere, con un livello di certezza soggettiva che eccede la soglia di 0.91, che in un futuro campione di 30 soggetti clinici depressi, il numero di pazienti con depressione grave sarà compreso tra 12 e 23.</p>
 <p><span class="math display">\[
@@ -579,35 +623,32 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <p>In situazioni dove è difficile derivare l’esatta distribuzione predittiva a posteriori è possibile ottenere un campione casuale di valori della distribuzione predittiva posteriori mediante simulazione. Facciamo un esempio riferito al caso che stiamo discutendo. È possibile svolgere la simulazione richiesta in due fasi. Supponiamo di volere ottenere un campione casuale di <span class="math inline">\(n\)</span> osservazioni dalla distribuzione predittiva a posteriori. A tal fine dobbiamo (1) estrarre <span class="math inline">\(n\)</span> valori a caso del parametro <span class="math inline">\(\theta\)</span> dalla distribuzione a posteriori <span class="math inline">\(p(\theta \mid y)\)</span>: (2) con tali valori del parametro <span class="math inline">\(\theta\)</span> generiamo <span class="math inline">\(n\)</span> valori casuali <span class="math inline">\(\tilde{y}\)</span>; a tal fine usiamo il modello binomiale di parametri <span class="math inline">\(m\)</span> e <span class="math inline">\(\theta_i\)</span> (con <span class="math inline">\(i = 1, \dots, n\)</span>). Otteniamo così <span class="math inline">\(n\)</span> realizzazioni casuali di <span class="math inline">\(n\)</span> distribuzioni binomiali aventi i parametri specificati sopra.</p>
 <p>Vediamo come si fa in pratica con <span class="math inline">\(\mathsf{R}\)</span>. Per l’esempio che stiamo discutendo, la distribuzione a posteriori è una <span class="math inline">\(\mbox{Beta}(25, 17)\)</span>. Estraiamo 100,000 valori a caso da tale distribuzione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">12345</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">12345</span><span class="op">)</span></span>
 <span><span class="va">nrep</span> <span class="op">&lt;-</span> <span class="fl">1e5</span></span>
 <span><span class="va">a</span> <span class="op">&lt;-</span> <span class="fl">2</span></span>
 <span><span class="va">b</span> <span class="op">&lt;-</span> <span class="fl">10</span></span>
 <span><span class="va">n</span> <span class="op">&lt;-</span> <span class="fl">30</span></span>
 <span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fl">23</span></span>
 <span><span class="va">pred_p_sim</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Beta.html">rbeta</a></span><span class="op">(</span><span class="va">nrep</span>, <span class="va">a</span> <span class="op">+</span> <span class="va">y</span>, <span class="va">b</span> <span class="op">+</span> <span class="va">n</span> <span class="op">-</span> <span class="va">y</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>I primi 10 valori così ottenuti sono riportati di seguito.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pred_p_sim</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pred_p_sim</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
 <span><span class="co">#&gt;  [1] 0.5435206 0.5319551 0.6045577 0.6337146 0.7552324 0.5393935 0.6187069</span></span>
 <span><span class="co">#&gt;  [8] 0.6193819 0.6736216 0.6051480</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per ciascuno dei valori <span class="math inline">\(\theta_i\)</span>, con <span class="math inline">\(i = 1, \dots, 100,000\)</span>, estraggo a caso un valore dalla distribuzione binomiale di parametri <span class="math inline">\(n = 30\)</span> e <span class="math inline">\(\theta_i\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pred_y_sim</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="cn">NA</span>, <span class="va">nrep</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">pred_y_sim</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="cn">NA</span>, <span class="va">nrep</span><span class="op">)</span></span>
 <span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="va">nrep</span><span class="op">)</span> <span class="op">{</span></span>
 <span>  <span class="va">pred_y_sim</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">rbinom</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">30</span>, <span class="va">pred_p_sim</span><span class="op">[</span><span class="va">i</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="op">}</span></span>
 <span><span class="co"># In maniera equivalente posso fare:</span></span>
 <span><span class="co"># pred_y_sim &lt;- rbinom(1e5, n, pred_p_sim)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Calcolo la proporzione di volte in cui sono stati osservai i valori <span class="math inline">\(\tilde{y} = 0, 1, \dots, 30\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">ppd</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">pred_y_sim</span><span class="op">)</span> <span class="op">/</span> <span class="va">nrep</span></span>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">ppd</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">pred_y_sim</span><span class="op">)</span> <span class="op">/</span> <span class="va">nrep</span></span>
 <span><span class="va">ppd</span></span>
 <span><span class="co">#&gt; pred_y_sim</span></span>
 <span><span class="co">#&gt;       3       4       5       6       7       8       9      10      11      12 </span></span>
@@ -616,11 +657,10 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <span><span class="co">#&gt; 0.04290 0.06110 0.07812 0.09476 0.10763 0.11311 0.10821 0.09765 0.07982 0.06185 </span></span>
 <span><span class="co">#&gt;      23      24      25      26      27      28      29      30 </span></span>
 <span><span class="co">#&gt; 0.04156 0.02536 0.01299 0.00630 0.00224 0.00064 0.00016 0.00002</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Calcolo l’intervallo di valori <span class="math inline">\(\tilde{y}\)</span> a cui è associata una probabilità di 0.89 (per fare un confronto con il risultato ottenuto in precedenza).</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">LearnBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/LearnBayes/man/discint.html">discint</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">30</span>, <span class="va">ppd</span><span class="op">)</span>, <span class="fl">0.89</span><span class="op">)</span> </span>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">LearnBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/LearnBayes/man/discint.html">discint</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">30</span>, <span class="va">ppd</span><span class="op">)</span>, <span class="fl">0.89</span><span class="op">)</span> </span>
 <span><span class="co">#&gt; $prob</span></span>
 <span><span class="co">#&gt;      12 </span></span>
 <span><span class="co">#&gt; 0.91553 </span></span>
@@ -629,24 +669,22 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <span><span class="co">#&gt; 12 13 14 15 16 17 18 19 20 21 22 23 </span></span>
 <span><span class="co">#&gt; 12 13 14 15 16 17 18 19 20 21 22 23</span></span>
 <span><span class="co"># i risultati minori di 3 non sono stati calcolati</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Confronto i risultati della simulazione con i valori esatti della distribuzione predittiva a posteriori. Di seguito riporto i risultati esatti.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">prob30</span> <span class="op">&lt;-</span> <span class="fu">extraDistr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/extraDistr/man/BetaBinom.html">dbbinom</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, <span class="fl">30</span>, <span class="fl">25</span>, <span class="fl">17</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">prob30</span> <span class="op">&lt;-</span> <span class="fu">extraDistr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/extraDistr/man/BetaBinom.html">dbbinom</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, <span class="fl">30</span>, <span class="fl">25</span>, <span class="fl">17</span><span class="op">)</span></span>
 <span><span class="fu">LearnBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/LearnBayes/man/discint.html">discint</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, <span class="va">prob30</span><span class="op">)</span>, <span class="fl">0.89</span><span class="op">)</span></span>
 <span><span class="co">#&gt; $prob</span></span>
 <span><span class="co">#&gt; [1] 0.9152885</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $set</span></span>
 <span><span class="co">#&gt;  [1] 12 13 14 15 16 17 18 19 20 21 22 23</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Un grafico con la distribuzione predittiva a posteriori esatta è fornito nella figura seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span>Y<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, Probability <span class="op">=</span> <span class="va">prob30</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span>Y<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, Probability <span class="op">=</span> <span class="va">prob30</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ProbBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ProbBayes/man/prob_plot.html">prob_plot</a></span><span class="op">(</span>Color <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -655,9 +693,9 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 </div>
 <p>Una rappresentazione della distribuzione a posteriori ottenuta mediante simulazione è il seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span>Y<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, Probability <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">0</span>, <span class="va">ppd</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span>Y<span class="op">=</span><span class="fl">0</span><span class="op">:</span><span class="fl">30</span>, Probability <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">0</span>, <span class="va">ppd</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ProbBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ProbBayes/man/prob_plot.html">prob_plot</a></span><span class="op">(</span>Color <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -676,7 +714,7 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <div id="exr-post-pred-check-1" class="theorem exercise">
 <p><span class="theorem-title"><strong>Esercizio 24.1 </strong></span>Utilizziamo il codice Stan per generare <span class="math inline">\(p(y^{rep} \mid y)\)</span> nel caso dell’inferenza su una proporzione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">=</span> <span class="st">"</span></span>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">=</span> <span class="st">"</span></span>
 <span><span class="st">data {</span></span>
 <span><span class="st">  int&lt;lower=0&gt; N;</span></span>
 <span><span class="st">  array[N] int&lt;lower=0, upper=1&gt; y;</span></span>
@@ -696,26 +734,23 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <span><span class="st">}</span></span>
 <span><span class="st">"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">modelString</span>, con <span class="op">=</span> <span class="st">"code/betabin23-30-2-10.stan"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Si noti che nel nel blocco <code>generated quantities</code> sono state aggiunte le istruzioni necessarie per simulare <span class="math inline">\(y^{rep}\)</span>, ovvero, <code>y_rep[n] = bernoulli_rng(theta)</code>. Una tale istruzione ci dice di generare un valore casuale di una variabile Bernoulliana di parametro <span class="math inline">\(\theta\)</span>. Il valore <span class="math inline">\(\theta\)</span> è preso a caso dalla distribuzione a posteriori <span class="math inline">\(p(\theta \mid y)\)</span>. Il ciclo <code>for</code> specifica che tale operazione va ripetuta 30 volte per <em>ciascuna</em> iterazione MCMC.</p>
 <p>I dati dell’esempio sono forniti in formato <code>list</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>  N <span class="op">=</span> <span class="fl">30</span>,</span>
 <span>  y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">23</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">7</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Compiliamo il codice Stan.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"betabin23-30-2-10.stan"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"betabin23-30-2-10.stan"</span><span class="op">)</span></span>
 <span><span class="va">mod</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Eseguiamo il campionamento MCMC.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">data_list</span>,</span>
 <span>  iter_sampling <span class="op">=</span> <span class="fl">4000L</span>,</span>
 <span>  iter_warmup <span class="op">=</span> <span class="fl">2000L</span>,</span>
@@ -723,23 +758,20 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <span>  chains <span class="op">=</span> <span class="fl">4L</span>,</span>
 <span>  refresh <span class="op">=</span> <span class="fl">0</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per comodità, trasformiamo l’oggetto <code>fit</code> in un oggetto di classe <code>stanfit</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Il contenuto dell’oggetto <code>stanfit</code> può essere esaminato mediante la funzione <code>extract()</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">list_of_draws</span> <span class="op">&lt;-</span> <span class="fu">extract</span><span class="op">(</span><span class="va">stanfit</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">list_of_draws</span> <span class="op">&lt;-</span> <span class="fu">extract</span><span class="op">(</span><span class="va">stanfit</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">list_of_draws</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "theta" "y_rep" "lp__"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Dall’oggetto <code>list_of_draws</code> recuperiamo <code>y_rep</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">y_bern</span> <span class="op">&lt;-</span> <span class="va">list_of_draws</span><span class="op">$</span><span class="va">y_rep</span></span>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">y_bern</span> <span class="op">&lt;-</span> <span class="va">list_of_draws</span><span class="op">$</span><span class="va">y_rep</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">y_bern</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 16000    30</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">y_bern</span><span class="op">)</span></span>
@@ -767,15 +799,14 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <span><span class="co">#&gt;       [4,]     0     1     1     0     0     1</span></span>
 <span><span class="co">#&gt;       [5,]     0     0     0     0     1     0</span></span>
 <span><span class="co">#&gt;       [6,]     0     0     1     0     1     1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Dato che il codice Stan definisce un modello per i dati grezzi (ovvero, per ciascuna singola prova Bernoulliana del campione), ogni riga della matrice <code>y_bern</code> ha 30 colonne, ciascuna delle quali corrisponde ad un campione (<span class="math inline">\(n\)</span> = 16,000 in questa simulazione) di possibili valori futuri <span class="math inline">\(y_i \in \{0, 1\}\)</span>. In altre parole, abbiamo generato 16,000 campioni casuali di 30 osservazioni possibili osservazioni future.</p>
 <p>Per ottenere una stima della distribuzione predittiva a posteriori <span class="math inline">\(p(\tilde{y} \mid y)\)</span>, ovvero, per ottenere una stima della probabilità associata a ciascuno dei possibili numeri di successi, <span class="math inline">\(\tilde{y}\)</span>, in <span class="math inline">\(m = 30\)</span> nuove prove future, è sufficiente calcolare la proporzione di valori 1 in ciascuna riga della matrice <code>y_bern</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span>y_rep <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/colSums.html">rowSums</a></span><span class="op">(</span><span class="va">y_bern</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span>y_rep <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/colSums.html">rowSums</a></span><span class="op">(</span><span class="va">y_bern</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">y_rep</span>, <span class="fu">after_stat</span><span class="op">(</span><span class="va">density</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_histogram</span><span class="op">(</span>binwidth <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -794,16 +825,15 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <p><span class="theorem-title"><strong>Esercizio 24.2 </strong></span>Esaminiamo ora un set di dati che non seguono la distribuzione normale <span class="citation" data-cites="gelman2020regression">(<a href="999_refs.html#ref-gelman2020regression" role="doc-biblioref">Gelman et al., 2020</a>)</span>. I dati corrispondono ad una serie di misurazioni prese da Simon Newcomb nel 1882 come parte di un esperimento per stimare la velocità della luce. A questi dati verrà (inappropriatamente) adattata una distribuzione normale. L’obiettivo dell’esempio è quello di mostrare come i PPC possono rivelare la mancanza di adattamento di un modello ai dati.</p>
 <p>I PPC mostrano che il modo più semplice per verificare l’adattamento del modello è quello di visualizzare <span class="math inline">\(y^{rep}\)</span> insieme ai dati effettivi. Iniziamo a caricare i dati.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="http://www.stats.ox.ac.uk/pub/MASS4/">"MASS"</a></span><span class="op">)</span></span>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="http://www.stats.ox.ac.uk/pub/MASS4/">"MASS"</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="st">"newcomb"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Visualizziamo la distribuzione dei dati con un istogramma.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span><span class="va">newcomb</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span><span class="va">newcomb</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">newcomb</span>, <span class="fu">after_stat</span><span class="op">(</span><span class="va">density</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_histogram</span><span class="op">(</span>binwidth <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -812,15 +842,14 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 </div>
 <p>Creiamo un oggetto di tipo <code>list</code> dove inserire i dati.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>  y <span class="op">=</span> <span class="va">newcomb</span>,</span>
 <span>  N <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">newcomb</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Utilizziamo il seguente codice Stan per il modello normale.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
 <span><span class="st">data {</span></span>
 <span><span class="st">  int&lt;lower=0&gt; N;</span></span>
 <span><span class="st">  vector[N] y;</span></span>
@@ -842,11 +871,10 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <span><span class="st">}</span></span>
 <span><span class="st">"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">modelString</span>, con <span class="op">=</span> <span class="st">"code/newcomb.stan"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Adattiamo il modello ai dati.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"newcomb.stan"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"newcomb.stan"</span><span class="op">)</span></span>
 <span><span class="va">mod</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span>
 <span><span class="va">fit</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">data_list</span>,</span>
@@ -856,28 +884,25 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <span>  chains <span class="op">=</span> <span class="fl">4L</span>,</span>
 <span>  refresh <span class="op">=</span> <span class="fl">0</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Otteniamo le stime dei parametri <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span><span class="op">$</span><span class="fu">summary</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"mu"</span>, <span class="st">"sigma"</span><span class="op">)</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span><span class="op">$</span><span class="fu">summary</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"mu"</span>, <span class="st">"sigma"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 2 × 10</span></span>
 <span><span class="co">#&gt;   variable  mean median    sd   mad    q5   q95  rhat ess_bulk ess_tail</span></span>
 <span><span class="co">#&gt;   &lt;chr&gt;    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt; 1 mu        26.2   26.2 1.33  1.30  24.0   28.4  1.00   13305.   11189.</span></span>
 <span><span class="co">#&gt; 2 sigma     10.9   10.8 0.958 0.943  9.40  12.5  1.00   12614.   10352.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Trasformiamo l’oggetto <code>fit</code> in un formato <code>stanfit</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Rappresentiamo graficamente la distribuzione a posteriori di <span class="math inline">\(\mu\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mu_draws</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">stanfit</span>, pars <span class="op">=</span> <span class="st">"mu"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mu_draws</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">stanfit</span>, pars <span class="op">=</span> <span class="st">"mu"</span><span class="op">)</span></span>
 <span><span class="fu">mcmc_areas</span><span class="op">(</span><span class="va">mu_draws</span>, prob <span class="op">=</span> <span class="fl">0.95</span><span class="op">)</span> <span class="co"># color 95% interval</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -886,21 +911,19 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 </div>
 <p>La media campionaria è pari a 26.21.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">newcomb</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">newcomb</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 26.21212</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Anche se trova la media giusta, il modello non è comunque adeguato a prevedere le altre proprietà della <span class="math inline">\(y\)</span>. Estraiamo <span class="math inline">\(y^{rep}\)</span> dall’oggetto <code>stanfit</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">y_rep</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">stanfit</span>, pars <span class="op">=</span> <span class="st">"y_rep"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">y_rep</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">stanfit</span>, pars <span class="op">=</span> <span class="st">"y_rep"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">y_rep</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 16000    66</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>I valori <code>y_rep</code> sono i dati della distribuzione predittiva a posteriori che sono stati simulati usando gli stessi valori <span class="math inline">\(X\)</span> dei predittori utilizzati per adattare il modello. Il confronto tra l’istogramma della <span class="math inline">\(y\)</span> e gli istogrammi di diversi campioni <span class="math inline">\(y^{rep}\)</span> mostra una scarsa corrispondenza tra i due.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ppc_hist</span><span class="op">(</span><span class="va">data_list</span><span class="op">$</span><span class="va">y</span>, <span class="va">y_rep</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">8</span>, <span class="op">]</span>, binwidth <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ppc_hist</span><span class="op">(</span><span class="va">data_list</span><span class="op">$</span><span class="va">y</span>, <span class="va">y_rep</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">8</span>, <span class="op">]</span>, binwidth <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -909,8 +932,8 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 </div>
 <p>Alla stessa conclusione si giunge tramite un confronto tra la funzione di densità empirica della <span class="math inline">\(y\)</span> e quella di diversi campioni <span class="math inline">\(y^{rep}\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ppc_dens_overlay</span><span class="op">(</span><span class="va">data_list</span><span class="op">$</span><span class="va">y</span>, <span class="va">y_rep</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">50</span>, <span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ppc_dens_overlay</span><span class="op">(</span><span class="va">data_list</span><span class="op">$</span><span class="va">y</span>, <span class="va">y_rep</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">50</span>, <span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-31-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -919,8 +942,8 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 </div>
 <p>Generiamo ora i PPC per la media e il minimo della distribuzione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ppc_stat_2d</span><span class="op">(</span><span class="va">data_list</span><span class="op">$</span><span class="va">y</span>, <span class="va">y_rep</span>, stat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"mean"</span>, <span class="st">"min"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ppc_stat_2d</span><span class="op">(</span><span class="va">data_list</span><span class="op">$</span><span class="va">y</span>, <span class="va">y_rep</span>, stat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"mean"</span>, <span class="st">"min"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-32-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -930,7 +953,7 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <p>In conclusione, possiamo dire che mentre la media viene riprodotta accuratamente dal modello, ciò non è vero per il minimo della distribuzione. L’origine di questa mancanza di adattamento è il fatto che la distribuzione delle misurazioni della velocità della luce è asimmetrica negativa.</p>
 <p>Dato che ci sono poche osservazioni nella coda negativa della distribuzione, solo per fare un esempio, utilizzeremo ora un secondo modello che ipotizza una distribuzione <span class="math inline">\(t\)</span> di Student.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">=</span> <span class="st">"</span></span>
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">=</span> <span class="st">"</span></span>
 <span><span class="st">data {</span></span>
 <span><span class="st">  int&lt;lower=0&gt; N;</span></span>
 <span><span class="st">  vector[N] y;</span></span>
@@ -954,11 +977,10 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <span><span class="st">}</span></span>
 <span><span class="st">"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">modelString</span>, con <span class="op">=</span> <span class="st">"code/newcomb2.stan"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Adattiamo questo secondo modello ai dati.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"newcomb2.stan"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"newcomb2.stan"</span><span class="op">)</span></span>
 <span><span class="va">mod</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span>
 <span><span class="va">fit</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">data_list</span>,</span>
@@ -970,22 +992,21 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 <span><span class="op">)</span></span>
 <span><span class="co">#&gt; Running MCMC with 4 sequential chains...</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; Chain 1 finished in 0.3 seconds.</span></span>
+<span><span class="co">#&gt; Chain 1 finished in 0.2 seconds.</span></span>
 <span><span class="co">#&gt; Chain 2 finished in 0.3 seconds.</span></span>
 <span><span class="co">#&gt; Chain 3 finished in 0.3 seconds.</span></span>
-<span><span class="co">#&gt; Chain 4 finished in 0.3 seconds.</span></span>
+<span><span class="co">#&gt; Chain 4 finished in 0.4 seconds.</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; All 4 chains finished successfully.</span></span>
 <span><span class="co">#&gt; Mean chain execution time: 0.3 seconds.</span></span>
-<span><span class="co">#&gt; Total execution time: 1.3 seconds.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<span><span class="co">#&gt; Total execution time: 1.5 seconds.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Per questo secondo modello il confronto tra la funzione di densità empirica della <span class="math inline">\(y\)</span> e quella di diversi campioni <span class="math inline">\(y^{rep}\)</span> risulta adeguato.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">y_rep</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">stanfit</span>, pars <span class="op">=</span> <span class="st">"y_rep"</span><span class="op">)</span></span>
 <span><span class="fu">ppc_dens_overlay</span><span class="op">(</span><span class="va">data_list</span><span class="op">$</span><span class="va">y</span>, <span class="va">y_rep</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">50</span>, <span class="op">]</span><span class="op">)</span> <span class="op">+</span> <span class="fu">xlim</span><span class="op">(</span><span class="fl">0</span>, <span class="fl">50</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-35-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -994,8 +1015,8 @@ P(12 \leq \tilde{y} \leq 23) = 0.9145.
 </div>
 <p>Inoltre, anche la statistica “minimo della distribuzione” viene ben predetta dal modello.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ppc_stat_2d</span><span class="op">(</span><span class="va">data_list</span><span class="op">$</span><span class="va">y</span>, <span class="va">y_rep</span>, stat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"mean"</span>, <span class="st">"min"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ppc_stat_2d</span><span class="op">(</span><span class="va">data_list</span><span class="op">$</span><span class="va">y</span>, <span class="va">y_rep</span>, stat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"mean"</span>, <span class="st">"min"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-36-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -1023,14 +1044,14 @@ p(y, \theta) = p(\theta \mid y)p(y).
 <p>La distribuzione predittiva a priori può essere ricavata facilmente se l’inferenza bayesiana viene svolta mediante i metodi MCMC. Per fare un esempio consideriamo nuovamente i dati di <span class="citation" data-cites="zetschefuture2019">Zetsche et al. (<a href="999_refs.html#ref-zetschefuture2019" role="doc-biblioref">2019</a>)</span>, con 23 successi in 30 prove. Nella discussione precedente abbiamo svolto l’aggiornamento bayesiano imponendo su <span class="math inline">\(\theta\)</span> una distribuzione a priori <span class="math inline">\(\mbox{Beta}(2, 10)\)</span>.</p>
 <p>Nel caso di una verosimiglianza binomiale e di una distribuzione a priori Beta, la distribuzione predittiva a priori può essere costruita mediante la funzione <code><a href="https://rdrr.io/pkg/LearnBayes/man/pbetap.html">LearnBayes::pbetap()</a></code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
 <span>  y <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">30</span>,</span>
 <span>  Probability <span class="op">=</span> <span class="fu">LearnBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/LearnBayes/man/pbetap.html">pbetap</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">10</span><span class="op">)</span>, <span class="fl">30</span>, <span class="fl">0</span><span class="op">:</span><span class="fl">30</span><span class="op">)</span></span>
 <span><span class="op">)</span></span>
 <span><span class="va">df</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ProbBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ProbBayes/man/prob_plot.html">prob_plot</a></span><span class="op">(</span>Color <span class="op">=</span> <span class="st">"gray"</span>, Size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span>data <span class="op">=</span> <span class="fu">tibble</span><span class="op">(</span>y <span class="op">=</span> <span class="fl">23</span>, Probability <span class="op">=</span> <span class="fl">0</span><span class="op">)</span>, size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-37-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -1041,14 +1062,14 @@ p(y, \theta) = p(\theta \mid y)p(y).
 <p>Nella distribuzione predittiva a priori riportata nel grafico precedente ho evidenziato il punto <span class="math inline">\(y = 23\)</span>, ovvero il numero di successi nel campione. Il grafico mostra che la distribuzione predittiva a priori assegna una credibilità quasi nulla all’evento <span class="math inline">\(y = 23\)</span>, ovvero ai dati che sono stati effettivamente osservati. Questo indica chiaramente che la distribuzione a priori <span class="math inline">\(\mbox{Beta}(2, 10)\)</span> non è adeguata per i dati che stiamo analizzando, così come avevamo in precedenza anticipato.</p>
 <p>Se viene invece utilizzata una distribuzione a priori debolmente informativa, o vero <span class="math inline">\(\mbox{Beta}(2, 2)\)</span>, la distribuzione predittiva a priori assume la forma seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
 <span>  y <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">30</span>,</span>
 <span>  Probability <span class="op">=</span> <span class="fu">LearnBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/LearnBayes/man/pbetap.html">pbetap</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">2</span><span class="op">)</span>, <span class="fl">30</span>, <span class="fl">0</span><span class="op">:</span><span class="fl">30</span><span class="op">)</span></span>
 <span><span class="op">)</span></span>
 <span><span class="va">df</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ProbBayes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ProbBayes/man/prob_plot.html">prob_plot</a></span><span class="op">(</span>Color <span class="op">=</span> <span class="st">"gray"</span>, Size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span>data <span class="op">=</span> <span class="fu">tibble</span><span class="op">(</span>y <span class="op">=</span> <span class="fl">23</span>, Probability <span class="op">=</span> <span class="fl">0</span><span class="op">)</span>, size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="046_bayesian_prediction_files/figure-html/unnamed-chunk-38-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>

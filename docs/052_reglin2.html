@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Data Science per psicologi - 27&nbsp; Regressione lineare bivariata</title>
 <style>
@@ -210,7 +210,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata: significato, teoremi, eventi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -220,7 +220,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indici di posizione, di varianza e di associazione di variabili casuali</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -398,21 +398,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
-  </div>
-</li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Appendici</a>
+            <a href="./frequentist_inference.html" class="sidebar-item-text sidebar-link">Parte 7: Inferenza frequentista</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./220_intro_frequentist.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Legge dei grandi numeri</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./221_conf_interv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Intervallo fiduciale</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./225_distr_camp_mean.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Distribuzione campionaria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./226_test_ipotesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Significatività statistica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./227_ttest.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Inferenza sulle medie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./228_limiti_stat_frequentista.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Limiti dell’inferenza frequentista</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Appendici</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./a01_math_symbols.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Simbologia di base</span></a>
@@ -435,12 +475,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  <a href="./a05_calculus_notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Per liberarvi dai terrori preliminari</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
+  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
   </div>
 </li>
       </ul>
@@ -470,7 +515,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-regr-model-lm" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-regr-model-lm" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regressione lineare bivariata</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Codice</button></div></div>
 </div>
 
 
@@ -508,7 +553,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Nel presente Capitolo esaminerò la relazione tra l’intelligenza del bambino (<code>kid_score</code>) e l’intelligenza della madre (<code>mom_iq</code>). Mi chiederò se, e in che misura, l’intelligenza della madre sia in grado di predire l’intelligenza del bambino.</p>
 <p>Per iniziare, leggo i dati in <span class="math inline">\(\mathsf{R}\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">&lt;-</span> <span class="fu">rio</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/rio/man/import.html">import</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://here.r-lib.org//reference/here.html">here</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">&lt;-</span> <span class="fu">rio</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/rio/man/import.html">import</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://here.r-lib.org//reference/here.html">here</a></span><span class="op">(</span></span>
 <span>  <span class="st">"data"</span>, <span class="st">"kidiq.dta"</span></span>
 <span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="fu">glimpse</span><span class="op">(</span><span class="va">kidiq</span><span class="op">)</span></span>
@@ -519,14 +564,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="co">#&gt; $ mom_iq    &lt;dbl&gt; 121.11753, 89.36188, 115.44316, 99.44964, 92.74571, 107.9018…</span></span>
 <span><span class="co">#&gt; $ mom_work  &lt;dbl&gt; 4, 4, 4, 3, 4, 1, 4, 3, 1, 1, 1, 4, 4, 4, 2, 1, 3, 3, 4, 3, …</span></span>
 <span><span class="co">#&gt; $ mom_age   &lt;dbl&gt; 27, 25, 27, 25, 27, 18, 20, 23, 24, 19, 23, 24, 27, 26, 24, …</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>I dati rappresentati in un diagramma a dispersione suggeriscono che, in questo campione, sembra effettivamente esserci un’associazione positiva tra l’intelligenza del bambino (<code>kid_score</code>) e l’intelligenza della madre (<code>mom_iq</code>).</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">%&gt;%</span> </span>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">mom_iq</span>, y <span class="op">=</span> <span class="va">kid_score</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="052_reglin2_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -535,11 +579,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>Il modello di regressione lineare descrive questa associazione mediante una retta.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">%&gt;%</span> </span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">mom_iq</span>, y <span class="op">=</span> <span class="va">kid_score</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_smooth</span><span class="op">(</span>method <span class="op">=</span> <span class="st">"lm"</span>, se <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="052_reglin2_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -548,7 +592,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>Ci sono infinite rette che, in linea di principio, possono essere usate per “approssimare” la nube di punti nel diagramma a dispersione. È dunque necessario introdurre dei vincoli per selezionare una di queste possibili rette. Un vincolo che viene introdotto dal modello di regressione è quello di costringere la retta a passare per il punto <span class="math inline">\((\bar{x}, \bar{y})\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">%&gt;%</span> </span>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">mom_iq</span>, y <span class="op">=</span> <span class="va">kid_score</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_smooth</span><span class="op">(</span>method <span class="op">=</span> <span class="st">"lm"</span>, se <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op">+</span></span>
@@ -556,7 +600,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>    <span class="fu">aes</span><span class="op">(</span>x<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">mom_iq</span><span class="op">)</span>, y<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kid_score</span><span class="op">)</span><span class="op">)</span>, </span>
 <span>    colour<span class="op">=</span><span class="st">"red"</span>, size <span class="op">=</span> <span class="fl">4</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="052_reglin2_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -570,28 +614,24 @@ y_i = a + b x_i + e_i.
 \]</span></p>
 <p>I valori <span class="math inline">\(y_i\)</span> corrispondono, nell’esempio che stiamo discutendo, alla variabile <code>kid_score</code>. I primi 10 valori della variabile <span class="math inline">\(y\)</span> sono i seguenti:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
 <span><span class="co">#&gt;  [1]  65  98  85  83 115  98  69 106 102  95</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per fare riferimento a ciascuna osservazione usiamo l’indice <span class="math inline">\(i\)</span>. Quindi, ad esempio, <span class="math inline">\(y_3\)</span> è uguale a</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span></span>
 <span><span class="co">#&gt; [1] 85</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Nel caso presente, la variabile <span class="math inline">\(x\)</span> è <code>mom_iq</code>. I primi 10 valori di <span class="math inline">\(x\)</span> sono i seguenti:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
 <span><span class="co">#&gt;  [1] 121.11753  89.36188 115.44316  99.44964  92.74571 107.90184 138.89311</span></span>
 <span><span class="co">#&gt;  [8] 125.14512  81.61953  95.07307</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>In maniera corrispondente alla <span class="math inline">\(y\)</span>, uso un indice per fare riferimento ai singoli valori della variabile. Ad esempio, <span class="math inline">\(x_3\)</span> è</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span></span>
 <span><span class="co">#&gt; [1] 115.4432</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Il modello di regressione bivariata, descritto dall’equazione precedente, ci dice che ciascun valore <span class="math inline">\(y\)</span> è dato dalla somma di due componenti: una componente deterministica e una componente aleatoria. Consideriamo il primo valore <span class="math inline">\(y\)</span> del campione. Per esso, il modello di regressione diventa</p>
 <p><span class="math display">\[
@@ -654,24 +694,21 @@ b = \frac{\mbox{Cov}(x, y)}{\mbox{Var}(x)}.
 <p>Le due precedenti equazioni corrispondono alla <em>stima dei minimi quadrati</em> dei coefficienti di regressione della retta che minimizza la somma dei quadrati dei residui.</p>
 <p>Nel caso dell’esempio presente, tali coefficienti sono uguali a:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">b</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">cov</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span>, <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">var</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">b</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">cov</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span>, <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html">var</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span>
 <span><span class="va">b</span></span>
 <span><span class="co">#&gt; [1] 0.6099746</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">a</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">)</span> <span class="op">-</span> <span class="va">b</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">a</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">)</span> <span class="op">-</span> <span class="va">b</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span>
 <span><span class="va">a</span></span>
 <span><span class="co">#&gt; [1] 25.79978</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>In <span class="math inline">\(\mathsf{R}\)</span> li possiamo facilmente trovare con la seguente funzione:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">kid_score</span> <span class="op">~</span> <span class="va">mom_iq</span>, data <span class="op">=</span> <span class="va">kidiq</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fm</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">kid_score</span> <span class="op">~</span> <span class="va">mom_iq</span>, data <span class="op">=</span> <span class="va">kidiq</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html">coef</a></span><span class="op">(</span><span class="va">fm</span><span class="op">)</span></span>
 <span><span class="co">#&gt; (Intercept)      mom_iq </span></span>
 <span><span class="co">#&gt;  25.7997778   0.6099746</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>In precedenza abbiamo soltanto accennato al problema di come si possono trovano i coefficienti dei minimi quadrati; ritorneremo su questo punto in seguito, con una simulazione. Per ora, chiediamoci cosa significano i due coefficienti che abbiamo appena trovato.</p>
 <p>Il coefficiente <span class="math inline">\(a\)</span> si chiama <em>intercetta</em>. L’intercetta, all’interno del diagramma a dispersione, specifica il punto in cui la retta di regressione interseca l’asse <span class="math inline">\(y\)</span> del sistema di assi cartesiani.</p>
@@ -684,7 +721,7 @@ b = \frac{\mbox{Cov}(x, y)}{\mbox{Var}(x)}.
 <p>Dunque, quando il coefficiente <span class="math inline">\(b\)</span> è uguale a 0.61, questo significa che il modello di regressione predice che <em>la medie</em> della distribuzione condizionata <span class="math inline">\(p(y \mid x_i)\)</span> aumenta di 0.61 punti se la variabile <span class="math inline">\(x\)</span> (QI delle madri) aumenta di un punto. Questo significa che il modello di regressione non fa una predizione sul punteggio di ciascun valore <span class="math inline">\(y_i\)</span> (in funzione di <span class="math inline">\(x\)</span>), ma solo della media delle distribuzioni condizionate <span class="math inline">\(p(y \mid x_i)\)</span> di cui il valore osservato <span class="math inline">\(y_i\)</span> è una realizzazione casuale.</p>
 <p>Possiamo dire la stessa cosa con parole diverse dicendo che il modello di regressione fa delle predizioni sulla componente deterministica di ciascuna osservazione. È più semplice capire questo aspetto se rappresentiamo in maniera grafica la componente “deterministica” <span class="math inline">\(\hat{y}_i = a + b x_i\)</span> predetta dal modello di regressione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">yhat</span> <span class="op">&lt;-</span> <span class="va">fm</span><span class="op">$</span><span class="va">fitted.values</span></span>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">yhat</span> <span class="op">&lt;-</span> <span class="va">fm</span><span class="op">$</span><span class="va">fitted.values</span></span>
 <span><span class="va">kidiq</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">mom_iq</span>, y <span class="op">=</span> <span class="va">yhat</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
@@ -693,7 +730,7 @@ b = \frac{\mbox{Cov}(x, y)}{\mbox{Var}(x)}.
 <span>    <span class="fu">aes</span><span class="op">(</span>x<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">mom_iq</span><span class="op">)</span>, y<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kid_score</span><span class="op">)</span><span class="op">)</span>, </span>
 <span>    colour<span class="op">=</span><span class="st">"red"</span>, size <span class="op">=</span> <span class="fl">4</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="052_reglin2_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -711,50 +748,44 @@ y_1 = (a + b x_1) + e_1
 \]</span></p>
 <p>Abbiamo</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span>
 <span><span class="co">#&gt; [1] 65</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Dunque</p>
 <p><span class="math display">\[
 e_1 = (a + b x_1) - y_1
 \]</span></p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">e_1</span> <span class="op">&lt;-</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">-</span> <span class="op">(</span><span class="va">a</span> <span class="op">+</span> <span class="va">b</span> <span class="op">*</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">e_1</span> <span class="op">&lt;-</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">-</span> <span class="op">(</span><span class="va">a</span> <span class="op">+</span> <span class="va">b</span> <span class="op">*</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="va">e_1</span></span>
 <span><span class="co">#&gt; [1] -34.67839</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Ciò significa che il valore osservato <span class="math inline">\(y_1 = 65\)</span> viene scomposto dal modello di regressione in due componenti. La componente deterministica <span class="math inline">\(\hat{y}_1\)</span>, predicibile da <span class="math inline">\(x_1\)</span>, è</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">yhat_1</span> <span class="op">&lt;-</span> <span class="va">a</span> <span class="op">+</span> <span class="va">b</span> <span class="op">*</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">yhat_1</span> <span class="op">&lt;-</span> <span class="va">a</span> <span class="op">+</span> <span class="va">b</span> <span class="op">*</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span>
 <span><span class="va">yhat_1</span></span>
 <span><span class="co">#&gt; [1] 99.67839</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>La somma della componente deterministica e della componente erratica, ovviamente, riproduce il valore osservato.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">yhat_1</span> <span class="op">+</span> <span class="va">e_1</span></span>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">yhat_1</span> <span class="op">+</span> <span class="va">e_1</span></span>
 <span><span class="co">#&gt; [1] 65</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Se sommiamo tutti i residui calcolati rispetto alla retta di regressione dei minimi quadrati otteniamo zero:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">fm</span><span class="op">$</span><span class="va">res</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">fm</span><span class="op">$</span><span class="va">res</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 5.373479e-13</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <section id="trasformazione-dei-dati" class="level3" data-number="27.1.1"><h3 data-number="27.1.1" class="anchored" data-anchor-id="trasformazione-dei-dati">
 <span class="header-section-number">27.1.1</span> Trasformazione dei dati</h3>
 <p>In generale, per variabili a livello di scala ad intervalli, non è possibile assegnare un’interpretazione utile all’intercetta del modello di regressione lineare. L’intercetta ci dice infatti qual è il valore atteso della <span class="math inline">\(y\)</span> quando <span class="math inline">\(x = 0\)</span>. Ma, se la variabile <span class="math inline">\(x\)</span> è misurata su scala ad intervalli, il valore <span class="math inline">\(x = 0\)</span> è arbitrario e non corrisponde “all’assenza di intensità” della variabile <span class="math inline">\(x\)</span>. Un valore pari a 0 del QI della madre non vuol dire che l’intelligenza della madre sia nulla (un’affermazione, questa, che è difficile da capire), ma semplicemente che il punteggio del test usato per misurare il QI della madre assume valore 0 (qualcosa che, comunque, in pratica non succederà mai). Quindi è di poco interesse sapere qual è il valore medio del QI del bambino quando test usato per misurare il QI della madre ha valore 0. Per potere fornire all’intercetta del modello di regressione un’interpretazione più utile dobbiamo trasformare le osservazioni <span class="math inline">\(x\)</span>.</p>
 <p>Esprimiamo <span class="math inline">\(x\)</span> come differenza dalla media. Chiamiamo questa nuova variabile <span class="math inline">\(xd\)</span>:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">xd</span> <span class="op">&lt;-</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span><span class="op">$</span><span class="va">xd</span> <span class="op">&lt;-</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Se ora usiamo le coppie di osservazioni <span class="math inline">\(xd_i, y_i\)</span>, il diagramma a dispersione assume la forma seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">%&gt;%</span> </span>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">kidiq</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">xd</span>, y <span class="op">=</span> <span class="va">kid_score</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_smooth</span><span class="op">(</span>method <span class="op">=</span> <span class="st">"lm"</span>, se <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="op">+</span></span>
@@ -762,7 +793,7 @@ e_1 = (a + b x_1) - y_1
 <span>    <span class="fu">aes</span><span class="op">(</span>x<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">xd</span><span class="op">)</span>, y<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kid_score</span><span class="op">)</span><span class="op">)</span>, </span>
 <span>    colour<span class="op">=</span><span class="st">"red"</span>, size <span class="op">=</span> <span class="fl">4</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="052_reglin2_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -771,11 +802,10 @@ e_1 = (a + b x_1) - y_1
 </div>
 <p>Quello che abbiamo fatto è stato di <em>traslare rigidamente</em> la nube di punti sul piano cartesiano di una quantità pari alla distanza tra <span class="math inline">\(\bar{x}\)</span> e l’origine. Dunque, le <em>relazioni spaziali</em> tra i punti del diagramma a dispersione restano immutate. Di conseguenza, la pendenza della retta di regressione calcolata sui dati trasformati è uguale a quella che si trova nel caso dei dati non trasformati. Ciò che cambia è il valore dell’intercetta.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fm1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">kid_score</span> <span class="op">~</span> <span class="va">xd</span>, data <span class="op">=</span> <span class="va">kidiq</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fm1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">kid_score</span> <span class="op">~</span> <span class="va">xd</span>, data <span class="op">=</span> <span class="va">kidiq</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html">coef</a></span><span class="op">(</span><span class="va">fm1</span><span class="op">)</span></span>
 <span><span class="co">#&gt; (Intercept)          xd </span></span>
 <span><span class="co">#&gt;  86.7972350   0.6099746</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>L’intercetta corrisponde al punto sull’asse <span class="math inline">\(y\)</span> dove la retta di regressione interseca l’ordinata. Ma, nel caso dei dati trasformati, dato che abbiamo traslato i punti di una quantità pari a <span class="math inline">\(x - \bar{x}\)</span>, il valore <span class="math inline">\(xd = 0\)</span> corrisponde a <span class="math inline">\(x = \bar{x}\)</span> nel caso dei dati grezzi. Dunque, per i dati trasformati <span class="math inline">\(xd_i, y_i\)</span>, l’intercetta corrisponderà al valore atteso della <span class="math inline">\(y\)</span> in corrispondenza del valore medio della variabile <span class="math inline">\(x\)</span> sulla scala dei dati non trasformati (ovvero <span class="math inline">\(\bar{x}\)</span>). In altre parole, l’intercetta del modello di regressione lineare calcolata sui dati trasformati corrisponde al QI medio dei bambini in corrispondenza del QI medio delle madri.</p>
 </section><section id="il-metodo-dei-minimi-quadrati" class="level3" data-number="27.1.2"><h3 data-number="27.1.2" class="anchored" data-anchor-id="il-metodo-dei-minimi-quadrati">
@@ -784,31 +814,28 @@ e_1 = (a + b x_1) - y_1
 <p>Il problema è di trovare i valori <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> tali per cui la quantità <span class="math inline">\(\sum_{i=1}^{n}{(y_i - (a + b x_i))^2}\)</span> assume il valore minore possibile. Questo è un problema di minimizzazione rispetto a due parametri. Per dare un’idea di come si fa, semplifichiamo il problema e supponiamo che uno dei due parametri sia noto, ad esempio <span class="math inline">\(a\)</span>, così ci resta una sola incognita.</p>
 <p>Credo una griglia di valori <code>b_grid</code> possibili, ad esempio:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nrep</span> <span class="op">&lt;-</span> <span class="fl">1e5</span></span>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nrep</span> <span class="op">&lt;-</span> <span class="fl">1e5</span></span>
 <span><span class="va">b_grid</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">1</span>, length.out <span class="op">=</span> <span class="va">nrep</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Definisco una funzione che calcola la quantità <span class="math inline">\(\sum_{i=1}^{n}{(y_i - (a + b x_i))^2}\)</span>:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sse</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">a</span>, <span class="va">b</span>, <span class="va">x</span>, <span class="va">y</span><span class="op">)</span> <span class="op">{</span></span>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sse</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">a</span>, <span class="va">b</span>, <span class="va">x</span>, <span class="va">y</span><span class="op">)</span> <span class="op">{</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">y</span> <span class="op">-</span> <span class="op">(</span><span class="va">a</span> <span class="op">+</span> <span class="va">b</span> <span class="op">*</span> <span class="va">x</span><span class="op">)</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Calcolo la somma degli errori quadratici per ciascun possibile valore <code>b_grid</code>, fissando <span class="math inline">\(a = 25.79978\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sse_res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="cn">NA</span>, <span class="va">nrep</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sse_res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="cn">NA</span>, <span class="va">nrep</span><span class="op">)</span></span>
 <span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="va">nrep</span><span class="op">)</span> <span class="op">{</span></span>
 <span>  <span class="va">sse_res</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu">sse</span><span class="op">(</span>a <span class="op">=</span> <span class="fl">25.79978</span>, b <span class="op">=</span> <span class="va">b_grid</span><span class="op">[</span><span class="va">i</span><span class="op">]</span>, x <span class="op">=</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span>, y <span class="op">=</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">)</span></span>
 <span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Esaminiamo il risultato ottenuto.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span></span>
 <span>  <span class="va">b_grid</span>, <span class="va">sse_res</span>, type <span class="op">=</span> <span class="st">'l'</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="052_reglin2_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -817,15 +844,13 @@ e_1 = (a + b x_1) - y_1
 </div>
 <p>Il risultato ottenuto con la simulazione</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">b_grid</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/which.min.html">which.min</a></span><span class="op">(</span><span class="va">sse_res</span><span class="op">)</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">b_grid</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/which.min.html">which.min</a></span><span class="op">(</span><span class="va">sse_res</span><span class="op">)</span><span class="op">]</span></span>
 <span><span class="co">#&gt; [1] 0.6099761</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>riproduce quello ottenuto per via analitica:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">b</span></span>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">b</span></span>
 <span><span class="co">#&gt; [1] 0.6099746</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Una simulazione simile, ma computazionalmente più complessa, può essere usata per stimare simultaneamente entrambi i parametri. Ci siamo limitati qui ad una <em>proof of concept</em> del caso più semplice.</p>
 </section><section id="lerrore-standard-della-regressione" class="level3" data-number="27.1.3"><h3 data-number="27.1.3" class="anchored" data-anchor-id="lerrore-standard-della-regressione">
@@ -845,37 +870,33 @@ s_e = \sqrt{\frac{1}{n-2}\sum e_i^2}.
 <p>Verifichiamo quanto detto con i dati a disposizione.</p>
 <p>I residui possono essere trovati nel modo seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">e</span> <span class="op">&lt;-</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span> <span class="op">-</span> <span class="op">(</span><span class="va">a</span> <span class="op">+</span> <span class="va">b</span> <span class="op">*</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">e</span> <span class="op">&lt;-</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span> <span class="op">-</span> <span class="op">(</span><span class="va">a</span> <span class="op">+</span> <span class="va">b</span> <span class="op">*</span> <span class="va">kidiq</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span>
 <span><span class="va">e</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
 <span><span class="co">#&gt;  [1] -34.678390  17.691747 -11.217173  -3.461529  32.627697   6.382845</span></span>
 <span><span class="co">#&gt;  [7] -41.521041   3.864881  26.414387  11.208068</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Oppure nel modo seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fm</span><span class="op">$</span><span class="va">residuals</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fm</span><span class="op">$</span><span class="va">residuals</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
 <span><span class="co">#&gt;          1          2          3          4          5          6          7 </span></span>
 <span><span class="co">#&gt; -34.678390  17.691747 -11.217173  -3.461529  32.627697   6.382845 -41.521041 </span></span>
 <span><span class="co">#&gt;          8          9         10 </span></span>
 <span><span class="co">#&gt;   3.864881  26.414387  11.208068</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Calcolo il residuo medio, prendendo il valore assoluto.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">abs</a></span><span class="op">(</span><span class="va">e</span><span class="op">)</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">abs</a></span><span class="op">(</span><span class="va">e</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 14.4686</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>L’errore standard della regressione è</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">e</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span> <span class="op">/</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">e</span><span class="op">)</span> <span class="op">-</span> <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">e</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span> <span class="op">/</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">e</span><span class="op">)</span> <span class="op">-</span> <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 18.26612</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>I due numeri non sono uguali, ma possiamo dire che hanno lo stesso ordine di grandezza.</p>
 <p>Se usiamo la funzione <code><a href="https://rdrr.io/r/stats/lm.html">lm()</a></code> otteniamo lo stesso valore, chiamato <code>Residual standard error</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">fm</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">fm</span><span class="op">)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; Call:</span></span>
 <span><span class="co">#&gt; lm(formula = kid_score ~ mom_iq, data = kidiq)</span></span>
@@ -894,7 +915,6 @@ s_e = \sqrt{\frac{1}{n-2}\sum e_i^2}.
 <span><span class="co">#&gt; Residual standard error: 18.27 on 432 degrees of freedom</span></span>
 <span><span class="co">#&gt; Multiple R-squared:  0.201,  Adjusted R-squared:  0.1991 </span></span>
 <span><span class="co">#&gt; F-statistic: 108.6 on 1 and 432 DF,  p-value: &lt; 2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section></section><section id="indice-di-determinazione" class="level2" data-number="27.2"><h2 data-number="27.2" class="anchored" data-anchor-id="indice-di-determinazione">
 <span class="header-section-number">27.2</span> Indice di determinazione</h2>
@@ -929,28 +949,25 @@ R^2 \triangleq \frac{\mbox{dev_R}}{\mbox{dev_T}} = 1 - \frac{\mbox{dev_E}}{\mbox
 <p>Quando l’insieme di tutte le deviazioni della <span class="math inline">\(y\)</span> dalla media è spiegato dall’insieme di tutte le deviazioni della variabile teorica <span class="math inline">\(\hat{y}\)</span> dalla media, si ha che l’adattamento (o accostamento) del modello al campione di dati è perfetto, la devianza residua è nulla ed <span class="math inline">\(r^2 = 1\)</span>; nel caso opposto, la variabilità totale coincide con quella residua, per cui <span class="math inline">\(r^2 = 0\)</span>. Tra questi due estremi, <span class="math inline">\(r\)</span> indica l’intensità della relazione lineare tra le due variabili e <span class="math inline">\(r^2\)</span>, con <span class="math inline">\(0 \leq r^2 \leq 1\)</span>, esprime la porzione della devianza totale della <span class="math inline">\(y\)</span> che è spiegata dalla regressione lineare sulla <span class="math inline">\(x\)</span>.</p>
 <p>Per l’esempio in discussione abbiamo quanto segue. La devianza totale è</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dev_t</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">)</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dev_t</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">)</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="va">dev_t</span></span>
 <span><span class="co">#&gt; [1] 180386.2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>La devianza spiegata è</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dev_r</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">fm</span><span class="op">$</span><span class="va">fitted.values</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">)</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dev_r</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">fm</span><span class="op">$</span><span class="va">fitted.values</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">kidiq</span><span class="op">$</span><span class="va">kid_score</span><span class="op">)</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="va">dev_r</span></span>
 <span><span class="co">#&gt; [1] 36248.82</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>L’indice di determinazione è</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">R2</span> <span class="op">&lt;-</span> <span class="va">dev_r</span> <span class="op">/</span> <span class="va">dev_t</span></span>
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">R2</span> <span class="op">&lt;-</span> <span class="va">dev_r</span> <span class="op">/</span> <span class="va">dev_t</span></span>
 <span><span class="va">R2</span></span>
 <span><span class="co">#&gt; [1] 0.2009512</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Nell’output di <code><a href="https://rdrr.io/r/stats/lm.html">lm()</a></code> un tale valore è chiamato <code>Multiple R-squared</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">fm</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">fm</span><span class="op">)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; Call:</span></span>
 <span><span class="co">#&gt; lm(formula = kid_score ~ mom_iq, data = kidiq)</span></span>
@@ -969,7 +986,6 @@ R^2 \triangleq \frac{\mbox{dev_R}}{\mbox{dev_T}} = 1 - \frac{\mbox{dev_E}}{\mbox
 <span><span class="co">#&gt; Residual standard error: 18.27 on 432 degrees of freedom</span></span>
 <span><span class="co">#&gt; Multiple R-squared:  0.201,  Adjusted R-squared:  0.1991 </span></span>
 <span><span class="co">#&gt; F-statistic: 108.6 on 1 and 432 DF,  p-value: &lt; 2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Il risultato ottenuto si può interpretare dicendo che circa il 20% della variabilità dei punteggi del QI dei bambini può essere predetto conoscendo il QI delle madri.</p>
 <section id="inferenza-sul-modello-di-regressione" class="level3" data-number="27.2.1"><h3 data-number="27.2.1" class="anchored" data-anchor-id="inferenza-sul-modello-di-regressione">

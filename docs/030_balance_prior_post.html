@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Data Science per psicologi - 19&nbsp; L’influenza della distribuzione a priori</title>
 <style>
@@ -229,7 +229,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata: significato, teoremi, eventi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -239,7 +239,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indici di posizione, di varianza e di associazione di variabili casuali</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -417,21 +417,61 @@ div.csl-indent {
   <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
-  </div>
-</li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Appendici</a>
+            <a href="./frequentist_inference.html" class="sidebar-item-text sidebar-link">Parte 7: Inferenza frequentista</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./220_intro_frequentist.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Legge dei grandi numeri</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./221_conf_interv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Intervallo fiduciale</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./225_distr_camp_mean.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Distribuzione campionaria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./226_test_ipotesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Significatività statistica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./227_ttest.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Inferenza sulle medie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./228_limiti_stat_frequentista.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Limiti dell’inferenza frequentista</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Appendici</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./a01_math_symbols.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Simbologia di base</span></a>
@@ -454,12 +494,17 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  <a href="./a05_calculus_notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Per liberarvi dai terrori preliminari</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
+  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
   </div>
 </li>
       </ul>
@@ -480,7 +525,7 @@ div.csl-indent {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-prior-influence" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-prior-influence" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">L’influenza della distribuzione a priori</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Codice</button></div></div>
 </div>
 
 
@@ -519,7 +564,7 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 <span class="header-section-number">19.2</span> Stessi dati, diverse distribuzioni a priori</h2>
 <p>Iniziamo con lo scenario che descrive il caso in cui abbiamo gli stessi dati ma diverse distribuzioni a priori. Supponiamo che le tre amiche decidano di guardare insieme 20 film selezionati a caso.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">bechdel</span>, package <span class="op">=</span> <span class="st">"bayesrules"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">bechdel</span>, package <span class="op">=</span> <span class="st">"bayesrules"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">84735</span><span class="op">)</span></span>
 <span><span class="va">bechdel_20</span> <span class="op">&lt;-</span> <span class="va">bechdel</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">sample_n</span><span class="op">(</span><span class="fl">20</span><span class="op">)</span></span>
@@ -531,25 +576,23 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 <span><span class="co">#&gt; 1  2005 King Kong  FAIL  </span></span>
 <span><span class="co">#&gt; 2  1983 Flashdance PASS  </span></span>
 <span><span class="co">#&gt; 3  2013 The Purge  FAIL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Di questi 20 film, solo il 45% (<span class="math inline">\(y\)</span> = 9) passa il test di Bechdel.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bechdel_20</span> <span class="op">%&gt;%</span> </span>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bechdel_20</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">janitor</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/janitor/man/tabyl.html">tabyl</a></span><span class="op">(</span><span class="va">binary</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">janitor</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/janitor/man/adorn_totals.html">adorn_totals</a></span><span class="op">(</span><span class="st">"row"</span><span class="op">)</span></span>
 <span><span class="co">#&gt;  binary  n percent</span></span>
 <span><span class="co">#&gt;    FAIL 11    0.55</span></span>
 <span><span class="co">#&gt;    PASS  9    0.45</span></span>
 <span><span class="co">#&gt;   Total 20    1.00</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Esaminiamo le tre distribuzioni a posteriori. Per la femminista usiamo una distribuzione a priori <span class="math inline">\(\text{Beta}(5, 11)\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
 <span>  alpha <span class="op">=</span> <span class="fl">5</span>, beta <span class="op">=</span> <span class="fl">11</span>, y <span class="op">=</span> <span class="fl">9</span>, n <span class="op">=</span> <span class="fl">20</span></span>
 <span>  <span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="030_balance_prior_post_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -557,20 +600,19 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 </div>
 </div>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/summarize_beta_binomial.html">summarize_beta_binomial</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/summarize_beta_binomial.html">summarize_beta_binomial</a></span><span class="op">(</span></span>
 <span>  alpha <span class="op">=</span> <span class="fl">5</span>, beta <span class="op">=</span> <span class="fl">11</span>, y <span class="op">=</span> <span class="fl">9</span>, n <span class="op">=</span> <span class="fl">20</span></span>
 <span><span class="op">)</span></span>
 <span><span class="co">#&gt;       model alpha beta      mean      mode        var         sd</span></span>
 <span><span class="co">#&gt; 1     prior     5   11 0.3125000 0.2857143 0.01263787 0.11241827</span></span>
 <span><span class="co">#&gt; 2 posterior    14   22 0.3888889 0.3823529 0.00642309 0.08014418</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per l’ottimista usiamo una distribuzione a priori <span class="math inline">\(\text{Beta}(14, 1)\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
 <span>  alpha <span class="op">=</span> <span class="fl">14</span>, beta <span class="op">=</span> <span class="fl">1</span>, y <span class="op">=</span> <span class="fl">9</span>, n <span class="op">=</span> <span class="fl">20</span></span>
 <span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="030_balance_prior_post_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -578,20 +620,19 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 </div>
 </div>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/summarize_beta_binomial.html">summarize_beta_binomial</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/summarize_beta_binomial.html">summarize_beta_binomial</a></span><span class="op">(</span></span>
 <span>  alpha <span class="op">=</span> <span class="fl">14</span>, beta <span class="op">=</span> <span class="fl">1</span>, y <span class="op">=</span> <span class="fl">9</span>, n <span class="op">=</span> <span class="fl">20</span></span>
 <span><span class="op">)</span></span>
 <span><span class="co">#&gt;       model alpha beta      mean      mode         var         sd</span></span>
 <span><span class="co">#&gt; 1     prior    14    1 0.9333333 1.0000000 0.003888889 0.06236096</span></span>
 <span><span class="co">#&gt; 2 posterior    23   12 0.6571429 0.6666667 0.006258503 0.07911070</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Infine, per l’ignara usiamo una distribuzione a priori <span class="math inline">\(\text{Beta}(1, 1)\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
 <span>  alpha <span class="op">=</span> <span class="fl">1</span>, beta <span class="op">=</span> <span class="fl">1</span>, y <span class="op">=</span> <span class="fl">9</span>, n <span class="op">=</span> <span class="fl">20</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="030_balance_prior_post_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -599,13 +640,12 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 </div>
 </div>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/summarize_beta_binomial.html">summarize_beta_binomial</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/summarize_beta_binomial.html">summarize_beta_binomial</a></span><span class="op">(</span></span>
 <span>  alpha <span class="op">=</span> <span class="fl">1</span>, beta <span class="op">=</span> <span class="fl">1</span>, y <span class="op">=</span> <span class="fl">9</span>, n <span class="op">=</span> <span class="fl">20</span></span>
 <span><span class="op">)</span></span>
 <span><span class="co">#&gt;       model alpha beta      mean mode        var        sd</span></span>
 <span><span class="co">#&gt; 1     prior     1    1 0.5000000  NaN 0.08333333 0.2886751</span></span>
 <span><span class="co">#&gt; 2 posterior    10   12 0.4545455 0.45 0.01077973 0.1038255</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per calcolare la distribuzione a posteriori, ho usato le funzioni del pacchetto <code>bayesrules</code>. Ma per lo schema beta-binomiale è facile trovare i parametri della distribuzione a posteriori. Per esempio, nel caso dell’amica femminista, la distribuzione a posteriori è una Beta di parametri</p>
 <p><span class="math display">\[
@@ -623,7 +663,7 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 <p>Supponiamo ora che l’amica ottimista abbia tre amiche, Maria, Anna e Sara, tutte ottimiste come lei. L’ottimista chiede a Maria, Anna e Sara di fare loro stesse l’esperimento descritto in precedenza. Maria guarda 13 film; di questi 6 passano il test di Bechdel. Anna guarda 63 film; di questi 29 passano il test di Bechdel. Sara guarda 99 film; di questi 46 passano il test di Bechdel.</p>
 <p>Supponiamo che Maria, Anna e Sara condividano la stessa credenza a priori su <span class="math inline">\(\pi\)</span>: ovvero, Beta(14, 1). In tali circostanze e, alla luce dei dati osservati, cosa possiamo dire delle tre distribuzioni a posteriori?</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
 <span>  alpha <span class="op">=</span> <span class="fl">14</span>, beta <span class="op">=</span> <span class="fl">1</span>, y <span class="op">=</span> <span class="fl">6</span>, n <span class="op">=</span> <span class="fl">13</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span> </span>
 <span>  <span class="fu">theme</span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span> </span>
@@ -636,7 +676,7 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme</span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span> </span>
 <span><span class="va">p1</span> <span class="op">+</span> <span class="va">p2</span> <span class="op">+</span> <span class="va">p3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div id="fig-bechdel-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="030_balance_prior_post_files/figure-html/fig-bechdel-2-1.png" class="img-fluid figure-img" style="width:95.0%"></p>
 <p></p><figcaption class="figure-caption">Figura&nbsp;19.1: Aggiornamento bayesiano per le credenze di Maria (sinistra, 16 film), Anna (centro, 63 film) e Sara (destra, 99 film).</figcaption><p></p>
@@ -649,7 +689,7 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 <span class="header-section-number">19.4</span> Dati diversi, diverse distribuzioni a priori</h2>
 <p>La <a href="#fig-bechdel-3">Figura&nbsp;<span>19.2</span></a> illustra le distribuzioni a posteriori che si ottengono incrociando tre diversi set di dati (<span class="math inline">\(y\)</span> = 6, <span class="math inline">\(n\)</span> = 13;, <span class="math inline">\(y\)</span> = 29, <span class="math inline">\(n\)</span> = 63; <span class="math inline">\(y\)</span> = 66, <span class="math inline">\(n\)</span> = 99) con tre diverse distribuzioni a priori, <span class="math inline">\(\mbox{Beta}(14, 1)\)</span>, <span class="math inline">\(\mbox{Beta}(5, 11)\)</span> e <span class="math inline">\(\mbox{Beta}(1, 1)\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu">bayesrules</span><span class="fu">:::</span><span class="fu"><a href="https://bayes-rules.github.io/bayesrules/docs/reference/plot_beta_binomial.html">plot_beta_binomial</a></span><span class="op">(</span></span>
 <span>  alpha <span class="op">=</span> <span class="fl">14</span>, beta <span class="op">=</span> <span class="fl">1</span>, y <span class="op">=</span> <span class="fl">6</span>, n <span class="op">=</span> <span class="fl">13</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme</span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span> </span>
@@ -686,7 +726,7 @@ Y \mid \pi &amp; \sim \mbox{Bin}(n, \pi)  \notag\\
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme</span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span> </span>
 <span><span class="op">(</span><span class="va">p1</span> <span class="op">+</span> <span class="va">p2</span> <span class="op">+</span> <span class="va">p3</span><span class="op">)</span> <span class="op">/</span> <span class="op">(</span><span class="va">p4</span> <span class="op">+</span> <span class="va">p5</span> <span class="op">+</span> <span class="va">p6</span><span class="op">)</span> <span class="op">/</span> <span class="op">(</span><span class="va">p7</span> <span class="op">+</span> <span class="va">p8</span> <span class="op">+</span> <span class="va">p9</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div id="fig-bechdel-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure"><p><img src="030_balance_prior_post_files/figure-html/fig-bechdel-3-1.png" class="img-fluid figure-img" style="width:95.0%"></p>
 <p></p><figcaption class="figure-caption">Figura&nbsp;19.2: Sulle colonne (a partire da sinistra) i dati utilizzati sono, rispettivamente, (y = 6, n = 13), (y = 29, n = 63) e (y = 66, n = 99). Sulle righe (a partire dall’alto), le distribuzioni a priori usate sono: Beta(14, 1), Beta(5, 11) e Beta(1, 1).</figcaption><p></p>

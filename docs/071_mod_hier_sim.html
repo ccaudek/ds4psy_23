@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Data Science per psicologi - 34&nbsp; Modello gerarchico: simulazioni</title>
 <style>
@@ -210,7 +210,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata: significato, teoremi, eventi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -220,7 +220,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indici di posizione, di varianza e di associazione di variabili casuali</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -398,21 +398,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
-  </div>
-</li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Appendici</a>
+            <a href="./frequentist_inference.html" class="sidebar-item-text sidebar-link">Parte 7: Inferenza frequentista</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./220_intro_frequentist.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Legge dei grandi numeri</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./221_conf_interv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Intervallo fiduciale</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./225_distr_camp_mean.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Distribuzione campionaria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./226_test_ipotesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Significatività statistica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./227_ttest.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Inferenza sulle medie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./228_limiti_stat_frequentista.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Limiti dell’inferenza frequentista</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Appendici</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./a01_math_symbols.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Simbologia di base</span></a>
@@ -435,12 +475,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  <a href="./a05_calculus_notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Per liberarvi dai terrori preliminari</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
+  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
   </div>
 </li>
       </ul>
@@ -458,7 +503,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-hier-sim" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-hier-sim" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Modello gerarchico: simulazioni</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Codice</button></div></div>
 </div>
 
 
@@ -479,7 +524,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span class="header-section-number">34.1</span> Modello generativo dei dati</h2>
 <p>I modelli bayesiani sono “generativi”, ovvero rappresentano il processo generativo dei dati e, dunque, essi stessi possono essere usati per generare campioni di dati. Per introdurre questo aspetto, consideriamo il modello più semplice, ovvero il modello Normale descritto in precedenza. Le osservazioni per tale modello corrispondono alle osservazioni di <code>N</code> individui contenuti nel vettore <code>y</code>. Il modello assume che <code>y</code> segua la legge Normale di media <code>mu</code> e deviazione standard <code>sigma</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">model_string</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">model_string</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
 <span><span class="st">  data {</span></span>
 <span><span class="st">    int&lt;lower=1&gt; N;</span></span>
 <span><span class="st">    vector[N] y;</span></span>
@@ -494,18 +539,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="st">    y ~ normal(mu, tau);</span></span>
 <span><span class="st">  }</span></span>
 <span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Compiliamo il modello.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">model_string</span>, con <span class="op">=</span> <span class="st">"code/flat_regression.stan"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">model_string</span>, con <span class="op">=</span> <span class="st">"code/flat_regression.stan"</span><span class="op">)</span></span>
 <span><span class="va">file1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"flat_regression.stan"</span><span class="op">)</span></span>
 <span><span class="va">mod1</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file1</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Fissati i parametri, il modello precedente può essere usato per generare campioni di dati. A questo fine dobbiamo specificare solo i blocchi <code>data</code> e <code>generated quantities</code>, come indicato qui sotto. La funzione <code>normal_rng(mu, tau)</code> è il corrispondente in linguaggio Stan della funzione <code><a href="https://rdrr.io/r/stats/Normal.html">rnorm()</a></code> in <span class="math inline">\(\mathsf{R}\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">model2_string</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">model2_string</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
 <span><span class="st">  data {</span></span>
 <span><span class="st">    int&lt;lower=1&gt; N;</span></span>
 <span><span class="st">    real mu; </span></span>
@@ -519,28 +562,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="st">    }</span></span>
 <span><span class="st">  }</span></span>
 <span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Compiliamo il modello.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">model2_string</span>, con <span class="op">=</span> <span class="st">"code/generate_flat_data.stan"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">model2_string</span>, con <span class="op">=</span> <span class="st">"code/generate_flat_data.stan"</span><span class="op">)</span></span>
 <span><span class="va">file2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"generate_flat_data.stan"</span><span class="op">)</span></span>
 <span><span class="va">mod2</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Specifichiamo ora i valori dei parametri indicati qui sotto.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Specify data and parameter values.</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Specify data and parameter values.</span></span>
 <span><span class="va">sim_values</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>  N <span class="op">=</span> <span class="fl">100</span>, <span class="co"># Number of observations.</span></span>
 <span>  mu <span class="op">=</span> <span class="fl">5</span>,  <span class="co"># Mean of the regression.</span></span>
 <span>  tau <span class="op">=</span> <span class="fl">1</span>  <span class="co"># Variance of the regression.</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Utilizziamo <code>cmdstan</code> per generare 1,000 campioni di 100 osservazioni ciascuno.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim_data</span> <span class="op">&lt;-</span> <span class="va">mod2</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim_data</span> <span class="op">&lt;-</span> <span class="va">mod2</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">sim_values</span>,</span>
 <span>  chains <span class="op">=</span> <span class="fl">1</span>,</span>
 <span>  seed <span class="op">=</span> <span class="fl">42</span>,</span>
@@ -560,22 +600,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="co">#&gt; Chain 1 Iteration: 900 / 1000 [ 90%]  (Sampling) </span></span>
 <span><span class="co">#&gt; Chain 1 Iteration: 1000 / 1000 [100%]  (Sampling) </span></span>
 <span><span class="co">#&gt; Chain 1 finished in 0.0 seconds.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Recuperiamo i 1,000 campioni di 100 osservazioni generati dal modello.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim_data_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">sim_data</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> </span>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim_data_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">sim_data</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> </span>
 <span><span class="va">fake_data_matrix</span>  <span class="op">&lt;-</span> <span class="va">sim_data_stanfit</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="va">as.data.frame</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="fu">contains</span><span class="op">(</span><span class="st">"y"</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">fake_data_matrix</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 1000  100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Recuperiamo i dati di un singolo campione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim_y</span> <span class="op">&lt;-</span> <span class="va">fake_data_matrix</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span></span>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim_y</span> <span class="op">&lt;-</span> <span class="va">fake_data_matrix</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/numeric.html">as.numeric</a></span><span class="op">(</span><span class="va">sim_y</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   [1] 4.92727 6.07489 5.62040 5.64771 6.18387 5.49394 4.54341 5.73332 4.88385</span></span>
 <span><span class="co">#&gt;  [10] 3.80247 5.53683 3.79003 6.13880 5.10517 4.51741 3.23568 5.47868 5.14018</span></span>
@@ -589,20 +627,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="co">#&gt;  [82] 3.04167 6.70704 5.44426 4.05945 3.88011 5.88271 5.56971 4.92103 5.62393</span></span>
 <span><span class="co">#&gt;  [91] 5.66139 4.77127 3.75681 4.98407 5.41049 6.23022 5.73609 6.35978 4.95185</span></span>
 <span><span class="co">#&gt; [100] 4.43508</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Possiamo ora usare il modello <code>flat_regression.stan</code> per stimare i parametri che abbiamo utilizzato per generare i dati. Sistemiamo i 100 valori simulati in una lista.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Specify data.</span></span>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Specify data.</span></span>
 <span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>  N <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">sim_y</span><span class="op">)</span>,   <span class="co"># Number of observations.</span></span>
 <span>  y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">as.numeric</a></span><span class="op">(</span><span class="va">sim_y</span><span class="op">)</span> <span class="co"># Vector of observations.</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Otteniamo i campioni dalla distribuzione a posteriori dei parametri del modello.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span> <span class="op">&lt;-</span> <span class="va">mod1</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span> <span class="op">&lt;-</span> <span class="va">mod1</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">data</span>,</span>
 <span>  iter_sampling <span class="op">=</span> <span class="fl">4000L</span>,</span>
 <span>  iter_warmup <span class="op">=</span> <span class="fl">2000L</span>,</span>
@@ -618,24 +654,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; All 4 chains finished successfully.</span></span>
 <span><span class="co">#&gt; Mean chain execution time: 0.1 seconds.</span></span>
-<span><span class="co">#&gt; Total execution time: 0.8 seconds.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<span><span class="co">#&gt; Total execution time: 0.7 seconds.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Esaminiamo le medie a posteriori dei parametri <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\tau\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span><span class="op">$</span><span class="fu">summary</span><span class="op">(</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span><span class="op">$</span><span class="fu">summary</span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 3 × 10</span></span>
 <span><span class="co">#&gt;   variable   mean median     sd    mad      q5    q95  rhat ess_bulk ess_tail</span></span>
 <span><span class="co">#&gt;   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt; 1 lp__     -61.1  -60.8  1.02   0.728  -63.2   -60.2   1.00    7655.    8226.</span></span>
 <span><span class="co">#&gt; 2 mu         4.99   4.99 0.114  0.113    4.80    5.17  1.00   12532.   10226.</span></span>
 <span><span class="co">#&gt; 3 tau        1.12   1.12 0.0807 0.0795   0.998   1.26  1.00   11652.   10121.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Le medie a posteriori sono molto simili al vero valore dei parametri.</p>
 <p>Esaminiamo la convergenza delle catene di Markov.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> </span>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> </span>
 <span></span>
 <span><span class="va">fit_stanfit</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">mcmc_trace</span><span class="op">(</span></span>
@@ -643,7 +677,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>    n_warmup <span class="op">=</span> <span class="fl">2000</span>,</span>
 <span>    facet_args <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>nrow <span class="op">=</span> <span class="fl">2</span>, labeller <span class="op">=</span> <span class="va">label_parsed</span><span class="op">)</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="071_mod_hier_sim_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -652,7 +686,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>Esaminiamo graficamente la distribuzioni a posteriori dei parametri.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">par_values</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">par_values</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
 <span>  .variable <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"mu"</span>, <span class="st">"tau"</span><span class="op">)</span>,</span>
 <span>  values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">sim_values</span><span class="op">$</span><span class="va">mu</span>, <span class="va">sim_values</span><span class="op">$</span><span class="va">tau</span><span class="op">)</span>,</span>
 <span><span class="op">)</span></span>
@@ -662,10 +696,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="co">#&gt;   &lt;chr&gt;      &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt; 1 mu             5</span></span>
 <span><span class="co">#&gt; 2 tau            1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit_stanfit</span> <span class="op">%&gt;%</span></span>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit_stanfit</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">gather_draws</span><span class="op">(</span><span class="va">mu</span>, <span class="va">tau</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">.value</span>, y <span class="op">=</span> <span class="va">.variable</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_halfeyeh</span><span class="op">(</span>.width <span class="op">=</span> <span class="fl">.95</span><span class="op">)</span> <span class="op">+</span></span>
@@ -675,7 +708,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>    nrow <span class="op">=</span> <span class="fl">2</span>,</span>
 <span>    scales <span class="op">=</span> <span class="st">"free"</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="071_mod_hier_sim_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -687,7 +720,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span class="header-section-number">34.2</span> Modello gerarchico</h2>
 <p>Supponiamo ora che i dati abbiano una struttura complessa, ovvero siano organizzati in cluster (ad esempio, bambini in scuole diverse). In linguaggio Stan il modello gerarchico può essere scritto nel modo seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">model3_string</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">model3_string</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
 <span><span class="st">  // Index values and observations.</span></span>
 <span><span class="st">  data {</span></span>
 <span><span class="st">    int&lt;lower=1&gt; N; // Number of observations.</span></span>
@@ -718,13 +751,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="st">    }</span></span>
 <span><span class="st">  }</span></span>
 <span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Nel blocco <code>data</code> ora abbiamo un vettore <code>g</code> che indica a quale dei <code>K</code> gruppi appartiene ciascuno degli <code>N</code> individui nel campione. Nel blocco <code>parameters</code>, abbiamo un vettore <code>K</code>-dimensionale di parametri <code>beta</code> che specifica una media separata per ciascuno dei <code>K</code> gruppi di osservazioni. Nel blocco <code>model</code> possiamo vedere che la verosimiglianza delle osservazioni (ora all’interno di un ciclo for) è ancora assunta essere normale, ma ora il punteggio di ogni individuo ha una media diversa e pari a <code>beta</code> che è specifica per il gruppo a cui l’individuo appartiene. Lo statement <code>beta ~ normal(mu, tau)</code> ci dice che i coefficienti beta specifici al gruppo sono tratti da una popolazione che si presume normale con una media <code>mu</code> e deviazione standard <code>tau</code>.</p>
 <p>Il modello specifica dunque una struttura gerarchica: ci sono due livelli nel nostro modello, il modello a livello inferiore specifica la verosimiglianza delle osservazioni, mentre il modello al livello superiore specifica le proprietà della popolazione. Infine, il modello include le distribuzioni a priori sui parametri della popolazione (formalmente indicati come hyper-priors, poiché sono le distribuzioni a priori delle distribuzioni a priori). Per gli iper-parametri <code>mu</code> e <code>tau</code> vengono ipotizzate distribuzioni a priori Normali. Infine, alla deviazione standard della verosimiglianza, ora chiamata <code>sigma</code>, viene imposta una distribuzione a priori Normale.</p>
 <p>Come in precedenza, dallo script precedente possiamo derivare un nuovo script che contiene il modello generativo dei dati.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">model4_string</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">model4_string</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
 <span><span class="st">  // Index and hyperparameter values.</span></span>
 <span><span class="st">  data {</span></span>
 <span><span class="st">    int&lt;lower=1&gt; N; // Number of observations.</span></span>
@@ -748,11 +780,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="st">    }</span></span>
 <span><span class="st">  }</span></span>
 <span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Specifichiamo i valori degli iper-parametri.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_values</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_values</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>  N <span class="op">=</span> <span class="fl">100</span>,                            <span class="co"># Number of observations.</span></span>
 <span>  K <span class="op">=</span> <span class="fl">5</span>,                              <span class="co"># Number of groups.</span></span>
 <span>  g <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">100</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>, <span class="co"># Vector of group assignments.</span></span>
@@ -760,18 +791,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  tau <span class="op">=</span> <span class="fl">1</span>,                            <span class="co"># Variance of the population model.</span></span>
 <span>  sigma <span class="op">=</span> <span class="fl">1</span>                           <span class="co"># Variance of the likelihood.</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Compiliamo il modello.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">model4_string</span>, con <span class="op">=</span> <span class="st">"code/generate_hierarchical_data_01.stan"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">model4_string</span>, con <span class="op">=</span> <span class="st">"code/generate_hierarchical_data_01.stan"</span><span class="op">)</span></span>
 <span><span class="va">file4</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"generate_hierarchical_data_01.stan"</span><span class="op">)</span></span>
 <span><span class="va">mod4</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file4</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Utilizziamo <code>cmdstan</code> per generare 1,000 campioni di 100 osservazioni ciascuno.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_data</span> <span class="op">&lt;-</span> <span class="va">mod4</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_data</span> <span class="op">&lt;-</span> <span class="va">mod4</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">sim4_values</span>,</span>
 <span>  chains <span class="op">=</span> <span class="fl">1</span>,</span>
 <span>  fixed_param <span class="op">=</span> <span class="cn">TRUE</span></span>
@@ -790,51 +819,45 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="co">#&gt; Chain 1 Iteration: 900 / 1000 [ 90%]  (Sampling) </span></span>
 <span><span class="co">#&gt; Chain 1 Iteration: 1000 / 1000 [100%]  (Sampling) </span></span>
 <span><span class="co">#&gt; Chain 1 finished in 0.0 seconds.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Recuperiamo i 1,000 campioni di 100 osservazioni generati dal modello.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_data_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">sim4_data</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> </span>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_data_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">sim4_data</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> </span>
 <span><span class="va">fake_data4_matrix</span>  <span class="op">&lt;-</span> <span class="va">sim4_data_stanfit</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="va">as.data.frame</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="fu">contains</span><span class="op">(</span><span class="st">"y"</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">fake_data4_matrix</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 1000  100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Selezioniamo i dati di un singolo campione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_y</span> <span class="op">&lt;-</span> <span class="va">fake_data4_matrix</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span></span>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_y</span> <span class="op">&lt;-</span> <span class="va">fake_data4_matrix</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">sim4_y</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1]   1 100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Seleziono i valori beta.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fake_beta_matrix</span>  <span class="op">&lt;-</span> <span class="va">sim4_data_stanfit</span> <span class="op">%&gt;%</span> </span>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fake_beta_matrix</span>  <span class="op">&lt;-</span> <span class="va">sim4_data_stanfit</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="va">as.data.frame</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="fu">contains</span><span class="op">(</span><span class="st">"beta"</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Isolo i valori beta del primo campione di dati simulati.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_beta</span> <span class="op">&lt;-</span> <span class="va">fake_beta_matrix</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_beta</span> <span class="op">&lt;-</span> <span class="va">fake_beta_matrix</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Possiamo ora testare il nostro modello gerarchico utilizzando i dati simulati.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>  N <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">sim4_y</span><span class="op">)</span>,     <span class="co"># Number of observations.</span></span>
 <span>  K <span class="op">=</span> <span class="va">sim4_values</span><span class="op">$</span><span class="va">K</span>,      <span class="co"># Number of groups.</span></span>
 <span>  y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html">as.numeric</a></span><span class="op">(</span><span class="va">sim4_y</span><span class="op">)</span>, <span class="co"># Vector of observations.</span></span>
 <span>  g <span class="op">=</span> <span class="va">sim4_values</span><span class="op">$</span><span class="va">g</span>       <span class="co"># Vector of group assignments.</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Otteniamo i campioni dalla distribuzione a posteriori dei parametri del modello.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">model3_string</span>, con <span class="op">=</span> <span class="st">"code/hierarchical_regression_01.stan"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">model3_string</span>, con <span class="op">=</span> <span class="st">"code/hierarchical_regression_01.stan"</span><span class="op">)</span></span>
 <span><span class="va">file3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"hierarchical_regression_01.stan"</span><span class="op">)</span></span>
 <span><span class="va">mod3</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file3</span><span class="op">)</span></span>
 <span></span>
@@ -855,11 +878,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="co">#&gt; All 4 chains finished successfully.</span></span>
 <span><span class="co">#&gt; Mean chain execution time: 0.3 seconds.</span></span>
 <span><span class="co">#&gt; Total execution time: 1.3 seconds.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Esaminiamo la convergenza delle catene di Markov.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit3_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit3</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> </span>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit3_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit3</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> </span>
 <span></span>
 <span><span class="va">fit3_stanfit</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">mcmc_trace</span><span class="op">(</span></span>
@@ -867,7 +889,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>    n_warmup <span class="op">=</span> <span class="fl">2000</span>,</span>
 <span>    facet_args <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>nrow <span class="op">=</span> <span class="fl">5</span>, labeller <span class="op">=</span> <span class="va">label_parsed</span><span class="op">)</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="071_mod_hier_sim_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -876,7 +898,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>Esaminiamo graficamente la distribuzioni a posteriori dei parametri.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Recover parameter values.</span></span>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Recover parameter values.</span></span>
 <span><span class="va">hyper_par_values</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
 <span>  .variable <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"mu"</span>, <span class="st">"tau"</span>, <span class="st">"sigma"</span><span class="op">)</span>,</span>
 <span>  values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">sim4_values</span><span class="op">$</span><span class="va">mu</span>, <span class="va">sim4_values</span><span class="op">$</span><span class="va">tau</span>, <span class="va">sim4_values</span><span class="op">$</span><span class="va">sigma</span><span class="op">)</span></span>
@@ -892,7 +914,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>    nrow <span class="op">=</span> <span class="fl">2</span>,</span>
 <span>    scales <span class="op">=</span> <span class="st">"free"</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="071_mod_hier_sim_files/figure-html/unnamed-chunk-28-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -901,7 +923,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>Consideriamo anche gli intervalli di credibilità al 95% per i parametri <code>beta</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">broom.mixed</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/broom.mixed/man/mcmc_tidiers.html">tidyMCMC</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">broom.mixed</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/broom.mixed/man/mcmc_tidiers.html">tidyMCMC</a></span><span class="op">(</span></span>
 <span>  <span class="va">fit3_stanfit</span>, </span>
 <span>  conf.level <span class="op">=</span> <span class="fl">0.95</span>,</span>
 <span>  conf.int <span class="op">=</span> <span class="cn">TRUE</span>, </span>
@@ -916,14 +938,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="co">#&gt; 3 beta[3]     6.22     0.259     5.72      6.73</span></span>
 <span><span class="co">#&gt; 4 beta[4]     5.38     0.263     4.87      5.90</span></span>
 <span><span class="co">#&gt; 5 beta[5]     3.15     0.210     2.74      3.56</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>I valori usati nella simulazione sono i seguenti.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_beta</span></span>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sim4_beta</span></span>
 <span><span class="co">#&gt;   beta[1] beta[2] beta[3] beta[4] beta[5]</span></span>
 <span><span class="co">#&gt; 1 5.00552 4.51655 6.25045 5.08532 3.01116</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>In conclusione, anche il modello gerarchico è in grado di recuperare accuratamente il valore dei parametri usati nella simulazione per creare i dati.</p>
 </section><section id="commenti-e-considerazioni-finali" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="commenti-e-considerazioni-finali">Commenti e considerazioni finali</h2>

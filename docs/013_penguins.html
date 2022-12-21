@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Data Science per psicologi - 6&nbsp; Manipolazione e visualizzazione dei dati in \(\mathsf{R}\)</title>
 <style>
@@ -229,7 +229,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata: significato, teoremi, eventi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -239,7 +239,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indici di posizione, di varianza e di associazione di variabili casuali</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -417,21 +417,61 @@ div.csl-indent {
   <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
-  </div>
-</li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Appendici</a>
+            <a href="./frequentist_inference.html" class="sidebar-item-text sidebar-link">Parte 7: Inferenza frequentista</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./220_intro_frequentist.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Legge dei grandi numeri</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./221_conf_interv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Intervallo fiduciale</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./225_distr_camp_mean.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Distribuzione campionaria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./226_test_ipotesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Significatività statistica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./227_ttest.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Inferenza sulle medie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./228_limiti_stat_frequentista.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Limiti dell’inferenza frequentista</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Appendici</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./a01_math_symbols.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Simbologia di base</span></a>
@@ -454,12 +494,17 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  <a href="./a05_calculus_notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Per liberarvi dai terrori preliminari</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
+  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
   </div>
 </li>
       </ul>
@@ -493,7 +538,7 @@ div.csl-indent {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-intro-dplyr" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-intro-dplyr" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Manipolazione e visualizzazione dei dati in <span class="math inline">\(\mathsf{R}\)</span></span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Codice</button></div></div>
 </div>
 
 
@@ -525,17 +570,16 @@ div.csl-indent {
 <p>Il pacchetto <code>dplyr</code> include sei funzioni base: <code><a href="https://dplyr.tidyverse.org/reference/filter.html">filter()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/select.html">select()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange()</a></code>, <code><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by()</a></code> e <code><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise()</a></code>. Queste sei funzioni costituiscono i <em>verbi</em> del linguaggio di manipolazione dei dati. A questi sei verbi si aggiunge il pipe <code>%&gt;%</code> (oppure <code>|&gt;</code>) che serve a concatenare più operazioni. In particolare, considerando una matrice osservazioni per variabili, <code><a href="https://dplyr.tidyverse.org/reference/select.html">select()</a></code> e <code><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate()</a></code> si occupano di organizzare le variabili, <code><a href="https://dplyr.tidyverse.org/reference/filter.html">filter()</a></code> e <code><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange()</a></code> i casi, e <code><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by()</a></code> e <code><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise()</a></code> i gruppi.</p>
 <p>Per introdurre le funzionalità di <code>dplyr</code>, utilizzeremo i dati <code>msleep</code> forniti dal pacchetto <code>ggplot2</code>. Tali dati descrivono le ore di sonno medie di 83 specie di mammiferi <span class="citation" data-cites="savage2007scaling">(<a href="999_refs.html#ref-savage2007scaling" role="doc-biblioref">Savage et al., 2007</a>)</span>. Carichiamo il <em>boundle</em> <code>tidyverse</code> (che contiene <code>ggplot2</code>) e leggiamo nella memoria di lavoro l’oggetto <code>msleep</code>:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://tidyverse.tidyverse.org">"tidyverse"</a></span><span class="op">)</span></span>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://tidyverse.tidyverse.org">"tidyverse"</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 83 11</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <section id="operatore-pipe" class="level4" data-number="6.2.0.1"><h4 data-number="6.2.0.1" class="anchored" data-anchor-id="operatore-pipe">
 <span class="header-section-number">6.2.0.1</span> Operatore pipe</h4>
 <p>Prima di presentare le funzionalità di <code>dplyr</code>, introduciamo l’operatore pipe <code>%&gt;%</code> del pacchetto <code>magrittr</code> – ma ora presente anche in base <span class="math inline">\(\mathsf{R}\)</span> nella versione <code>|&gt;</code>. L’operatore pipe, <code>%&gt;%</code> o <code>|&gt;</code>, serve a concatenare varie funzioni insieme, in modo da inserire un’operazione dietro l’altra. Una spiegazione intuitiva dell’operatore pipe è stata fornita in un tweet di <code>@andrewheiss</code>. Consideriamo la seguente istruzione in pseudo-codice <span class="math inline">\(\mathsf{R}\)</span>:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">leave_house</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">leave_house</span><span class="op">(</span></span>
 <span>  <span class="fu">get_dressed</span><span class="op">(</span></span>
 <span>    <span class="fu">get_out_of_bed</span><span class="op">(</span></span>
 <span>      <span class="fu">wake_up</span><span class="op">(</span><span class="va">me</span>, time <span class="op">=</span> <span class="st">"8:00"</span><span class="op">)</span>, </span>
@@ -545,16 +589,14 @@ div.csl-indent {
 <span>  car <span class="op">=</span> <span class="cn">TRUE</span>, </span>
 <span>  bike <span class="op">=</span> <span class="cn">FALSE</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Il listato precedente descrive una serie di (pseudo) funzioni concatenate, le quali costituiscono gli argomenti di altre funzioni. Scritto così, il codice è molto difficile da capire. Possiamo però ottenere lo stesso risultato utilizzando l’operatore pipe che facilita enormememnte la leggibilità del codice:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">me</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">me</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">wake_up</span><span class="op">(</span>time <span class="op">=</span> <span class="st">"8:00"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">get_out_of_bed</span><span class="op">(</span>side <span class="op">=</span> <span class="st">"correct"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">get_dressed</span><span class="op">(</span>pants <span class="op">=</span> <span class="cn">TRUE</span>, shirt <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">leave_house</span><span class="op">(</span>car <span class="op">=</span> <span class="cn">TRUE</span>, bike <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>In questa seconda versione del (pseudo) codice <span class="math inline">\(\mathsf{R}\)</span> si capisce molto meglio ciò che vogliamo fare. Il <code>tibble</code> <code>me</code> viene passato alla funzione <code>wake_up()</code>. La funzione <code>wake_up()</code> ha come argomento l’ora del giorno: <code>time = "8:00"</code>. Una volta “svegliati” (wake up) dobbiamo scendere dal letto. Quindi l’output di <code>wake_up()</code> viene passato alla funzione <code>get_out_of_bed()</code> la quale ha come argomento <code>side = "correct"</code> perché vogliamo scendere dal letto dalla parte giusta. E così via.</p>
 <p>Questo pseudo-codice chiarisce il significato dell’operatore pipe. L’operatore <code>|&gt;</code> è “syntactic sugar” per una serie di chiamate di funzioni concatenate, ovvero, detto in altre parole, consente di definire la relazione tra una serie di funzioni nelle quali il risultato (output) di una funzione viene utilizzato come l’input di una funzione successiva.</p>
@@ -562,20 +604,18 @@ div.csl-indent {
 <span class="header-section-number">6.3</span> Esaminare i dati</h2>
 <p>Iniziamo a trasformare il data frame <code>msleep</code> in un <code>tibble</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>I nomi delle colonne del tibble (ovvero, i nomi delle variabili del campione) si ottengono con la funzione <code><a href="https://rdrr.io/r/base/names.html">names()</a></code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">)</span></span>
 <span><span class="co">#&gt;  [1] "name"         "genus"        "vore"         "order"        "conservation"</span></span>
 <span><span class="co">#&gt;  [6] "sleep_total"  "sleep_rem"    "sleep_cycle"  "awake"        "brainwt"     </span></span>
 <span><span class="co">#&gt; [11] "bodywt"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>I valori iniziali di ciascuna colonna del tibble possono essere visualizzati usando la funzone <code><a href="https://pillar.r-lib.org/reference/glimpse.html">glimpse()</a></code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Rows: 83</span></span>
 <span><span class="co">#&gt; Columns: 11</span></span>
 <span><span class="co">#&gt; $ name         &lt;chr&gt; "Cheetah", "Owl monkey", "Mountain beaver", "Greater shor…</span></span>
@@ -589,26 +629,23 @@ div.csl-indent {
 <span><span class="co">#&gt; $ awake        &lt;dbl&gt; 11.9, 7.0, 9.6, 9.1, 20.0, 9.6, 15.3, 17.0, 13.9, 21.0, 1…</span></span>
 <span><span class="co">#&gt; $ brainwt      &lt;dbl&gt; NA, 0.01550, NA, 0.00029, 0.42300, NA, NA, NA, 0.07000, 0…</span></span>
 <span><span class="co">#&gt; $ bodywt       &lt;dbl&gt; 50.000, 0.480, 1.350, 0.019, 600.000, 3.850, 20.490, 0.04…</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per le variabili qualitative, possiamo creare una distribuzione di frequenze assolute mediante la funzione <code><a href="https://rdrr.io/r/base/table.html">table()</a></code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">$</span><span class="va">vore</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">$</span><span class="va">vore</span><span class="op">)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;   carni   herbi insecti    omni </span></span>
 <span><span class="co">#&gt;      19      32       5      20</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Usando <code><a href="https://rdrr.io/r/base/table.html">table()</a></code> possiamo anche creare una tabella di contingenza.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">$</span><span class="va">vore</span>, <span class="va">msleep</span><span class="op">$</span><span class="va">conservation</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">msleep</span><span class="op">$</span><span class="va">vore</span>, <span class="va">msleep</span><span class="op">$</span><span class="va">conservation</span><span class="op">)</span></span>
 <span><span class="co">#&gt;          </span></span>
 <span><span class="co">#&gt;           cd domesticated en lc nt vu</span></span>
 <span><span class="co">#&gt;   carni    1            2  1  5  1  4</span></span>
 <span><span class="co">#&gt;   herbi    1            7  2 10  3  3</span></span>
 <span><span class="co">#&gt;   insecti  0            0  1  2  0  0</span></span>
 <span><span class="co">#&gt;   omni     0            1  0  8  0  0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Si ricordi che, quando si usa <code><a href="https://rdrr.io/r/base/table.html">table()</a></code> per creare una tabella di contingenza, i dati mancanti (<code>NA</code>) vengono esclusi.</p>
 </section><section id="estrarre-una-singola-colonna-con-pull" class="level2" data-number="6.4"><h2 data-number="6.4" class="anchored" data-anchor-id="estrarre-una-singola-colonna-con-pull">
@@ -616,7 +653,7 @@ div.csl-indent {
 </h2>
 <p>Estraiamo da <code>msleep</code> la variabile <code>sleep_total</code> usando il verbo <code><a href="https://dplyr.tidyverse.org/reference/pull.html">pull()</a></code>:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/pull.html">pull</a></span><span class="op">(</span><span class="va">sleep_total</span><span class="op">)</span></span>
 <span><span class="co">#&gt;  [1] 12.1 17.0 14.4 14.9  4.0 14.4  8.7  7.0 10.1  3.0  5.3  9.4 10.0 12.5 10.3</span></span>
 <span><span class="co">#&gt; [16]  8.3  9.1 17.4  5.3 18.0  3.9 19.7  2.9  3.1 10.1 10.9 14.9 12.5  9.8  1.9</span></span>
@@ -624,22 +661,20 @@ div.csl-indent {
 <span><span class="co">#&gt; [46]  7.7 14.5  8.4  3.8  9.7 15.8 10.4 13.5  9.4 10.3 11.0 11.5 13.7  3.5  5.6</span></span>
 <span><span class="co">#&gt; [61] 11.1 18.1  5.4 13.0  8.7  9.6  8.4 11.3 10.6 16.6 13.8 15.9 12.8  9.1  8.6</span></span>
 <span><span class="co">#&gt; [76] 15.8  4.4 15.6  8.9  5.2  6.3 12.5  9.8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>In maniera equivalente, possiamo usare l’operatore <code>$</code> di base <span class="math inline">\(\mathsf{R}\)</span>:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span><span class="op">$</span><span class="va">sleep_total</span></span>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span><span class="op">$</span><span class="va">sleep_total</span></span>
 <span><span class="co">#&gt;  [1] 12.1 17.0 14.4 14.9  4.0 14.4  8.7  7.0 10.1  3.0  5.3  9.4 10.0 12.5 10.3</span></span>
 <span><span class="co">#&gt; [16]  8.3  9.1 17.4  5.3 18.0  3.9 19.7  2.9  3.1 10.1 10.9 14.9 12.5  9.8  1.9</span></span>
 <span><span class="co">#&gt; [31]  2.7  6.2  6.3  8.0  9.5  3.3 19.4 10.1 14.2 14.3 12.8 12.5 19.9 14.6 11.0</span></span>
 <span><span class="co">#&gt; [46]  7.7 14.5  8.4  3.8  9.7 15.8 10.4 13.5  9.4 10.3 11.0 11.5 13.7  3.5  5.6</span></span>
 <span><span class="co">#&gt; [61] 11.1 18.1  5.4 13.0  8.7  9.6  8.4 11.3 10.6 16.6 13.8 15.9 12.8  9.1  8.6</span></span>
 <span><span class="co">#&gt; [76] 15.8  4.4 15.6  8.9  5.2  6.3 12.5  9.8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Possiamo ordinare i dati con <code><a href="https://rdrr.io/r/base/sort.html">sort()</a></code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span><span class="op">$</span><span class="va">sleep_total</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span><span class="op">$</span><span class="va">sleep_total</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/sort.html">sort</a></span><span class="op">(</span><span class="op">)</span> </span>
 <span><span class="co">#&gt;  [1]  1.9  2.7  2.9  3.0  3.1  3.3  3.5  3.8  3.9  4.0  4.4  5.2  5.3  5.3  5.4</span></span>
 <span><span class="co">#&gt; [16]  5.6  6.2  6.3  6.3  7.0  7.7  8.0  8.3  8.4  8.4  8.6  8.7  8.7  8.9  9.1</span></span>
@@ -647,11 +682,10 @@ div.csl-indent {
 <span><span class="co">#&gt; [46] 10.6 10.9 11.0 11.0 11.1 11.3 11.5 12.1 12.5 12.5 12.5 12.5 12.8 12.8 13.0</span></span>
 <span><span class="co">#&gt; [61] 13.5 13.7 13.8 14.2 14.3 14.4 14.4 14.5 14.6 14.9 14.9 15.6 15.8 15.8 15.9</span></span>
 <span><span class="co">#&gt; [76] 16.6 17.0 17.4 18.0 18.1 19.4 19.7 19.9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Oppure, in ordine decrescente:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span><span class="op">$</span><span class="va">sleep_total</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span><span class="op">$</span><span class="va">sleep_total</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/sort.html">sort</a></span><span class="op">(</span>decreasing <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> </span>
 <span><span class="co">#&gt;  [1] 19.9 19.7 19.4 18.1 18.0 17.4 17.0 16.6 15.9 15.8 15.8 15.6 14.9 14.9 14.6</span></span>
 <span><span class="co">#&gt; [16] 14.5 14.4 14.4 14.3 14.2 13.8 13.7 13.5 13.0 12.8 12.8 12.5 12.5 12.5 12.5</span></span>
@@ -659,32 +693,28 @@ div.csl-indent {
 <span><span class="co">#&gt; [46]  9.8  9.8  9.7  9.6  9.5  9.4  9.4  9.1  9.1  8.9  8.7  8.7  8.6  8.4  8.4</span></span>
 <span><span class="co">#&gt; [61]  8.3  8.0  7.7  7.0  6.3  6.3  6.2  5.6  5.4  5.3  5.3  5.2  4.4  4.0  3.9</span></span>
 <span><span class="co">#&gt; [76]  3.8  3.5  3.3  3.1  3.0  2.9  2.7  1.9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Possiamo attribuire la colonna estratta dal tibble ad un oggetto nella memoria di lavoro di <span class="math inline">\(\mathsf{R}\)</span> usando l’operatore di attribuzione <code>&lt;-</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sl_tot</span> <span class="op">&lt;-</span> <span class="va">msleep</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">sl_tot</span> <span class="op">&lt;-</span> <span class="va">msleep</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/pull.html">pull</a></span><span class="op">(</span><span class="va">sleep_total</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Essendo <code>sl_tot</code> presente nella emoria di lavoro di <span class="math inline">\(\mathsf{R}\)</span>, possiamo passarlo a qualsiasi altra funzione di <span class="math inline">\(\mathsf{R}\)</span>. Per esempio, possiamo calcolare la media di <code>sl_tot</code> usando la funzione <code><a href="https://rdrr.io/r/base/mean.html">mean()</a></code></p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">sl_tot</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">sl_tot</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 10.43373</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>oppure la deviazione standard usando la funzione <code><a href="https://rdrr.io/r/stats/sd.html">sd()</a></code></p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/sd.html">sd</a></span><span class="op">(</span><span class="va">sl_tot</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/sd.html">sd</a></span><span class="op">(</span><span class="va">sl_tot</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 4.450357</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section><section id="selezionare-più-colonne-con-select" class="level2" data-number="6.5"><h2 data-number="6.5" class="anchored" data-anchor-id="selezionare-più-colonne-con-select">
 <span class="header-section-number">6.5</span> Selezionare più colonne con <code>select()</code>
 </h2>
 <p>Se vogliamo selezionare da <code>msleep</code> un insieme di variabili, ad esempio <code>name</code>, <code>vore</code> e <code>sleep_total</code>, possiamo usare il verbo <code><a href="https://dplyr.tidyverse.org/reference/select.html">select()</a></code></p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">&lt;-</span> <span class="va">msleep</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">&lt;-</span> <span class="va">msleep</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">name</span>, <span class="va">vore</span>, <span class="va">sleep_total</span><span class="op">)</span></span>
 <span><span class="va">dt</span></span>
 <span><span class="co">#&gt; # A tibble: 83 × 3</span></span>
@@ -699,14 +729,13 @@ div.csl-indent {
 <span><span class="co">#&gt; 7 Northern fur seal          carni         8.7</span></span>
 <span><span class="co">#&gt; 8 Vesper mouse               &lt;NA&gt;          7  </span></span>
 <span><span class="co">#&gt; # … with 75 more rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>laddove la sequenza di istruzioni precedenti significa che abbiamo passato <code>msleep</code> alla funzione <code><a href="https://dplyr.tidyverse.org/reference/select.html">select()</a></code> contenuta nel pacchetto <code>dplyr</code> e l’output di <code><a href="https://dplyr.tidyverse.org/reference/select.html">select()</a></code> è stato salvato (usando l’operatore di assegnazione, <code>&lt;-</code>) nell’oggetto <code>dt</code>. Alla funzione <code><a href="https://dplyr.tidyverse.org/reference/select.html">select()</a></code> abbiamo passato gli argomenti <code>name</code>, <code>vore</code> e <code>sleep_total</code>.</p>
 </section><section id="selezionare-le-righe-che-soddisfano-una-condizione" class="level2" data-number="6.6"><h2 data-number="6.6" class="anchored" data-anchor-id="selezionare-le-righe-che-soddisfano-una-condizione">
 <span class="header-section-number">6.6</span> Selezionare le righe che soddisfano una condizione</h2>
 <p>Il verbo <code><a href="https://dplyr.tidyverse.org/reference/filter.html">filter()</a></code> consente di selezionare da un <code>tibble</code> un sottoinsieme di righe (osservazioni). Per esempio, possiamo selezionare tutte le osservazioni nella variabile <code>vore</code> contrassegnate come <code>carni</code> (ovvero, tutti i carnivori):</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">vore</span> <span class="op">==</span> <span class="st">"carni"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 19 × 3</span></span>
 <span><span class="co">#&gt;   name                 vore  sleep_total</span></span>
@@ -720,7 +749,6 @@ div.csl-indent {
 <span><span class="co">#&gt; 7 Gray seal            carni         6.2</span></span>
 <span><span class="co">#&gt; 8 Thick-tailed opposum carni        19.4</span></span>
 <span><span class="co">#&gt; # … with 11 more rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per utilizzare il verbo <code><a href="https://dplyr.tidyverse.org/reference/filter.html">filter()</a></code> in modo efficace è neccessario usare gli operatori relazionali</p>
 <span class="math display">\[\begin{array}{l l}
@@ -751,7 +779,7 @@ div.csl-indent {
 </h2>
 <p>Talvolta vogliamo creare una nuova variabile, per esempio, sommando o dividendo due variabili, oppure calcolandone la media. A questo scopo si usa il verbo <code><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate()</a></code>. Per esempio, se vogliamo esprimere i valori di <code>sleep_total</code> in minuti, moltiplichiamo per 60:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
 <span>    sleep_minutes <span class="op">=</span> <span class="va">sleep_total</span> <span class="op">*</span> <span class="fl">60</span></span>
 <span>  <span class="op">)</span> <span class="op">|&gt;</span> </span>
@@ -768,14 +796,13 @@ div.csl-indent {
 <span><span class="co">#&gt; 7         8.7           522</span></span>
 <span><span class="co">#&gt; 8         7             420</span></span>
 <span><span class="co">#&gt; # … with 75 more rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section><section id="ordinare-i-dati-con-arrange" class="level2" data-number="6.8"><h2 data-number="6.8" class="anchored" data-anchor-id="ordinare-i-dati-con-arrange">
 <span class="header-section-number">6.8</span> Ordinare i dati con <code>arrange()</code>
 </h2>
 <p>Il verbo <code><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange()</a></code> ordina i dati in base ai valori di una o più variabili. Per esempio, possiamo ordinare la variabile <code>sleep_total</code> dal valore più alto al più basso in questo modo:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span></span>
 <span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">sleep_total</span><span class="op">)</span></span>
 <span>  <span class="op">)</span></span>
@@ -791,7 +818,6 @@ div.csl-indent {
 <span><span class="co">#&gt; 7 Owl monkey             omni           17  </span></span>
 <span><span class="co">#&gt; 8 Arctic ground squirrel herbi          16.6</span></span>
 <span><span class="co">#&gt; # … with 75 more rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section><section id="raggruppare-i-dati-con-group_by" class="level2" data-number="6.9"><h2 data-number="6.9" class="anchored" data-anchor-id="raggruppare-i-dati-con-group_by">
 <span class="header-section-number">6.9</span> Raggruppare i dati con <code>group_by()</code>
@@ -803,7 +829,7 @@ div.csl-indent {
 </h2>
 <p>Il verbo <code><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise()</a></code> collassa il dataset in una singola riga dove viene riportato il risultato della statistica richiesta. Per esempio, la media del tempo totale del sonno è</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span></span>
 <span>    m_sleep <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">sleep_total</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span>  <span class="op">)</span> </span>
@@ -811,13 +837,12 @@ div.csl-indent {
 <span><span class="co">#&gt;   m_sleep</span></span>
 <span><span class="co">#&gt;     &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt; 1    10.4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section><section id="operazioni-raggruppate" class="level2" data-number="6.11"><h2 data-number="6.11" class="anchored" data-anchor-id="operazioni-raggruppate">
 <span class="header-section-number">6.11</span> Operazioni raggruppate</h2>
 <p>Sopra abbiamo visto come i mammiferi considerati dormano, in media, 10.4 ore al giorno. Troviamo ora il sonno medio in funzione di <code>vore</code>:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">dt</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">vore</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span></span>
 <span>    m_sleep <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">sleep_total</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>, </span>
@@ -831,7 +856,6 @@ div.csl-indent {
 <span><span class="co">#&gt; 3 insecti   14.9      5</span></span>
 <span><span class="co">#&gt; 4 omni      10.9     20</span></span>
 <span><span class="co">#&gt; 5 &lt;NA&gt;      10.2      7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Si noti che, nel caso di 7 osservazioni, il valore di <code>vore</code> non era specificato. Per tali osservazioni, dunque, la classe di appartenenza è <code>NA</code>.</p>
 </section><section id="applicare-una-funzione-su-più-colonne-across" class="level2" data-number="6.12"><h2 data-number="6.12" class="anchored" data-anchor-id="applicare-una-funzione-su-più-colonne-across">
@@ -839,7 +863,7 @@ div.csl-indent {
 </h2>
 <p>È spesso utile eseguire la stessa operazione su più colonne, ma copiare e incollare è sia noioso che soggetto a errori:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">g1</span>, <span class="va">g2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span></span>
 <span>    a <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">a</span><span class="op">)</span>,</span>
@@ -847,18 +871,16 @@ div.csl-indent {
 <span>    c <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">c</span><span class="op">)</span>,</span>
 <span>    d <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>In tali circostanze è possibile usare la funzione <code><a href="https://dplyr.tidyverse.org/reference/across.html">across()</a></code> che consente di riscrivere il codice precedente in modo più succinto:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">g1</span>, <span class="va">g2</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/across.html">across</a></span><span class="op">(</span><span class="va">a</span><span class="op">:</span><span class="va">d</span>, <span class="va">mean</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per i dati presenti, ad esempio, possiamo avere:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">vore</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/across.html">across</a></span><span class="op">(</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html">starts_with</a></span><span class="op">(</span><span class="st">"sleep"</span><span class="op">)</span>, <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">.x</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 5 × 4</span></span>
@@ -869,7 +891,6 @@ div.csl-indent {
 <span><span class="co">#&gt; 3 insecti       14.9       3.52       0.161</span></span>
 <span><span class="co">#&gt; 4 omni          10.9       1.96       0.592</span></span>
 <span><span class="co">#&gt; 5 &lt;NA&gt;          10.2       1.88       0.183</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section><section id="dati-categoriali-in-mathsfr" class="level2" data-number="6.13"><h2 data-number="6.13" class="anchored" data-anchor-id="dati-categoriali-in-mathsfr">
 <span class="header-section-number">6.13</span> Dati categoriali in <span class="math inline">\(\mathsf{R}\)</span>
@@ -882,7 +903,7 @@ div.csl-indent {
 <span class="header-section-number">6.14</span> Modificare le etichette dei livelli di un fattore</h2>
 <p>Esaminiamo l’esempio seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">f_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"old_3"</span>, <span class="st">"old_4"</span>, <span class="st">"old_1"</span>, <span class="st">"old_1"</span>, <span class="st">"old_2"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">f_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"old_3"</span>, <span class="st">"old_4"</span>, <span class="st">"old_1"</span>, <span class="st">"old_1"</span>, <span class="st">"old_2"</span><span class="op">)</span></span>
 <span><span class="va">f_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">f_1</span><span class="op">)</span></span>
 <span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span></span>
 <span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span><span class="va">f_1</span>, <span class="va">y</span><span class="op">)</span></span>
@@ -895,11 +916,10 @@ div.csl-indent {
 <span><span class="co">#&gt; 3 old_1     3</span></span>
 <span><span class="co">#&gt; 4 old_1     4</span></span>
 <span><span class="co">#&gt; 5 old_2     5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Supponiamo ora di volere che i livelli del fattore <code>f_1</code> abbiano le etichette <code>new_1</code>, <code>new_2</code>, ecc. Per ottenere questo risultato usiamo la funzione <code><a href="https://forcats.tidyverse.org/reference/fct_recode.html">forcats::fct_recode()</a></code>:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="va">df</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="va">df</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>f_1 <span class="op">=</span></span>
 <span>    <span class="fu">forcats</span><span class="fu">::</span><span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_recode.html">fct_recode</a></span><span class="op">(</span></span>
 <span>      <span class="va">f_1</span>, </span>
@@ -918,13 +938,12 @@ div.csl-indent {
 <span><span class="co">#&gt; 3 poco        3</span></span>
 <span><span class="co">#&gt; 4 poco        4</span></span>
 <span><span class="co">#&gt; 5 medio       5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section><section id="riordinare-i-livelli-di-un-fattore" class="level2" data-number="6.15"><h2 data-number="6.15" class="anchored" data-anchor-id="riordinare-i-livelli-di-un-fattore">
 <span class="header-section-number">6.15</span> Riordinare i livelli di un fattore</h2>
 <p>Spesso i livelli dei fattori hanno un ordinamento naturale. Quindi, gli utenti devono avere un modo per imporre l’ordine desiderato sulla codifica delle loro variabili qualitative. Se per qualche motivo vogliamo ordinare i livelli <code>f_1</code> in ordine inverso, ad esempio, possiamo procedere nel modo seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span><span class="op">$</span><span class="va">f_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">df</span><span class="op">$</span><span class="va">f_1</span>,</span>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df</span><span class="op">$</span><span class="va">f_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span><span class="va">df</span><span class="op">$</span><span class="va">f_1</span>,</span>
 <span>  levels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
 <span>    <span class="st">"massimo"</span>, <span class="st">"tanto"</span>, <span class="st">"medio"</span>, <span class="st">"poco"</span> </span>
 <span>  <span class="op">)</span></span>
@@ -932,7 +951,6 @@ div.csl-indent {
 <span><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">df</span><span class="op">$</span><span class="va">f_1</span><span class="op">)</span></span>
 <span><span class="co">#&gt; massimo   tanto   medio    poco </span></span>
 <span><span class="co">#&gt;       1       1       1       2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per approfondire le problematiche della manipolazione di variabili qualitative in <span class="math inline">\(\mathsf{R}\)</span>, si veda <span class="citation" data-cites="mcnamara2018wrangling">McNamara &amp; Horton (<a href="999_refs.html#ref-mcnamara2018wrangling" role="doc-biblioref">2018</a>)</span>.</p>
 </section><section id="creare-grafici-con-ggplot2" class="level2" data-number="6.16"><h2 data-number="6.16" class="anchored" data-anchor-id="creare-grafici-con-ggplot2">
@@ -960,24 +978,23 @@ div.csl-indent {
 </ul>
 <p>Un comando generico ha la seguente forma:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">my_graph</span> <span class="op">&lt;-</span> <span class="va">my_data</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">my_graph</span> <span class="op">&lt;-</span> <span class="va">my_data</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">x_var</span>, <span class="va">y_var</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_...</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>La prima volta che si usa il pacchetto <code>ggplot2</code> è necessario installarlo. Per fare questo possiamo installare <code>tidyverse</code> che, oltre a caricare <code>ggplot2</code>, carica anche altre utili funzioni per l’analisi dei dati. Ogni volta che si inizia una sessione R è necessario attivare i pacchetti che si vogliono usare, ma non è necessario istallarli una nuova volta. Se è necessario specificare il pacchetto nel quale è contenuta la funzione che vogliamo utilizzare, usiamo la sintassi <code>package::function()</code>. Per esempio, l’istruzione <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot2::ggplot()</a></code> rende esplicito che stiamo usando la funzione <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> contenuta nel pacchetto <code>ggplot2</code>.</p>
 </section><section id="diagramma-a-dispersione" class="level2" data-number="6.17"><h2 data-number="6.17" class="anchored" data-anchor-id="diagramma-a-dispersione">
 <span class="header-section-number">6.17</span> Diagramma a dispersione</h2>
 <p>Consideriamo nuovamenti i dati contenuti nel <code>tibble</code> <code>msleep</code> e poniamoci il problema di rappresentare graficamente la relazione tra il numero medio di ore di sonno giornaliero (<code>sleep_total</code>) e il peso dell’animale (<code>bodywt</code>). Usando le impostazioni di default di <code>ggplot2</code>, con le istruzioni seguenti, otteniamo il grafico fornito dalla figura seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="st">"msleep"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="st">"msleep"</span><span class="op">)</span></span>
 <span><span class="va">p</span> <span class="op">&lt;-</span> <span class="va">msleep</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
 <span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">bodywt</span>, y <span class="op">=</span> <span class="va">sleep_total</span><span class="op">)</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">p</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="013_penguins_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -986,13 +1003,13 @@ div.csl-indent {
 </div>
 <p>Coloriamo ora in maniera diversa i punti che rappresentano animali carnivori, erbivori, ecc.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="va">msleep</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="va">msleep</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
 <span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">bodywt</span>, y <span class="op">=</span> <span class="va">sleep_total</span>, col <span class="op">=</span> <span class="va">vore</span><span class="op">)</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">p</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="013_penguins_files/figure-html/unnamed-chunk-31-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -1001,13 +1018,13 @@ div.csl-indent {
 </div>
 <p>È chiaro, senza fare alcuna analisi statistica, che la relazione tra le due variabili non è lineare. Trasformando in maniera logaritmica i valori dell’asse <span class="math inline">\(x\)</span> la relazione si linearizza.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="va">msleep</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p</span> <span class="op">&lt;-</span> <span class="va">msleep</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
 <span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log</a></span><span class="op">(</span><span class="va">bodywt</span><span class="op">)</span>, y <span class="op">=</span> <span class="va">sleep_total</span>, col <span class="op">=</span> <span class="va">vore</span><span class="op">)</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="va">p</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="013_penguins_files/figure-html/unnamed-chunk-32-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -1016,7 +1033,7 @@ div.csl-indent {
 </div>
 <p>Infine, aggiustiamo il “tema” del grafico (si noti l’utilizzo di una tavolozza di colori adatta ai daltonici mediante il pacchetto <code>viridis</code>), aggiungiamo le etichette sugli assi e il titolo.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://sjmgarnier.github.io/viridis/">"viridis"</a></span><span class="op">)</span></span>
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://sjmgarnier.github.io/viridis/">"viridis"</a></span><span class="op">)</span></span>
 <span><span class="va">msleep</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
 <span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log</a></span><span class="op">(</span><span class="va">bodywt</span><span class="op">)</span>, y <span class="op">=</span> <span class="va">sleep_total</span>, col <span class="op">=</span> <span class="va">vore</span><span class="op">)</span></span>
@@ -1032,7 +1049,7 @@ div.csl-indent {
 <span>  <span class="fu"><a href="https://sjmgarnier.github.io/viridis/reference/scale_viridis.html">scale_fill_viridis</a></span><span class="op">(</span>discrete <span class="op">=</span> <span class="cn">TRUE</span>, option <span class="op">=</span> <span class="st">"viridis"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span>legend.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="013_penguins_files/figure-html/unnamed-chunk-33-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -1044,7 +1061,7 @@ div.csl-indent {
 <span class="header-section-number">6.18</span> Istogramma</h2>
 <p>Creiamo ora un istogramma che rappresenta la distribuzione del (logaritmo del) peso medio del cervello delle 83 specie di mammiferi considerate da <span class="citation" data-cites="savage2007quantitative">Savage &amp; West (<a href="999_refs.html#ref-savage2007quantitative" role="doc-biblioref">2007</a>)</span>. L’argomento <code>aes(y = ..density..)</code> in <code><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram()</a></code> produce le frequenze relative. L’opzione di default (senza questo argomento) porta <code><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot()</a></code> a rappresentare le frequenze assolute.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span> <span class="op">|&gt;</span> </span>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">msleep</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
 <span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">log</a></span><span class="op">(</span><span class="va">brainwt</span><span class="op">)</span><span class="op">)</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
@@ -1054,7 +1071,7 @@ div.csl-indent {
 <span>    y <span class="op">=</span> <span class="st">"Frequenza relativa"</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span>legend.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_blank</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="013_penguins_files/figure-html/unnamed-chunk-34-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>

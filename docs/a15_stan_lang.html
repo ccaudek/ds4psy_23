@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Data Science per psicologi - Appendix F — Programmare in Stan</title>
+<title>Data Science per psicologi - Appendix G — Programmare in Stan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,7 +122,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Appendix F — Programmare in Stan</h1>
+      <h1 class="quarto-secondary-nav-title">Appendix G — Programmare in Stan</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -209,7 +209,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata: significato, teoremi, eventi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -219,7 +219,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indici di posizione, di varianza e di associazione di variabili casuali</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -397,21 +397,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
-  </div>
-</li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Appendici</a>
+            <a href="./frequentist_inference.html" class="sidebar-item-text sidebar-link">Parte 7: Inferenza frequentista</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./220_intro_frequentist.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Legge dei grandi numeri</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./221_conf_interv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Intervallo fiduciale</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./225_distr_camp_mean.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Distribuzione campionaria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./226_test_ipotesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Significatività statistica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./227_ttest.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Inferenza sulle medie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./228_limiti_stat_frequentista.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Limiti dell’inferenza frequentista</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Appendici</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./a01_math_symbols.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Simbologia di base</span></a>
@@ -434,12 +474,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  <a href="./a05_calculus_notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Per liberarvi dai terrori preliminari</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
+  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
   </div>
 </li>
       </ul>
@@ -450,26 +495,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sommario</h2>
    
   <ul>
-<li><a href="#interfacce-e-pacchetti" id="toc-interfacce-e-pacchetti" class="nav-link active" data-scroll-target="#interfacce-e-pacchetti"><span class="toc-section-number">F.1</span>  Interfacce e pacchetti</a></li>
-  <li><a href="#interfaccia-cmdstanr" id="toc-interfaccia-cmdstanr" class="nav-link" data-scroll-target="#interfaccia-cmdstanr"><span class="toc-section-number">F.2</span>  Interfaccia <code>cmdstanr</code></a></li>
+<li><a href="#interfacce-e-pacchetti" id="toc-interfacce-e-pacchetti" class="nav-link active" data-scroll-target="#interfacce-e-pacchetti"><span class="toc-section-number">G.1</span>  Interfacce e pacchetti</a></li>
+  <li><a href="#interfaccia-cmdstanr" id="toc-interfaccia-cmdstanr" class="nav-link" data-scroll-target="#interfaccia-cmdstanr"><span class="toc-section-number">G.2</span>  Interfaccia <code>cmdstanr</code></a></li>
   <li>
-<a href="#codice-stan" id="toc-codice-stan" class="nav-link" data-scroll-target="#codice-stan"><span class="toc-section-number">F.3</span>  Codice Stan</a>
+<a href="#codice-stan" id="toc-codice-stan" class="nav-link" data-scroll-target="#codice-stan"><span class="toc-section-number">G.3</span>  Codice Stan</a>
   <ul class="collapse">
-<li><a href="#hello-world-stan" id="toc-hello-world-stan" class="nav-link" data-scroll-target="#hello-world-stan"><span class="toc-section-number">F.3.1</span>  “Hello, world” – Stan</a></li>
-  <li><a href="#blocco-data" id="toc-blocco-data" class="nav-link" data-scroll-target="#blocco-data"><span class="toc-section-number">F.3.2</span>  Blocco <code>data</code></a></li>
-  <li><a href="#blocco-parameters" id="toc-blocco-parameters" class="nav-link" data-scroll-target="#blocco-parameters"><span class="toc-section-number">F.3.3</span>  Blocco <code>parameters</code></a></li>
-  <li><a href="#blocco-model" id="toc-blocco-model" class="nav-link" data-scroll-target="#blocco-model"><span class="toc-section-number">F.3.4</span>  Blocco <code>model</code></a></li>
-  <li><a href="#blocchi-opzionali" id="toc-blocchi-opzionali" class="nav-link" data-scroll-target="#blocchi-opzionali"><span class="toc-section-number">F.3.5</span>  Blocchi opzionali</a></li>
-  <li><a href="#sintassi" id="toc-sintassi" class="nav-link" data-scroll-target="#sintassi"><span class="toc-section-number">F.3.6</span>  Sintassi</a></li>
+<li><a href="#hello-world-stan" id="toc-hello-world-stan" class="nav-link" data-scroll-target="#hello-world-stan"><span class="toc-section-number">G.3.1</span>  “Hello, world” – Stan</a></li>
+  <li><a href="#blocco-data" id="toc-blocco-data" class="nav-link" data-scroll-target="#blocco-data"><span class="toc-section-number">G.3.2</span>  Blocco <code>data</code></a></li>
+  <li><a href="#blocco-parameters" id="toc-blocco-parameters" class="nav-link" data-scroll-target="#blocco-parameters"><span class="toc-section-number">G.3.3</span>  Blocco <code>parameters</code></a></li>
+  <li><a href="#blocco-model" id="toc-blocco-model" class="nav-link" data-scroll-target="#blocco-model"><span class="toc-section-number">G.3.4</span>  Blocco <code>model</code></a></li>
+  <li><a href="#blocchi-opzionali" id="toc-blocchi-opzionali" class="nav-link" data-scroll-target="#blocchi-opzionali"><span class="toc-section-number">G.3.5</span>  Blocchi opzionali</a></li>
+  <li><a href="#sintassi" id="toc-sintassi" class="nav-link" data-scroll-target="#sintassi"><span class="toc-section-number">G.3.6</span>  Sintassi</a></li>
   </ul>
 </li>
-  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow"><span class="toc-section-number">F.4</span>  Workflow</a></li>
-  <li><a href="#ciao-stan" id="toc-ciao-stan" class="nav-link" data-scroll-target="#ciao-stan"><span class="toc-section-number">F.5</span>  Ciao, Stan</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow"><span class="toc-section-number">G.4</span>  Workflow</a></li>
+  <li><a href="#ciao-stan" id="toc-ciao-stan" class="nav-link" data-scroll-target="#ciao-stan"><span class="toc-section-number">G.5</span>  Ciao, Stan</a></li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-intro-stan" class="quarto-section-identifier d-none d-lg-block">Appendix F — Programmare in Stan</span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-intro-stan" class="quarto-section-identifier d-none d-lg-block">Appendix G — Programmare in Stan</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Codice</button></div></div>
 </div>
 
 
@@ -485,8 +530,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </header><!-- http://avehtari.github.io/BDA_R_demos/demos_rstan/rstan_demo.html --><div class="cell">
 
 </div>
-<section id="interfacce-e-pacchetti" class="level2" data-number="F.1"><h2 data-number="F.1" class="anchored" data-anchor-id="interfacce-e-pacchetti">
-<span class="header-section-number">F.1</span> Interfacce e pacchetti</h2>
+<section id="interfacce-e-pacchetti" class="level2" data-number="G.1"><h2 data-number="G.1" class="anchored" data-anchor-id="interfacce-e-pacchetti">
+<span class="header-section-number">G.1</span> Interfacce e pacchetti</h2>
 <p>È possibile accedere al linguaggio Stan tramite diverse interfacce:</p>
 <ul>
 <li>
@@ -516,42 +561,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <code>edstan</code> - modelli Stan per la Item Response Theory;</li>
 <li>
 <code>cmdstanr</code> - un’interfaccia <span class="math inline">\(\mathsf{R}\)</span> per <code>CmdStan</code>.</li>
-</ul></section><section id="interfaccia-cmdstanr" class="level2" data-number="F.2"><h2 data-number="F.2" class="anchored" data-anchor-id="interfaccia-cmdstanr">
-<span class="header-section-number">F.2</span> Interfaccia <code>cmdstanr</code>
+</ul></section><section id="interfaccia-cmdstanr" class="level2" data-number="G.2"><h2 data-number="G.2" class="anchored" data-anchor-id="interfaccia-cmdstanr">
+<span class="header-section-number">G.2</span> Interfaccia <code>cmdstanr</code>
 </h2>
 <p>Negli esempi di questa dispensa verrà usata l’interfaccia <code>cmdstanr</code>. Il pacchetto <code>cmdstanr</code> non è ancora disponibile su CRAN, ma può essere installato come indicato su questo <a href="https://mc-stan.org/docs/2_27/cmdstan-guide/cmdstan-installation.html">link</a>. Una volta che è stato installato, il pacchetto <code>cmdstanr</code> può essere caricato come un qualsiasi altro pacchetto <span class="math inline">\(\mathsf{R}\)</span>.</p>
 <p>Si noti che <code>cmdstanr</code> richiede un’installazione funzionante di <code>CmdStan</code>, l’interfaccia shell per Stan. Se <code>CmdStan</code> non è installato, <code>cmdstanr</code> lo installerà automaticamente se il computer dispone di una <em>Toolchain</em> adatta. Stan richiede infatti che sul computer su cui viene installato siano presenti alcuni strumenti necessari per gestire i file C++. Tra le altre ragioni, questo è dovuto al fatto che il codice Stan viene tradotto in codice C++ e compilato. Il modo migliore per ottenere il software necessario per un computer Windows è quello di installare <code>RTools</code>. Per un computer Linux, è necessario installare <code>build-essential</code> e una versione recente dei compilatori g++ o clang++. Per un Mac è necessario disporre di Xcode Command Line Tools. Se non sono già installati, per installarli, digitare nel Terminal (NON nella console di RStudio):</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">xcode</span><span class="op">-</span><span class="va">select</span> <span class="op">-</span><span class="op">-</span><span class="va">install</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">xcode</span><span class="op">-</span><span class="va">select</span> <span class="op">-</span><span class="op">-</span><span class="va">install</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>I requisiti sono descritti nella <a href="https://mc-stan.org/docs/cmdstan-guide/cmdstan-installation.html">Guida di CmdStan</a>.</p>
 <p>Per verificare che la Toolchain sia configurata correttamente è possibile utilizzare la funzione <code>check_cmdstan_toolchain()</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">check_cmdstan_toolchain</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">check_cmdstan_toolchain</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Se la toolchain è configurata correttamente, <code>CmdStan</code> può essere installato mediante la funzione <code>install_cmdstan()</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">install_cmdstan</span><span class="op">(</span>cores <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">install_cmdstan</span><span class="op">(</span>cores <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>La versione installata di <code>CmdStan</code> si ottiene con <code>cmdstan_version()</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">cmdstan_version</span><span class="op">(</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">cmdstan_version</span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "2.31.0"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
-</section><section id="codice-stan" class="level2" data-number="F.3"><h2 data-number="F.3" class="anchored" data-anchor-id="codice-stan">
-<span class="header-section-number">F.3</span> Codice Stan</h2>
+</section><section id="codice-stan" class="level2" data-number="G.3"><h2 data-number="G.3" class="anchored" data-anchor-id="codice-stan">
+<span class="header-section-number">G.3</span> Codice Stan</h2>
 <p>Qualunque sia l’interfaccia che viene usata, i modelli sottostanti sono sempre scritti nel linguaggio Stan, il che significa che lo stesso codice Stan è valido per tutte le interfacce possibili. Il codice Stan è costituito da una serie di blocchi che vengono usati per specificare un modello statistico. In ordine, questi blocchi sono: <code>data</code>, <code>transformed data</code>, <code>parameters</code>, <code>transformed parameters</code>, <code>model</code>, e <code>generated quantities</code>.</p>
-<section id="hello-world-stan" class="level3" data-number="F.3.1"><h3 data-number="F.3.1" class="anchored" data-anchor-id="hello-world-stan">
-<span class="header-section-number">F.3.1</span> “Hello, world” – Stan</h3>
+<section id="hello-world-stan" class="level3" data-number="G.3.1"><h3 data-number="G.3.1" class="anchored" data-anchor-id="hello-world-stan">
+<span class="header-section-number">G.3.1</span> “Hello, world” – Stan</h3>
 <p>Quando si studia un nuovo linguaggio di programmazione si utilizza spesso un programma “Hello, world”. Questo è un modo semplice, spesso minimo, per dimostrare alcune delle sintassi di base del linguaggio. Qui presentiamo Stan e scriviamo un programma “Hello, world” per Stan.</p>
 <p>Prima di scrivere il nostro primo programma “Hello, world” per Stan (che estrarrà campioni dalla distribuzione a posteriori di un modello gaussiano) spendiamo due parole per spiegare cosa fa Stan. Un utente scrive un modello usando il linguaggio Stan. Questo è solitamente memorizzato in un file di testo <code>.stan</code>. Il modello viene compilato in due passaggi. Innanzitutto, Stan traduce il modello nel file <code>.stan</code> in codice C++. Quindi, quel codice C++ viene compilato in codice macchina. Una volta creato il codice macchina, l’utente può, tramite l’interfaccia CmdStan, campionare la distribuzione definita dal modello ed eseguire altri calcoli con il modello. I risultati del campionamento vengono scritti su disco come file CSV e txt. Come mostrato di seguito, l’utente accede a questi file utilizzando varie funzioni <span class="math inline">\(\mathsf{R}\)</span>, senza interagire direttamente con loro.</p>
 <p>Per iniziare, possiamo dire che un programma Stan contiene tre “blocchi” obbligatori: blocco <code>data</code>, blocco <code>parameters</code>, blocco <code>model</code>.</p>
-</section><section id="blocco-data" class="level3" data-number="F.3.2"><h3 data-number="F.3.2" class="anchored" data-anchor-id="blocco-data">
-<span class="header-section-number">F.3.2</span> Blocco <code>data</code>
+</section><section id="blocco-data" class="level3" data-number="G.3.2"><h3 data-number="G.3.2" class="anchored" data-anchor-id="blocco-data">
+<span class="header-section-number">G.3.2</span> Blocco <code>data</code>
 </h3>
 <p>Qui vengono dichiarate le variabili che saranno passate a Stan. Devono essere elencati i nomi delle variabili che saranno utilizzate nel programma, il <em>tipo di dati</em> da registrare per ciascuna variabile, per esempio:</p>
 <ul>
@@ -568,61 +609,55 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>Devono anche essere dichiarate le dimensioni delle variabili e le eventuali restrizioni sulle variabili (es. <code>upper = 1</code> <code>lower = 0</code>, che fungono da controlli per Stan). Tutti i nomi delle variabili assegnate qui saranno anche usati negli altri blocchi del programma. Per esempio, l’istruzione seguente dichiaria la variabile <code>Y</code> – la quale rappresenta, ad esempio, l’altezza di 10 persone – come una variabile di tipo <code>real</code>. Ciò significa che specifichiamo un array di lunghezza 10, i cui elementi sono variabili continue definite sull’intervallo dei numeri reali <span class="math inline">\([-\infty, +\infty]\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data {</span>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data {</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  array[<span class="dv">10</span>] real Y; <span class="sc">/</span><span class="er">/</span> heights <span class="cf">for</span> <span class="dv">10</span> people</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Invece, con l’istruzione seguente dichiariamo la variabile <code>Y</code> – la quale rappresenta, ad esempio, il QI di 10 persone – come una variabile di tipo <code>int</code>, ovvero un array di lunghezza 10, i cui elementi sono numeri naturali, cioè numeri interi non negativi <span class="math inline">\(\{0, +1, +2, +3, +4, \dots\}\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data {</span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data {</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  array[<span class="dv">10</span>] int Y; <span class="sc">/</span><span class="er">/</span> qi <span class="cf">for</span> <span class="dv">10</span> people</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Un altro esempio è il seguente, dove viene specificato un array di lunghezza 10, i cui elementi sono delle variabili continue definite sull’intervallo dei numeri reali <span class="math inline">\([0, 1]\)</span> — per esempio, delle proporzioni.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>data {</span>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>data {</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  array[<span class="dv">10</span>] real<span class="sc">&lt;</span>lower<span class="ot">=</span><span class="dv">0</span>, upper<span class="ot">=</span><span class="dv">1</span><span class="sc">&gt;</span> Y; <span class="sc">/</span><span class="er">/</span> <span class="dv">10</span> proportions</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Si noti che i tipi <code>vector</code> e <code>matrix</code> contengono solo elementi di tipo <code>real</code>, ovvero variabili continue, mentre gli <code>array</code> possono contenere dati di qualsiasi tipo. I dati passati a Stan devono essere contenuti in un oggetto del tipo <code>list</code>.</p>
-</section><section id="blocco-parameters" class="level3" data-number="F.3.3"><h3 data-number="F.3.3" class="anchored" data-anchor-id="blocco-parameters">
-<span class="header-section-number">F.3.3</span> Blocco <code>parameters</code>
+</section><section id="blocco-parameters" class="level3" data-number="G.3.3"><h3 data-number="G.3.3" class="anchored" data-anchor-id="blocco-parameters">
+<span class="header-section-number">G.3.3</span> Blocco <code>parameters</code>
 </h3>
 <p>I parametri che vengono stimati sono dichiarati nel blocco <code>parameters</code>. Per esempio, l’istruzione seguente dichiara la variabile <code>mu</code> che codifica l’altezza media nella popolazione, che è una variabile continua in un intervallo illimitato di valori, e la deviazione standard <code>sigma</code>, che è una variabile continua non negativa. Avremmo anche potuto specificare un limite inferiore di zero su <code>mu</code> perché deve essere non negativo.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>parameters {</span>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>parameters {</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  real mu; <span class="sc">/</span><span class="er">/</span> mean height <span class="cf">in</span> population</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  real<span class="sc">&lt;</span>lower<span class="ot">=</span><span class="dv">0</span><span class="sc">&gt;</span> sigma; <span class="sc">/</span><span class="er">/</span> sd of height distribution</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per una regressione lineare semplice, ad esempio, devono essere dichiarate le variabili corrispondenti all’intercetta (<code>alpha</code>), alla pendenza (<code>beta</code>) e alla deviazione standard degli errori attorno alla linea di regressione (<code>sigma</code>). In altri termini, nel blocco <code>parameters</code> devono essere elencati tutti i parametri che dovranno essere stimati dal modello. Si noti che parametri discreti non sono possibili. Infatti, Stan attualmente non supporta i parametri con valori interi, almeno non direttamente.</p>
-</section><section id="blocco-model" class="level3" data-number="F.3.4"><h3 data-number="F.3.4" class="anchored" data-anchor-id="blocco-model">
-<span class="header-section-number">F.3.4</span> Blocco <code>model</code>
+</section><section id="blocco-model" class="level3" data-number="G.3.4"><h3 data-number="G.3.4" class="anchored" data-anchor-id="blocco-model">
+<span class="header-section-number">G.3.4</span> Blocco <code>model</code>
 </h3>
 <p>Nel blocco <code>model</code> vengono elencate le dichiarazioni relative alla verosimiglianza dei dati e alle distribuzioni a priori dei parametri, come ad esempio, nelle istruzioni seguenti.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>model {</span>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>model {</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) {</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    Y[i] <span class="sc">~</span> <span class="fu">normal</span>(mu, sigma);</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  mu <span class="sc">~</span> <span class="fu">normal</span>(<span class="dv">170</span>, <span class="dv">15</span>); <span class="sc">/</span><span class="er">/</span> prior <span class="cf">for</span> mu</span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  sigma <span class="sc">~</span> <span class="fu">cauchy</span>(<span class="dv">0</span>, <span class="dv">20</span>); <span class="sc">/</span><span class="er">/</span> prior <span class="cf">for</span> sigma</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Mediante l’istruzione all’interno del ciclo <code>for</code>, ciascun valore dell’altezza viene concepito come una variable casuale proveniente da una distribuzione Normale di parametri <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma\)</span> (i parametri di interesse nell’inferenza). Il ciclo <code>for</code> viene ripetuto 10 volte perché i dati sono costituiti da un array di 10 elementi (ovvero, il campione è costituito da 10 osservazioni).</p>
 <p>Le due righe che seguno il ciclo <code>for</code> specificano le distribuzioni a priori dei parametri su cui vogliamo effettuare l’inferenza. Per <span class="math inline">\(\mu\)</span> assumiamo una distribuzione a priori Normale di parametri <span class="math inline">\(\mu = 170\)</span> e <span class="math inline">\(\sigma = 15\)</span>; per <span class="math inline">\(\sigma\)</span> assumiamo una distribuzione a priori Cauchy(0, 20).</p>
 <p>Se non viene definita alcuna distribuzione a priori, Stan utilizzerà la distribuzione a priori predefinita <span class="math inline">\(Unif(-\infty, +\infty)\)</span>. Raccomandazioni sulle distribuzioni a priori sono fornite in questo <a href="https://github.com/stan-dev/stan/wiki/Prior-Choice-Recommendations">link</a>.</p>
 <p>La precedente notazione di campionamento può anche essere espressa usando la seguente notazione alternativa.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) {</span>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) {</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    target <span class="sc">+</span><span class="er">=</span> <span class="fu">normal_lpdf</span>(Y[i] <span class="sc">|</span> mu, sigma);</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Questa notazione rende trasparente il fatto che, in pratica, Stan esegue un campionamento nello spazio della log-verosimiglianza.</p>
 <p><span class="math display">\[
@@ -631,32 +666,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Per ogni passo MCMC, viene ottenuto un nuovo valore di <span class="math inline">\(\mu\)</span> e <span class="math inline">\(\sigma\)</span> eviene valutata la log densità a posteriori non normalizzata. Ad ogni passo MCMC, Stan calcola un nuovo valore della densità a posteriori su scala logaritmica partendo da un valore di 0 e incrementandola ogni volta che incontra un’istruzione <code>~</code>. Quindi, le istruzioni precedenti aumentano la log-densità di una quantità pari a <span class="math inline">\(\log (p(Y[i])) \propto -\frac{1}{2} \log(\sigma^2) - (Y[i]-\mu)^2 / 2\sigma^2\)</span> per le altezze si ciascuno degli <span class="math inline">\(i=1 \dots, 10\)</span> individui – laddove la formula esprime, in termini logaritmici, la densità Normale da cui sono stati esclusi i termini costanti.</p>
 <p>Oppure, in termini vettorializzati, il modello descritto sopra può essere espresso come segue.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>model {</span>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>model {</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  Y <span class="sc">~</span> <span class="fu">normal</span>(mu, sigma);</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>dove il termine a sinistra di <span class="math inline">\(\sim\)</span> è un array. Questa notazione più compatta è anche la più efficiente.</p>
-</section><section id="blocchi-opzionali" class="level3" data-number="F.3.5"><h3 data-number="F.3.5" class="anchored" data-anchor-id="blocchi-opzionali">
-<span class="header-section-number">F.3.5</span> Blocchi opzionali</h3>
+</section><section id="blocchi-opzionali" class="level3" data-number="G.3.5"><h3 data-number="G.3.5" class="anchored" data-anchor-id="blocchi-opzionali">
+<span class="header-section-number">G.3.5</span> Blocchi opzionali</h3>
 <p>Ci sono inoltre tre blocchi opzionali:</p>
 <ul>
 <li>Il blocco <code>transformed data</code> consente il pre-processing dei dati. È possibile trasformare i parametri del modello; solitamente ciò viene fatto nel caso dei modelli più avanzati per consentire un campionamento MCMC più efficiente.</li>
 <li>Il blocco <code>transformed parameters</code> consente la manipolazione dei parametri prima del calcolo della distribuzione a posteriori.</li>
 <li>Il blocco <code>generated quantities</code> consente il post-processing riguardante qualsiasi quantità che non fa parte del modello ma può essere calcolata a partire dai parametri del modello, per ogni iterazione dell’algoritmo. Esempi includono la generazione dei campioni a posteriori e le dimensioni degli effetti.</li>
-</ul></section><section id="sintassi" class="level3" data-number="F.3.6"><h3 data-number="F.3.6" class="anchored" data-anchor-id="sintassi">
-<span class="header-section-number">F.3.6</span> Sintassi</h3>
+</ul></section><section id="sintassi" class="level3" data-number="G.3.6"><h3 data-number="G.3.6" class="anchored" data-anchor-id="sintassi">
+<span class="header-section-number">G.3.6</span> Sintassi</h3>
 <p>Si noti che il codice Stan richiede i punti e virgola (;) alla fine di ogni istruzione di assegnazione. Questo accade per le dichiarazioni dei dati, per le dichiarazioni dei parametri e ovunque si acceda ad un elemento di un tipo <code>data</code> e lo si assegni a qualcos’altro. I punti e virgola non sono invece richiesti all’inizio di un ciclo o di un’istruzione condizionale, dove non viene assegnato nulla.</p>
 <p>In STAN, qualsiasi stringa che segue <code>//</code> denota un commento e viene ignorata dal programma.</p>
 <p>Stan è un linguaggio estremamente potente e consente di implementare quasi tutti i modelli statistici, ma al prezzo di un certo sforzo di programmazione. Anche l’adattamento di semplici modelli statistici mediante il linguaggio STAN a volte può essere laborioso. Per molti modelli comunemente usati, come i modelli di regressione e multilivello, tale processo può essere semplificato usando le funzioni del pacchetto <code>brms</code>. D’altra parte, per modelli veramente complessi, non ci sono molte alternative all’uso di STAN. Per chi è curioso, il manuale del linguaggio Stan è accessibile al seguente <a href="https://mc-stan.org/docs/2_27/stan-users-guide/index.html">link</a>.</p>
-</section></section><section id="workflow" class="level2" data-number="F.4"><h2 data-number="F.4" class="anchored" data-anchor-id="workflow">
-<span class="header-section-number">F.4</span> Workflow</h2>
+</section></section><section id="workflow" class="level2" data-number="G.4"><h2 data-number="G.4" class="anchored" data-anchor-id="workflow">
+<span class="header-section-number">G.4</span> Workflow</h2>
 <p>Se usiamo <code>cmdstanr</code>, dobbiamo prima scrivere il codice con il modello statistico in un file in formato Stan. È necessario poi “transpile” quel file, ovvero tradurre il file in C++ e compilarlo. Ciò viene fatto mediante la funzione <code>cmdstan_model()</code>. Possiamo poi eseguire il campionamento MCMC con il metodo <code>$sample()</code>. Infine è possibile creare un sommario dei risultati usando, per esempio, usando il metodo <code>$summary()</code>.</p>
-</section><section id="ciao-stan" class="level2" data-number="F.5"><h2 data-number="F.5" class="anchored" data-anchor-id="ciao-stan">
-<span class="header-section-number">F.5</span> Ciao, Stan</h2>
+</section><section id="ciao-stan" class="level2" data-number="G.5"><h2 data-number="G.5" class="anchored" data-anchor-id="ciao-stan">
+<span class="header-section-number">G.5</span> Ciao, Stan</h2>
 <p>Scriviamo ora il nostro programma Stan “Hello, world” per generare campioni da una distribuzione Normale standard (con media zero e varianza unitaria).</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">=</span> <span class="st">"</span></span>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">=</span> <span class="st">"</span></span>
 <span><span class="st">parameters {</span></span>
 <span><span class="st">  real x;</span></span>
 <span><span class="st">}</span></span>
@@ -665,22 +699,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span><span class="st">}</span></span>
 <span><span class="st">"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">modelString</span>, con <span class="op">=</span> <span class="st">"code/hello_world.stan"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Si noti che ci sono solo due blocchi in questo particolare codice Stan, il blocco parametri e il blocco modello. Questi sono due dei sette blocchi possibili in un codice Stan. Nel blocco parametri, abbiamo i nomi e i tipi di parametri per i quali vogliamo ottenere i campioni. In questo caso, vogliamo ottenere campioni di numeri reale che chiamiamo <code>x</code>. Nel blocco modello, abbiamo il nostro modello statistico. Specifichiamo che x, il parametro di cui vogliamo ottenere i campioni, è normalmente distribuito con media zero e deviazione standard unitaria. Ora che abbiamo il nostro codice (che è stato memorizzato in un file chiamato <code>hello_world.stan</code>), possiamo usare CmdStan per compilarlo e ottenere <code>mod</code>, che è un oggetto <span class="math inline">\(\mathsf{R}\)</span> che fornisce l’accesso all’eseguibile Stan compilato.</p>
 <p>Leggiamo il file in cui abbiamo salvato il codice Stan.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"hello_world.stan"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"hello_world.stan"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Compiliamo il modello.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mod</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mod</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Eseguiamo il campionamento MCMC.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
 <span>  iter_sampling <span class="op">=</span> <span class="fl">4000L</span>,</span>
 <span>  iter_warmup <span class="op">=</span> <span class="fl">2000L</span>,</span>
 <span>  seed <span class="op">=</span> <span class="va">SEED</span>,</span>
@@ -688,28 +719,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  refresh <span class="op">=</span> <span class="fl">0</span>,</span>
 <span>  thin <span class="op">=</span> <span class="fl">1</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Tasformiamo l’oggetto <code>fit</code> nel formato <code>stanfit</code> per manipolarlo più facilmente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Esaminiamo l’oggetto <code>stanfit</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">stanfit</span><span class="op">@</span><span class="va">sim</span><span class="op">$</span><span class="va">samples</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">stanfit</span><span class="op">@</span><span class="va">sim</span><span class="op">$</span><span class="va">samples</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Quello che abbiamo ottenuto sono 4 catene di 4000 osservazioni ciascuna, le quali contengono valori casuali estratti dalla gaussiana standardizzata.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">stanfit</span><span class="op">@</span><span class="va">sim</span><span class="op">$</span><span class="va">samples</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">stanfit</span><span class="op">@</span><span class="va">sim</span><span class="op">$</span><span class="va">samples</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Verifichiamo.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">stanfit</span><span class="op">@</span><span class="va">sim</span><span class="op">$</span><span class="va">samples</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">[</span>, <span class="fl">1</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">stanfit</span><span class="op">@</span><span class="va">sim</span><span class="op">$</span><span class="va">samples</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">[</span>, <span class="fl">1</span><span class="op">]</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="a15_stan_lang_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -905,7 +932,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./a10_markov_chains.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

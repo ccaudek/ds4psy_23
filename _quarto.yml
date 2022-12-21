@@ -64,7 +64,15 @@ book:
       - 091_kl.qmd
       - 092_info_criterion.qmd
       # - 093_projpred.qmd
-      - 999_refs.qmd
+    - part: frequentist_inference.qmd
+      chapters: 
+        - 220_intro_frequentist.qmd
+        - 221_conf_interv.qmd
+        - 225_distr_camp_mean.qmd
+        - 226_test_ipotesi.qmd
+        - 227_ttest.qmd
+        - 228_limiti_stat_frequentista.qmd
+    - 999_refs.qmd
   appendices:
     - a01_math_symbols.qmd
     - a02_number_sets.qmd

@@ -13,7 +13,9 @@ La specificazione del modello lineare bayesiano inizia nello stesso modo dell'ap
 
 $$
 y_i = \alpha + \beta x_i + \varepsilon_i, \quad i = 1, \dots, n.
-$$ Si assume che gli errori, $\varepsilon_i$, siano indipendenti e identicamente distribuiti come variabili casuali Normali con media zero e varianza costante $\sigma^2$. Queste ipotesi sono esattamente uguali a quelle che vengono usato nell'inferenza frequentista. Il nostro obiettivo è aggiornare le distribuzioni a priori dei parametri sconosciuti $\alpha$ e $\beta$ alla luce dei dati $x_1, y_1, \dots, x_n, y_n$. Solitamente, è desiderabile scegliere distribuzioni a priori che hanno uno scarso impatto sulla distribuzione a posteriori.
+$$
+
+Si assume che gli errori, $\varepsilon_i$, siano indipendenti e identicamente distribuiti come variabili casuali Normali con media zero e varianza costante $\sigma^2$. Queste ipotesi sono esattamente uguali a quelle che vengono usato nell'inferenza frequentista. Il nostro obiettivo è aggiornare le distribuzioni a priori dei parametri sconosciuti $\alpha$ e $\beta$ alla luce dei dati $x_1, y_1, \dots, x_n, y_n$. Solitamente, è desiderabile scegliere distribuzioni a priori che hanno uno scarso impatto sulla distribuzione a posteriori.
 
 Supponiamo che le nostre credenza a priori sui parametri del modello, $\alpha$, $\beta$ e $\sigma$ siano tra loro indipendenti. Allora possiamo scrivere la distribuzione congiunta dei parametri nel modo seguente:
 
@@ -181,9 +183,9 @@ Il codice Stan viene eseguito più velocemente se l'input è standardizzato cos�
 
 Sono possibili due strade per la standardizzazione dei dati. Se non ci sono ragioni particolari per mantenere l'unità di misura dei dati grezzi (ad esempio, se è sufficiente valutare l'intervallo di credibilità per $\beta$ per determinare se include o meno lo 0), allora possiamo standardizzare i dati *prima* di passarli a Stan (questa è la procedura usuale).
 
-In alternativa, se vogliamo mantenere la soluzione sulla scala delle variabili originarie, è possibile seguire la procedura indicata di seguito. Si passano a Stan i dati grezzi; i dati vengono standardizzati con una trasformazione di variabili all'interno del codice Stan. Viene poi eseguito il campionamento sui dati standardizzati; infine, le stime dei parametri vengono nuovamente trasformate sulla scala delle variabili originarie[^reglin3-1].
+In alternativa, se vogliamo mantenere la soluzione sulla scala delle variabili originarie, è possibile seguire la procedura indicata di seguito. Si passano a Stan i dati grezzi; i dati vengono standardizzati con una trasformazione di variabili all'interno del codice Stan. Viene poi eseguito il campionamento sui dati standardizzati; infine, le stime dei parametri vengono nuovamente trasformate sulla scala delle variabili originarie[^053_reglin3-1].
 
-[^reglin3-1]: Nella discussione che segue ripeto pari pari ciò che è riportato nel manuale del linguaggio [Stan](https://mc-stan.org/docs/2_27/stan-users-guide/standardizing-predictors-and-outputs.html).
+[^053_reglin3-1]: Nella discussione che segue ripeto pari pari ciò che è riportato nel manuale del linguaggio [Stan](https://mc-stan.org/docs/2_27/stan-users-guide/standardizing-predictors-and-outputs.html).
 
 Per ottenere il risultato descritto sopra, si procede come segue. Ponendo $y = (y_1, \dots, y_n)$ e $x = (x_1, \dots, x_n)$, il modello lineare può essere scritto come
 

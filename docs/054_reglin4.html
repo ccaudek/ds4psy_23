@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Data Science per psicologi - 29&nbsp; Inferenza sul modello lineare</title>
 <style>
@@ -229,7 +229,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata</span></a>
+  <a href="./016_conditional_prob.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Probabilità condizionata: significato, teoremi, eventi indipendenti</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -239,7 +239,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Valore atteso e varianza</span></a>
+  <a href="./018_expval_var.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Indici di posizione, di varianza e di associazione di variabili casuali</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -417,21 +417,61 @@ div.csl-indent {
   <a href="./092_info_criterion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Criterio di informazione e convalida incrociata</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
-  </div>
-</li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Appendici</a>
+            <a href="./frequentist_inference.html" class="sidebar-item-text sidebar-link">Parte 7: Inferenza frequentista</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./220_intro_frequentist.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">Legge dei grandi numeri</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./221_conf_interv.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Intervallo fiduciale</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./225_distr_camp_mean.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Distribuzione campionaria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./226_test_ipotesi.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Significatività statistica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./227_ttest.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Inferenza sulle medie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./228_limiti_stat_frequentista.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Limiti dell’inferenza frequentista</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./999_refs.html" class="sidebar-item-text sidebar-link">Riferimenti bibliografici</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Appendici</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./a01_math_symbols.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Simbologia di base</span></a>
@@ -454,12 +494,17 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  <a href="./a05_calculus_notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Per liberarvi dai terrori preliminari</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
+  <a href="./a10_markov_chains.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">F</span>&nbsp; <span class="chapter-title">Le catene di Markov</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a15_stan_lang.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">G</span>&nbsp; <span class="chapter-title">Programmare in Stan</span></a>
   </div>
 </li>
       </ul>
@@ -484,7 +529,7 @@ div.csl-indent {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span id="sec-inference-reg-lin-stan" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Codice</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span id="sec-inference-reg-lin-stan" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Inferenza sul modello lineare</span></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Codice</button></div></div>
 </div>
 
 
@@ -505,7 +550,7 @@ div.csl-indent {
 <span class="header-section-number">29.1</span> Rappresentazione grafica dell’incertezza della stima</h2>
 <p>Supponiamo (come indicato nel Capitolo precedente) di avere eseguito il campionamento MCMC mediante la seguente istruzione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit2</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit2</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">data2_list</span>,</span>
 <span>  iter_sampling <span class="op">=</span> <span class="fl">4000L</span>,</span>
 <span>  iter_warmup <span class="op">=</span> <span class="fl">2000L</span>,</span>
@@ -513,7 +558,6 @@ div.csl-indent {
 <span>  chains <span class="op">=</span> <span class="fl">4L</span>,</span>
 <span>  refresh <span class="op">=</span> <span class="fl">0</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per creare una rappresentazione grafica della retta di regressione stimata dal modello bayesiano, insieme all’incertezza della stima, è necessario manipolare i dati contenuti nell’oggetto creato da <code>mod$sample()</code> che contiene i campioni a posteriori dei parametri del modello di regressione lineare, ovvero <code>fit2</code>.</p>
 <p>Usando la funzione <code><a href="https://mc-stan.org/rstan/reference/stan_csv.html">rstan::read_stan_csv()</a></code> trasformo <code>fit2</code> in un oggetto di formato <code>stanfit</code>.</p>
@@ -521,23 +565,20 @@ div.csl-indent {
 
 </div>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">output_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit2</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">output_stanfit</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_csv.html">read_stan_csv</a></span><span class="op">(</span><span class="va">fit2</span><span class="op">$</span><span class="fu">output_files</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Dall’oggetto <code>output_stanfit</code> estraggo i campioni a posteriori dei parametri <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span> e <span class="math inline">\(\sigma\)</span> con la funzione <code>extract()</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">post</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stanfit-method-extract.html">extract</a></span><span class="op">(</span><span class="va">output_stanfit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">post</span> <span class="op">&lt;-</span> <span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stanfit-method-extract.html">extract</a></span><span class="op">(</span><span class="va">output_stanfit</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>L’oggetto <code>post</code> così creato è una lista.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">post</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span><span class="op">(</span><span class="va">post</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "list"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Esaminiamo il contenuto di <code>post</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">glimpse</span><span class="op">(</span><span class="va">post</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">glimpse</span><span class="op">(</span><span class="va">post</span><span class="op">)</span></span>
 <span><span class="co">#&gt; List of 7</span></span>
 <span><span class="co">#&gt;  $ alpha_std: num [1:16000(1d)] 0.0582 0.0407 -0.0828 0.0997 0.0886 ...</span></span>
 <span><span class="co">#&gt;   ..- attr(*, "dimnames")=List of 1</span></span>
@@ -560,23 +601,20 @@ div.csl-indent {
 <span><span class="co">#&gt;  $ lp__     : num [1:16000(1d)] -170 -169 -171 -172 -174 ...</span></span>
 <span><span class="co">#&gt;   ..- attr(*, "dimnames")=List of 1</span></span>
 <span><span class="co">#&gt;   .. ..$ iterations: NULL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>L’output di <code>glimpse()</code> ci dice che <code>alpha</code> è un vettore di 16,000 elementi. Ciascuno di questi elementi è un valore estratto a caso dalla distribuzione a posteriori del parametro <span class="math inline">\(\alpha\)</span>. È dunque possibile calcolare una stima puntuale della distribuzione a posteriori del parametro <span class="math inline">\(\alpha\)</span> semplicemente trovando la media di tali valori.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">alpha</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">alpha</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 86.7936</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Lo stesso si può dire di <code>beta</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 0.6082648</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per creare un diagramma a dispersione dei dati con sovrapposto il valore atteso della <span class="math inline">\(y\)</span> (ovvero, la retta di regressione) usiamo la sintassi seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span></span>
 <span>  kid_score <span class="op">=</span> <span class="va">df</span><span class="op">$</span><span class="va">kid_score</span>,</span>
 <span>  mom_iq <span class="op">=</span> <span class="va">df</span><span class="op">$</span><span class="va">mom_iq</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">df</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span>
 <span><span class="op">)</span> <span class="op">%&gt;%</span></span>
@@ -586,7 +624,7 @@ div.csl-indent {
 <span>    intercept <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">alpha</span><span class="op">)</span>,</span>
 <span>    slope <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span><span class="op">)</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="054_reglin4_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -597,22 +635,20 @@ div.csl-indent {
 <p>Con le istruzioni precedenti abbiamo disegnato una singola retta. Ma una singola retta non ci fa capire qual è l’incertezza associata alle stime dei parametri <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span>. Una tale incertezza può essere visualizzata tracciando molteplici rette, ciascuna delle quali definita da un diverso valore <em>estratto a caso</em> dalla distribuzione a posteriori dei parametri <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span>.</p>
 <p>Per fare ciò dobbiamo estrarre le informazioni richieste dall’oggetto <code>output_stanfit</code> che è stato creato. A tal fine possiamo usare, ad esempio, le funzioni del pacchetto <code>tidybayes</code>. Iniziamo a elencare i nomi degli oggetti contenuti in <code>output_stanfit</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tidybayes</span><span class="fu">::</span><span class="fu"><a href="http://mjskay.github.io/tidybayes/reference/get_variables.html">get_variables</a></span><span class="op">(</span><span class="va">output_stanfit</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tidybayes</span><span class="fu">::</span><span class="fu"><a href="http://mjskay.github.io/tidybayes/reference/get_variables.html">get_variables</a></span><span class="op">(</span><span class="va">output_stanfit</span><span class="op">)</span></span>
 <span><span class="co">#&gt;  [1] "alpha_std"     "beta_std"      "sigma_std"     "alpha"        </span></span>
 <span><span class="co">#&gt;  [5] "beta"          "sigma"         "lp__"          "accept_stat__"</span></span>
 <span><span class="co">#&gt;  [9] "treedepth__"   "stepsize__"    "divergent__"   "n_leapfrog__" </span></span>
 <span><span class="co">#&gt; [13] "energy__"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Vogliamo creare un DataFrame in formato <em>tidy</em>, cioè, tale per cui le osservazioni stanno sulle righe e le variabili stanno sulle colonne; una colonna per le stime a posteriori di <span class="math inline">\(\alpha\)</span> e una colonna per le stime a posteriori di <span class="math inline">\(\beta\)</span>. Un tale risultato si ottiene con la funzione <code>spread_draws()</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">draws</span> <span class="op">&lt;-</span> <span class="va">output_stanfit</span> <span class="op">%&gt;%</span></span>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">draws</span> <span class="op">&lt;-</span> <span class="va">output_stanfit</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">spread_draws</span><span class="op">(</span><span class="va">beta</span>, <span class="va">alpha</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Esaminiamo l’oggetto <code>draws</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">draws</span> <span class="op">%&gt;%</span></span>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">draws</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 10 × 5</span></span>
 <span><span class="co">#&gt;   .chain .iteration .draw  beta alpha</span></span>
@@ -626,11 +662,10 @@ div.csl-indent {
 <span><span class="co">#&gt; 7      1          7     7 0.623  87.0</span></span>
 <span><span class="co">#&gt; 8      1          8     8 0.616  87.2</span></span>
 <span><span class="co">#&gt; # … with 2 more rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>L’oggetto <code>draws</code> contiene le stime a posteriori dei parametri <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span> nel formato desiderato. Possiamo ora generare un diagramma a dispersione con <code>ggplot()</code> a cui vengono aggiunte tutte le 16,000 rette di regressione definite da ciascuna coppia di valori <span class="math inline">\(\hat{\alpha}\)</span> e <span class="math inline">\(\hat{\beta}\)</span> contenuti nelle righe del DataFrame <code>draws</code>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">tibble</span><span class="op">(</span></span>
 <span>  kid_score <span class="op">=</span> <span class="va">df</span><span class="op">$</span><span class="va">kid_score</span>,</span>
 <span>  mom_iq <span class="op">=</span> <span class="va">df</span><span class="op">$</span><span class="va">mom_iq</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">df</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span>
 <span><span class="op">)</span> <span class="op">%&gt;%</span></span>
@@ -649,7 +684,7 @@ div.csl-indent {
 <span>    x <span class="op">=</span> <span class="st">"Quoziente di intelligenza della madre"</span>,</span>
 <span>    y <span class="op">=</span> <span class="st">"Quoziente di intelligenza del bambino"</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="054_reglin4_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -658,12 +693,11 @@ div.csl-indent {
 </div>
 <p>Il risultato cercato si ottiene (disegnare molteplici rette ciascuna definita da un valore casuale dalla distribuzione a posteriori dei parametri <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span>) mediante la seguente porzione del codice <span class="math inline">\(\mathsf{R}\)</span>.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">geom_abline</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">geom_abline</span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">draws</span>, </span>
 <span>  <span class="fu">aes</span><span class="op">(</span>intercept <span class="op">=</span> <span class="va">alpha</span>, slope <span class="op">=</span> <span class="va">beta</span><span class="op">)</span>,</span>
 <span>  size <span class="op">=</span> <span class="fl">0.2</span>, alpha <span class="op">=</span> <span class="fl">0.01</span>, color <span class="op">=</span> <span class="st">"darkgray"</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>L’argomento grafico <code>alpha = 0.01</code> passato a <code>geom_abline()</code> specifica la trasparenza del segmento che rappresenta ciascuna retta. Ho usato un valore molto basso per questo argomento per fare in modo che, anche sovrapponendo 16,000 rette, si produca comunque ancora un certo grado di trasparenza.</p>
 <p>Il grafico mostra che le rette di regressione costruite estraendo a caso valori dalla distribuzione a posteriori dei parametri <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span> <em>sono molto simili tra loro</em>. Ciò significa che, se combiniamo le informazioni fornite dai dati con le nostre credenza precedenti (qui, dei prior poco informativi), allora dobbiamo concludere che l’incertezza relativa alla dipendenza lineare del quoziente di intelligenza del bambino da quello della madre è decisamente piccola. In altre parole, siamo molto sicuri che c’è una associazione lineare positiva tra le due variabili: <em>in media</em> il QI dei figli è positivamente associato al QI della madre.</p>
@@ -673,7 +707,7 @@ div.csl-indent {
 <p>Abbiamo visto come l’incertezza sulla stima dei parametri possa essere espressa graficamente. In alternativa, l’incertezza inferenziale sui parametri può essere descritta mediante gli <em>intervalli di credibilità</em>, ovvero gli intervalli che contengono la quota desiderata (es., il 95%) della distribuzione a posteriori.</p>
 <p>Per l’esempio che stiamo discutendo, gli intervalli di credibilità (a code uguali) al 95% si ottengono nel modo seguente:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">rstantools</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstantools/reference/posterior_interval.html">posterior_interval</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">rstantools</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstantools/reference/posterior_interval.html">posterior_interval</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="va">output_stanfit</span><span class="op">)</span>, </span>
 <span>  prob <span class="op">=</span> <span class="fl">0.95</span></span>
 <span><span class="op">)</span></span>
@@ -685,17 +719,16 @@ div.csl-indent {
 <span><span class="co">#&gt; beta         0.49171840    0.72342520</span></span>
 <span><span class="co">#&gt; sigma       17.12519250   19.60110750</span></span>
 <span><span class="co">#&gt; lp__      -173.15907500 -168.54400000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Un grafico che, nel caso dei dati standardizzati, riporta l’intervallo di credibilità al livello di probabilità desiderato per i parametri <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span> e <span class="math inline">\(\sigma\)</span> si ottiene con l’istruzione seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">output_stanfit</span> <span class="op">%&gt;%</span></span>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">output_stanfit</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">mcmc_intervals</span><span class="op">(</span></span>
 <span>    pars <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"alpha_std"</span>, <span class="st">"beta_std"</span>, <span class="st">"sigma_std"</span><span class="op">)</span>,</span>
 <span>    prob <span class="op">=</span> <span class="fl">0.8</span>,</span>
 <span>    prob_outer <span class="op">=</span> <span class="fl">0.95</span></span>
 <span>  <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="054_reglin4_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -704,7 +737,7 @@ div.csl-indent {
 </div>
 <p>Gli intervalli di massima densità si trovano nel modo seguente.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayestestR</span><span class="fu">::</span><span class="fu"><a href="https://easystats.github.io/bayestestR/reference/hdi.html">hdi</a></span><span class="op">(</span><span class="va">output_stanfit</span>, ci <span class="op">=</span> <span class="fl">0.95</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">bayestestR</span><span class="fu">::</span><span class="fu"><a href="https://easystats.github.io/bayestestR/reference/hdi.html">hdi</a></span><span class="op">(</span><span class="va">output_stanfit</span>, ci <span class="op">=</span> <span class="fl">0.95</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Highest Density Interval</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; Parameter |        95% HDI</span></span>
@@ -713,7 +746,6 @@ div.csl-indent {
 <span><span class="co">#&gt; beta_std  | [ 0.36,  0.53]</span></span>
 <span><span class="co">#&gt; alpha     | [85.08, 88.52]</span></span>
 <span><span class="co">#&gt; beta      | [ 0.49,  0.72]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Quando la distribuzione a posteriori dei parametri è simmetrica, i due tipi di intervalli producono, all’atto pratico, risultati equivalenti.</p>
 <section id="quale-soglia-usare" class="level3" data-number="29.2.1"><h3 data-number="29.2.1" class="anchored" data-anchor-id="quale-soglia-usare">
@@ -730,12 +762,12 @@ div.csl-indent {
 <p>Sulla base di queste affermazioni di Fisher, la soglia del 0.95 è diventata la consuetudine nella comunità scientifica – o almeno, in parte di essa.</p>
 <p>Ma sono ovviamente possibili tantissime altre soglie per quantificare la nostra incertezza: alcuni ricercatori usano il livello di 0.89, altri quello di 0.5. Se l’obiettivo è quello di descrivere il livello della nostra incertezza relativamente alla stima del parametro, allora dobbiamo riconoscere che la nostra incertezza è descritta dall’<em>intera</em> distribuzione a posteriori. Per cui il metodo più semplice, più diretto e più completo per descrivere la nostra incertezza rispetto alla stima dei parametri è quello di riportare graficamente <em>tutta</em> la distribuzione a posteriori. Per l’esempio presente, una rappresentazione della distribuzione a posteriori dei parametri del modello si ottiene, ad esempio, con la seguente istruzione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_plot.html">stan_dens</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">rstan</span><span class="fu">::</span><span class="fu"><a href="https://mc-stan.org/rstan/reference/stan_plot.html">stan_dens</a></span><span class="op">(</span></span>
 <span>  <span class="va">output_stanfit</span>,</span>
 <span>  pars <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"alpha"</span>, <span class="st">"beta"</span>, <span class="st">"sigma"</span><span class="op">)</span>,</span>
 <span>  fill <span class="op">=</span> <span class="st">"lightgray"</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="054_reglin4_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -744,12 +776,12 @@ div.csl-indent {
 </div>
 <p>In alternativa possiamo usare la seguente istruzione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">mcmc_areas</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">mcmc_areas</span><span class="op">(</span></span>
 <span>  <span class="va">fit2</span><span class="op">$</span><span class="fu">draws</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"alpha_std"</span>, <span class="st">"beta_std"</span>, <span class="st">"sigma_std"</span><span class="op">)</span><span class="op">)</span>,</span>
 <span>  prob <span class="op">=</span> <span class="fl">0.8</span>,</span>
 <span>  prob_outer <span class="op">=</span> <span class="fl">0.95</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
+<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="054_reglin4_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
@@ -761,15 +793,13 @@ div.csl-indent {
 <p>È facile valutare ipotesi direzionali usando Stan. Per esempio, chiediamoci quale sia la probabilità <span class="math inline">\(P(\hat{\beta}_1 &gt; 0)\)</span>.</p>
 <p>Per trovare la probabilità richiesta possiamo usare il vettore <code>post$beta</code> il quale contiene 16,000 valori presi a caso dalla distribuzione a posteriori <span class="math inline">\(p(\beta \mid y)\)</span>. Nell’istruzione seguente, <code>post$beta &gt; 0</code> valuta se ciascun elemento di <code>post$beta</code> soddisfi la condizione logica specificata, ritornando <code>TRUE</code> (codificato con 1) o <code>FALSE</code> (codificato con 0) a seconda che la condizione logica sia vera o falsa. L’istruzione <code>sum(post$beta &gt; 0)</code> conta dunque il numero di volte in cui la condizione è soddisfatta, mentre <code>length(post$beta)</code> è uguale a 16,000. La proporzione così determinata è una stima empirica della probabilità cercata.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span> <span class="op">&gt;</span> <span class="fl">0</span><span class="op">)</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span> <span class="op">&gt;</span> <span class="fl">0</span><span class="op">)</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>L’evento complementare, ovvero, la probabilità <span class="math inline">\(P(\hat{\beta}_1 &lt; 0)\)</span> è dunque dato dalla seguente istruzione.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span> <span class="op">&lt;</span> <span class="fl">0</span><span class="op">)</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span> <span class="op">&lt;</span> <span class="fl">0</span><span class="op">)</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">post</span><span class="op">$</span><span class="va">beta</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Ciò significa che, relativamente alla presenza di un’associazione lineare positiva tra QI della madre e QI del figlio, la forza dell’evidenza è enorme.</p>
 </section><section id="modello-lineare-robusto" class="level2" data-number="29.4"><h2 data-number="29.4" class="anchored" data-anchor-id="modello-lineare-robusto">
@@ -778,23 +808,21 @@ div.csl-indent {
 <p>Questo problema trova una semplice soluzione nell’approccio bayesiano. Il modello lineare che abbiamo dicusso finora ipotizza una specifica distribuzione degli errori, ovvero <span class="math inline">\(\varepsilon \sim \mathcal{N}(0, \sigma_{\varepsilon})\)</span>. In un modello formulato in questi termini, la presenza di solo un valore anomalo e influente ha un effetto drammatico sulle stime dei parametri.</p>
 <p>Per fare un esempio, introduciamo un singolo valore anomalo e influente nel set dei dati dell’esempio che stiamo discutendo:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df2</span> <span class="op">&lt;-</span> <span class="va">df</span></span>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">df2</span> <span class="op">&lt;-</span> <span class="va">df</span></span>
 <span><span class="va">df2</span><span class="op">$</span><span class="va">kid_score</span><span class="op">[</span><span class="fl">434</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="op">-</span><span class="fl">500</span></span>
 <span><span class="va">df2</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">[</span><span class="fl">434</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fl">140</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Per comodità, calcoliamo le stime di <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span> con il metodo dei minimi quadrati (tali stime sono simili a quelle che si otterrebbero con un modello bayesiano gaussiano che impiega distribuzioni a priori debolmente informative). Sappiamo che, nel campione originale di dati, <span class="math inline">\(\hat{\beta} \approx 0.6\)</span>. In presenza di un solo outlier, la stima di <span class="math inline">\(\beta\)</span> viene drammaticamente ridotta.</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">kid_score</span> <span class="op">~</span> <span class="va">mom_iq</span>, data <span class="op">=</span> <span class="va">df2</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">kid_score</span> <span class="op">~</span> <span class="va">mom_iq</span>, data <span class="op">=</span> <span class="va">df2</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/stats/coef.html">coef</a></span><span class="op">(</span><span class="op">)</span> </span>
 <span><span class="co">#&gt; (Intercept)      mom_iq </span></span>
 <span><span class="co">#&gt;   49.187954    0.362552</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>In generale, però, non è necessario assumere <span class="math inline">\(\varepsilon \sim \mathcal{N}(0, \sigma_{\varepsilon})\)</span>. È altrettanto valido un modello che ipotizza una diversa distribuzione per gli errori come, ad esempio, la distribuzione <span class="math inline">\(t\)</span> di Student con un piccolo numero di gradi di libertà. Una caratteristica della <span class="math inline">\(t\)</span> di Student è che le code della distribuzione contengono una massa di probabilità maggiore della distribuzione gaussiana. Ciò fornisce alla <span class="math inline">\(t\)</span> di Student la possibilità di “rendere conto” della presenza di osservazioni lontane dalla media della distribuzione. In altri termini, se in modello lineare usiamo la <span class="math inline">\(t\)</span> di Student quale distribuzione degli errori, la presenza di outlier avrà un’influenza minore sulle stime dei parametri di quanto avviene nel tradizionale modello lineare gaussiano.</p>
 <p>Per verificare questa affermazione, modifichiamo il codice Stan usato in precedenza in modo tale da ipotizzare che <span class="math inline">\(y\)</span> segua una distribuzione <span class="math inline">\(t\)</span> di Student con un numero <span class="math inline">\(\nu\)</span> gradi di libertà stimato dal modello: <code>student_t(nu, mu, sigma)</code>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">modelString</span> <span class="op">&lt;-</span> <span class="st">"</span></span>
 <span><span class="st">data {</span></span>
 <span><span class="st">  int&lt;lower=0&gt; N;</span></span>
 <span><span class="st">  vector[N] y;</span></span>
@@ -829,20 +857,18 @@ div.csl-indent {
 <span><span class="st">}</span></span>
 <span><span class="st">"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html">writeLines</a></span><span class="op">(</span><span class="va">modelString</span>, con <span class="op">=</span> <span class="st">"code/simpleregstdrobust.stan"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Costruiamo la lista dei dati usando il data.frame <code>df2</code> che include l’outlier:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data3_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data3_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>  N <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">df2</span><span class="op">$</span><span class="va">kid_score</span><span class="op">)</span>,</span>
 <span>  y <span class="op">=</span> <span class="va">df2</span><span class="op">$</span><span class="va">kid_score</span>,</span>
 <span>  x <span class="op">=</span> <span class="va">df2</span><span class="op">$</span><span class="va">mom_iq</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">df2</span><span class="op">$</span><span class="va">mom_iq</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Adattiamo il modello lineare robusto ai dati:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"simpleregstdrobust.stan"</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">file</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"code"</span>, <span class="st">"simpleregstdrobust.stan"</span><span class="op">)</span></span>
 <span><span class="va">mod</span> <span class="op">&lt;-</span> <span class="fu">cmdstan_model</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">fit4</span> <span class="op">&lt;-</span> <span class="va">mod</span><span class="op">$</span><span class="fu">sample</span><span class="op">(</span></span>
@@ -853,11 +879,10 @@ div.csl-indent {
 <span>  chains <span class="op">=</span> <span class="fl">4L</span>,</span>
 <span>  refresh <span class="op">=</span> <span class="fl">0</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>Se esaminiamo le stime dei parametri notiamo che la stima di <span class="math inline">\(\beta\)</span> non è stata influenzata dalla presenza di un’osservazione anomala e influente:</p>
 <div class="cell" data-layout-align="center">
-<details><summary>Codice</summary><div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit4</span><span class="op">$</span><span class="fu">summary</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"alpha"</span>, <span class="st">"beta"</span>, <span class="st">"sigma"</span>, <span class="st">"nu"</span><span class="op">)</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">fit4</span><span class="op">$</span><span class="fu">summary</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"alpha"</span>, <span class="st">"beta"</span>, <span class="st">"sigma"</span>, <span class="st">"nu"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 4 × 10</span></span>
 <span><span class="co">#&gt;   variable   mean median     sd    mad     q5    q95  rhat ess_bulk ess_tail</span></span>
 <span><span class="co">#&gt;   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;</span></span>
@@ -865,7 +890,6 @@ div.csl-indent {
 <span><span class="co">#&gt; 2 beta      0.602  0.602 0.0589 0.0587  0.505  0.699  1.00   14903.   11582.</span></span>
 <span><span class="co">#&gt; 3 sigma    15.9   15.9   0.800  0.803  14.6   17.2    1.00   12993.   11619.</span></span>
 <span><span class="co">#&gt; 4 nu        5.58   5.46  1.15   1.09    3.93   7.64   1.00   12998.   11288.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <p>I risultati mostrano come il modello lineare robusto non risente della presenza di outlier (almeno nel caso presente).</p>
 </section><section id="commenti-e-considerazioni-finali" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="commenti-e-considerazioni-finali">Commenti e considerazioni finali</h2>
